@@ -369,21 +369,21 @@ const ProjectsPage = () => {
           SCREEN 2 — SKILLS, TRAINING & EDUCATION
           Learning takes different forms.
       ════════════════════════════════════════════════════════════════ */}
-      <section id="skills-training-education" className="py-16 sm:py-20 lg:py-24 bg-background relative overflow-hidden">
-        {/* Decorative Corner Artworks for Screen 2 */}
-        <div className="absolute top-0 left-0 w-[220px] sm:w-[280px] lg:w-[320px] pointer-events-none select-none opacity-85 z-0">
-          <img
-            src="/images/projects/skills-art-left.png"
-            alt=""
-            className="w-full h-auto object-contain object-left-top"
-          />
-        </div>
-        <div className="absolute top-0 right-0 w-[380px] sm:w-[480px] lg:w-[580px] pointer-events-none select-none opacity-95 z-0">
-          <img
-            src="/images/projects/skills-art-right.png"
-            alt=""
-            className="w-full h-auto object-contain object-right-top"
-          />
+      <section id="skills-training-education" className="py-12 sm:py-16 lg:py-20 bg-background relative overflow-hidden">
+        {/* Full-Section Unified Artwork — Spans the entire section behind cards & header */}
+        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+          <div className="container mx-auto px-4 max-w-7xl h-full relative">
+            <img
+              src="/images/projects/skills-header-art.png"
+              alt=""
+              className="w-full h-full object-fill object-center opacity-85 hidden lg:block"
+            />
+            <img
+              src="/images/projects/skills-header-art.png"
+              alt=""
+              className="w-full h-auto object-cover object-top opacity-50 lg:hidden"
+            />
+          </div>
         </div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
@@ -703,29 +703,21 @@ const ProjectsPage = () => {
           SCREEN 3 — HERITAGE & TRADITIONAL KNOWLEDGE
           Keeping knowledge in practice.
       ════════════════════════════════════════════════════════════════ */}
-      <section id="heritage-traditional-knowledge" className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
-        {/* Decorative Corner Artworks for Screen 3 */}
-        <div className="absolute top-0 left-0 w-[200px] sm:w-[260px] lg:w-[300px] pointer-events-none select-none opacity-85 z-0">
-          <img
-            src="/images/projects/heritage-art-left.png"
-            alt=""
-            className="w-full h-auto object-contain object-left-top"
-          />
-        </div>
-        <div className="absolute top-0 right-0 w-[380px] sm:w-[480px] lg:w-[560px] pointer-events-none select-none opacity-95 z-0">
-          <img
-            src="/images/projects/heritage-art-main.png"
-            alt=""
-            className="w-full h-auto object-contain object-right-top"
-          />
-        </div>
-        {/* Bottom-left corner botanical & arch flourish behind Card 01 */}
-        <div className="absolute bottom-0 left-0 w-[180px] sm:w-[220px] lg:w-[260px] pointer-events-none select-none opacity-75 z-0">
-          <img
-            src="/images/projects/inclusion-corner-bl.png"
-            alt=""
-            className="w-full h-auto object-contain object-left-bottom"
-          />
+      <section id="heritage-traditional-knowledge" className="py-12 sm:py-16 lg:py-20 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
+        {/* Full-Section Unified Artwork — Spans the entire section behind cards & header */}
+        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+          <div className="container mx-auto px-4 max-w-7xl h-full relative">
+            <img
+              src="/images/projects/heritage-header-art.png"
+              alt=""
+              className="w-full h-full object-fill object-center opacity-85 hidden lg:block"
+            />
+            <img
+              src="/images/projects/heritage-header-art.png"
+              alt=""
+              className="w-full h-auto object-cover object-top opacity-50 lg:hidden"
+            />
+          </div>
         </div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
@@ -1017,31 +1009,21 @@ const ProjectsPage = () => {
           SCREEN 4 — REHABILITATION, HEALTH & DIGITAL LEARNING
           Taking opportunity beyond conventional spaces.
       ════════════════════════════════════════════════════════════════ */}
-      <section id="rehabilitation-health-digital" className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
-        {/* Distinct Corner Artworks for Screen 4 */}
-        {/* 1. Top-right sunlit archway with staircase */}
-        <div className="absolute top-0 right-0 w-[340px] sm:w-[420px] lg:w-[480px] pointer-events-none select-none opacity-95 z-0">
-          <img
-            src="/images/projects/inclusion-corner-tr.png"
-            alt=""
-            className="w-full h-auto object-contain object-right-top"
-          />
-        </div>
-        {/* 2. Bottom-left terracotta & green arches with hanging beads & leaves behind Card 01 */}
-        <div className="absolute bottom-0 left-0 w-[200px] sm:w-[260px] lg:w-[300px] pointer-events-none select-none opacity-90 z-0">
-          <img
-            src="/images/projects/inclusion-corner-bl.png"
-            alt=""
-            className="w-full h-auto object-contain object-left-bottom"
-          />
-        </div>
-        {/* 3. Bottom-right circle, green fan & golden leaf branch behind Card 03 */}
-        <div className="absolute bottom-0 right-0 w-[180px] sm:w-[240px] lg:w-[280px] pointer-events-none select-none opacity-90 z-0">
-          <img
-            src="/images/projects/inclusion-corner-br.png"
-            alt=""
-            className="w-full h-auto object-contain object-right-bottom"
-          />
+      <section id="rehabilitation-health-digital" className="py-12 sm:py-16 lg:py-20 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
+        {/* Full-Section Unified Artwork — Spans the entire section behind cards & header */}
+        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+          <div className="container mx-auto px-4 max-w-7xl h-full relative">
+            <img
+              src="/images/projects/inclusion-header-art.png"
+              alt=""
+              className="w-full h-full object-fill object-center opacity-90 hidden lg:block"
+            />
+            <img
+              src="/images/projects/inclusion-header-art.png"
+              alt=""
+              className="w-full h-auto object-cover object-top opacity-50 lg:hidden"
+            />
+          </div>
         </div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
