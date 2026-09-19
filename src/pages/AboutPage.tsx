@@ -10,7 +10,7 @@ import {
   Users, CheckCircle2, ShieldCheck, Heart, Landmark,
   BookOpen, Compass, Feather, FileText, ChevronRight,
   ExternalLink, Layers, GraduationCap, Briefcase, Leaf,
-  Handshake, HeartHandshake
+  Handshake, HeartHandshake, MapPin, Sprout
 } from "lucide-react";
 
 /* ─── Metric Counter Component for Screen 6 ─── */
@@ -432,84 +432,138 @@ const AboutPage = () => {
           </div>
 
           {/* Lower Section — Our Roots (Rooted in Braj) */}
-          <div className="pt-16 border-t border-border/80">
-            <AnimeReveal variant="fade-up" className="max-w-4xl mb-12">
-              <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-2">
-                ROOTED IN BRAJ
-              </span>
-              <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary mb-4 leading-tight">
-                Mathura is our home.
-                <br />
-                <span className="text-secondary font-serif italic">Braj shapes our work.</span>
-              </h3>
-              <p className="text-muted-foreground text-base sm:text-lg font-light leading-relaxed">
-                Khajani's connection with Mathura and Braj goes beyond its address. This is the landscape in which the organisation began, built relationships with communities and developed much of its understanding of skills, livelihoods and traditional knowledge.
-              </p>
-              <div className="mt-4 p-4 rounded-2xl bg-primary/5 border border-primary/10">
-                <p className="text-xs text-primary/80 font-mono leading-relaxed">
-                  Grassroots engagement extends across Mathura and the wider Braj region, with connections to women and artisan groups in Vrindavan, Govardhan, Barsana, Nandgaon, Gokul, Mahavan, Raya, Chhata, Mant, Baldeo, Farah, Jait, Rawal and Ading.
-                </p>
-              </div>
-            </AnimeReveal>
+          <div className="pt-16 border-t border-[#EAE2D5]">
+            {/* Top Row with Header (Left) and Flourish Graphic (Right) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-12 relative">
+              {/* Left Column: Heading, Subtitle & Grassroots Box */}
+              <AnimeReveal variant="fade-up" className="lg:col-span-7 xl:col-span-8">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#D32F2F] font-mono">
+                    ROOTED IN BRAJ
+                  </span>
+                  <span className="w-12 h-px bg-[#D8C7B0] inline-block" />
+                </div>
 
-            {/* Three Root Cards */}
+                <h3 className="text-4xl sm:text-5xl font-display font-bold text-[#142033] tracking-tight leading-[1.12] mb-4">
+                  Mathura is our home.
+                  <br />
+                  <span className="font-serif italic font-normal text-[#C48332]">Braj shapes our work.</span>
+                </h3>
+
+                <p className="text-sm sm:text-base text-[#64748B] font-light leading-relaxed max-w-2xl mb-5">
+                  Khajani’s connection with Mathura and Braj goes beyond its address. This is the landscape in which the organisation began, built relationships with communities and developed much of its understanding of skills, livelihoods and traditional knowledge.
+                </p>
+
+                <div className="p-3.5 sm:p-4 rounded-xl bg-[#F1F3F6]/70 border border-[#E2E8F0] max-w-2xl">
+                  <p className="text-xs font-mono text-[#475569] leading-relaxed">
+                    Grassroots engagement extends across Mathura and the wider Braj region, with connections to women and artisan groups in Vrindavan, Govardhan, Barsana, Nandgaon, Gokul, Mahavan, Raya, Chhata, Mant, Baldeo, Farah, Jait, Rawal and Ading.
+                  </p>
+                </div>
+              </AnimeReveal>
+
+              {/* Right Column: Decorative Flourish Quote with Blob & Nodes */}
+              <AnimeReveal variant="fade-left" delay={150} className="lg:col-span-5 xl:col-span-4 flex justify-start lg:justify-end items-end">
+                <img
+                  src="/images/about/rooted-in-braj-flourish.png"
+                  alt="Same roots. Stronger people. Brighter tomorrows."
+                  className="w-full max-w-[340px] sm:max-w-[400px] h-auto object-contain select-none pointer-events-none"
+                />
+              </AnimeReveal>
+            </div>
+
+            {/* Three Root Cards (No Arrows per user requirement) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              {[
-                {
-                  num: "01",
-                  title: "PEOPLE",
-                  subtitle: "Communities at the Centre",
-                  desc: "Khajani's work is shaped by engagement with women, learners, artisans and communities—starting with local realities rather than a one-size-fits-all approach.",
-                },
-                {
-                  num: "02",
-                  title: "PLACE",
-                  subtitle: "Rooted in Mathura & Braj",
-                  desc: "From urban Mathura to communities across the wider Braj region, place has remained central to Khajani's identity and its grassroots relationships.",
-                },
-                {
-                  num: "03",
-                  title: "HERITAGE",
-                  subtitle: "Tradition as a Living Resource",
-                  desc: "Braj's traditional skills and cultural knowledge are not treated simply as something from the past. Khajani works at the intersection of heritage, practical skills and contemporary livelihood opportunities.",
-                },
-              ].map((root, i) => (
-                <AnimeReveal key={root.num} variant="fade-up" delay={i * 90}>
-                  <div className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                    <div>
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-3xl font-display font-black text-secondary/40 group-hover:text-secondary transition-colors">
-                          {root.num}
-                        </span>
-                        <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-accent/10 text-accent">
-                          {root.title}
-                        </span>
-                      </div>
-                      <h4 className="font-display font-bold text-xl text-primary leading-snug mb-3 group-hover:text-secondary transition-colors">
-                        {root.subtitle}
-                      </h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {root.desc}
-                      </p>
+              {/* Card 1: Communities at the Centre */}
+              <AnimeReveal variant="fade-up" delay={100}>
+                <div className="rounded-3xl p-7 flex flex-col justify-between h-full bg-[#FDF8F3] border border-[#F3E5D5] shadow-xs hover:shadow-md transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden">
+                  <div>
+                    <div className="w-12 h-12 rounded-full bg-[#FCECE0] text-[#D0704B] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                      <Users size={22} />
                     </div>
+                    <h4 className="font-display font-bold text-xl text-[#142033] mb-3 leading-snug">
+                      Communities at the Centre
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#64748B] font-light leading-relaxed mb-6">
+                      Khajani’s work is shaped by engagement with women, learners, artisans and communities—starting with local realities rather than a one-size-fits-all approach.
+                    </p>
                   </div>
-                </AnimeReveal>
-              ))}
+
+                  {/* Decorative Wavy Line with Node (No Arrow) */}
+                  <div className="mt-auto pt-2">
+                    <svg className="w-full h-8 text-[#C48332]/40 select-none pointer-events-none" viewBox="0 0 300 30" fill="none">
+                      <path d="M0,22 Q80,36 160,20 T300,12" stroke="currentColor" strokeWidth="1.5" />
+                      <circle cx="12" cy="23" r="3.5" fill="#C48332" />
+                    </svg>
+                  </div>
+                </div>
+              </AnimeReveal>
+
+              {/* Card 2: Rooted in Mathura & Braj */}
+              <AnimeReveal variant="fade-up" delay={200}>
+                <div className="rounded-3xl p-7 flex flex-col justify-between h-full bg-[#F4F8FC] border border-[#E0EDF7] shadow-xs hover:shadow-md transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden">
+                  <div>
+                    <div className="w-12 h-12 rounded-full bg-[#E5F0FA] text-[#3B82C4] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                      <MapPin size={22} />
+                    </div>
+                    <h4 className="font-display font-bold text-xl text-[#142033] mb-3 leading-snug">
+                      Rooted in Mathura &amp; Braj
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#64748B] font-light leading-relaxed mb-6">
+                      From urban Mathura to communities across the wider Braj region, place has remained central to Khajani’s identity and its grassroots relationships.
+                    </p>
+                  </div>
+
+                  {/* Decorative Wavy Line with Node (No Arrow) */}
+                  <div className="mt-auto pt-2">
+                    <svg className="w-full h-8 text-[#3B82C4]/40 select-none pointer-events-none" viewBox="0 0 300 30" fill="none">
+                      <path d="M0,26 Q100,6 200,24 T300,16" stroke="currentColor" strokeWidth="1.5" />
+                      <circle cx="150" cy="19" r="3.5" fill="#3B82C4" />
+                    </svg>
+                  </div>
+                </div>
+              </AnimeReveal>
+
+              {/* Card 3: Tradition as a Living Resource */}
+              <AnimeReveal variant="fade-up" delay={300}>
+                <div className="rounded-3xl p-7 flex flex-col justify-between h-full bg-[#F5F9F4] border border-[#E0EFE0] shadow-xs hover:shadow-md transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden">
+                  <div>
+                    <div className="w-12 h-12 rounded-full bg-[#E6F3E5] text-[#4E9954] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                      <Sprout size={22} />
+                    </div>
+                    <h4 className="font-display font-bold text-xl text-[#142033] mb-3 leading-snug">
+                      Tradition as a Living Resource
+                    </h4>
+                    <p className="text-xs sm:text-sm text-[#64748B] font-light leading-relaxed mb-6">
+                      Braj’s traditional skills and cultural knowledge are not treated simply as something from the past. Khajani works at the intersection of heritage, practical skills and contemporary livelihood opportunities.
+                    </p>
+                  </div>
+
+                  {/* Decorative Wavy Line with Nodes (No Arrow) */}
+                  <div className="mt-auto pt-2">
+                    <svg className="w-full h-8 text-[#4E9954]/40 select-none pointer-events-none" viewBox="0 0 300 30" fill="none">
+                      <path d="M0,16 Q85,32 180,18 T300,25" stroke="currentColor" strokeWidth="1.5" />
+                      <circle cx="12" cy="17" r="3.5" fill="#4E9954" />
+                      <circle cx="160" cy="21" r="3.5" fill="#4E9954" />
+                    </svg>
+                  </div>
+                </div>
+              </AnimeReveal>
             </div>
 
             {/* Accent Line + Bottom Transition */}
-            <div className="pt-6 border-t border-border/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <p className="font-handwriting text-2xl text-secondary italic font-normal">
+            <div className="pt-8 border-t border-[#EAE2D5] flex flex-col sm:flex-row items-center justify-between gap-4">
+              <span className="font-handwriting text-2xl sm:text-3xl text-[#C48332] italic tracking-wide">
                 Our roots give the work its character. Our people give it purpose.
-              </p>
+              </span>
+              <span className="hidden sm:block flex-1 h-px bg-[#EAE2D5] mx-6" />
               <a
                 href="#timeline-part-1"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary hover:text-accent transition-colors"
+                className="inline-flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[#142033] hover:text-[#C48332] transition-colors shrink-0 group"
               >
-                Next: A journey shaped over time <ArrowRight size={14} />
+                <span>NEXT: A JOURNEY SHAPED OVER TIME</span>
+                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
-
           </div>
         </div>
       </section>
