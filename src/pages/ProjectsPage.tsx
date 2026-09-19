@@ -994,192 +994,331 @@ const ProjectsPage = () => {
           SCREEN 4 — REHABILITATION, HEALTH & DIGITAL LEARNING
           Taking opportunity beyond conventional spaces.
       ════════════════════════════════════════════════════════════════ */}
-      <section id="rehabilitation-health-digital" className="py-20 lg:py-24 bg-background relative">
-        <div className="container mx-auto px-4 max-w-6xl">
-          {/* Section Header */}
-          <div className="max-w-3xl mb-14">
-            <AnimeReveal variant="fade-up">
-              <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase inline-block mb-2">
-                ACCESS · DIGNITY · LEARNING
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary tracking-tight leading-tight">
-                Taking opportunity beyond conventional spaces.
-              </h2>
-              <p className="mt-4 text-muted-foreground text-base sm:text-lg leading-relaxed">
-                Khajani’s work also reaches people and settings where the need is different—from prison inmates and community health initiatives to practical digital learning.
-              </p>
-            </AnimeReveal>
+      <section id="rehabilitation-health-digital" className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          
+          {/* Section Header with Artwork & Inclusion Elements */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14 sm:mb-16">
+            
+            {/* Left Column: Title & Context */}
+            <div className="lg:col-span-7">
+              <AnimeReveal variant="fade-up">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-[#B85D3B] text-xs font-bold tracking-[0.2em] uppercase font-mono">
+                    ACCESS · DIGNITY · LEARNING
+                  </span>
+                  <span className="w-10 h-[1.5px] bg-[#B85D3B]/60" />
+                </div>
+
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary tracking-tight leading-[1.08]">
+                  Taking opportunity beyond
+                  <br />
+                  <span className="font-serif italic font-normal text-[#B85D3B]">
+                    conventional spaces.
+                  </span>
+                </h2>
+
+                <div className="mt-5 space-y-2.5 text-muted-foreground text-sm sm:text-base leading-relaxed font-light max-w-xl">
+                  <p>
+                    Khajani’s work also reaches people and settings where the need is different—from prison inmates and community health initiatives to practical digital learning.
+                  </p>
+                </div>
+
+                {/* Sub-strand line */}
+                <div className="flex items-center gap-3 mt-6 pt-4 border-t border-[#EAE2D5]/70">
+                  <span className="w-8 h-[1.5px] bg-[#B85D3B]/50" />
+                  <span className="text-[10px] sm:text-[11px] font-mono font-bold tracking-[0.22em] text-[#8C6D46] uppercase">
+                    OPPORTUNITY · PEOPLE · INCLUSION · EMPOWERMENT
+                  </span>
+                </div>
+              </AnimeReveal>
+            </div>
+
+            {/* Right Column: Abstract Art Composition & Calligraphy */}
+            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[240px]">
+              {/* Top right label */}
+              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-2 z-10">
+                <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
+                  DIFFERENT<br />
+                  PEOPLE<br />
+                  BRIGHTER<br />
+                  TOMORROWS
+                </p>
+              </div>
+
+              {/* Centered illustration background */}
+              <div className="absolute right-0 top-0 bottom-0 w-full max-w-[440px] pointer-events-none select-none opacity-95">
+                <img
+                  src="/images/projects/inclusion-header-art.png"
+                  alt="Opportunity beyond conventional spaces artwork with sunlit archway"
+                  className="w-full h-full object-contain object-right-top"
+                />
+              </div>
+
+              {/* Overlay Cursive Tagline */}
+              <div className="relative z-10 text-right pr-2 sm:pr-4 pt-4 mt-auto">
+                <span className="font-handwriting text-2xl sm:text-3xl text-[#B85D3B] italic leading-tight block">
+                  Learning has no boundaries.
+                </span>
+              </div>
+            </div>
+
           </div>
 
-          {/* Programmes Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Programme 1: BRIJ-ANSHUMAN */}
+          {/* Programmes Grid — 3 Bespoke Editorial Cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+            
+            {/* ─── Programme 1: BRIJ-ANSHUMAN ─── */}
             <AnimeReveal variant="fade-up" delay={100} className="h-full">
               <div
                 id="brij-anshuman"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#FAF0EE]/60 border border-[#ECD1CD] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/brij-anshuman-icon.jpg"
-                    alt="Brij-Anshuman Prison Rehabilitation Program"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Prison Inmates · Rehabilitation
-                  </span>
+                {/* Media Top Section with Terracotta Spine/Tab */}
+                <div className="flex w-full overflow-hidden border-b border-[#ECD1CD]/70">
+                  {/* Left Colored Spine */}
+                  <div className="w-14 sm:w-16 bg-[#B85D3B] shrink-0 flex flex-col items-center justify-between py-5 text-white">
+                    <div className="flex flex-col items-center">
+                      <span className="text-xs font-mono font-bold tracking-wider">01</span>
+                      <div className="w-5 h-[1px] bg-white/40 mt-1" />
+                    </div>
+                    <div className="w-9 h-9 rounded-full border border-white/40 flex items-center justify-center my-auto shadow-xs">
+                      <BookOpen size={16} className="text-white" />
+                    </div>
+                    <div className="w-2 h-2 rounded-full bg-white/20" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/brij-anshuman-icon.jpg"
+                      alt="Brij-Anshuman Prison Rehabilitation Program"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Rehabilitation & Learning
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       BRIJ-ANSHUMAN
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Skill training and rehabilitation for prison inmates
+                    <p className="text-sm font-serif italic text-[#B85D3B] font-semibold mb-3">
+                      Learning beyond conventional spaces.
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed font-light">
                       <p>
-                        Brij-Anshuman provides practical vocational training for prison inmates in skills such as Thakur Ji Poshak making, candle making, stitching, Royal Sanjhi Art, crochet and beauty &amp; wellness.
+                        Brij-Anshuman brings Khajani's skill-development work into prisons and correctional settings.
                       </p>
                       <p>
-                        Participants can use their training to make products and generate income, with documented programme earnings directed to their bank accounts to help build financial security for the future.
+                        Through practical training initiatives with inmates, the programme creates opportunities for learning and constructive engagement in an environment where access to conventional skill-development opportunities is limited.
+                      </p>
+                      <p>
+                        The work is centred on skills, learning and rehabilitation, with dignity at its core.
                       </p>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Prison Inmates</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Skill Training</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Bank Accounts</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Second Chance</span>
+                  <div className="mt-6 pt-4 border-t border-[#ECD1CD]/60">
+                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium">
+                      <span className="bg-[#B85D3B]/10 text-[#B85D3B] font-semibold px-2.5 py-1 rounded-md">Skills</span>
+                      <span className="bg-[#B85D3B]/10 text-[#B85D3B] font-semibold px-2.5 py-1 rounded-md">Learning</span>
+                      <span className="bg-[#B85D3B]/10 text-[#B85D3B] font-semibold px-2.5 py-1 rounded-md">Rehabilitation</span>
                     </div>
                     <Link
                       to="/projects/brij-anshuman"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
+                      className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#B85D3B] hover:text-primary transition-colors group/link font-mono"
                     >
                       <span>EXPLORE BRIJ-ANSHUMAN</span>
-                      <ArrowRight size={14} />
+                      <span className="w-7 h-7 rounded-full border border-[#B85D3B]/40 group-hover/link:border-[#B85D3B] group-hover/link:bg-[#B85D3B] group-hover/link:text-white flex items-center justify-center transition-all">
+                        <ChevronRight size={14} />
+                      </span>
                     </Link>
                   </div>
                 </div>
               </div>
             </AnimeReveal>
 
-            {/* Programme 2: BRIJ-SANGINI */}
+            {/* ─── Programme 2: BRIJ-SANGINI ─── */}
             <AnimeReveal variant="fade-up" delay={200} className="h-full">
               <div
                 id="brij-sangini"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#EFF5F1]/60 border border-[#CFDDD3] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/sanitary-napkin-vending.jpg"
-                    alt="Brij-Sangini Health & Dignity Initiative"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Health & Dignity
-                  </span>
+                {/* Media Top Section with Sage Green Spine/Tab */}
+                <div className="flex w-full overflow-hidden border-b border-[#CFDDD3]/70">
+                  {/* Left Colored Spine */}
+                  <div className="w-14 sm:w-16 bg-[#557A61] shrink-0 flex flex-col items-center justify-between py-5 text-white">
+                    <div className="flex flex-col items-center">
+                      <span className="text-xs font-mono font-bold tracking-wider">02</span>
+                      <div className="w-5 h-[1px] bg-white/40 mt-1" />
+                    </div>
+                    <div className="w-9 h-9 rounded-full border border-white/40 flex items-center justify-center my-auto shadow-xs">
+                      <Heart size={16} className="text-white" />
+                    </div>
+                    <div className="w-2 h-2 rounded-full bg-white/20" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/sanitary-napkin-vending.jpg"
+                      alt="Brij-Sangini Health & Dignity Initiative"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Health & Dignity
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       BRIJ-SANGINI
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Health, hygiene and dignity for women and girls
+                    <p className="text-sm font-serif italic text-[#557A61] font-semibold mb-2">
+                      Health, awareness and everyday dignity.
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2 text-xs sm:text-sm text-muted-foreground leading-relaxed font-light">
                       <p>
-                        Brij-Sangini brings together Khajani’s work in menstrual hygiene, women’s health awareness and blood donation.
+                        Brij-Sangini brings together Khajani's initiatives connected with health, awareness and dignity.
                       </p>
-                      <p>
-                        The programme combines awareness with practical action—including the installation of 25 sanitary napkin vending machines and destroyers across 25 government schools and colleges.
+                      <p className="text-xs">
+                        Rather than functioning as separate projects, activities such as Menstrual Hygiene initiatives and Blood Donation Camps form part of this larger programme:
+                      </p>
+                      <div className="p-3 rounded-2xl bg-white/80 border border-[#CFDDD3]/70 text-[11px] space-y-2 font-sans">
+                        <div>
+                          <span className="font-bold text-primary block text-[10px] uppercase tracking-wider">MENSTRUAL HYGIENE</span>
+                          <span className="text-muted-foreground leading-tight block">
+                            Khajani's menstrual-hygiene work combines awareness with practical intervention. Documented work includes the installation of 25 sanitary napkin vending machines and destroyers across 25 government schools and colleges.
+                          </span>
+                        </div>
+                        <div>
+                          <span className="font-bold text-primary block text-[10px] uppercase tracking-wider">BLOOD DONATION CAMPS</span>
+                          <span className="text-muted-foreground leading-tight block">
+                            Blood-donation camps bring together voluntary participation and a direct community-health need.
+                          </span>
+                        </div>
+                      </div>
+                      <p className="text-[10px] italic text-muted-foreground/90">
+                        Other verified health and dignity initiatives can continue to be added within Brij-Sangini.
                       </p>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
+                  <div className="mt-6 pt-4 border-t border-[#CFDDD3]/60">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Women’s Health</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Menstrual Hygiene</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">25 Schools</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Blood Donation</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Health</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Awareness</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Dignity</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Participation</span>
                     </div>
                     <Link
                       to="/projects/brij-sangini"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
+                      className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#557A61] hover:text-primary transition-colors group/link font-mono"
                     >
                       <span>EXPLORE BRIJ-SANGINI</span>
-                      <ArrowRight size={14} />
+                      <span className="w-7 h-7 rounded-full border border-[#557A61]/40 group-hover/link:border-[#557A61] group-hover/link:bg-[#557A61] group-hover/link:text-white flex items-center justify-center transition-all">
+                        <ChevronRight size={14} />
+                      </span>
                     </Link>
                   </div>
                 </div>
               </div>
             </AnimeReveal>
 
-            {/* Programme 3: DIGI-SHALA */}
+            {/* ─── Programme 3: DIGI-SHALA ─── */}
             <AnimeReveal variant="fade-up" delay={300} className="h-full">
               <div
                 id="digi-shala"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#F0F4FA]/60 border border-[#CDD9E8] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/digi-shala.jpg"
-                    alt="Digi-Shala practical digital literacy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Digital Learning
-                  </span>
+                {/* Media Top Section with Steel Blue Spine/Tab */}
+                <div className="flex w-full overflow-hidden border-b border-[#CDD9E8]/70">
+                  {/* Left Colored Spine */}
+                  <div className="w-14 sm:w-16 bg-[#4A709C] shrink-0 flex flex-col items-center justify-between py-5 text-white">
+                    <div className="flex flex-col items-center">
+                      <span className="text-xs font-mono font-bold tracking-wider">03</span>
+                      <div className="w-5 h-[1px] bg-white/40 mt-1" />
+                    </div>
+                    <div className="w-9 h-9 rounded-full border border-white/40 flex items-center justify-center my-auto shadow-xs">
+                      <Laptop size={16} className="text-white" />
+                    </div>
+                    <div className="w-2 h-2 rounded-full bg-white/20" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/digi-shala.jpg"
+                      alt="Digi-Shala practical digital literacy"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Digital Learning
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       DIGI-SHALA
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Digital skills and technology awareness for girls
+                    <p className="text-sm font-serif italic text-[#4A709C] font-semibold mb-3">
+                      Learning for an increasingly digital world.
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed font-light">
                       <p>
-                        Digi-Shala helps school- and college-going girls build digital skills and become more confident with technology.
+                        Digi-Shala brings digital learning into Khajani's wider education and skill-development work.
                       </p>
                       <p>
-                        The programme focuses on digital literacy, AI awareness, educational technology, cyber security and responsible use of digital tools.
-                      </p>
-                      <p className="text-xs text-primary/80 font-medium">
-                        A five-year collaborative initiative was designed to reach 1,800 girls across 18 educational institutions.
+                        It provides practical exposure to relevant digital tools and helps participants develop greater familiarity and confidence in using technology.
                       </p>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
+                  <div className="mt-6 pt-4 border-t border-[#CDD9E8]/60">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Digital Literacy</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">AI Awareness</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">1,800 Girls</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Online Safety</span>
+                      <span className="bg-[#4A709C]/15 text-[#2A4D73] font-semibold px-2.5 py-1 rounded-md">Digital Learning</span>
+                      <span className="bg-[#4A709C]/15 text-[#2A4D73] font-semibold px-2.5 py-1 rounded-md">Technology</span>
+                      <span className="bg-[#4A709C]/15 text-[#2A4D73] font-semibold px-2.5 py-1 rounded-md">Practical Skills</span>
                     </div>
                     <Link
                       to="/projects/digi-shala"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
+                      className="flex items-center justify-between text-xs font-bold uppercase tracking-wider text-[#4A709C] hover:text-primary transition-colors group/link font-mono"
                     >
-                      <span>EXPLORE DIGI-SHALA →</span>
+                      <span>EXPLORE DIGI-SHALA</span>
+                      <span className="w-7 h-7 rounded-full border border-[#4A709C]/40 group-hover/link:border-[#4A709C] group-hover/link:bg-[#4A709C] group-hover/link:text-white flex items-center justify-center transition-all">
+                        <ChevronRight size={14} />
+                      </span>
                     </Link>
                   </div>
                 </div>
               </div>
             </AnimeReveal>
+
           </div>
+
+          {/* Section Corner Accents */}
+          <div className="mt-14 pt-6 border-t border-[#EAE2D5] flex items-center justify-between text-[10px] font-mono tracking-[0.25em] text-[#8C6D46]/70 uppercase">
+            <span>SKILLS · DIGNITY · ACCESS · COMMUNITY</span>
+            <span>SAME PEOPLE. MORE POSSIBILITIES.</span>
+          </div>
+
         </div>
       </section>
 
