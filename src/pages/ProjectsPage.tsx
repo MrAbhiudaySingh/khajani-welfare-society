@@ -112,19 +112,20 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   },
   "sanjhi-art": {
     id: "sanjhi-art",
-    name: "SANJHI ART REVIVAL",
-    category: "Living Heritage",
-    tagline: "A tradition continues when it is practised.",
+    name: "ROYAL SANJHI ART",
+    category: "Keeping the traditional art of Braj alive",
+    tagline: "Keeping the traditional art of Braj alive",
     image: "/images/projects/royal-sanjhi-training.jpg",
-    tags: ["Sanjhi", "Braj", "Practice", "Continuity", "Living Heritage"],
+    tags: ["250+ artists trained", "120+ women earning", "Braj Heritage", "Traditional Art"],
     overview: [
-      "Sanjhi is closely associated with the cultural and devotional landscape of Braj.",
-      "Khajani’s initiative focuses on the revival and continuity of the art—bringing attention to its practice and creating opportunities for its knowledge and techniques to be learnt and carried forward.",
+      "Khajani trains women, students, young people and artisans in traditional Sanjhi techniques including stencil making, intricate paper cutting, patterns and motifs.",
+      "The initiative connects the preservation of Braj's cultural heritage with creativity, training and livelihood opportunities.",
+      "250+ artists trained · 120+ women earning through Sanjhi Art.",
     ],
     highlights: [
-      "Revival of delicate hand-stencil paper cutting rooted in the Radha-Krishna tradition",
-      "Mentorship from traditional master craftsmen passing techniques to new practitioners",
-      "Exploration of living applications in apparel, home decor, and contemporary galleries",
+      "Preserving the sacred Braj stencil paper-cutting art through master artisan mentorship",
+      "Expanding from traditional worship stencils to contemporary fashion and interior design",
+      "Unique fusion of Sanjhi-inspired art with locally rooted cow-dung sustainable materials",
     ],
   },
   "mathura-poshak": {
@@ -604,16 +605,16 @@ const ProjectsPage = () => {
 
           {/* Programmes Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Programme 1: SANJHI ART REVIVAL */}
+            {/* Programme 1: ROYAL SANJHI ART */}
             <AnimeReveal variant="fade-up" delay={100} className="h-full">
               <div
-                id="sanjhi-art"
+                id="royal-sanjhi"
                 className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src="/images/projects/royal-sanjhi-training.jpg"
-                    alt="Sanjhi Art Revival Workshop"
+                    alt="Royal Sanjhi Art Workshop"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
@@ -625,36 +626,33 @@ const ProjectsPage = () => {
                 <div className="p-6 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-primary mb-1">
-                      SANJHI ART REVIVAL
+                      ROYAL SANJHI ART
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      A tradition continues when it is practised.
+                      Keeping the traditional art of Braj alive
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Sanjhi is closely associated with the cultural and devotional landscape of Braj.
+                        Khajani trains women, students, young people and artisans in traditional Sanjhi techniques including stencil making, intricate paper cutting, patterns and motifs.
                       </p>
                       <p>
-                        Khajani’s initiative focuses on the revival and continuity of the art—bringing attention to its practice and creating opportunities for its knowledge and techniques to be learnt and carried forward.
+                        The initiative connects the preservation of Braj's cultural heritage with creativity, training and livelihood opportunities.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Sanjhi</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Braj</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Practice</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Continuity</span>
+                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium">
+                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">250+ artists trained</span>
+                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">120+ women earning</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("sanjhi-art")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/royal-sanjhi"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
-                      <span>Explore Sanjhi Art Revival</span>
+                      <span>EXPLORE ROYAL SANJHI ART</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1244,10 +1242,10 @@ const ProjectsPage = () => {
               },
               {
                 id: "sanjhi-art",
-                name: "Sanjhi Art Revival",
-                subtitle: "Living Heritage",
+                name: "Royal Sanjhi Art",
+                subtitle: "Keeping the traditional art of Braj alive",
                 icon: Sparkles,
-                tag: "Heritage",
+                tag: "Living Heritage",
                 link: "/projects/royal-sanjhi",
               },
               {
