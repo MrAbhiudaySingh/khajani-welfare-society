@@ -168,19 +168,20 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "brij-anshuman": {
     id: "brij-anshuman",
     name: "BRIJ-ANSHUMAN",
-    category: "Rehabilitation & Learning",
-    tagline: "Learning beyond conventional spaces.",
+    category: "Prison Inmates · Skill Training · Rehabilitation · Income · Second Chance",
+    tagline: "Skill training and rehabilitation for prison inmates",
     image: "/images/projects/brij-anshuman-icon.jpg",
-    tags: ["Skills", "Learning", "Rehabilitation", "Dignity"],
+    tags: ["Prison Inmates", "Skill Training", "Rehabilitation", "Second Chance", "Income"],
     overview: [
-      "Brij-Anshuman brings Khajani’s skill-development work into prisons and correctional settings.",
-      "Through practical training initiatives with inmates, the programme creates opportunities for learning and constructive engagement in an environment where access to conventional skill-development opportunities is limited.",
-      "The work is centred on skills, learning and rehabilitation, with dignity at its core.",
+      "Brij-Anshuman is Khajani Welfare Society's skill-development initiative for prison inmates.",
+      "Through practical vocational training, inmates learn skills they can use to make products, earn income and prepare for opportunities after release.",
+      "Documented training areas include Thakur Ji Poshak making, candle making, stitching, PPE kit manufacturing, beauty & wellness, Royal Sanjhi Art, and crochet.",
+      "Programme documentation states that earnings from products made by trainees are directed directly to their bank accounts to help build financial security for the future.",
     ],
     highlights: [
-      "Correctional facility vocational workshops fostering creative engagement and self-worth",
-      "Practical livelihood skills that facilitate reintegration into society upon release",
-      "Respectful, dignity-first learning atmosphere breaking cycles of institutional despair",
+      "15-day structured vocational training modules inside Mathura District Jail",
+      "Direct transfer of product earnings into inmates' personal bank accounts",
+      "Comprehensive trades spanning traditional Braj art, deity poshak, and utility crafts",
     ],
   },
   "brij-sangini": {
@@ -814,7 +815,7 @@ const ProjectsPage = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
                   <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Rehabilitation & Learning
+                    Prison Inmates · Rehabilitation
                   </span>
                 </div>
                 <div className="p-6 flex-1 flex flex-col justify-between">
@@ -823,35 +824,32 @@ const ProjectsPage = () => {
                       BRIJ-ANSHUMAN
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Learning beyond conventional spaces.
+                      Skill training and rehabilitation for prison inmates
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Brij-Anshuman brings Khajani’s skill-development work into prisons and correctional settings.
+                        Brij-Anshuman provides practical vocational training for prison inmates in skills such as Thakur Ji Poshak making, candle making, stitching, Royal Sanjhi Art, crochet and beauty &amp; wellness.
                       </p>
                       <p>
-                        Through practical training initiatives with inmates, the programme creates opportunities for learning and constructive engagement in an environment where access to conventional skill-development opportunities is limited.
-                      </p>
-                      <p>
-                        The work is centred on skills, learning and rehabilitation, with dignity at its core.
+                        Participants can use their training to make products and generate income, with documented programme earnings directed to their bank accounts to help build financial security for the future.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Skills</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Learning</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Rehabilitation</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Prison Inmates</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Skill Training</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Bank Accounts</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Second Chance</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-anshuman")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-anshuman"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
-                      <span>Explore Brij-Anshuman</span>
+                      <span>EXPLORE BRIJ-ANSHUMAN</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1259,6 +1257,7 @@ const ProjectsPage = () => {
                 subtitle: "Rehabilitation & Learning",
                 icon: ShieldAlert,
                 tag: "Rehabilitation",
+                link: "/projects/brij-anshuman",
               },
               {
                 id: "brij-sangini",
