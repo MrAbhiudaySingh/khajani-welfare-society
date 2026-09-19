@@ -186,7 +186,7 @@ const Footer = () => {
                 {[
                   { to: "/about", label: "About Us" },
                   { to: "/our-work", label: "Our Work" },
-                  { to: "/our-work#heritage-traditional-knowledge", label: "Culture & Heritage" },
+                  { to: "/culture", label: "Culture & Heritage" },
                   { to: "/gi-recognition", label: "GI Recognition" },
                   { to: "/media", label: "Gallery & Media" },
                 ].map(({ to, label }) => (

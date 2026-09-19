@@ -33,6 +33,7 @@ import DonatePage from "./pages/DonatePage";
 import VolunteerPage from "./pages/VolunteerPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
 import ContactPage from "./pages/ContactPage";
+import CulturePage from "./pages/CulturePage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFound from "./pages/NotFound";
@@ -70,6 +71,9 @@ const App = () => (
           <Route path="/projects/sanitary-napkin" element={<SanitaryNapkinPage />} />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/gallery" element={<MediaPage />} />
+          <Route path="/culture" element={<CulturePage />} />
+          <Route path="/culture-and-heritage" element={<CulturePage />} />
+          <Route path="/heritage" element={<CulturePage />} />
           <Route path="/gi-recognition" element={<GIRecognitionPage />} />
           <Route path="/campaigns" element={<CampaignsPage />} />
           <Route path="/collaborations" element={<Navigate to="/get-involved" replace />} />

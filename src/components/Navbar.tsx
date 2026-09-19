@@ -15,6 +15,7 @@ const Navbar = () => {
     { to: "/", label: "Home" },
     { to: "/about", label: "About Us" },
     { to: "/our-work", label: "Our Work" },
+    { to: "/culture", label: "Culture" },
     { to: "/gi-recognition", label: "GI Recognition" },
     { to: "/media", label: "Gallery & Media" },
     { to: "/get-involved", label: "Get Involved" },
