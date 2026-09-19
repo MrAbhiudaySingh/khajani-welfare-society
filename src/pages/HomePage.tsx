@@ -1289,56 +1289,176 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Our Partners & Recognition Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-            {/* Our Partners */}
-            <div className="p-8 rounded-3xl bg-card border border-border flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-accent block mb-1">
-                  STRATEGIC NETWORK
-                </span>
-                <h3 className="text-2xl font-display font-bold text-primary mb-3">
-                  Our Partners
-                </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-6">
-                  NABARD &nbsp;|&nbsp; IndianOil &nbsp;|&nbsp; PMKVY &nbsp;|&nbsp; Government of Uttar Pradesh &nbsp;|&nbsp; Skill India &nbsp;|&nbsp; G20 India 2023
+          {/* ══════════════════════════════════════════════════════════════════════════════
+              OUR PARTNERS & AWARDS RECOGNITION (STRATEGIC NETWORK)
+             ══════════════════════════════════════════════════════════════════════════════ */}
+          <div className="mt-20 pt-16 border-t border-[#EAE2D5]">
+            {/* Top Header Row with Title (Left) and Flourish Quote (Right) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-8 relative">
+              {/* Left Column: Heading and Subtitle */}
+              <AnimeReveal variant="fade-up" className="lg:col-span-7 xl:col-span-8">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#D32F2F] font-mono">
+                    STRATEGIC NETWORK
+                  </span>
+                  <span className="w-12 h-px bg-[#D8C7B0] inline-block" />
+                </div>
+
+                <h2 className="text-4xl sm:text-5xl font-display font-bold text-[#142033] tracking-tight leading-[1.12] mb-3">
+                  Our <span className="font-serif italic font-normal text-[#C48332]">Partners</span>
+                </h2>
+
+                <p className="text-sm sm:text-base text-[#64748B] font-light leading-relaxed max-w-2xl">
+                  Collaborating with organisations that share our vision for a stronger, more inclusive Mathura and Braj. Together, we create opportunities, preserve heritage and empower communities.
                 </p>
-              </div>
-              <div>
-                <Link to="/get-involved" className="btn-3d-accent inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-wider">
-                  Partner With Us <ArrowRight size={13} />
-                </Link>
-              </div>
+              </AnimeReveal>
+
+              {/* Right Column: Decorative Quote with Golden Curve & Leaves */}
+              <AnimeReveal variant="fade-left" delay={150} className="lg:col-span-5 xl:col-span-4 flex justify-start lg:justify-end items-end">
+                <img
+                  src="/images/home/partners-quote-flourish.png"
+                  alt="Greater impact through shared purpose"
+                  className="w-full max-w-[360px] sm:max-w-[400px] h-auto object-contain select-none pointer-events-none"
+                />
+              </AnimeReveal>
             </div>
 
-            {/* Awards & Recognition */}
-            <div className="p-8 rounded-3xl bg-card border border-border flex flex-col justify-between">
-              <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-accent block mb-1">
-                  ACCOLADES &amp; HONOURS
-                </span>
-                <h3 className="text-2xl font-display font-bold text-primary mb-3">
-                  Awards &amp; Recognition
-                </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed mb-6">
-                  Honoured for our efforts in skill development, heritage preservation and community empowerment across Mathura and Braj.
-                </p>
-              </div>
-              <div>
-                <Link to="/media" className="btn-3d-accent inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-wider">
-                  See All Recognition <ArrowRight size={13} />
-                </Link>
-              </div>
-            </div>
-          </div>
+            {/* 2-Column Cards Grid: Partners (Left) & Recognition (Right) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+              {/* Left Card: 8 Partners Grid & Call to Action */}
+              <AnimeReveal variant="fade-up" delay={200} className="lg:col-span-7 xl:col-span-8 h-full">
+                <div className="rounded-3xl bg-white border border-[#E2E8F0] p-6 sm:p-7 shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between h-full hover:border-[#D8C7B0]/60 transition-colors">
+                  {/* 8 Partner Cards Grid (4 cols x 2 rows) */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                    {[
+                      {
+                        name: "SIDBI",
+                        alt: "SIDBI - Small Industries Development Bank of India",
+                        img: "/images/home/partners/card-sidbi.png",
+                      },
+                      {
+                        name: "UPSDM",
+                        alt: "Uttar Pradesh Skill Development Mission",
+                        img: "/images/home/partners/card-upsdm.png",
+                      },
+                      {
+                        name: "MSME",
+                        alt: "Ministry of Micro, Small & Medium Enterprises",
+                        img: "/images/home/partners/card-msme.png",
+                      },
+                      {
+                        name: "UP Pro-Poor Tourism",
+                        alt: "UP Pro-Poor Tourism Development Project",
+                        img: "/images/home/partners/card-uppro.png",
+                      },
+                      {
+                        name: "World Bank",
+                        alt: "The World Bank",
+                        img: "/images/home/partners/card-worldbank.png",
+                      },
+                      {
+                        name: "Indian Oil",
+                        alt: "Indian Oil Corporation Limited",
+                        img: "/images/home/partners/card-indianoil.png",
+                      },
+                      {
+                        name: "Balrampur Chini Mills",
+                        alt: "Balrampur Chini Mills Limited",
+                        img: "/images/home/partners/card-balrampur.png",
+                      },
+                      {
+                        name: "Supreme",
+                        alt: "Supreme Industries Limited",
+                        img: "/images/home/partners/card-supreme.png",
+                      },
+                    ].map((p) => (
+                      <div
+                        key={p.name}
+                        className="rounded-2xl border border-[#EEF2F6] bg-[#FAFBFD] p-1.5 flex items-center justify-center hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer"
+                      >
+                        <img
+                          src={p.img}
+                          alt={p.alt}
+                          className="w-full h-auto object-contain rounded-xl group-hover:scale-[1.03] transition-transform duration-300"
+                          loading="lazy"
+                        />
+                      </div>
+                    ))}
+                  </div>
 
-          <div className="text-center pt-10 mt-10 border-t border-border/50">
-            <p className="font-handwriting text-2xl text-secondary italic">
-              Real People · Real Impact · A Brighter Tomorrow
-            </p>
-            <p className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase mt-1">
-              MATHURA · BRAJ · PEOPLE · HERITAGE · OPPORTUNITY
-            </p>
+                  {/* Bottom Action Strip */}
+                  <div className="pt-4 border-t border-[#F1F5F9] flex flex-col sm:flex-row items-center gap-4">
+                    <Link
+                      to="/partnership-inquiry"
+                      className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-[#D32F2F] to-[#B71C1C] hover:from-[#C62828] hover:to-[#A71818] text-white font-bold text-xs uppercase tracking-wider shadow-[0_6px_20px_rgba(211,47,47,0.32)] transition-all hover:scale-105 active:scale-95 shrink-0"
+                    >
+                      <span>PARTNER WITH US</span>
+                      <ArrowRight size={14} />
+                    </Link>
+
+                    <div className="w-px h-8 bg-[#E2E8F0] mx-2 hidden sm:block shrink-0" />
+
+                    <p className="text-xs text-[#64748B] font-light leading-relaxed text-center sm:text-left">
+                      We are always open to meaningful collaborations that create lasting impact. Let's build a stronger Braj together.
+                    </p>
+                  </div>
+                </div>
+              </AnimeReveal>
+
+              {/* Right Card: Awards & Recognition with Braj Pavilion Architecture */}
+              <AnimeReveal variant="fade-up" delay={300} className="lg:col-span-5 xl:col-span-4 h-full">
+                <div className="rounded-3xl bg-white border border-[#E2E8F0] p-7 sm:p-8 shadow-[0_8px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between h-full relative overflow-hidden group hover:border-[#D8C7B0]/60 transition-colors">
+                  {/* Subtle architectural oval wash behind pavilion */}
+                  <div className="absolute right-0 bottom-0 w-[85%] h-[55%] rounded-tl-full bg-[#FAF4EA]/85 pointer-events-none -z-0" />
+
+                  {/* Top Content */}
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-2.5 mb-2.5">
+                      <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D32F2F] font-mono">
+                        ACCOLADES &amp; HONOURS
+                      </span>
+                      <span className="w-8 h-px bg-[#C4A480] inline-block" />
+                    </div>
+
+                    <h3 className="text-3xl sm:text-4xl font-display font-bold text-[#142033] mb-3 leading-tight">
+                      Awards &amp; <span className="font-serif italic font-normal text-[#C48332]">Recognition</span>
+                    </h3>
+
+                    <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed mb-6 max-w-xs font-light">
+                      Honoured for our efforts in skill development, heritage preservation and community empowerment across Mathura and Braj.
+                    </p>
+
+                    <Link
+                      to="/media"
+                      className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#FAF5EE] border border-[#E5D7C3] hover:bg-[#F3ECE0] text-[#142033] font-bold text-[11px] uppercase tracking-wider transition-all duration-300 shadow-2xs hover:shadow-xs group w-fit"
+                    >
+                      <span>SEE ALL RECOGNITION</span>
+                      <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+
+                  {/* Bottom Pavilion Illustration */}
+                  <div className="relative z-10 -mr-7 -mb-8 sm:-mr-8 sm:-mb-8 mt-6 pointer-events-none flex justify-end">
+                    <img
+                      src="/images/home/braj-pavilion-ghat.png"
+                      alt="Mathura Heritage Ghat Architecture"
+                      className="w-[300px] sm:w-[350px] lg:w-[370px] h-auto object-contain select-none group-hover:scale-[1.02] transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              </AnimeReveal>
+            </div>
+
+            {/* Bottom Slogan Bar */}
+            <div className="pt-10 mt-12 border-t border-[#EAE2D5] flex flex-col sm:flex-row items-center justify-between gap-4">
+              <span className="font-handwriting text-2xl sm:text-3xl text-[#C48332] italic tracking-wide">
+                Real People, Real Impact, A Brighter Tomorrow.
+              </span>
+              <span className="hidden lg:block flex-1 h-px bg-[#EAE2D5] mx-6" />
+              <span className="text-[10px] sm:text-xs font-mono tracking-[0.25em] text-[#7A7165] uppercase font-bold">
+                MATHURA · BRAJ · PEOPLE · HERITAGE · OPPORTUNITY
+              </span>
+            </div>
           </div>
 
         </div>
