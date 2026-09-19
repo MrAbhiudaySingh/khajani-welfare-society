@@ -9,7 +9,8 @@ import {
   ArrowRight, ArrowDown, Sparkles, Award, Building2,
   Users, CheckCircle2, ShieldCheck, Heart, Landmark,
   BookOpen, Compass, Feather, FileText, ChevronRight,
-  ExternalLink, Layers, GraduationCap, Briefcase, Leaf
+  ExternalLink, Layers, GraduationCap, Briefcase, Leaf,
+  Handshake, HeartHandshake
 } from "lucide-react";
 
 /* ─── Metric Counter Component for Screen 6 ─── */
@@ -903,87 +904,206 @@ const AboutPage = () => {
       <section id="evolution-impact" className="py-24 bg-background scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Top Half — How Our Work Evolved */}
+          {/* Top Half — How Our Work Evolved / Areas of Work */}
           <div className="mb-20">
-            <AnimeReveal variant="fade-up" className="max-w-3xl mb-12">
-              <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-2">
-                HOW OUR WORK EVOLVED
-              </span>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-primary leading-[1.12]">
-                The work grew as the needs around us grew.
-              </h2>
-              <p className="text-muted-foreground text-base sm:text-lg mt-4 font-light leading-relaxed">
-                Khajani's journey has never been limited to a single programme or sector. As its relationships with people and communities deepened, the work expanded—building on existing experience while responding to new needs and opportunities.
-              </p>
-            </AnimeReveal>
+            {/* Header: Title & Description on Left, Quote Artwork on Right */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-12">
+              <AnimeReveal variant="fade-up" className="lg:col-span-7">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-[#C45A47] text-[11px] font-bold tracking-[0.22em] uppercase">
+                    OUR AREAS OF WORK
+                  </span>
+                  <span className="w-10 h-[1px] bg-[#C45A47]/40" />
+                </div>
+                <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-display font-bold text-[#192742] leading-[1.15] tracking-tight">
+                  Different areas of work.
+                  <br />
+                  <span className="font-serif italic font-normal text-[#B3702A]">
+                    One connected purpose.
+                  </span>
+                </h2>
+                <p className="text-[#5F6A7D] text-sm sm:text-base font-light leading-relaxed mt-4 max-w-xl">
+                  Khajani's journey has never been limited to a single programme or sector. As its relationships with people and communities deepened, the work expanded — building on existing experience while responding to new needs and opportunities.
+                </p>
+              </AnimeReveal>
 
-            {/* Single Flowing Pathway of 6 Evolutionary Stages */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <AnimeReveal variant="fade-up" delay={150} className="lg:col-span-5 flex justify-center lg:justify-end">
+                <img
+                  src="/images/about/stronger-communities-quote.png"
+                  alt="“Stronger communities brighter tomorrows.” Same Roots Brighter Tomorrows"
+                  className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[400px] h-auto object-contain select-none pointer-events-none"
+                  loading="lazy"
+                />
+              </AnimeReveal>
+            </div>
+
+            {/* 6 Connected Areas of Work Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {[
                 {
-                  step: "01",
-                  title: "SKILLS",
+                  category: "SKILLS",
                   headline: "Learning that can be used.",
                   desc: "Practical, hands-on training formed the foundation of Khajani's early work.",
+                  icon: BookOpen,
+                  iconBg: "bg-[#FDF0ED]",
+                  iconColor: "text-[#D35F4C]",
+                  link: "/work#skills-training",
+                  image: "/images/about/area-skills.jpg",
+                  blobColor: "#FCECE8",
+                  blobRadiusBg: "42% 58% 65% 35% / 45% 42% 58% 55%",
+                  blobOffsetBg: "scale(1.08) translate(-6px, 4px)",
+                  blobRadiusImg: "48% 52% 62% 38% / 46% 54% 46% 54%",
                 },
                 {
-                  step: "02",
-                  title: "LIVELIHOODS",
+                  category: "LIVELIHOODS",
                   headline: "Skills connected with opportunity.",
                   desc: "Training increasingly focused on helping women strengthen capabilities that could support economic participation.",
+                  icon: Users,
+                  iconBg: "bg-[#EDF4FC]",
+                  iconColor: "text-[#3D82D0]",
+                  link: "/work#shg-livelihoods",
+                  image: "/images/about/area-livelihoods.jpg",
+                  blobColor: "#E2EEFA",
+                  blobRadiusBg: "64% 36% 42% 58% / 52% 38% 62% 48%",
+                  blobOffsetBg: "scale(1.08) translate(-4px, -6px)",
+                  blobRadiusImg: "54% 46% 44% 56% / 58% 44% 56% 42%",
                 },
                 {
-                  step: "03",
-                  title: "HERITAGE & ARTISANS",
+                  category: "HERITAGE & ARTISANS",
                   headline: "Traditional knowledge carried forward.",
                   desc: "Khajani's work with crafts brought together skill development, artisan capability and the living heritage of Braj.",
+                  icon: Landmark,
+                  iconBg: "bg-[#FAF3E6]",
+                  iconColor: "text-[#B88732]",
+                  link: "/culture-heritage",
+                  image: "/images/about/area-heritage.jpg",
+                  blobColor: "#F8EFE2",
+                  blobRadiusBg: "44% 56% 54% 46% / 62% 42% 58% 38%",
+                  blobOffsetBg: "scale(1.1) translate(-6px, -2px)",
+                  blobRadiusImg: "46% 54% 58% 42% / 50% 50% 50% 50%",
                 },
                 {
-                  step: "04",
-                  title: "EDUCATION & LEARNING",
+                  category: "EDUCATION & LEARNING",
                   headline: "Building capability earlier.",
                   desc: "Educational initiatives widened the organisation's engagement with learning and opportunity.",
+                  icon: GraduationCap,
+                  iconBg: "bg-[#EDF7F0]",
+                  iconColor: "text-[#439962]",
+                  link: "/work#education",
+                  image: "/images/about/area-education.jpg",
+                  blobColor: "#E4F1E7",
+                  blobRadiusBg: "58% 42% 38% 62% / 42% 64% 36% 58%",
+                  blobOffsetBg: "scale(1.1) translate(-8px, 0px)",
+                  blobRadiusImg: "48% 52% 52% 48% / 54% 46% 54% 46%",
                 },
                 {
-                  step: "05",
-                  title: "COMMUNITY DEVELOPMENT",
+                  category: "COMMUNITY DEVELOPMENT",
                   headline: "Responding to wider needs.",
                   desc: "Community-based initiatives extended the work beyond training into areas requiring practical local action.",
+                  icon: HeartHandshake,
+                  iconBg: "bg-[#FDF0F0]",
+                  iconColor: "text-[#D45E5E]",
+                  link: "/work#community",
+                  image: "/images/about/area-community.jpg",
+                  blobColor: "#FCE8E7",
+                  blobRadiusBg: "46% 54% 64% 36% / 56% 46% 54% 44%",
+                  blobOffsetBg: "scale(1.08) translate(4px, 4px)",
+                  blobRadiusImg: "54% 46% 48% 52% / 48% 52% 48% 52%",
                 },
                 {
-                  step: "06",
-                  title: "PARTNERSHIPS",
+                  category: "PARTNERSHIPS",
                   headline: "Growing through collaboration.",
                   desc: "Institutional, government, industry and community partnerships have enabled different forms of work to reach further.",
+                  icon: Handshake,
+                  iconBg: "bg-[#EFF1FB]",
+                  iconColor: "text-[#4A64CF]",
+                  link: "/work#partnerships",
+                  image: "/images/about/area-partnerships.jpg",
+                  blobColor: "#E8EBF8",
+                  blobRadiusBg: "60% 40% 46% 54% / 42% 62% 38% 58%",
+                  blobOffsetBg: "scale(1.12) translate(-6px, -4px)",
+                  blobRadiusImg: "50% 50% 56% 44% / 54% 46% 54% 46%",
                 },
               ].map((stage, i) => (
-                <AnimeReveal key={stage.step} variant="fade-up" delay={i * 70}>
-                  <div className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                    <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <span className="text-2xl font-display font-black text-secondary/50 group-hover:text-secondary transition-colors">
-                          {stage.step}
-                        </span>
-                        <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-accent/10 text-accent">
-                          {stage.title}
-                        </span>
+                <AnimeReveal key={stage.category} variant="fade-up" delay={i * 70}>
+                  <div className="bg-white rounded-[24px] p-5 sm:p-6 border border-[#EAE4DC] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_12px_32px_rgba(0,0,0,0.07)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full group">
+                    <div className="flex items-center justify-between gap-3 sm:gap-4 h-full">
+                      {/* Left Column: Icon, Text and Link */}
+                      <div className="flex-1 flex flex-col justify-between h-full min-w-0 pr-1">
+                        <div>
+                          {/* Icon Badge */}
+                          <div className={`w-9 h-9 rounded-xl flex items-center justify-center mb-3 ${stage.iconBg} ${stage.iconColor}`}>
+                            <stage.icon className="w-4 h-4" />
+                          </div>
+
+                          {/* Category Tag */}
+                          <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.14em] text-[#C45A47] block mb-1">
+                            {stage.category}
+                          </span>
+
+                          {/* Headline */}
+                          <h4 className="font-display font-bold text-base sm:text-[17px] text-[#192742] leading-snug mb-2 group-hover:text-[#B3702A] transition-colors">
+                            {stage.headline}
+                          </h4>
+
+                          {/* Description */}
+                          <p className="text-xs sm:text-[13px] text-[#616C7D] leading-relaxed font-light mb-4">
+                            {stage.desc}
+                          </p>
+                        </div>
+
+                        {/* Learn more Link */}
+                        <div className="pt-1">
+                          <Link
+                            to={stage.link}
+                            className="inline-flex items-center gap-1.5 text-xs font-bold text-[#192742] hover:text-[#B3702A] transition-colors group/link"
+                          >
+                            <span>Learn more</span>
+                            <span className="transition-transform group-hover/link:translate-x-1">→</span>
+                          </Link>
+                        </div>
                       </div>
-                      <h4 className="font-display font-bold text-lg text-primary leading-snug mb-2 group-hover:text-secondary transition-colors">
-                        {stage.headline}
-                      </h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {stage.desc}
-                      </p>
+
+                      {/* Right Column: Organic Pebble-Clipped Image with Pastel Blob */}
+                      <div className="relative w-28 h-28 sm:w-32 sm:h-32 md:w-28 md:h-28 lg:w-32 lg:h-32 xl:w-36 xl:h-36 shrink-0 flex items-center justify-center my-auto">
+                        {/* Background pastel organic blob */}
+                        <div
+                          className="absolute inset-0 transition-transform duration-500 group-hover:scale-105 pointer-events-none"
+                          style={{
+                            backgroundColor: stage.blobColor,
+                            borderRadius: stage.blobRadiusBg,
+                            transform: stage.blobOffsetBg,
+                          }}
+                        />
+                        {/* Foreground dynamically clipped organic image */}
+                        <div
+                          className="relative z-10 w-full h-full overflow-hidden shadow-[0_4px_16px_rgba(0,0,0,0.08)] transition-transform duration-500 group-hover:scale-[1.03]"
+                          style={{
+                            borderRadius: stage.blobRadiusImg,
+                          }}
+                        >
+                          <img
+                            src={stage.image}
+                            alt={stage.headline}
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                            loading="lazy"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </AnimeReveal>
               ))}
             </div>
 
-            <div className="text-center pt-4">
-              <p className="font-handwriting text-2xl text-secondary italic font-normal">
-                Different areas of work. One connected purpose.
+            {/* Bottom Accent Strip */}
+            <div className="pt-8 border-t border-[#EAE4DC] flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p className="font-handwriting text-xl sm:text-2xl text-[#B3702A] italic font-normal tracking-wide text-center sm:text-left">
+                Our roots give the work its character. Our people give it purpose.
               </p>
+              <div className="text-[11px] font-medium tracking-[0.24em] text-[#8C847C] uppercase">
+                PEOPLE · HERITAGE · OPPORTUNITY
+              </div>
             </div>
           </div>
 
