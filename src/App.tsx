@@ -31,6 +31,8 @@ import PartnershipInquiryPage from "./pages/PartnershipInquiryPage";
 import DonatePage from "./pages/DonatePage";
 import VolunteerPage from "./pages/VolunteerPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
+import TermsPage from "./pages/TermsPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -73,6 +75,10 @@ const App = () => (
           <Route path="/get-involved" element={<GetInvolvedPage />} />
           <Route path="/volunteer" element={<GetInvolvedPage />} />
           <Route path="/contact" element={<GetInvolvedPage />} />
+          <Route path="/terms-and-conditions" element={<TermsPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/privacy" element={<PrivacyPolicyPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
