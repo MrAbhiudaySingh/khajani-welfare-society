@@ -96,18 +96,20 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "digi-shala": {
     id: "digi-shala",
     name: "DIGI-SHALA",
-    category: "Digital Learning",
-    tagline: "Learning for an increasingly digital world.",
+    category: "Digital Literacy · AI Awareness · Technology · Online Safety · Digital Confidence",
+    tagline: "Digital skills and technology awareness for girls",
     image: "/images/projects/digi-shala.jpg",
-    tags: ["Digital Learning", "Technology", "Practical Skills", "Inclusion"],
+    tags: ["Digital Literacy", "AI Awareness", "Technology", "Online Safety", "Digital Confidence"],
     overview: [
-      "Digi-Shala brings digital learning into Khajani’s wider education and skill-development work.",
-      "It provides practical exposure to relevant digital tools and helps participants develop greater familiarity and confidence in using technology.",
+      "Digi-Shala helps school- and college-going girls build digital skills and become more confident with technology.",
+      "The programme focuses on digital literacy, AI awareness, educational technology, cyber security and responsible use of digital tools.",
+      "A five-year collaborative initiative was designed to reach 1,800 girls across 18 educational institutions.",
+      "Learning is brought directly into educational institutions so girls can develop digital capabilities alongside their regular education.",
     ],
     highlights: [
-      "Hands-on exposure to computers, mobile internet, and essential office suites",
-      "Awareness of digital identity, secure banking, and citizen e-governance services",
-      "Overcoming technophobia for rural learners and traditional artisans",
+      "Collaborative initiative designed to reach 1,800 girls across 18 educational institutions over 5 years",
+      "Comprehensive modules covering digital literacy, AI awareness, and cyber security",
+      "Institutional approach taking technology where girls already study",
     ],
   },
   "sanjhi-art": {
@@ -926,32 +928,35 @@ const ProjectsPage = () => {
                       DIGI-SHALA
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Learning for an increasingly digital world.
+                      Digital skills and technology awareness for girls
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Digi-Shala brings digital learning into Khajani’s wider education and skill-development work.
+                        Digi-Shala helps school- and college-going girls build digital skills and become more confident with technology.
                       </p>
                       <p>
-                        It provides practical exposure to relevant digital tools and helps participants develop greater familiarity and confidence in using technology.
+                        The programme focuses on digital literacy, AI awareness, educational technology, cyber security and responsible use of digital tools.
+                      </p>
+                      <p className="text-xs text-primary/80 font-medium">
+                        A five-year collaborative initiative was designed to reach 1,800 girls across 18 educational institutions.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Digital Learning</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Technology</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Practical Skills</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Digital Literacy</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">AI Awareness</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">1,800 Girls</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Online Safety</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("digi-shala")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/digi-shala"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
-                      <span>Explore Digi-Shala</span>
+                      <span>EXPLORE DIGI-SHALA</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
