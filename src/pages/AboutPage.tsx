@@ -1122,39 +1122,39 @@ const AboutPage = () => {
           </AnimeReveal>
 
           {/* Sub-Section: The Founding Story (3 Prominent Profiles) */}
-          <div className="mb-20">
-            <div className="text-center mb-10">
-              <h3 className="text-2xl font-display font-bold text-primary">
+          <div className="mb-20 max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h3 className="text-xl sm:text-2xl font-display font-bold text-primary">
                 The Founding Story: Where experience met new ideas.
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Dr. Harimohan Maheshwari */}
               <AnimeReveal variant="fade-up" delay={0}>
-                <div className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                <div className="clay-card rounded-2xl p-5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
                   <div>
-                    <div className="rounded-2xl overflow-hidden aspect-[4/4.5] bg-muted mb-6 border border-border/60 shadow-sm group-hover:scale-103 transition-transform duration-500">
+                    <div className="rounded-xl overflow-hidden h-48 sm:h-52 w-full bg-muted mb-4 border border-border/60 shadow-xs group-hover:scale-102 transition-transform duration-500">
                       <img
                         src="/images/about/dr-hari-mohan.jpg"
                         alt="Dr. Harimohan Maheshwari, Co-Founder"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-2">
+                    <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-1.5">
                       CO-FOUNDER
                     </span>
-                    <h4 className="font-display font-bold text-2xl text-primary leading-tight mb-1">
+                    <h4 className="font-display font-bold text-xl text-primary leading-tight mb-1">
                       Dr. Harimohan Maheshwari
                     </h4>
-                    <p className="text-xs font-medium text-secondary mb-3">
+                    <p className="text-[11px] font-medium text-secondary mb-2">
                       A lifetime of service. A grassroots perspective.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       A retired veterinary doctor, Dr. Harimohan Maheshwari brought his long experience of public service and direct engagement with people and communities. Following his retirement in 2007, his understanding of grassroots realities and service-oriented approach became an important part of Khajani’s early journey in Mathura.
                     </p>
                   </div>
-                  <div className="mt-6 pt-3 border-t border-border/50 text-[11px] font-mono text-muted-foreground uppercase">
+                  <div className="mt-4 pt-2.5 border-t border-border/50 text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
                     Public Service · Community · Purpose
                   </div>
                 </div>
@@ -1162,29 +1162,29 @@ const AboutPage = () => {
 
               {/* Abha Maheshwari */}
               <AnimeReveal variant="fade-up" delay={100}>
-                <div className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                <div className="clay-card rounded-2xl p-5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
                   <div>
-                    <div className="rounded-2xl overflow-hidden aspect-[4/4.5] bg-muted mb-6 border border-border/60 shadow-sm group-hover:scale-103 transition-transform duration-500">
+                    <div className="rounded-xl overflow-hidden h-48 sm:h-52 w-full bg-muted mb-4 border border-border/60 shadow-xs group-hover:scale-102 transition-transform duration-500">
                       <img
                         src="/images/about/abha.jpg"
                         alt="Abha Maheshwari, Co-Founder &amp; President"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-2">
+                    <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-1.5">
                       CO-FOUNDER · PRESIDENT
                     </span>
-                    <h4 className="font-display font-bold text-2xl text-primary leading-tight mb-1">
+                    <h4 className="font-display font-bold text-xl text-primary leading-tight mb-1">
                       Abha Maheshwari
                     </h4>
-                    <p className="text-xs font-medium text-secondary mb-3">
+                    <p className="text-[11px] font-medium text-secondary mb-2">
                       People at the heart of the journey.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       Abha Maheshwari has been part of Khajani’s journey from its beginnings. Her involvement has remained closely connected with the organisation’s work with women and communities and with the continuity and institutional development of Khajani as its work expanded.
                     </p>
                   </div>
-                  <div className="mt-6 pt-3 border-t border-border/50 text-[11px] font-mono text-muted-foreground uppercase">
+                  <div className="mt-4 pt-2.5 border-t border-border/50 text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
                     People · Participation · Continuity
                   </div>
                 </div>
@@ -1192,29 +1192,29 @@ const AboutPage = () => {
 
               {/* Shipra Rathi */}
               <AnimeReveal variant="fade-up" delay={200}>
-                <div className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+                <div className="clay-card rounded-2xl p-5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
                   <div>
-                    <div className="rounded-2xl overflow-hidden aspect-[4/4.5] bg-muted mb-6 border border-border/60 shadow-sm group-hover:scale-103 transition-transform duration-500">
+                    <div className="rounded-xl overflow-hidden h-48 sm:h-52 w-full bg-muted mb-4 border border-border/60 shadow-xs group-hover:scale-102 transition-transform duration-500">
                       <img
                         src="/images/about/shipra-rathi.jpg"
                         alt="Shipra Rathi, Co-Founder &amp; Secretary"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-2">
+                    <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-1.5">
                       CO-FOUNDER · SECRETARY
                     </span>
-                    <h4 className="font-display font-bold text-2xl text-primary leading-tight mb-1">
+                    <h4 className="font-display font-bold text-xl text-primary leading-tight mb-1">
                       Shipra Rathi
                     </h4>
-                    <p className="text-xs font-medium text-secondary mb-3">
+                    <p className="text-[11px] font-medium text-secondary mb-2">
                       From design and skills to livelihood possibilities.
                     </p>
                     <p className="text-xs text-muted-foreground leading-relaxed">
                       Daughter of Dr. Harimohan and Abha Maheshwari, Shipra Rathi brought a younger generation and a different professional perspective. A fashion designer with experience in vocational training, her background in design and practical learning became central to Khajani’s work in women’s skills, livelihoods and traditional crafts.
                     </p>
                   </div>
-                  <div className="mt-6 pt-3 border-t border-border/50 text-[11px] font-mono text-muted-foreground uppercase">
+                  <div className="mt-4 pt-2.5 border-t border-border/50 text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
                     Design · Skills · Livelihoods
                   </div>
                 </div>
