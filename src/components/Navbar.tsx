@@ -18,6 +18,7 @@ const Navbar = () => {
     { to: "/gi-recognition", label: "GI Recognition" },
     { to: "/media", label: "Gallery & Media" },
     { to: "/get-involved", label: "Get Involved" },
+    { to: "/contact", label: "Contact Us" },
   ];
 
   // Scroll detection for navbar glass intensity

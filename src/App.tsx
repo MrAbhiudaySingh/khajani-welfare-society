@@ -32,6 +32,7 @@ import PartnershipInquiryPage from "./pages/PartnershipInquiryPage";
 import DonatePage from "./pages/DonatePage";
 import VolunteerPage from "./pages/VolunteerPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
+import ContactPage from "./pages/ContactPage";
 import TermsPage from "./pages/TermsPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import NotFound from "./pages/NotFound";
@@ -76,7 +77,7 @@ const App = () => (
           <Route path="/donate" element={<DonatePage />} />
           <Route path="/get-involved" element={<GetInvolvedPage />} />
           <Route path="/volunteer" element={<GetInvolvedPage />} />
-          <Route path="/contact" element={<GetInvolvedPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/terms-and-conditions" element={<TermsPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

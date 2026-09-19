@@ -212,7 +212,7 @@ const Footer = () => {
                   { to: "/get-involved", label: "Volunteer" },
                   { to: "/get-involved", label: "Collaborate" },
                   { to: "/donate", label: "Donate" },
-                  { to: "/get-involved", label: "Contact Us" },
+                  { to: "/contact", label: "Contact Us" },
                 ].map(({ to, label }) => (
                   <li key={label}>
                     <Link
