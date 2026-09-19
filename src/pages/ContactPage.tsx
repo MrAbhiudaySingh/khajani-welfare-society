@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import AnimeReveal from "@/components/AnimeReveal";
+import AuroraBackground from "@/components/AuroraBackground";
 import { 
   MapPin, 
   Phone, 
@@ -120,112 +122,112 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <div className="bg-stone-950 text-stone-100 min-h-screen">
+      <div className="bg-background text-foreground min-h-screen">
         
         {/* ========================================================= */}
-        {/* SCENE 1 — HERO                                            */}
-        {/* Visual: Genuine photograph of Khajani premises / team     */}
+        {/* SCENE 1 — HERO HEADER                                     */}
+        {/* Warm heritage aesthetic matching Khajani design system   */}
         {/* ========================================================= */}
-        <section className="relative min-h-[85vh] sm:min-h-[88vh] flex items-center justify-center overflow-hidden pt-24 pb-16">
-          {/* Genuine photo background */}
-          <div className="absolute inset-0 z-0">
-            <img
-              src="/images/about/institute-entrance.jpg"
-              alt="Khajani Welfare Society Premises in Mathura"
-              className="w-full h-full object-cover object-center brightness-[0.38] contrast-105 scale-105 transition-transform duration-1000"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/60 to-stone-950/40" />
-            <div className="absolute inset-0 bg-amber-950/20 mix-blend-multiply pointer-events-none" />
-          </div>
+        <section className="relative pt-16 pb-20 lg:pt-20 lg:pb-24 overflow-hidden border-b border-border/80 bg-gradient-to-b from-card/80 via-background to-background">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <AnimeReveal variant="fade-up">
+              {/* Category badge */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold tracking-widest uppercase mb-4 shadow-2xs">
+                <Sparkles size={13} className="text-accent" />
+                CONTACT · KHAJANI WELFARE SOCIETY
+              </div>
 
-          <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            {/* Category badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-semibold tracking-widest uppercase mb-6 backdrop-blur-md">
-              <Sparkles size={13} className="text-amber-400" />
-              CONTACT · KHAJANI WELFARE SOCIETY
-            </div>
+              {/* Main Title */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary tracking-tight leading-[1.15] mb-4">
+                We’d be glad to hear from you.
+                <br />
+                <span className="font-serif italic font-normal text-secondary">
+                  Let’s start a conversation.
+                </span>
+              </h1>
 
-            {/* Main Title */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-white tracking-tight font-medium leading-[1.15] mb-6">
-              We’d be glad to hear from you.
-            </h1>
+              {/* Sub-paragraph */}
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light mb-8">
+                For questions about our programmes, artisan collaborations, volunteering, institutional CSR partnerships, donations or general enquiries, connect with Khajani Welfare Society in Mathura.
+              </p>
 
-            {/* Sub-paragraph */}
-            <p className="text-base sm:text-lg lg:text-xl text-stone-300 max-w-3xl mx-auto leading-relaxed font-light mb-10">
-              For questions about our work, volunteering, collaboration, institutional partnerships, donations, media or general enquiries, get in touch with Khajani Welfare Society in Mathura.
-            </p>
-
-            {/* Get in Touch CTA */}
-            <div>
-              <button
-                onClick={scrollToDetails}
-                className="btn-3d-accent inline-flex items-center justify-center gap-2 px-8 py-3.5 text-xs sm:text-sm font-semibold tracking-widest uppercase rounded-xl transition-all duration-300 hover:gap-3 cursor-pointer shadow-lg shadow-amber-500/20"
-              >
-                Get in Touch <ArrowDown size={16} />
-              </button>
-            </div>
+              {/* Get in Touch CTA */}
+              <div className="flex flex-wrap justify-center items-center gap-3">
+                <button
+                  onClick={scrollToDetails}
+                  className="btn-3d-accent inline-flex items-center justify-center gap-2 px-7 py-3 text-xs sm:text-sm font-bold tracking-widest uppercase shadow-md cursor-pointer"
+                >
+                  Get in Touch <ArrowDown size={15} />
+                </button>
+                <a
+                  href="#enquiry-form"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 text-xs sm:text-sm font-bold tracking-widest uppercase rounded-full border border-border text-foreground hover:border-accent hover:text-accent hover:bg-accent/5 transition-all"
+                >
+                  Send a Message <ArrowRight size={15} />
+                </a>
+              </div>
+            </AnimeReveal>
           </div>
         </section>
 
         {/* ========================================================= */}
         {/* SCENE 2 & 3: CONTACT DETAILS & ENQUIRY FORM               */}
         {/* ========================================================= */}
-        <section id="contact-details" className="relative py-20 lg:py-28 bg-stone-950 border-t border-white/5">
+        <section id="contact-details" className="py-16 sm:py-20 lg:py-24 scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
               
               {/* SCENE 2 — CONTACT DETAILS (5 Cols) */}
-              <div className="lg:col-span-5 space-y-8">
+              <div className="lg:col-span-5 space-y-6">
                 <div>
-                  <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-amber-400 block mb-2">
-                    GET IN TOUCH
+                  <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-accent block mb-1.5">
+                    REACH KHAJANI
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-serif text-white tracking-tight">
-                    Reach Khajani.
+                  <h2 className="text-3xl sm:text-4xl font-display font-bold text-primary tracking-tight">
+                    Visit or Connect.
                   </h2>
-                  <p className="text-stone-400 text-sm mt-3 leading-relaxed">
-                    Our doors and communication channels are always open for individuals, partners, and institutions committed to welfare and heritage.
+                  <p className="text-muted-foreground text-xs sm:text-sm mt-2 leading-relaxed font-light">
+                    Our doors and communication channels are open for learners, artisans, partners, and institutions committed to grassroots capability and heritage preservation.
                   </p>
                 </div>
 
                 {/* Address Card */}
-                <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-6 sm:p-7 backdrop-blur-sm space-y-6">
+                <div className="clay-card rounded-2xl p-5 sm:p-6 bg-card border border-border/80 shadow-xs space-y-5">
                   {/* Physical Address */}
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent shrink-0 mt-0.5">
                       <MapPin size={18} />
                     </div>
                     <div>
-                      <div className="text-xs uppercase font-bold tracking-wider text-amber-300/90 mb-1">
-                        Khajani Welfare Society
+                      <div className="text-[11px] uppercase font-bold tracking-wider text-secondary mb-0.5">
+                        Headquarters · Mathura
                       </div>
-                      <address className="not-italic text-sm text-stone-300 leading-relaxed">
-                        64/128, Gali Sales Tax<br />
-                        Dampier Nagar<br />
-                        Mathura – 281001<br />
-                        Uttar Pradesh, India
+                      <address className="not-italic text-xs sm:text-sm text-foreground font-medium leading-relaxed">
+                        Khajani Welfare Society<br />
+                        64/128, Gali Sales Tax, Dampier Nagar<br />
+                        Mathura – 281001, Uttar Pradesh, India
                       </address>
                     </div>
                   </div>
 
                   {/* Email */}
-                  <div className="flex items-start gap-4 pt-5 border-t border-white/5">
-                    <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                  <div className="flex items-start gap-3.5 pt-4 border-t border-border/60">
+                    <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent shrink-0 mt-0.5">
                       <Mail size={18} />
                     </div>
                     <div>
-                      <div className="text-xs uppercase font-bold tracking-wider text-amber-300/90 mb-1">
+                      <div className="text-[11px] uppercase font-bold tracking-wider text-secondary mb-0.5">
                         Email
                       </div>
                       <a
                         href="mailto:info@khajaniwelfaresociety.com"
-                        className="text-sm text-stone-300 hover:text-amber-300 transition-colors block"
+                        className="text-xs sm:text-sm text-foreground hover:text-accent font-medium transition-colors block"
                       >
                         info@khajaniwelfaresociety.com
                       </a>
                       <a
                         href="mailto:projects@khajaniwelfaresociety.com"
-                        className="text-xs text-stone-400 hover:text-amber-300 transition-colors block mt-0.5"
+                        className="text-xs text-muted-foreground hover:text-accent transition-colors block mt-0.5"
                       >
                         projects@khajaniwelfaresociety.com
                       </a>
@@ -233,30 +235,30 @@ const ContactPage = () => {
                   </div>
 
                   {/* Phone */}
-                  <div className="flex items-start gap-4 pt-5 border-t border-white/5">
-                    <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 shrink-0">
+                  <div className="flex items-start gap-3.5 pt-4 border-t border-border/60">
+                    <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent shrink-0 mt-0.5">
                       <Phone size={18} />
                     </div>
                     <div>
-                      <div className="text-xs uppercase font-bold tracking-wider text-amber-300/90 mb-1">
-                        Phone
+                      <div className="text-[11px] uppercase font-bold tracking-wider text-secondary mb-0.5">
+                        Phone &amp; WhatsApp
                       </div>
-                      <div className="space-y-1">
+                      <div className="space-y-0.5">
                         <a
                           href="tel:+918373990809"
-                          className="text-sm text-stone-300 hover:text-amber-300 transition-colors block"
+                          className="text-xs sm:text-sm text-foreground hover:text-accent font-medium transition-colors block"
                         >
-                          +91 8373990809
+                          +91 83739 90809
                         </a>
                         <a
                           href="tel:+919868518738"
-                          className="text-sm text-stone-300 hover:text-amber-300 transition-colors block"
+                          className="text-xs text-muted-foreground hover:text-accent transition-colors block"
                         >
-                          +91 9868518738
+                          +91 98685 18738
                         </a>
                         <a
                           href="tel:+918126511999"
-                          className="text-xs text-stone-400 hover:text-amber-300 transition-colors block pt-0.5"
+                          className="text-xs text-muted-foreground hover:text-accent transition-colors block"
                         >
                           +91 81265 11999
                         </a>
@@ -266,29 +268,29 @@ const ContactPage = () => {
                 </div>
 
                 {/* Map Card & Get Directions */}
-                <div className="bg-white/[0.03] border border-white/10 rounded-2xl p-5 overflow-hidden">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-xs uppercase font-bold tracking-wider text-stone-300">
+                <div className="clay-card rounded-2xl p-4 sm:p-5 bg-card border border-border/80 shadow-xs overflow-hidden">
+                  <div className="flex items-center justify-between mb-2.5">
+                    <span className="text-xs uppercase font-bold tracking-wider text-primary">
                       Find Us in Mathura
                     </span>
                     <a
                       href="https://maps.google.com/?q=Khajani+Welfare+Society+Dampier+Nagar+Mathura+Uttar+Pradesh"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-xs text-amber-400 hover:text-amber-300 font-semibold inline-flex items-center gap-1 transition-colors"
+                      className="text-xs text-accent hover:text-accent/80 font-bold inline-flex items-center gap-1 transition-colors"
                     >
-                      Get Directions <ArrowRight size={13} />
+                      Directions <ArrowRight size={12} />
                     </a>
                   </div>
 
                   {/* Clean Map Embed */}
-                  <div className="w-full h-48 sm:h-56 rounded-xl overflow-hidden border border-white/10 bg-stone-900">
+                  <div className="w-full h-44 sm:h-48 rounded-xl overflow-hidden border border-border bg-muted">
                     <iframe
                       title="Khajani Welfare Society Location"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8166547141566!2d77.6749174!3d27.4890858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39737119022e3895%3A0xe54d92416f5c80ef!2sDampier%20Nagar%2C%20Mathura%2C%20Uttar%20Pradesh%20281001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
-                      style={{ border: 0, filter: "grayscale(25%) contrast(105%)" }}
+                      style={{ border: 0 }}
                       allowFullScreen={false}
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -297,11 +299,11 @@ const ContactPage = () => {
                 </div>
 
                 {/* Verified Official Social Accounts */}
-                <div className="pt-2">
-                  <div className="text-[11px] font-semibold uppercase tracking-wider text-stone-400 mb-3">
-                    Official Khajani Channels
+                <div className="pt-1">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground mb-2.5">
+                    Official Community Channels
                   </div>
-                  <div className="flex flex-wrap gap-2.5">
+                  <div className="flex flex-wrap gap-2">
                     {socialLinks.map(({ href, icon: Icon, label }) => (
                       <a
                         key={label}
@@ -309,7 +311,7 @@ const ContactPage = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={label}
-                        className="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-amber-500/10 border border-white/10 hover:border-amber-500/30 text-stone-300 hover:text-amber-300 text-xs transition-all duration-200"
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-card hover:bg-accent/10 border border-border/80 hover:border-accent/30 text-muted-foreground hover:text-accent text-xs font-semibold transition-all duration-200"
                       >
                         <Icon size={14} />
                         <span>{label}</span>
@@ -321,63 +323,63 @@ const ContactPage = () => {
 
               {/* SCENE 3 — ENQUIRY FORM (7 Cols) */}
               <div id="enquiry-form" className="lg:col-span-7">
-                <div className="bg-gradient-to-b from-stone-900/90 to-stone-900/50 border border-white/10 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
-                  <div className="mb-8">
-                    <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-amber-400 block mb-2">
-                      SEND A MESSAGE
+                <div className="clay-card rounded-3xl p-6 sm:p-8 lg:p-9 bg-card border border-border shadow-md">
+                  <div className="mb-6">
+                    <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-accent block mb-1">
+                      SEND A DIRECT MESSAGE
                     </span>
-                    <h2 className="text-3xl sm:text-4xl font-serif text-white tracking-tight">
+                    <h2 className="text-2xl sm:text-3xl font-display font-bold text-primary tracking-tight">
                       How can we help?
                     </h2>
-                    <p className="text-stone-400 text-sm mt-2">
+                    <p className="text-muted-foreground text-xs sm:text-sm mt-1 font-light">
                       Please submit your message and our team will get back to you promptly.
                     </p>
                   </div>
 
                   {submitted ? (
-                    <div className="py-12 px-6 text-center space-y-4 rounded-2xl bg-emerald-950/20 border border-emerald-500/20">
-                      <div className="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
-                        <CheckCircle2 size={32} />
+                    <div className="py-10 px-6 text-center space-y-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30">
+                      <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-600 flex items-center justify-center mx-auto">
+                        <CheckCircle2 size={28} />
                       </div>
-                      <h3 className="text-xl font-serif text-white">
+                      <h3 className="text-xl font-display font-bold text-primary">
                         Thank you for getting in touch.
                       </h3>
-                      <p className="text-stone-300 text-sm max-w-md mx-auto">
+                      <p className="text-muted-foreground text-xs sm:text-sm max-w-md mx-auto leading-relaxed font-light">
                         Your message has been received. Our team will review your enquiry and get back to you shortly.
                       </p>
-                      <div className="pt-4">
+                      <div className="pt-2">
                         <button
                           type="button"
                           onClick={() => setSubmitted(false)}
-                          className="text-xs uppercase font-bold tracking-wider text-amber-400 hover:text-amber-300 underline underline-offset-4 cursor-pointer"
+                          className="text-xs uppercase font-bold tracking-wider text-accent hover:underline underline-offset-4 cursor-pointer"
                         >
                           Send another message
                         </button>
                       </div>
                     </div>
                   ) : (
-                    <form onSubmit={handleSubmit} className="space-y-5">
+                    <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
                       {/* Name */}
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">
-                          Name <span className="text-amber-400">*</span>
+                        <label className="block text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                          Name <span className="text-accent">*</span>
                         </label>
                         <input
                           type="text"
                           name="name"
-                          placeholder="Your name"
+                          placeholder="Your full name"
                           required
                           value={formData.name}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 bg-stone-950/80 border border-white/10 rounded-xl text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                          className="w-full px-4 py-2.5 sm:py-3 bg-background border border-border rounded-xl text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
                         />
                       </div>
 
                       {/* Email & Phone Grid */}
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <label className="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">
-                            Email <span className="text-amber-400">*</span>
+                          <label className="block text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                            Email <span className="text-accent">*</span>
                           </label>
                           <input
                             type="email"
@@ -386,12 +388,12 @@ const ContactPage = () => {
                             required
                             value={formData.email}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 bg-stone-950/80 border border-white/10 rounded-xl text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                            className="w-full px-4 py-2.5 sm:py-3 bg-background border border-border rounded-xl text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
                           />
                         </div>
                         <div>
-                          <label className="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">
-                            Phone <span className="text-stone-500 text-[10px] lowercase">(optional)</span>
+                          <label className="block text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                            Phone <span className="text-muted-foreground text-[10px] font-normal lowercase">(optional)</span>
                           </label>
                           <input
                             type="tel"
@@ -399,21 +401,21 @@ const ContactPage = () => {
                             placeholder="Your phone number"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            className="w-full px-4 py-3 bg-stone-950/80 border border-white/10 rounded-xl text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-400 transition-colors"
+                            className="w-full px-4 py-2.5 sm:py-3 bg-background border border-border rounded-xl text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all"
                           />
                         </div>
                       </div>
 
                       {/* I'm interested in */}
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">
-                          I’m interested in <span className="text-amber-400">*</span>
+                        <label className="block text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                          I’m interested in <span className="text-accent">*</span>
                         </label>
                         <select
                           name="interest"
                           value={formData.interest}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 bg-stone-950/80 border border-white/10 rounded-xl text-stone-100 text-sm focus:outline-none focus:border-amber-400 transition-colors cursor-pointer"
+                          className="w-full px-4 py-2.5 sm:py-3 bg-background border border-border rounded-xl text-foreground text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all cursor-pointer"
                         >
                           <option value="General Enquiry">General Enquiry</option>
                           <option value="Volunteer">Volunteer</option>
@@ -428,32 +430,32 @@ const ContactPage = () => {
 
                       {/* Message */}
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-stone-300 mb-2">
-                          Message <span className="text-amber-400">*</span>
+                        <label className="block text-xs font-bold uppercase tracking-wider text-foreground mb-1.5">
+                          Message <span className="text-accent">*</span>
                         </label>
                         <textarea
                           name="message"
-                          placeholder="Tell us how we can help."
+                          placeholder="Tell us how we can help or collaborate."
                           required
-                          rows={5}
+                          rows={4}
                           value={formData.message}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-3 bg-stone-950/80 border border-white/10 rounded-xl text-stone-100 placeholder-stone-500 text-sm focus:outline-none focus:border-amber-400 transition-colors resize-none"
+                          className="w-full px-4 py-2.5 sm:py-3 bg-background border border-border rounded-xl text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all resize-none"
                         />
                       </div>
 
                       {error && (
-                        <p className="text-xs text-rose-400 bg-rose-500/10 border border-rose-500/20 px-3 py-2 rounded-lg">
+                        <p className="text-xs text-accent bg-accent/10 border border-accent/20 px-3.5 py-2 rounded-lg font-medium">
                           {error}
                         </p>
                       )}
 
                       {/* Submit button */}
-                      <div>
+                      <div className="pt-2">
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold text-xs sm:text-sm tracking-widest uppercase transition-all duration-200 inline-flex items-center justify-center gap-2 cursor-pointer shadow-lg shadow-amber-500/20 disabled:opacity-50"
+                          className="btn-3d-accent w-full sm:w-auto px-8 py-3 text-xs sm:text-sm font-bold tracking-widest uppercase inline-flex items-center justify-center gap-2 cursor-pointer shadow-md disabled:opacity-50"
                         >
                           {isSubmitting ? (
                             <>
@@ -476,81 +478,80 @@ const ContactPage = () => {
         </section>
 
         {/* ========================================================= */}
-        {/* SCENE 4 — QUICK LINKS                                     */}
-        {/* LOOKING FOR SOMETHING SPECIFIC? Find the right place.     */}
+        {/* SCENE 4 — QUICK LINKS (Looking for something specific?)    */}
         {/* ========================================================= */}
-        <section className="py-20 lg:py-24 bg-stone-900/60 border-t border-white/5">
+        <section className="py-14 sm:py-18 bg-[#FAF6EE] border-t border-[#EAE2D5]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-2xl mx-auto mb-14">
-              <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-amber-400 block mb-2">
+            <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+              <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-accent block mb-1.5">
                 LOOKING FOR SOMETHING SPECIFIC?
               </span>
-              <h2 className="text-3xl sm:text-4xl font-serif text-white tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-display font-bold text-primary tracking-tight">
                 Find the right place.
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
               {/* Card 1: OUR WORK */}
-              <div className="bg-stone-950 border border-white/10 rounded-2xl p-7 sm:p-8 flex flex-col justify-between group hover:border-amber-500/40 transition-all duration-300">
-                <div className="space-y-4 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center">
-                    <Compass size={22} />
+              <div className="clay-card rounded-2xl p-5 sm:p-6 bg-card border border-border/80 flex flex-col justify-between group hover:border-accent/40 hover:shadow-md transition-all duration-300">
+                <div className="space-y-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 text-accent flex items-center justify-center">
+                    <Compass size={20} />
                   </div>
-                  <h3 className="text-xl font-serif text-white font-medium">
+                  <h3 className="text-lg font-display font-bold text-primary">
                     OUR WORK
                   </h3>
-                  <p className="text-stone-400 text-sm leading-relaxed">
-                    Explore Khajani’s work across skills, education, heritage, health and community initiatives.
+                  <p className="text-muted-foreground text-xs leading-relaxed font-light">
+                    Explore Khajani’s programmes across women’s livelihoods, education, traditional crafts, healthcare and community seva.
                   </p>
                 </div>
                 <Link
                   to="/our-work"
-                  className="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-amber-400 group-hover:text-amber-300 group-hover:translate-x-1 transition-all"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-accent group-hover:translate-x-1 transition-all"
                 >
-                  Explore Our Work <ArrowRight size={14} />
+                  Explore Our Work <ArrowRight size={13} />
                 </Link>
               </div>
 
               {/* Card 2: GET INVOLVED */}
-              <div className="bg-stone-950 border border-white/10 rounded-2xl p-7 sm:p-8 flex flex-col justify-between group hover:border-amber-500/40 transition-all duration-300">
-                <div className="space-y-4 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center">
-                    <HeartHandshake size={22} />
+              <div className="clay-card rounded-2xl p-5 sm:p-6 bg-card border border-border/80 flex flex-col justify-between group hover:border-accent/40 hover:shadow-md transition-all duration-300">
+                <div className="space-y-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 text-accent flex items-center justify-center">
+                    <HeartHandshake size={20} />
                   </div>
-                  <h3 className="text-xl font-serif text-white font-medium">
+                  <h3 className="text-lg font-display font-bold text-primary">
                     GET INVOLVED
                   </h3>
-                  <p className="text-stone-400 text-sm leading-relaxed">
-                    Interested in volunteering, collaborating, sharing expertise or creating opportunities?
+                  <p className="text-muted-foreground text-xs leading-relaxed font-light">
+                    Interested in volunteering, academic internships, institutional CSR collaboration or sharing vocational expertise?
                   </p>
                 </div>
                 <Link
                   to="/get-involved"
-                  className="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-amber-400 group-hover:text-amber-300 group-hover:translate-x-1 transition-all"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-accent group-hover:translate-x-1 transition-all"
                 >
-                  Get Involved <ArrowRight size={14} />
+                  Get Involved <ArrowRight size={13} />
                 </Link>
               </div>
 
               {/* Card 3: DONATE */}
-              <div className="bg-stone-950 border border-white/10 rounded-2xl p-7 sm:p-8 flex flex-col justify-between group hover:border-amber-500/40 transition-all duration-300">
-                <div className="space-y-4 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center">
-                    <Briefcase size={22} />
+              <div className="clay-card rounded-2xl p-5 sm:p-6 bg-card border border-border/80 flex flex-col justify-between group hover:border-accent/40 hover:shadow-md transition-all duration-300">
+                <div className="space-y-3 mb-5">
+                  <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 text-accent flex items-center justify-center">
+                    <Briefcase size={20} />
                   </div>
-                  <h3 className="text-xl font-serif text-white font-medium">
+                  <h3 className="text-lg font-display font-bold text-primary">
                     DONATE
                   </h3>
-                  <p className="text-stone-400 text-sm leading-relaxed">
-                    Find information about contributing through UPI or direct bank transfer.
+                  <p className="text-muted-foreground text-xs leading-relaxed font-light">
+                    Learn about transparent giving, statutory 80G tax exemptions, and verified bank and UPI transfer channels.
                   </p>
                 </div>
                 <Link
                   to="/donate"
-                  className="inline-flex items-center gap-2 text-xs font-bold tracking-wider uppercase text-amber-400 group-hover:text-amber-300 group-hover:translate-x-1 transition-all"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider uppercase text-accent group-hover:translate-x-1 transition-all"
                 >
-                  Donate <ArrowRight size={14} />
+                  Support Khajani <ArrowRight size={13} />
                 </Link>
               </div>
             </div>
@@ -558,43 +559,39 @@ const ContactPage = () => {
         </section>
 
         {/* ========================================================= */}
-        {/* SCENE 5 — CLOSING                                         */}
-        {/* Wide genuine photograph of Khajani premises/team          */}
+        {/* SCENE 5 — CLOSING FOOTER BANNER                           */}
         {/* ========================================================= */}
-        <section className="relative py-28 sm:py-36 overflow-hidden flex items-center justify-center text-center">
-          {/* Background image with restrained warm overlay */}
-          <div className="absolute inset-0 z-0">
-            <img
-              src="/images/about/team-working.jpg"
-              alt="Khajani Welfare Society Team and Organisational Environment"
-              className="w-full h-full object-cover object-center brightness-[0.25] contrast-110"
-            />
-            <div className="absolute inset-0 bg-stone-950/75" />
-            <div className="absolute inset-0 bg-gradient-to-b from-stone-950/90 via-transparent to-stone-950" />
-            <div className="absolute inset-0 bg-amber-900/10 mix-blend-color-burn" />
-          </div>
+        <section className="py-16 sm:py-20 bg-primary text-primary-foreground relative overflow-hidden text-center">
+          <AuroraBackground variant="dark" intensity={1.2} />
 
-          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <div className="text-xs sm:text-sm font-bold tracking-[0.25em] uppercase text-amber-400/90">
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 glass-dark rounded-full text-[11px] font-bold tracking-widest uppercase text-secondary border border-white/10">
               KHAJANI WELFARE SOCIETY · MATHURA
             </div>
 
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif text-white tracking-tight font-medium">
-              Rooted here. Open to conversation.
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-white tracking-tight">
+              Rooted in Mathura.{" "}
+              <span className="font-serif italic font-normal text-secondary">
+                Open to conversation.
+              </span>
             </h2>
 
-            <div className="pt-3">
-              <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm tracking-widest font-medium text-stone-300 uppercase">
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">
-                  People
+            <p className="text-xs sm:text-sm text-primary-foreground/75 max-w-xl mx-auto font-light leading-relaxed">
+              Every meaningful programme begins with understanding local realities and listening to people. We welcome your questions and partnerships.
+            </p>
+
+            <div className="pt-2">
+              <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs tracking-widest font-semibold text-secondary uppercase">
+                <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">
+                  People First
                 </span>
-                <span className="text-amber-400">·</span>
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">
+                <span className="text-secondary">·</span>
+                <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">
                   Heritage
                 </span>
-                <span className="text-amber-400">·</span>
-                <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">
-                  Opportunities
+                <span className="text-secondary">·</span>
+                <span className="px-3 py-1 rounded-full bg-white/10 border border-white/10">
+                  Accountability
                 </span>
               </div>
             </div>
