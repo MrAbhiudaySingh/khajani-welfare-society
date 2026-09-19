@@ -108,7 +108,7 @@ function PartnersTicker() {
           className="partner-item group flex items-center justify-center p-3 sm:p-4 rounded-xl bg-card border border-border/70 hover:border-secondary/60 hover:shadow-md transition-all duration-300 cursor-default"
           style={{ opacity: 0 }}
         >
-          <Component size={42} className="transition-transform duration-300 group-hover:scale-105" />
+          <Component height={42} className="transition-transform duration-300 group-hover:scale-105" />
         </div>
       ))}
     </div>
