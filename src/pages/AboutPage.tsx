@@ -167,7 +167,7 @@ const AboutPage = () => {
       {/* ══════════════════════════════════════════════════════════════════════════════════
           SCREEN 2 — OUR BEGINNING + WHAT WE BELIEVE
          ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section id="our-beginning" className="py-14 sm:py-16 bg-background scroll-mt-20">
+      <section id="our-beginning" className="py-14 sm:py-16 bg-[#F9F4ED] border-b border-[#EAE2D5] scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Part A: Our Beginning */}
@@ -206,7 +206,7 @@ const AboutPage = () => {
           </div>
 
           {/* Part B: What We Believe (Redesigned matching Mockup) */}
-          <div className="pt-10 sm:pt-12 border-t border-border/80">
+          <div className="pt-10 sm:pt-12 border-t border-[#E8DFC8]/80">
             {/* Header: Left Headline + Right Supporting Art */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center mb-8 sm:mb-10">
               {/* Left Column: Eyebrow, Large Serif Headline & Narrative */}
@@ -234,16 +234,13 @@ const AboutPage = () => {
                 </p>
               </AnimeReveal>
 
-              {/* Right Column: Section Art — full-height organic art piece */}
+              {/* Right Column: Section Art — full-height organic art piece seamlessly integrated */}
               <AnimeReveal variant="fade-right" delay={150} className="lg:col-span-5 relative flex items-stretch">
-                <div className="relative w-full h-full min-h-[260px] lg:min-h-[320px] flex items-center justify-center overflow-hidden rounded-2xl">
-                  {/* Ambient wash behind art */}
-                  <div className="absolute inset-0 bg-[#F8F1E8]/60 rounded-2xl pointer-events-none" />
-                  {/* Full-section art fills the container */}
+                <div className="relative w-full h-full min-h-[240px] lg:min-h-[300px] flex items-center justify-center">
                   <img
                     src="/images/about/what-we-believe-art.png"
                     alt="Same roots. Stronger people. Brighter tomorrows."
-                    className="absolute inset-0 w-full h-full object-contain select-none pointer-events-none"
+                    className="w-full h-full max-h-[300px] object-contain select-none pointer-events-none"
                   />
                 </div>
               </AnimeReveal>
