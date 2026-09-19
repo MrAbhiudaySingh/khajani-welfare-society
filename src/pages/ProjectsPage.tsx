@@ -534,35 +534,34 @@ const ProjectsPage = () => {
                       KHAJANI LEARNING ACADEMY
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Stronger foundations for what comes next.
+                      Learning support for girls who need it most
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Khajani Learning Academy extends the organisation’s work into education.
+                        Khajani Learning Academy supports school-going girls from economically weaker families through remedial education, academic support and mentoring.
                       </p>
                       <p>
-                        It provides structured learning support designed around the educational needs of its learners, with an emphasis on strengthening foundations, regular learning and confidence.
+                        Along with regular learning, girls get opportunities for digital skills, art and craft, awareness programmes, communication, life skills and activities that build confidence.
                       </p>
-                      <p>
-                        The Academy represents a continuing strand of Khajani’s work with younger learners.
+                      <p className="font-semibold text-primary/90 text-xs">
+                        ₹6,100 can support one girl for one year.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Education</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Learning Support</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Foundations</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Remedial Learning</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Academic Mentoring</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">₹6,100 / Year</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("kla")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/kla"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
                     >
-                      <span>Explore Khajani Learning Academy</span>
+                      <span>EXPLORE KHAJANI LEARNING ACADEMY</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
