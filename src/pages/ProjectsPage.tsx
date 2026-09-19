@@ -149,20 +149,20 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "brij-surabhi": {
     id: "brij-surabhi",
     name: "BRIJ-SURABHI",
-    category: "Cow Welfare · Temple Waste · Sustainable Livelihoods",
-    tagline: "Turning what is often discarded into something of value.",
+    category: "Women’s SHGs · Cow Welfare · Temple Flowers · Sustainable Products · Livelihoods",
+    tagline: "Turning local resources into useful products and livelihoods",
     image: "/images/projects/brij-surabhi-cow.jpg",
-    tags: ["Cow Welfare", "Waste to Value", "Skills", "Livelihoods"],
+    tags: ["Women’s SHGs", "Cow Welfare", "Temple Flowers", "Sustainable Products", "Livelihoods"],
     overview: [
-      "Brij-Surabhi brings together two concerns closely connected with the Braj region—cow welfare and temple waste—and links them with practical skill development and livelihood activity.",
-      "Through training, cow dung is transformed into traditional and useful products, including diyas and decorative or devotional items.",
-      "A second strand works with discarded temple flowers and organic material, training participants to create products such as dhoopbatti, agarbatti, sambrani cups, itra and paper.",
-      "In both, the approach is practical: reduce waste, make productive use of locally available material and develop useful skills.",
+      "Brij-Surabhi brings together women’s Self Help Groups, cow welfare, responsible use of natural resources and livelihood creation in Braj.",
+      "The project works in two main areas: making useful products from cow dung and transforming flowers collected from temples into new products instead of allowing them to go to waste.",
+      "From diyas and traditional products to incense, fragrance and handmade paper, the project connects local resources with practical skills, environmental responsibility and livelihood opportunities.",
+      "150 women from 10 Self Help Groups have had their handcrafted products showcased at prestigious platforms including the Uttar Pradesh International Trade Show.",
     ],
     highlights: [
-      "Ecological circular economy model based on indigenous gaushala resources",
-      "Diversion of tons of floral offerings from the Yamuna river into fragrant organic incense",
-      "Sustainable home-based income generation for rural women collectives",
+      "Ecological circular economy model based on indigenous gaushala resources and temple floral offerings",
+      "Diversion of tons of floral offerings into incense, fragrance, sambrani cups, and handmade paper",
+      "Documented milestone: 150 women from 10 SHGs showcased at Uttar Pradesh International Trade Show",
     ],
   },
   "brij-anshuman": {
@@ -721,13 +721,13 @@ const ProjectsPage = () => {
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
                     src="/images/projects/brij-surabhi-cow.jpg"
-                    alt="Brij-Surabhi Cow Welfare & Temple Waste"
+                    alt="Brij-Surabhi Cow Welfare & Temple Flower Reuse"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
                   <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Cow Welfare · Temple Waste
+                    Cow Welfare · Temple Flowers
                   </span>
                 </div>
                 <div className="p-6 flex-1 flex flex-col justify-between">
@@ -736,39 +736,32 @@ const ProjectsPage = () => {
                       BRIJ-SURABHI
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Turning what is often discarded into something of value.
+                      Turning local resources into useful products and livelihoods
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Brij-Surabhi brings together two concerns closely connected with the Braj region—cow welfare and temple waste—and links them with practical skill development and livelihood activity.
+                        Brij-Surabhi works with women’s Self Help Groups and communities to create useful products from cow dung and reused temple flowers.
                       </p>
                       <p>
-                        Through training, cow dung is transformed into traditional and useful products, including diyas and decorative or devotional items.
-                      </p>
-                      <p>
-                        A second strand works with discarded temple flowers and organic material, training participants to create products such as dhoopbatti, agarbatti, sambrani cups, itra and paper.
-                      </p>
-                      <p>
-                        In both, the approach is practical: reduce waste, make productive use of locally available material and develop useful skills.
+                        From diyas and traditional products to incense, fragrance and handmade paper, the project connects local resources with practical skills, environmental responsibility and livelihood opportunities.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Women’s SHGs</span>
                       <span className="bg-muted px-2.5 py-1 rounded-md">Cow Welfare</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Waste to Value</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Skills</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Temple Flowers</span>
                       <span className="bg-muted px-2.5 py-1 rounded-md">Livelihoods</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-surabhi")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-surabhi"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
-                      <span>Explore Brij-Surabhi</span>
+                      <span>EXPLORE BRIJ-SURABHI</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
