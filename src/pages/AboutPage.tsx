@@ -934,21 +934,13 @@ const AboutPage = () => {
 
       {/* Bottom Transition to Screen 6 */}
       <div className="bg-background py-8 border-b border-border/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-accent">
-              The journey explains how Khajani grew.
-            </p>
-            <p className="text-sm text-muted-foreground mt-0.5">
-              The next chapter shows what that growth became.
-            </p>
-          </div>
-          <a
-            href="#evolution-impact"
-            className="btn-3d-accent inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-wider"
-          >
-            Next: How Our Work Evolved ↓
-          </a>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-xs font-bold uppercase tracking-widest text-accent">
+            The journey explains how Khajani grew.
+          </p>
+          <p className="text-sm text-muted-foreground mt-0.5">
+            The next chapter shows what that growth became.
+          </p>
         </div>
       </div>
 
