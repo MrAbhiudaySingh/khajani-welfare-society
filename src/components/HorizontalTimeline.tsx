@@ -533,14 +533,6 @@ export default function HorizontalTimeline() {
             </div>
           </div>
 
-          {/* Interactive Hint beneath timeline */}
-          <div className="mt-5 flex items-center justify-center gap-3 text-[10px] sm:text-xs font-mono font-medium text-[#8C7A6B] uppercase tracking-[0.22em] select-none">
-            <span className="w-10 sm:w-16 h-px bg-[#D8C7B5]" />
-            <span className="inline-flex items-center gap-1.5">
-              <span>👆</span> Drag or use arrows to explore
-            </span>
-            <span className="w-10 sm:w-16 h-px bg-[#D8C7B5]" />
-          </div>
         </div>
 
       </div>
