@@ -9,7 +9,7 @@ import {
   Users, ArrowRight, Sparkles, CheckCircle2, Mail, HeartHandshake,
   Award, BookOpen, Heart, Compass, Feather, Building2, Calendar,
   Newspaper, Video, Image as ImageIcon, ChevronRight, Quote, ShieldCheck,
-  Cog, Share2, Sprout, Star, Eye, ZoomIn
+  Cog, Share2, Sprout, Star, Eye, ZoomIn, X
 } from "lucide-react";
 import { animate, stagger } from "animejs";
 import { MediaLightbox, MediaItem } from "@/components/MediaLightbox";
@@ -86,6 +86,18 @@ const HomePage = () => {
   // Lightbox state for Press Coverage newspaper clippings
   const [lightboxItems, setLightboxItems] = useState<MediaItem[]>([]);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  // Story Modal state for Stories of Change
+  const [selectedStory, setSelectedStory] = useState<{
+    quote: string;
+    author: string;
+    role: string;
+    location?: string;
+    image?: string;
+    fullStory?: string;
+    programme?: string;
+    programmeLink?: string;
+  } | null>(null);
 
   const openLightbox = (items: MediaItem[], index: number) => {
     setLightboxItems(items);
@@ -1022,82 +1034,263 @@ const HomePage = () => {
             </div>
           </AnimeReveal>
 
-          {/* 5 Real Voice Cards */}
+          {/* 5 Real Voice Cards + Watch Stories with Picture Provision */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14">
             {[
               {
                 quote: "“I never thought I could earn and support my family. Today, I am confident, independent and dreaming bigger.”",
                 author: "Meena",
                 role: "Skill Training Participant, Mathura",
+                location: "Mathura",
+                image: "/images/projects/upsdm-tailor.jpg",
+                fullStory: "Meena joined Khajani Welfare Society's vocational tailoring programme with zero prior formal training. Within months of structured practice, she gained the technical competence and confidence to take on custom garment orders. Today, she earns independently from home, contributes reliably to her household expenses, and ensures her children attend school regularly.",
+                programme: "Brij-Hunar Long-Term Skill Training",
+                programmeLink: "/projects/brij-hunar",
               },
               {
                 quote: "“Khajani gave me a skill, an identity and a new beginning.”",
                 author: "Savitri Devi",
                 role: "Artisan & Entrepreneur",
+                location: "Vrindavan",
+                image: "/images/get-involved/artisan-woman-embroidery.jpg",
+                fullStory: "Savitri started with a short creative workshop at Khajani. Discovering her passion for traditional Braj crafts and deity poshak embroidery, she honed her skills under master artisans. Today, Savitri operates an independent micro-enterprise, fulfilling temple decor orders and mentoring younger women in her neighborhood.",
+                programme: "Brij-Nipun & Heritage Crafts",
+                programmeLink: "/projects/brij-nipun",
               },
               {
                 quote: "“I feel more confident now. I want to study further and help my community.”",
                 author: "Kavya",
                 role: "Student, Digital Learning",
+                location: "Mathura",
+                image: "/images/projects/kla-classroom-1.jpg",
+                fullStory: "A bright middle-school student studying in a local government school, Kavya faced academic hurdles and had never used a computer before. Through Khajani Learning Academy, she received daily remedial tutoring and hands-on digital skills. Her grades improved markedly, and she now leads school study circles with big dreams for higher education.",
+                programme: "Khajani Learning Academy",
+                programmeLink: "/projects/kla",
               },
               {
                 quote: "“Our traditional craft is our pride. Khajani helped us reach new markets.”",
                 author: "Rehana",
                 role: "Zari Poshak Artisan",
+                location: "Mathura Old City",
+                image: "/images/projects/shakti-ek-adhaar-1.jpg",
+                fullStory: "Belonging to a generational artisan family, Rehana has practiced the sacred art of Mathura Zari Poshak for years. Khajani helped organize her craft collective, secure official GI certification recognition, and connect directly with institutional buyers, eliminating middlemen and bringing dignity and fair remuneration to her craft.",
+                programme: "Mathura Zari Poshak GI Initiative",
+                programmeLink: "/gi-recognition",
               },
               {
                 quote: "“Our children are healthier, happier and have better opportunities today.”",
                 author: "Pooja",
                 role: "Community Member",
+                location: "Rural Braj",
+                image: "/images/about/hero-women-training.jpg",
+                fullStory: "Pooja first connected with Khajani during an adolescent health and menstrual hygiene awareness camp in her village. Inspired by the positive changes in her community, she became a volunteer mobilizer, championing hygiene sanitation units in local schools and helping mothers access essential health resources.",
+                programme: "Brij-Sangini Health & Dignity",
+                programmeLink: "/projects/brij-sangini",
               },
             ].map((story, i) => (
               <AnimeReveal key={story.author} variant="fade-up" delay={i * 80}>
-                <div className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 transition-all">
+                <div
+                  onClick={() => setSelectedStory(story)}
+                  className="clay-card rounded-3xl p-7 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1 cursor-pointer bg-background"
+                >
                   <div>
-                    <Quote size={24} className="text-secondary mb-4 opacity-70" />
-                    <p className="text-sm font-serif italic text-foreground/90 leading-relaxed mb-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <Quote size={24} className="text-secondary opacity-70 group-hover:text-accent transition-colors" />
+                      {story.location && (
+                        <span className="text-[10px] font-mono uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-muted text-muted-foreground">
+                          {story.location}
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm sm:text-[15px] font-serif italic text-foreground/90 leading-relaxed mb-6">
                       {story.quote}
                     </p>
                   </div>
-                  <div className="pt-4 border-t border-border/50 flex items-center justify-between">
-                    <div>
-                      <h4 className="font-display font-bold text-base text-primary">
-                        {story.author}
-                      </h4>
-                      <p className="text-xs text-muted-foreground">
-                        {story.role}
-                      </p>
+
+                  {/* Author Card Footer with Picture Provision */}
+                  <div className="pt-4 border-t border-border/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="flex items-center gap-3.5">
+                      {story.image ? (
+                        <div className="relative shrink-0 group-hover:scale-105 transition-transform duration-300">
+                          <img
+                            src={story.image}
+                            alt={story.author}
+                            className="w-12 h-12 sm:w-13 sm:h-13 rounded-full object-cover border-2 border-secondary/40 shadow-xs ring-2 ring-primary/5"
+                            loading="lazy"
+                          />
+                          <span className="absolute -bottom-0.5 -right-0.5 w-4 h-4 rounded-full bg-secondary text-primary-foreground text-[9px] font-bold flex items-center justify-center shadow-xs">
+                            ✓
+                          </span>
+                        </div>
+                      ) : (
+                        <div className="w-12 h-12 sm:w-13 sm:h-13 rounded-full bg-secondary/15 text-primary font-bold font-display flex items-center justify-center shrink-0 border border-secondary/20">
+                          {story.author.charAt(0)}
+                        </div>
+                      )}
+                      <div>
+                        <h4 className="font-display font-bold text-base text-primary leading-snug group-hover:text-secondary transition-colors">
+                          {story.author}
+                        </h4>
+                        <p className="text-xs text-muted-foreground leading-tight">
+                          {story.role}
+                        </p>
+                      </div>
                     </div>
-                    <span className="text-xs font-bold text-accent">
-                      Read her story →
-                    </span>
+
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        setSelectedStory(story);
+                      }}
+                      className="text-xs font-bold text-accent hover:text-primary transition-colors inline-flex items-center gap-1.5 group/btn cursor-pointer self-end sm:self-center"
+                    >
+                      <span>Read her story</span>
+                      <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
+                    </button>
                   </div>
                 </div>
               </AnimeReveal>
             ))}
 
-            {/* Watch Their Stories card */}
+            {/* Watch Their Stories card with visual background */}
             <AnimeReveal variant="fade-up" delay={400}>
-              <div className="rounded-3xl p-7 bg-primary text-primary-foreground flex flex-col justify-between h-full">
-                <div>
-                  <span className="text-xs font-bold uppercase tracking-widest text-secondary block mb-2">
-                    Watch Their Stories
-                  </span>
-                  <h3 className="font-display font-bold text-2xl text-white mb-2">
+              <div className="rounded-3xl p-7 bg-primary text-primary-foreground flex flex-col justify-between h-full relative overflow-hidden group shadow-xl">
+                {/* Visual Background Thumbnail */}
+                <div
+                  className="absolute inset-0 bg-cover bg-center opacity-25 mix-blend-overlay group-hover:scale-105 transition-transform duration-700"
+                  style={{ backgroundImage: "url('/images/projects/shakti-ek-adhaar-2.jpg')" }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/80 to-primary/60 pointer-events-none" />
+
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-bold uppercase tracking-widest text-secondary block font-mono">
+                      WATCH THEIR STORIES
+                    </span>
+                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-secondary border border-white/10 group-hover:scale-110 transition-transform">
+                      <Video size={14} />
+                    </div>
+                  </div>
+                  <h3 className="font-display font-bold text-2xl text-white mb-2 leading-snug">
                     Real journeys. Real impact. A stronger Mathura.
                   </h3>
-                  <p className="text-xs text-primary-foreground/70 leading-relaxed">
+                  <p className="text-xs text-primary-foreground/75 leading-relaxed font-light mt-3">
                     Witness firsthand how vocational skills, artisan development and community support empower families across Braj.
                   </p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+
+                <div className="relative z-10 mt-8 pt-4 border-t border-white/15 flex items-center justify-between">
                   <span className="text-[11px] font-mono text-secondary">
                     Stronger Communities · Brighter Tomorrows
                   </span>
+                  <Link
+                    to="/media"
+                    className="text-xs font-bold text-white hover:text-secondary inline-flex items-center gap-1 transition-colors"
+                  >
+                    <span>View Media</span>
+                    <span>→</span>
+                  </Link>
                 </div>
               </div>
             </AnimeReveal>
           </div>
+
+          {/* Interactive Modal for Full Story & Photo */}
+          {selectedStory && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs animate-in fade-in duration-200"
+              onClick={() => setSelectedStory(null)}
+            >
+              <div
+                className="bg-card border border-border/80 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 sm:p-8 relative animate-in zoom-in-95 duration-200"
+                onClick={(e) => e.stopPropagation()}
+              >
+                {/* Close Button */}
+                <button
+                  onClick={() => setSelectedStory(null)}
+                  className="absolute top-5 right-5 w-9 h-9 rounded-full bg-muted flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-muted/80 transition-colors"
+                  aria-label="Close story"
+                >
+                  <X size={18} />
+                </button>
+
+                {/* Modal Header with Portrait Photo */}
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 pb-6 border-b border-border/60">
+                  {selectedStory.image ? (
+                    <img
+                      src={selectedStory.image}
+                      alt={selectedStory.author}
+                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover border-2 border-secondary/40 shadow-lg shrink-0"
+                    />
+                  ) : (
+                    <div className="w-24 h-24 rounded-2xl bg-secondary/15 text-primary text-3xl font-display font-bold flex items-center justify-center shrink-0 border border-secondary/20">
+                      {selectedStory.author.charAt(0)}
+                    </div>
+                  )}
+
+                  <div className="text-center sm:text-left">
+                    <div className="flex items-center justify-center sm:justify-start gap-2 mb-1">
+                      <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-secondary/15 text-primary">
+                        VERIFIED JOURNEY
+                      </span>
+                      {selectedStory.location && (
+                        <span className="text-[10px] font-mono uppercase text-muted-foreground">
+                          {selectedStory.location}
+                        </span>
+                      )}
+                    </div>
+                    <h3 className="text-2xl sm:text-3xl font-display font-bold text-primary">
+                      {selectedStory.author}
+                    </h3>
+                    <p className="text-sm font-medium text-accent mt-0.5">
+                      {selectedStory.role}
+                    </p>
+                    {selectedStory.programme && (
+                      <p className="text-xs text-muted-foreground mt-1">
+                        Programme: {selectedStory.programme}
+                      </p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Quote in Modal */}
+                <div className="my-6 p-5 rounded-2xl bg-muted/50 border border-border/60">
+                  <p className="font-serif italic text-base sm:text-lg text-primary leading-relaxed">
+                    {selectedStory.quote}
+                  </p>
+                </div>
+
+                {/* Full Story Narrative */}
+                <div className="space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed font-light">
+                  <p>
+                    {selectedStory.fullStory}
+                  </p>
+                </div>
+
+                {/* Modal Footer */}
+                <div className="mt-8 pt-5 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  {selectedStory.programmeLink && (
+                    <Link
+                      to={selectedStory.programmeLink}
+                      onClick={() => setSelectedStory(null)}
+                      className="btn-3d-accent px-6 py-3 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2"
+                    >
+                      <span>Explore Related Programme</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => setSelectedStory(null)}
+                    className="text-xs font-mono uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                  >
+                    Close Story
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Stories That Inspire Banner */}
           <div className="p-8 rounded-3xl bg-background border border-border text-center max-w-3xl mx-auto">
