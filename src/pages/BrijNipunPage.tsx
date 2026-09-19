@@ -1,95 +1,73 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { AnimeReveal } from "@/components/AnimeReveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import TiltCard from "@/components/TiltCard";
 import { MediaLightbox, MediaItem } from "@/components/MediaLightbox";
-import { useAnimeCounter } from "@/hooks/use-anime-counter";
 import {
   ArrowRight,
   ArrowDown,
   Sparkles,
-  Scissors,
-  Laptop,
-  HeartHandshake,
-  Building,
   Palette,
-  MessageSquare,
+  Scissors,
+  ChefHat,
+  HeartHandshake,
+  Laptop,
+  CheckCircle2,
+  Sparkle,
   Search,
   BookOpen,
-  Briefcase,
-  TrendingUp,
-  Award,
-  CheckCircle2,
-  Users,
-  Compass,
-  Phone,
-  Handshake,
-  ZoomIn,
   Eye,
+  ZoomIn,
+  Flame,
   Layers,
-  GraduationCap
+  HandMetal,
+  Brush,
+  Flower2,
+  Coffee,
+  Compass,
+  Briefcase
 } from "lucide-react";
 
-/* ─── Animated Stat Counter for Section 6 Reach ─── */
-function ReachCounter({
-  target = 22000,
-  suffix = "+",
-}: {
-  target?: number;
-  suffix?: string;
-}) {
-  const { ref, displayed } = useAnimeCounter({
-    target,
-    duration: 2500,
-    suffix,
-  });
+const BrijNipunPage = () => {
+  useEffect(() => {
+    document.title = "Brij-Nipun | Short-Term Skill Training in Mathura | Khajani Welfare Society";
+  }, []);
 
-  return (
-    <span
-      ref={ref as React.RefObject<HTMLSpanElement>}
-      className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-primary tabular-nums tracking-tight block text-center"
-    >
-      {displayed}
-    </span>
-  );
-}
-
-const BrijHunarPage = () => {
-  // Lightbox state for Brij-Hunar in pictures
+  // Lightbox state for Brij-Nipun in pictures
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const galleryPhotos: MediaItem[] = [
     {
-      image: "/images/projects/upsdm-tailor.jpg",
-      title: "Apparel & Fashion Construction",
-      desc: "Practical garment making and tailoring training on modern industrial sewing machines.",
+      image: "/images/projects/brij-nipun-activities.jpg",
+      title: "Short-Term Skill Camps & Workshops",
+      desc: "Participants engaging in hands-on creative activities and collaborative skill development.",
     },
     {
-      image: "/images/about/computer-lab.jpg",
-      title: "Computer & Digital Literacy Lab",
-      desc: "Hands-on computing, workplace software, and internet literacy for girls.",
+      image: "/images/projects/royal-sanjhi-training.jpg",
+      title: "Traditional Sanjhi Art Workshop",
+      desc: "Learning the stencil cutting and devotional craft techniques of Braj.",
     },
     {
-      image: "/images/about/apparel-beauty-lab.jpg",
-      title: "Beauty & Wellness Training Center",
-      desc: "Professional cosmetology and beauty wellness salon techniques for self-employment.",
+      image: "/images/projects/shakti-ek-adhaar-3.jpg",
+      title: "Creative Painting & Handicrafts",
+      desc: "Hands-on decorative painting, clay work and festive craft sessions.",
     },
     {
-      image: "/images/projects/brij-hunar-training.jpg",
-      title: "Hands-on Practical Training Session",
-      desc: "One-on-one mentorship by certified master trainers in Mathura.",
+      image: "/images/about/hero-women-training.jpg",
+      title: "Personal Grooming & Skill Practice",
+      desc: "Participants practicing grooming, mehendi, and personal care techniques.",
     },
     {
-      image: "/images/about/classroom.jpg",
-      title: "Interactive Classroom Learning",
-      desc: "Structured classroom curriculum combining theory with practical application.",
+      image: "/images/projects/brij-surabhi-temple-waste.jpg",
+      title: "Deity Products & Sacred Craft Traditions",
+      desc: "Crafting temple flowers, dhoop sticks and handmade local heritage articles.",
     },
     {
-      image: "/images/about/team-working.jpg",
-      title: "Participant Artisan Work & Finishing",
-      desc: "Trainees producing finished apparel, crafts, and market-ready products.",
+      image: "/images/projects/brij-hunar-class.jpg",
+      title: "Focused Practical Demonstrations",
+      desc: "Interactive demonstration by trainers followed by participant trial and practice.",
     },
   ];
 
@@ -103,30 +81,30 @@ const BrijHunarPage = () => {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-            {/* Left Copy */}
+            {/* Left Column */}
             <AnimeReveal variant="fade-right" className="lg:col-span-7 space-y-6">
               <div className="flex items-center gap-3">
                 <span className="text-[#A32A29] text-xs font-bold tracking-[0.25em] uppercase font-mono">
-                  KHAJANI WELFARE SOCIETY · LONG-TERM SKILL PROGRAMME
+                  KHAJANI WELFARE SOCIETY · SHORT-TERM TRAINING
                 </span>
                 <span className="h-px w-8 bg-[#A32A29]/30" />
               </div>
 
               <div>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary tracking-tight leading-[1.08]">
-                  BRIJ-HUNAR
+                  BRIJ-NIPUN
                 </h1>
                 <p className="text-xl sm:text-2xl font-serif italic text-secondary mt-2">
-                  Long-term skill training for women and girls
+                  Short-term practical skill training
                 </p>
               </div>
 
               <div className="space-y-4 text-base sm:text-lg text-muted-foreground font-light leading-relaxed max-w-2xl border-l-4 border-secondary/50 pl-5">
                 <p>
-                  Brij-Hunar is Khajani Welfare Society’s long-term skill development programme. It provides structured vocational training that helps women and girls learn practical skills for employment, self-employment and income generation.
+                  Brij-Nipun is Khajani Welfare Society’s short-term skill training programme. It offers focused workshops, camps and practical learning opportunities where women and other participants can learn a useful skill without joining a long-duration training programme.
                 </p>
                 <p>
-                  The programme combines vocational skills with digital literacy, communication and life skills. Longer-duration training carried out through relevant government skill-development programmes and institutional collaborations also forms part of Brij-Hunar.
+                  The programme covers creative, practical and income-oriented skills that can be learned in shorter formats and used for personal development, home-based work or small earning opportunities.
                 </p>
               </div>
 
@@ -149,7 +127,7 @@ const BrijHunarPage = () => {
                   to="/partnership-inquiry"
                   className="text-xs font-bold uppercase tracking-wider text-secondary hover:text-accent inline-flex items-center gap-1.5 transition-colors ml-1"
                 >
-                  <span>Partner With Us</span>
+                  <span>Work With Us</span>
                   <ArrowRight size={13} />
                 </Link>
               </div>
@@ -159,23 +137,23 @@ const BrijHunarPage = () => {
             <AnimeReveal variant="fade-left" delay={150} className="lg:col-span-5 relative">
               <TiltCard maxTilt={6}>
                 <div
-                  className="aspect-[4/3.8] rounded-3xl overflow-hidden relative shadow-2xl border border-border/80 bg-muted group"
+                  className="aspect-[4/3.6] rounded-3xl overflow-hidden relative shadow-2xl border border-border/80 bg-muted group"
                   style={{
                     boxShadow: "0 20px 48px -12px rgba(27,46,107,0.18)",
                   }}
                 >
                   <img
-                    src="/images/projects/brij-hunar-training.jpg"
-                    alt="Women in hands-on practical vocational training session in Mathura"
+                    src="/images/projects/brij-nipun-activities.jpg"
+                    alt="Participants learning hands-on craft skills in Brij-Nipun workshop"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 text-white">
                     <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-secondary block mb-1">
-                      PRACTICAL VOCATIONAL MASTERY
+                      FOCUSED HANDS-ON WORKSHOPS
                     </span>
                     <h4 className="text-lg font-display font-bold leading-snug">
-                      Equipping women with certified skills for dignity and sustainable livelihoods
+                      Practical, creative, and income-oriented skill camps in Mathura
                     </h4>
                   </div>
                 </div>
@@ -186,91 +164,141 @@ const BrijHunarPage = () => {
       </header>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 2 — WHAT PARTICIPANTS LEARN (Skills That Can Lead to Work and Income)
+          SCENE 2 — LEARN A SKILL IN A SHORTER FORMAT
          ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section id="what-participants-learn" className="py-24 bg-background scroll-mt-20">
+      <section className="py-20 bg-background border-b border-border/60">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <AnimeReveal variant="fade-up">
+            <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-3 font-mono">
+              FLEXIBLE LEARNING OPPORTUNITIES
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary leading-tight mb-6">
+              Learn a skill in a shorter format
+            </h2>
+            <div className="space-y-4 text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
+              <p>
+                Not everyone can join a long-term training programme. Brij-Nipun provides shorter and more flexible learning opportunities through workshops, work camps and focused training programmes.
+              </p>
+              <p>
+                Participants get hands-on experience in a specific skill, making the programme suitable for different groups, interests and learning needs.
+              </p>
+            </div>
+            <div className="pt-6">
+              <p className="font-handwriting text-2xl sm:text-3xl text-secondary italic">
+                Focused learning. Practical experience. Lasting confidence.
+              </p>
+            </div>
+          </AnimeReveal>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════════════════════════
+          SCENE 3 — WHAT PARTICIPANTS CAN LEARN (9 Practical Skill Domains)
+         ══════════════════════════════════════════════════════════════════════════════════ */}
+      <section id="what-participants-learn" className="py-24 bg-card border-b border-border scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimeReveal variant="fade-up" className="max-w-3xl mb-16">
             <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-2 font-mono">
-              SKILLS THAT CAN LEAD TO WORK AND INCOME
+              CURRICULUM &amp; WORKSHOP STREAMS
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-              What participants learn
+              What participants can learn
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg mt-3 font-light leading-relaxed">
-              Brij-Hunar focuses on practical learning that participants can use beyond the classroom.
+              Brij-Nipun training can include:
             </p>
           </AnimeReveal>
 
-          {/* 6 What Participants Learn Domain Cards */}
+          {/* 9 Practical Learning Domains Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Apparel & Fashion",
-                desc: "Practical skills related to apparel, garment making and fashion.",
-                icon: Scissors,
-                iconBg: "bg-[#FDF0ED] text-[#D35F4C]",
-                tag: "Garment Making",
+                title: "Deity Products & Traditional Crafts",
+                desc: "Making handmade products connected with local craft traditions.",
+                icon: Flower2,
+                iconBg: "bg-[#FAF3E6] text-[#B88732]",
+                tag: "Heritage Craft",
               },
               {
-                title: "Computer & Digital Skills",
-                desc: "Computer skills and digital literacy for everyday and workplace use.",
-                icon: Laptop,
+                title: "Sanjhi Art",
+                desc: "Learning the basic techniques of the traditional art of Braj.",
+                icon: Sparkle,
+                iconBg: "bg-[#FDF0ED] text-[#D35F4C]",
+                tag: "Living Heritage",
+              },
+              {
+                title: "Painting & Creative Crafts",
+                desc: "Hands-on learning through painting and other creative activities.",
+                icon: Palette,
                 iconBg: "bg-[#EDF4FC] text-[#3D82D0]",
+                tag: "Creative Arts",
+              },
+              {
+                title: "Baking & Chocolate Making",
+                desc: "Practical food-based skills that can also be developed into home-based earning activities.",
+                icon: ChefHat,
+                iconBg: "bg-[#FAF0E6] text-[#C0772C]",
+                tag: "Food & Confectionery",
+              },
+              {
+                title: "Mehendi & Nail Art",
+                desc: "Creative skills that can be used professionally or for self-employment.",
+                icon: Brush,
+                iconBg: "bg-[#EDF7F0] text-[#439962]",
+                tag: "Beauty & Styling",
+              },
+              {
+                title: "Personal Grooming",
+                desc: "Practical grooming and personal-care skills.",
+                icon: Scissors,
+                iconBg: "bg-[#FDF0F0] text-[#D45E5E]",
+                tag: "Self-Care",
+              },
+              {
+                title: "Cooking",
+                desc: "Focused practical learning around food preparation.",
+                icon: Coffee,
+                iconBg: "bg-[#FFF4E5] text-[#D97706]",
+                tag: "Culinary Skills",
+              },
+              {
+                title: "Clay Work",
+                desc: "Learning to make creative products using clay.",
+                icon: HandMetal,
+                iconBg: "bg-[#F5EFE6] text-[#92400E]",
+                tag: "Pottery & Clay",
+              },
+              {
+                title: "Digital Skills",
+                desc: "Basic digital skills for everyday use and new opportunities.",
+                icon: Laptop,
+                iconBg: "bg-[#EFF1FB] text-[#4A64CF]",
                 tag: "Digital Literacy",
               },
-              {
-                title: "Beauty & Wellness",
-                desc: "Practical skills for work and self-employment in beauty and wellness.",
-                icon: HeartHandshake,
-                iconBg: "bg-[#FAF3E6] text-[#B88732]",
-                tag: "Cosmetology",
-              },
-              {
-                title: "Office Skills",
-                desc: "Skills that can support office-based work.",
-                icon: Building,
-                iconBg: "bg-[#EDF7F0] text-[#439962]",
-                tag: "Workplace Readiness",
-              },
-              {
-                title: "Art & Craft",
-                desc: "Creative and practical skills that can also support home-based earning.",
-                icon: Palette,
-                iconBg: "bg-[#FDF0F0] text-[#D45E5E]",
-                tag: "Creative Crafts",
-              },
-              {
-                title: "Communication & Life Skills",
-                desc: "Communication, confidence and everyday skills that help participants prepare for work and greater independence.",
-                icon: MessageSquare,
-                iconBg: "bg-[#EFF1FB] text-[#4A64CF]",
-                tag: "Confidence & Growth",
-              },
-            ].map((skill, idx) => (
-              <AnimeReveal key={skill.title} variant="fade-up" delay={idx * 70}>
-                <div className="clay-card rounded-3xl p-7 border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full group hover:-translate-y-1 bg-card">
+            ].map((item, idx) => (
+              <AnimeReveal key={item.title} variant="fade-up" delay={idx * 50}>
+                <div className="clay-card rounded-3xl p-7 border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full group hover:-translate-y-1 bg-background">
                   <div>
                     <div className="flex items-center justify-between mb-4">
-                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${skill.iconBg} shadow-sm group-hover:scale-110 transition-transform`}>
-                        <skill.icon size={22} />
+                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${item.iconBg} shadow-sm group-hover:scale-110 transition-transform`}>
+                        <item.icon size={22} />
                       </div>
                       <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-muted text-muted-foreground">
-                        {skill.tag}
+                        {item.tag}
                       </span>
                     </div>
 
-                    <h3 className="font-display font-bold text-xl text-primary mb-2 group-hover:text-secondary transition-colors">
-                      {skill.title}
+                    <h3 className="font-display font-bold text-xl text-primary mb-2 group-hover:text-secondary transition-colors leading-snug">
+                      {item.title}
                     </h3>
 
                     <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                      {skill.desc}
+                      {item.desc}
                     </p>
                   </div>
 
-                  <div className="mt-6 pt-3 border-t border-border/50 flex items-center text-xs font-semibold text-secondary">
-                    <span>Applied Vocational Learning</span>
+                  <div className="mt-6 pt-3 border-t border-border/40 flex items-center text-xs font-semibold text-secondary">
+                    <span>Hands-On Learning Stream</span>
                   </div>
                 </div>
               </AnimeReveal>
@@ -280,49 +308,52 @@ const BrijHunarPage = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 3 — HOW BRIJ-HUNAR WORKS (A simple path from training to opportunity)
+          SCENE 4 — HOW BRIJ-NIPUN WORKS (Short. Focused. Practical.)
          ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section className="py-24 bg-card border-y border-border scroll-mt-20 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <section className="py-24 bg-background scroll-mt-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimeReveal variant="fade-up" className="max-w-3xl mb-16 text-center mx-auto">
             <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-2 font-mono">
-              HOW BRIJ-HUNAR WORKS
+              OUR WORKFLOW
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-              A simple path from training to opportunity
+              How Brij-Nipun works
             </h2>
+            <p className="text-xl font-serif italic text-secondary mt-2">
+              Short. Focused. Practical.
+            </p>
           </AnimeReveal>
 
-          {/* 4 Steps Timeline Pathway */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {/* 4 Steps Timeline Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 step: "01",
-                label: "FIND & CONNECT",
-                desc: "Women and girls who can benefit from skill training are connected with suitable training opportunities.",
+                label: "CHOOSE A SKILL",
+                desc: "A focused skill or activity is selected according to the group and purpose of the programme.",
                 icon: Search,
               },
               {
                 step: "02",
-                label: "TRAIN",
-                desc: "Participants receive structured and practical training in the selected skill.",
+                label: "LEARN BY DOING",
+                desc: "Participants learn through demonstrations and hands-on practice.",
                 icon: BookOpen,
               },
               {
                 step: "03",
-                label: "CONNECT TO WORK",
-                desc: "Where applicable, participants are supported towards employment, self-employment or other livelihood opportunities.",
-                icon: Briefcase,
+                label: "MAKE & PRACTISE",
+                desc: "They use the skill themselves and build confidence through practical work.",
+                icon: Palette,
               },
               {
                 step: "04",
-                label: "CONTINUE SUPPORT",
-                desc: "Guidance and post-training support help participants take the next step after completing their training.",
-                icon: TrendingUp,
+                label: "USE THE SKILL",
+                desc: "Depending on the training, the skill can be used personally, developed further or explored as an earning opportunity.",
+                icon: Briefcase,
               },
             ].map((st, i) => (
               <AnimeReveal key={st.step} variant="fade-up" delay={i * 80} className="h-full">
-                <div className="p-7 rounded-3xl bg-background border border-border/80 flex flex-col justify-between h-full hover:border-secondary/60 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
+                <div className="p-7 rounded-3xl bg-card border border-border/80 flex flex-col justify-between h-full hover:border-secondary/60 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="font-display font-black text-3xl sm:text-4xl text-secondary/40 group-hover:text-secondary transition-colors">
@@ -344,80 +375,74 @@ const BrijHunarPage = () => {
 
                   <div className="mt-6 pt-3 border-t border-border/40">
                     <span className="text-[11px] font-mono text-muted-foreground">
-                      Stage {st.step} of 04
+                      Step {st.step} of 04
                     </span>
                   </div>
                 </div>
               </AnimeReveal>
             ))}
           </div>
-
-          {/* Model Citation Banner */}
-          <AnimeReveal variant="fade-up" delay={200}>
-            <div className="p-6 sm:p-8 rounded-3xl bg-primary text-primary-foreground border border-white/10 shadow-lg text-center max-w-4xl mx-auto">
-              <p className="text-sm sm:text-base font-serif italic text-primary-foreground/90 leading-relaxed">
-                &ldquo;This reflects Khajani’s documented model of mobilisation &rarr; training &rarr; placement &rarr; post-placement support.&rdquo;
-              </p>
-            </div>
-          </AnimeReveal>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 4 — MORE THAN TECHNICAL TRAINING (Skills for work. Confidence for everyday life.)
+          SCENE 5 — DIFFERENT FORMATS FOR DIFFERENT LEARNERS
          ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section className="py-24 bg-background scroll-mt-20">
+      <section className="py-24 bg-card border-y border-border scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Narrative */}
             <AnimeReveal variant="fade-right" className="lg:col-span-7 space-y-6">
               <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block font-mono">
-                MORE THAN TECHNICAL TRAINING
+                FLEXIBLE FORMATS
               </span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-primary leading-tight">
-                Skills for work.
-                <br />
-                <span className="font-serif italic text-secondary font-normal">
-                  Confidence for everyday life.
-                </span>
+                Different formats for different learners
               </h2>
 
               <p className="text-base sm:text-lg text-muted-foreground font-light leading-relaxed">
-                Learning a technical skill is only one part of Brij-Hunar. Training can also include:
+                Brij-Nipun is designed to remain flexible. Training may take the form of:
               </p>
 
-              {/* Badges of Holistic Skills */}
+              {/* Badges */}
               <div className="flex flex-wrap gap-2.5 pt-2">
                 {[
-                  "Basic English",
-                  "Digital Literacy",
-                  "Communication",
-                  "Life Skills",
-                  "Personal Development",
-                ].map((item) => (
+                  "Work Camps",
+                  "Skill Workshops",
+                  "Creative Workshops",
+                  "Painter Camps",
+                  "Short Training Programmes",
+                ].map((format) => (
                   <span
-                    key={item}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-card border border-border/80 text-primary text-xs sm:text-sm font-semibold shadow-xs hover:border-secondary/60 transition-colors"
+                    key={format}
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-background border border-border/80 text-primary text-xs sm:text-sm font-semibold shadow-xs hover:border-secondary/60 transition-colors"
                   >
                     <CheckCircle2 size={15} className="text-secondary" />
-                    {item}
+                    {format}
                   </span>
                 ))}
               </div>
 
               <div className="p-5 rounded-2xl bg-muted/60 border border-border/60 text-sm sm:text-base text-foreground/90 font-serif italic leading-relaxed mt-4">
-                &ldquo;These skills help participants become more confident in using what they have learned in work and everyday situations.&rdquo;
+                &ldquo;This allows Khajani to organise learning around a particular group, skill or community need rather than requiring every participant to enter the same long-term course.&rdquo;
               </div>
             </AnimeReveal>
 
-            {/* Right Photo */}
+            {/* Right Illustration Card */}
             <AnimeReveal variant="fade-left" delay={150} className="lg:col-span-5">
-              <div className="aspect-[4/3.4] rounded-3xl overflow-hidden border border-border shadow-xl bg-card">
-                <img
-                  src="/images/about/hero-women-training.jpg"
-                  alt="Young women building confidence in skill classes"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
+              <div className="p-8 rounded-3xl bg-background border border-border shadow-xl space-y-4">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#A32A29]">
+                  Community-Centred Design
+                </span>
+                <h3 className="font-display font-bold text-2xl text-primary">
+                  Responsive &amp; Adaptive
+                </h3>
+                <p className="text-sm text-muted-foreground font-light leading-relaxed">
+                  From residential village workshops to weekend community sessions and institution-hosted camps, learning travels to where the need and curiosity exist.
+                </p>
+                <div className="pt-2 border-t border-border/50 text-xs font-mono text-secondary">
+                  Mathura · Vrindavan · Rural Braj Villages
+                </div>
               </div>
             </AnimeReveal>
           </div>
@@ -425,127 +450,72 @@ const BrijHunarPage = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 5 — WHERE THE TRAINING CAN LEAD (From Learning to Earning)
+          SCENE 6 — CREATIVITY CAN ALSO BECOME AN OPPORTUNITY
          ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section className="py-24 bg-card border-y border-border scroll-mt-20">
+      <section className="py-24 bg-background scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimeReveal variant="fade-up" className="max-w-3xl mb-14">
             <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-2 font-mono">
-              WHERE THE TRAINING CAN LEAD
+              ENTREPRENEURIAL HORIZONS
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary leading-tight">
-              From learning to earning
+              Creativity can also become an opportunity
             </h2>
             <p className="text-muted-foreground text-base sm:text-lg mt-3 font-light leading-relaxed">
-              The aim is simple: help participants turn practical skills into opportunities to earn and become more independent.
+              A short workshop may begin with curiosity, but a useful skill can go much further. Brij-Nipun encourages participants to explore how creative and practical skills can be used for:
             </p>
           </AnimeReveal>
 
-          {/* 3 Pathway Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* 5 Opportunity Pathway Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-12">
             {[
-              {
-                title: "Employment",
-                tagline: "Workforce Integration",
-                desc: "Using vocational skills to seek suitable work.",
-                icon: Briefcase,
-                bg: "bg-background",
-              },
-              {
-                title: "Self-Employment",
-                tagline: "Independent Practice",
-                desc: "Using learned skills to earn independently or from home.",
-                icon: Compass,
-                bg: "bg-background",
-              },
-              {
-                title: "Small Enterprise",
-                tagline: "Micro-Business Growth",
-                desc: "Developing a skill into a small livelihood activity or business.",
-                icon: TrendingUp,
-                bg: "bg-background",
-              },
-            ].map((pathway, idx) => (
-              <AnimeReveal key={pathway.title} variant="fade-up" delay={idx * 100}>
-                <div className={`p-8 rounded-3xl ${pathway.bg} border border-border/80 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full group hover:-translate-y-1`}>
+              { title: "Home-Based Work", desc: "Crafting and earning flexibly from household spaces." },
+              { title: "Small Orders", desc: "Fulfilling local community, festive and custom orders." },
+              { title: "Self-Employment", desc: "Setting up independent services in grooming, mehendi or crafts." },
+              { title: "Creative Enterprise", desc: "Developing distinctive handmade products into micro-ventures." },
+              { title: "Further Learning", desc: "Stepping stone to longer vocational certification programmes." },
+            ].map((opp, idx) => (
+              <AnimeReveal key={opp.title} variant="fade-up" delay={idx * 70}>
+                <div className="p-6 rounded-3xl bg-card border border-border/80 hover:border-secondary/60 hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full group hover:-translate-y-1">
                   <div>
-                    <div className="w-12 h-12 rounded-2xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-secondary/15 group-hover:text-secondary transition-colors">
-                      <pathway.icon size={24} />
-                    </div>
-
-                    <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-accent block mb-1">
-                      {pathway.tagline}
+                    <span className="w-8 h-8 rounded-xl bg-primary/5 text-primary flex items-center justify-center text-xs font-bold font-mono mb-3 group-hover:bg-secondary/15 group-hover:text-secondary transition-colors">
+                      0{idx + 1}
                     </span>
-
-                    <h3 className="font-display font-bold text-2xl text-primary mb-3 group-hover:text-secondary transition-colors">
-                      {pathway.title}
+                    <h3 className="font-display font-bold text-lg text-primary mb-2 group-hover:text-secondary transition-colors leading-snug">
+                      {opp.title}
                     </h3>
-
-                    <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                      {pathway.desc}
+                    <p className="text-xs text-muted-foreground font-light leading-relaxed">
+                      {opp.desc}
                     </p>
-                  </div>
-
-                  <div className="mt-8 pt-4 border-t border-border/50 flex items-center justify-between text-xs font-bold text-primary group-hover:text-secondary transition-colors">
-                    <span>Livelihood Pathway</span>
-                    <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </AnimeReveal>
             ))}
           </div>
 
-          {/* Simple Takeaway Quote */}
-          <div className="text-center pt-2">
-            <p className="font-handwriting text-2xl sm:text-3xl text-secondary italic">
-              From practical skills to independent lives.
+          <div className="p-6 sm:p-8 rounded-3xl bg-primary text-primary-foreground text-center max-w-4xl mx-auto shadow-md">
+            <p className="text-base sm:text-lg font-serif italic text-primary-foreground/95 leading-relaxed">
+              &ldquo;The programme is designed to build practical ability as well as confidence, creativity and entrepreneurial thinking.&rdquo;
             </p>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 6 — OUR REACH (22,000+ candidates trained/reached)
-         ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section className="py-24 bg-background scroll-mt-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <AnimeReveal variant="fade-up">
-            <span className="text-accent text-xs font-bold tracking-[0.25em] uppercase block mb-3 font-mono">
-              OUR REACH
-            </span>
-
-            {/* Metric Counter */}
-            <div className="my-6">
-              <ReachCounter target={22000} suffix="+" />
-              <p className="text-xl sm:text-2xl font-serif italic text-secondary mt-2">
-                candidates trained/reached
-              </p>
-            </div>
-
-            <div className="h-0.5 w-16 bg-secondary/50 rounded-full mx-auto my-6" />
-
-            <p className="text-sm sm:text-base text-muted-foreground font-light leading-relaxed max-w-2xl mx-auto">
-              The master project document records 22,000+ candidates trained/reached in connection with Brij-Hunar.
-            </p>
-          </AnimeReveal>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 7 — BRIJ-HUNAR IN PICTURES (Genuine Khajani Photographs)
+          SCENE 7 — BRIJ-NIPUN IN PICTURES (Lively Variety Gallery)
          ══════════════════════════════════════════════════════════════════════════════════ */}
       <section className="py-24 bg-card border-y border-border scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 pb-4 border-b border-border">
             <AnimeReveal variant="fade-up">
               <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase block mb-2 font-mono">
-                VISUAL ARCHIVE
+                VISUAL RECORD
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary">
-                Brij-Hunar in pictures
+                Brij-Nipun in pictures
               </h2>
               <p className="text-muted-foreground text-sm sm:text-base mt-2 font-light max-w-2xl">
-                Genuine Khajani photographs showing apparel and fashion, computer training, beauty and wellness, practical training, classroom learning and participant work.
+                Painting · Sanjhi · Baking/Chocolate Making · Mehendi · Nail Art · Clay/Craft Work · Deity Products · Workshops
               </p>
             </AnimeReveal>
 
@@ -554,7 +524,7 @@ const BrijHunarPage = () => {
             </span>
           </div>
 
-          {/* Genuine Khajani Photographs Grid */}
+          {/* 6-Photo Responsive Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryPhotos.map((item, idx) => (
               <AnimeReveal key={item.title} variant="fade-up" delay={idx * 60}>
@@ -613,29 +583,29 @@ const BrijHunarPage = () => {
               Related Work
             </h2>
             <p className="text-sm text-muted-foreground font-light mt-1">
-              Looking for shorter, focused skill programmes?
+              Looking for longer-term vocational training or deeper cultural heritage?
             </p>
           </AnimeReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <AnimeReveal variant="fade-up" delay={50}>
               <Link
-                to="/projects/brij-nipun"
+                to="/projects/brij-hunar"
                 className="p-8 rounded-3xl bg-card border border-border hover:border-secondary/60 hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full group"
               >
                 <div>
                   <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-accent block mb-2">
-                    FOCUSED SKILL CAMPS &amp; SHORT COURSES
+                    LONG-TERM VOCATIONAL TRAINING
                   </span>
                   <h3 className="font-display font-bold text-2xl text-primary mb-2 group-hover:text-secondary transition-colors">
-                    Explore Brij-Nipun
+                    Explore Brij-Hunar
                   </h3>
                   <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    Khajani’s shorter-duration skill and learning initiatives, workshops and practical camps tailored for quick capability enhancement.
+                    Khajani’s structured long-term skill development programme combining technical vocational training with digital skills and employability.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-border/40 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary group-hover:text-secondary transition-colors">
-                  <span>Explore Brij-Nipun</span>
+                  <span>Explore Brij-Hunar</span>
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -643,22 +613,22 @@ const BrijHunarPage = () => {
 
             <AnimeReveal variant="fade-up" delay={100}>
               <Link
-                to="/our-work"
+                to="/culture"
                 className="p-8 rounded-3xl bg-card border border-border hover:border-secondary/60 hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full group"
               >
                 <div>
                   <span className="text-[11px] font-mono font-bold uppercase tracking-wider text-accent block mb-2">
-                    ALL PROGRAMMES &amp; INITIATIVES
+                    SANJHI &amp; BRAJ CRAFT TRADITIONS
                   </span>
                   <h3 className="font-display font-bold text-2xl text-primary mb-2 group-hover:text-secondary transition-colors">
-                    See All Our Work
+                    Explore Culture &amp; Heritage
                   </h3>
                   <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    From long-term skill training and digital literacy to traditional craft revival, health initiatives and community service across Braj.
+                    Where tradition remains a living practice: exploring Sanjhi stencil art, Mathura Zari Poshak, and the temple craft traditions of Braj.
                   </p>
                 </div>
                 <div className="mt-6 pt-4 border-t border-border/40 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary group-hover:text-secondary transition-colors">
-                  <span>See All Our Work</span>
+                  <span>Explore Culture &amp; Heritage</span>
                   <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </Link>
@@ -668,7 +638,7 @@ const BrijHunarPage = () => {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
-          SCENE 9 — INTERESTED IN SKILL TRAINING OR WORKING WITH KHAJANI?
+          SCENE 9 — INTERESTED IN A WORKSHOP OR SKILL PROGRAMME?
          ══════════════════════════════════════════════════════════════════════════════════ */}
       <section className="py-20 lg:py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <AuroraBackground variant="dark" intensity={1.1} />
@@ -677,15 +647,15 @@ const BrijHunarPage = () => {
           <AnimeReveal variant="fade-up">
             <span className="inline-flex items-center gap-2 px-4 py-1.5 glass-dark rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-secondary border border-white/10 shadow-sm font-mono">
               <Sparkles size={13} />
-              GET IN TOUCH
+              COLLABORATE WITH US
             </span>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4 leading-tight">
-              Interested in skill training or working with Khajani?
+              Interested in a workshop or skill programme?
             </h2>
 
             <p className="text-primary-foreground/80 text-base sm:text-lg mb-10 font-light max-w-2xl mx-auto leading-relaxed">
-              Whether you want to know more about training opportunities or explore a partnership, we would be happy to hear from you.
+              Schools, community groups, institutions and other organisations can connect with Khajani to explore suitable short-term skill programmes and workshops.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
@@ -700,7 +670,7 @@ const BrijHunarPage = () => {
                 to="/partnership-inquiry"
                 className="btn-3d-outline px-8 py-4 text-xs font-bold uppercase tracking-widest inline-flex items-center gap-2 bg-white/10 text-white hover:bg-white/20"
               >
-                <span>Partner With Us</span>
+                <span>Work With Us</span>
               </Link>
             </div>
 
@@ -722,4 +692,4 @@ const BrijHunarPage = () => {
   );
 };
 
-export default BrijHunarPage;
+export default BrijNipunPage;

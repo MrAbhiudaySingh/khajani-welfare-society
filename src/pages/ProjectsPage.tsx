@@ -480,35 +480,31 @@ const ProjectsPage = () => {
                       BRIJ-NIPUN
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Focused learning. Practical experience.
+                      Short-term practical skill training
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Brij-Nipun brings together Khajani’s shorter-duration skill and learning initiatives.
+                        Brij-Nipun offers focused workshops and short training programmes in skills such as painting, Sanjhi art, baking, chocolate making, mehendi, nail art, clay work, creative crafts and digital skills.
                       </p>
                       <p>
-                        Through work camps, painter camps, workshops and other focused programmes, participants can engage with a particular skill or practical activity without entering a long-duration training programme.
-                      </p>
-                      <p>
-                        Its flexible format allows different kinds of learning experiences to be developed for different groups and contexts.
+                        Its flexible format gives participants an opportunity to learn and practise a useful skill without joining a long-duration training programme.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Camps</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Workshops</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Practical Learning</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Short-Term Camps</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Creative Crafts</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Flexible Workshops</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-nipun")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-nipun"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
                     >
-                      <span>Explore Brij-Nipun</span>
+                      <span>EXPLORE BRIJ-NIPUN</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1221,6 +1217,7 @@ const ProjectsPage = () => {
                 subtitle: "Long-Term Skill Development",
                 icon: Scissors,
                 tag: "Vocational",
+                link: "/projects/brij-hunar",
               },
               {
                 id: "brij-nipun",
@@ -1228,6 +1225,7 @@ const ProjectsPage = () => {
                 subtitle: "Short-Term Skills & Camps",
                 icon: Users,
                 tag: "Workshops",
+                link: "/projects/brij-nipun",
               },
               {
                 id: "kla",
@@ -1235,6 +1233,7 @@ const ProjectsPage = () => {
                 subtitle: "Education & Learning",
                 icon: BookOpen,
                 tag: "Education",
+                link: "/projects/kla",
               },
               {
                 id: "digi-shala",
@@ -1242,6 +1241,7 @@ const ProjectsPage = () => {
                 subtitle: "Digital Learning",
                 icon: Laptop,
                 tag: "Digital",
+                link: "/projects/digi-shala",
               },
               {
                 id: "sanjhi-art",
@@ -1249,6 +1249,7 @@ const ProjectsPage = () => {
                 subtitle: "Living Heritage",
                 icon: Sparkles,
                 tag: "Heritage",
+                link: "/projects/royal-sanjhi",
               },
               {
                 id: "mathura-poshak",
@@ -1256,6 +1257,7 @@ const ProjectsPage = () => {
                 subtitle: "Craft · Heritage · GI",
                 icon: Palette,
                 tag: "Craft & GI",
+                link: "/projects/radha-krishna-poshak",
               },
               {
                 id: "brij-surabhi",
@@ -1263,6 +1265,7 @@ const ProjectsPage = () => {
                 subtitle: "Cow Welfare · Temple Waste · Sustainable Livelihoods",
                 icon: Flame,
                 tag: "Ecology",
+                link: "/projects/brij-surabhi",
               },
               {
                 id: "brij-anshuman",
@@ -1294,33 +1297,42 @@ const ProjectsPage = () => {
               },
             ].map((proj, idx) => {
               const Icon = proj.icon;
+              const cardContent = (
+                <div className="group clay-card p-5 rounded-2xl flex flex-col justify-between h-full hover:border-accent/60 transition-all duration-300 border border-border/50 hover:shadow-lg hover:-translate-y-1 cursor-pointer">
+                  <div>
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
+                        <Icon size={20} />
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-muted text-muted-foreground">
+                        {proj.tag}
+                      </span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-display font-bold text-primary group-hover:text-accent transition-colors leading-snug">
+                      {proj.name}
+                    </h3>
+                    <p className="text-xs text-muted-foreground mt-1 leading-relaxed line-clamp-2">
+                      {proj.subtitle}
+                    </p>
+                  </div>
+                  <div className="mt-5 pt-3 border-t border-border/40 flex items-center justify-between text-xs font-semibold text-accent group-hover:text-primary transition-colors">
+                    <span>{proj.link ? "Explore Programme" : "View Program Overview"}</span>
+                    <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              );
+
               return (
                 <AnimeReveal key={proj.name} variant="fade-up" delay={idx * 35}>
-                  <div
-                    onClick={() => openProjectModal(proj.id)}
-                    className="group clay-card p-5 rounded-2xl flex flex-col justify-between h-full hover:border-accent/60 transition-all duration-300 border border-border/50 hover:shadow-lg hover:-translate-y-1 cursor-pointer"
-                  >
-                    <div>
-                      <div className="flex items-center justify-between mb-3">
-                        <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white transition-colors">
-                          <Icon size={20} />
-                        </div>
-                        <span className="text-[10px] font-bold uppercase tracking-widest px-2.5 py-0.5 rounded-full bg-muted text-muted-foreground">
-                          {proj.tag}
-                        </span>
-                      </div>
-                      <h3 className="text-base sm:text-lg font-display font-bold text-primary group-hover:text-accent transition-colors leading-snug">
-                        {proj.name}
-                      </h3>
-                      <p className="text-xs text-muted-foreground mt-1 leading-relaxed line-clamp-2">
-                        {proj.subtitle}
-                      </p>
+                  {proj.link ? (
+                    <Link to={proj.link} className="block h-full">
+                      {cardContent}
+                    </Link>
+                  ) : (
+                    <div onClick={() => openProjectModal(proj.id)} className="h-full">
+                      {cardContent}
                     </div>
-                    <div className="mt-5 pt-3 border-t border-border/40 flex items-center justify-between text-xs font-semibold text-accent group-hover:text-primary transition-colors">
-                      <span>View Program Overview</span>
-                      <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
+                  )}
                 </AnimeReveal>
               );
             })}

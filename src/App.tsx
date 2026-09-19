@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import BrijSurabhiPage from "./pages/BrijSurabhiPage";
 import BrijHunarPage from "./pages/BrijHunarPage";
+import BrijNipunPage from "./pages/BrijNipunPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import KLAPage from "./pages/KLAPage";
 import DigiShalaPage from "./pages/DigiShalaPage";
@@ -56,6 +57,8 @@ const App = () => (
           <Route path="/projects/brij-surabhi" element={<BrijSurabhiPage />} />
           <Route path="/projects/brij-hunar" element={<BrijHunarPage />} />
           <Route path="/brij-hunar" element={<BrijHunarPage />} />
+          <Route path="/projects/brij-nipun" element={<BrijNipunPage />} />
+          <Route path="/brij-nipun" element={<BrijNipunPage />} />
           <Route path="/projects/kla" element={<KLAPage />} />
           <Route path="/projects/digi-shala" element={<DigiShalaPage />} />
           <Route path="/projects/edudaksh" element={<EdudakshPage />} />
