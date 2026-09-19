@@ -851,48 +851,51 @@ const AboutPage = () => {
                 </AnimeReveal>
               </div>
 
-              {/* TODAY: The Journey Continues */}
-              <AnimeReveal variant="fade-up" className="rounded-3xl p-8 sm:p-12 bg-primary text-primary-foreground border border-white/10 shadow-2xl relative overflow-hidden text-center max-w-4xl mx-auto">
-                <AuroraBackground variant="dark" intensity={1.1} />
-                <div className="relative z-10">
-                  <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-white/10 text-secondary border border-white/20 inline-block mb-4">
-                    TODAY · THE JOURNEY CONTINUES
-                  </span>
-                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4">
-                    Same roots. A wider purpose.
-                  </h3>
-                  <p className="text-primary-foreground/80 text-base sm:text-lg max-w-2xl mx-auto font-light leading-relaxed mb-6">
-                    Today, Khajani's work brings together women-focused skill development, livelihoods, traditional crafts, education and community development—while continuing to explore new opportunities around the skills and cultural knowledge of Mathura and Braj. What has changed over the years is the scale and range of the work. What remains constant is its connection with people, practical capability and place.
-                  </p>
-                  <p className="font-handwriting text-2xl text-secondary">
-                    People · Skills · Heritage · Opportunity
-                  </p>
-                </div>
-              </AnimeReveal>
-
             </div>
-
-            {/* Bottom Transition to Screen 6 */}
-            <div className="mt-16 pt-8 border-t border-border/60 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-              <div>
-                <p className="text-xs font-bold uppercase tracking-widest text-accent">
-                  The journey explains how Khajani grew.
-                </p>
-                <p className="text-sm text-muted-foreground mt-0.5">
-                  The next chapter shows what that growth became.
-                </p>
-              </div>
-              <a
-                href="#evolution-impact"
-                className="btn-3d-accent inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-wider"
-              >
-                Next: How Our Work Evolved ↓
-              </a>
-            </div>
-
           </div>
         </div>
       </section>
+
+      {/* ─── FULL-WIDTH STRIP: TODAY — THE JOURNEY CONTINUES (Side-to-Side Edge) ─── */}
+      <section className="w-full bg-primary text-primary-foreground relative overflow-hidden py-20 sm:py-24 border-y border-white/10 shadow-xl">
+        <AuroraBackground variant="dark" intensity={1.1} />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <AnimeReveal variant="fade-up">
+            <span className="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest bg-white/10 text-secondary border border-white/20 inline-block mb-4">
+              TODAY · THE JOURNEY CONTINUES
+            </span>
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4 tracking-tight">
+              Same roots. A wider purpose.
+            </h3>
+            <p className="text-primary-foreground/85 text-base sm:text-lg max-w-3xl mx-auto font-light leading-relaxed mb-6">
+              Today, Khajani's work brings together women-focused skill development, livelihoods, traditional crafts, education and community development—while continuing to explore new opportunities around the skills and cultural knowledge of Mathura and Braj. What has changed over the years is the scale and range of the work. What remains constant is its connection with people, practical capability and place.
+            </p>
+            <p className="font-handwriting text-2xl sm:text-3xl text-secondary">
+              People · Skills · Heritage · Opportunity
+            </p>
+          </AnimeReveal>
+        </div>
+      </section>
+
+      {/* Bottom Transition to Screen 6 */}
+      <div className="bg-background py-8 border-b border-border/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-widest text-accent">
+              The journey explains how Khajani grew.
+            </p>
+            <p className="text-sm text-muted-foreground mt-0.5">
+              The next chapter shows what that growth became.
+            </p>
+          </div>
+          <a
+            href="#evolution-impact"
+            className="btn-3d-accent inline-flex items-center gap-2 px-6 py-3 text-xs font-bold uppercase tracking-wider"
+          >
+            Next: How Our Work Evolved ↓
+          </a>
+        </div>
+      </div>
 
       {/* ══════════════════════════════════════════════════════════════════════════════════
           SCREEN 6 — HOW OUR WORK EVOLVED + OUR IMPACT
