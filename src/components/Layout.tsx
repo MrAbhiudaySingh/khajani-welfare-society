@@ -8,7 +8,6 @@ import Footer from "./Footer";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const mainRef = useRef<HTMLElement>(null);
-  const progressBarRef = useRef<HTMLDivElement>(null);
   const backToTopRef = useRef<HTMLButtonElement>(null);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -32,19 +31,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     });
   }, [location.pathname]);
 
-  // 2. Reading scroll progress bar & BackToTop trigger
+  // 2. BackToTop trigger on scroll
   useEffect(() => {
     const onScroll = () => {
       const scrollY = window.scrollY;
-      const totalHeight =
-        document.documentElement.scrollHeight - window.innerHeight;
-
-      // Update scroll progress bar scale
-      if (progressBarRef.current) {
-        const progress = totalHeight > 0 ? scrollY / totalHeight : 0;
-        progressBarRef.current.style.transform = `scaleX(${progress})`;
-      }
-
       // Show back to top button after 350px scroll
       setShowBackToTop(scrollY > 350);
     };
@@ -102,18 +92,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="min-h-screen flex flex-col relative selection:bg-amber-100 selection:text-amber-900">
-      {/* Heritage-themed scroll progress indicator at the very top */}
-      <div
-        aria-hidden="true"
-        className="fixed top-0 left-0 right-0 h-[3px] z-[60] bg-transparent pointer-events-none"
-      >
-        <div
-          ref={progressBarRef}
-          className="h-full w-full bg-gradient-to-r from-[#C85A32] via-[#E5A93C] to-[#A32A29] origin-left will-change-transform"
-          style={{ transform: "scaleX(0)" }}
-        />
-      </div>
-
       <Navbar />
 
       <main ref={mainRef} className="flex-1 will-change-transform">
