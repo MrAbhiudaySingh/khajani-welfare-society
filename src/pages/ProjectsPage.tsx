@@ -944,10 +944,9 @@ const ProjectsPage = () => {
                     </div>
                     <Link
                       to="/projects/digi-shala"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
                     >
-                      <span>EXPLORE DIGI-SHALA</span>
-                      <ArrowRight size={14} />
+                      <span>EXPLORE DIGI-SHALA →</span>
                     </Link>
                   </div>
                 </div>
