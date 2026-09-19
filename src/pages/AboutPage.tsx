@@ -1838,9 +1838,9 @@ const AboutPage = () => {
             </div>
             <a
               href="#closing-purpose"
-              className="btn-3d-accent inline-flex items-center gap-2 px-6 py-2.5 text-xs font-bold uppercase tracking-widest shrink-0 shadow-sm"
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-primary hover:text-accent transition-colors shrink-0"
             >
-              Same Roots. A Wider Purpose. <ArrowDown size={14} />
+              Same Roots. A Wider Purpose <ArrowDown size={14} />
             </a>
           </div>
 
