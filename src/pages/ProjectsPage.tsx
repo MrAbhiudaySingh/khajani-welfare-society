@@ -370,6 +370,22 @@ const ProjectsPage = () => {
           Learning takes different forms.
       ════════════════════════════════════════════════════════════════ */}
       <section id="skills-training-education" className="py-16 sm:py-20 lg:py-24 bg-background relative overflow-hidden">
+        {/* Decorative Corner Artworks for Screen 2 */}
+        <div className="absolute top-0 left-0 w-[220px] sm:w-[280px] lg:w-[320px] pointer-events-none select-none opacity-85 z-0">
+          <img
+            src="/images/projects/skills-art-left.png"
+            alt=""
+            className="w-full h-auto object-contain object-left-top"
+          />
+        </div>
+        <div className="absolute top-0 right-0 w-[380px] sm:w-[480px] lg:w-[580px] pointer-events-none select-none opacity-95 z-0">
+          <img
+            src="/images/projects/skills-art-right.png"
+            alt=""
+            className="w-full h-auto object-contain object-right-top"
+          />
+        </div>
+
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           
           {/* Section Header with Artwork & Quote Layout */}
@@ -404,8 +420,8 @@ const ProjectsPage = () => {
               </AnimeReveal>
             </div>
 
-            {/* Right Column: Abstract Art Composition & Editorial Quote */}
-            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[220px]">
+            {/* Right Column: Editorial Quote & Cursive Calligraphy (Non-overlapping) */}
+            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[200px]">
               {/* Top right label */}
               <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-4 z-10">
                 <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
@@ -413,25 +429,16 @@ const ProjectsPage = () => {
                 </p>
               </div>
 
-              {/* Centered illustration background */}
-              <div className="absolute right-0 top-0 bottom-0 w-full max-w-[420px] pointer-events-none select-none opacity-90">
-                <img
-                  src="/images/projects/skills-header-art.png"
-                  alt="Abstract craft and botanical heritage artwork"
-                  className="w-full h-full object-contain object-right-top"
-                />
-              </div>
-
-              {/* Overlay Quote and Cursive Tagline */}
-              <div className="relative z-10 text-right pr-2 sm:pr-6 pt-4 mt-auto">
-                <div className="inline-block text-left mb-2">
-                  <p className="font-serif italic text-base sm:text-lg text-primary font-medium leading-snug">
-                    <span className="text-xl text-secondary mr-0.5 font-normal font-serif">“</span>
+              {/* Editorial Quote & Cursive Tagline with ample breathing room */}
+              <div className="relative z-10 text-right pr-2 sm:pr-6 mt-4 sm:mt-8">
+                <div className="inline-block text-left mb-3">
+                  <p className="font-serif italic text-base sm:text-lg lg:text-xl text-primary font-medium leading-snug">
+                    <span className="text-xl sm:text-2xl text-secondary mr-0.5 font-normal font-serif">“</span>
                     Different<br />
                     skills.<br />
                     Brighter<br />
                     tomorrows.
-                    <span className="text-xl text-secondary ml-0.5 font-normal font-serif">”</span>
+                    <span className="text-xl sm:text-2xl text-secondary ml-0.5 font-normal font-serif">”</span>
                   </p>
                 </div>
                 <div>
@@ -697,6 +704,30 @@ const ProjectsPage = () => {
           Keeping knowledge in practice.
       ════════════════════════════════════════════════════════════════ */}
       <section id="heritage-traditional-knowledge" className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
+        {/* Decorative Corner Artworks for Screen 3 */}
+        <div className="absolute top-0 left-0 w-[200px] sm:w-[260px] lg:w-[300px] pointer-events-none select-none opacity-85 z-0">
+          <img
+            src="/images/projects/heritage-art-left.png"
+            alt=""
+            className="w-full h-auto object-contain object-left-top"
+          />
+        </div>
+        <div className="absolute top-0 right-0 w-[380px] sm:w-[480px] lg:w-[560px] pointer-events-none select-none opacity-95 z-0">
+          <img
+            src="/images/projects/heritage-art-main.png"
+            alt=""
+            className="w-full h-auto object-contain object-right-top"
+          />
+        </div>
+        {/* Bottom-left corner botanical & arch flourish behind Card 01 */}
+        <div className="absolute bottom-0 left-0 w-[180px] sm:w-[220px] lg:w-[260px] pointer-events-none select-none opacity-75 z-0">
+          <img
+            src="/images/projects/inclusion-corner-bl.png"
+            alt=""
+            className="w-full h-auto object-contain object-left-bottom"
+          />
+        </div>
+
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           
           {/* Section Header with Artwork & Heritage Elements */}
@@ -739,8 +770,8 @@ const ProjectsPage = () => {
               </AnimeReveal>
             </div>
 
-            {/* Right Column: Abstract Art Composition & Calligraphy */}
-            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[240px]">
+            {/* Right Column: Top Label & Calligraphy (Non-overlapping) */}
+            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[220px]">
               {/* Top right label */}
               <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-2 z-10">
                 <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
@@ -751,21 +782,12 @@ const ProjectsPage = () => {
                 </p>
               </div>
 
-              {/* Centered illustration background */}
-              <div className="absolute right-0 top-0 bottom-0 w-full max-w-[440px] pointer-events-none select-none opacity-95">
-                <img
-                  src="/images/projects/heritage-header-art.png"
-                  alt="Braj heritage craft, temple arch and pottery artwork"
-                  className="w-full h-full object-contain object-right-top"
-                />
-              </div>
-
               {/* Overlay Cursive Tagline */}
-              <div className="relative z-10 text-right pr-2 sm:pr-4 pt-4 mt-auto">
-                <span className="font-handwriting text-2xl sm:text-3xl text-[#B85D3B] italic leading-tight block">
+              <div className="relative z-10 text-right pr-2 sm:pr-4 mt-6 sm:mt-12">
+                <span className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-[#B85D3B] italic leading-tight block">
                   Rooted in practice.
                 </span>
-                <span className="font-handwriting text-2xl sm:text-3xl text-[#B85D3B] italic leading-tight block">
+                <span className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-[#B85D3B] italic leading-tight block mt-1.5">
                   Carried forward together.
                 </span>
               </div>
@@ -996,6 +1018,32 @@ const ProjectsPage = () => {
           Taking opportunity beyond conventional spaces.
       ════════════════════════════════════════════════════════════════ */}
       <section id="rehabilitation-health-digital" className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
+        {/* Distinct Corner Artworks for Screen 4 */}
+        {/* 1. Top-right sunlit archway with staircase */}
+        <div className="absolute top-0 right-0 w-[340px] sm:w-[420px] lg:w-[480px] pointer-events-none select-none opacity-95 z-0">
+          <img
+            src="/images/projects/inclusion-corner-tr.png"
+            alt=""
+            className="w-full h-auto object-contain object-right-top"
+          />
+        </div>
+        {/* 2. Bottom-left terracotta & green arches with hanging beads & leaves behind Card 01 */}
+        <div className="absolute bottom-0 left-0 w-[200px] sm:w-[260px] lg:w-[300px] pointer-events-none select-none opacity-90 z-0">
+          <img
+            src="/images/projects/inclusion-corner-bl.png"
+            alt=""
+            className="w-full h-auto object-contain object-left-bottom"
+          />
+        </div>
+        {/* 3. Bottom-right circle, green fan & golden leaf branch behind Card 03 */}
+        <div className="absolute bottom-0 right-0 w-[180px] sm:w-[240px] lg:w-[280px] pointer-events-none select-none opacity-90 z-0">
+          <img
+            src="/images/projects/inclusion-corner-br.png"
+            alt=""
+            className="w-full h-auto object-contain object-right-bottom"
+          />
+        </div>
+
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           
           {/* Section Header with Artwork & Inclusion Elements */}
@@ -1035,8 +1083,8 @@ const ProjectsPage = () => {
               </AnimeReveal>
             </div>
 
-            {/* Right Column: Abstract Art Composition & Calligraphy */}
-            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[240px]">
+            {/* Right Column: Top Label & Calligraphy (Non-overlapping) */}
+            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[220px]">
               {/* Top right label */}
               <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-2 z-10">
                 <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
@@ -1047,18 +1095,9 @@ const ProjectsPage = () => {
                 </p>
               </div>
 
-              {/* Centered illustration background */}
-              <div className="absolute right-0 top-0 bottom-0 w-full max-w-[440px] pointer-events-none select-none opacity-95">
-                <img
-                  src="/images/projects/inclusion-header-art.png"
-                  alt="Opportunity beyond conventional spaces artwork with sunlit archway"
-                  className="w-full h-full object-contain object-right-top"
-                />
-              </div>
-
               {/* Overlay Cursive Tagline */}
-              <div className="relative z-10 text-right pr-2 sm:pr-4 pt-4 mt-auto">
-                <span className="font-handwriting text-2xl sm:text-3xl text-[#B85D3B] italic leading-tight block">
+              <div className="relative z-10 text-right pr-2 sm:pr-4 mt-6 sm:mt-12">
+                <span className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-[#B85D3B] italic leading-tight block">
                   Learning has no boundaries.
                 </span>
               </div>
