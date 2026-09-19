@@ -921,15 +921,14 @@ const BrijSevaPage = () => {
 
       {/* Lightbox Component */}
       <MediaLightbox
-        isOpen={lightboxOpen}
-        onClose={() => setLightboxOpen(false)}
-        media={GALLERY_IMAGES.map((img) => ({
-          type: "image" as const,
-          url: img.url,
-          title: img.caption,
-          description: img.tag,
+        items={GALLERY_IMAGES.map((img) => ({
+          image: img.url,
+          title: img.tag,
+          desc: img.caption,
         }))}
-        initialIndex={activeImageIndex}
+        currentIndex={lightboxOpen ? activeImageIndex : null}
+        onClose={() => setLightboxOpen(false)}
+        onNavigate={(idx) => setActiveImageIndex(idx)}
       />
     </Layout>
   );

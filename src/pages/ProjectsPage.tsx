@@ -370,26 +370,18 @@ const ProjectsPage = () => {
           Learning takes different forms.
       ════════════════════════════════════════════════════════════════ */}
       <section id="skills-training-education" className="py-12 sm:py-16 lg:py-20 bg-background relative overflow-hidden">
-        {/* Full-Section Unified Artwork — Spans the entire section behind cards & header */}
-        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl h-full relative">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          {/* Corner Art — anchored to the same container as the text, so it can't drift relative to it */}
+          <div className="absolute top-0 right-4 h-[260px] xl:h-[320px] w-auto max-w-[55%] pointer-events-none select-none z-0 hidden lg:block">
             <img
               src="/images/projects/skills-header-art.png"
               alt=""
-              className="w-full h-full object-fill object-center opacity-85 hidden lg:block"
-            />
-            <img
-              src="/images/projects/skills-header-art.png"
-              alt=""
-              className="w-full h-auto object-cover object-top opacity-50 lg:hidden"
+              className="h-full w-auto object-contain object-right-top opacity-90"
             />
           </div>
-        </div>
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
-          
           {/* Section Header with Artwork & Quote Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14 sm:mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-6 sm:mb-8">
             
             {/* Left Column: Title & Context */}
             <div className="lg:col-span-7">
@@ -420,32 +412,20 @@ const ProjectsPage = () => {
               </AnimeReveal>
             </div>
 
-            {/* Right Column: Editorial Quote & Cursive Calligraphy (Non-overlapping) */}
-            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[200px]">
+            {/* Right Column: Top Label & Cursive Calligraphy */}
+            <div className="lg:col-span-5 relative lg:min-h-[220px] xl:min-h-[260px]">
               {/* Top right label */}
-              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-4 z-10">
+              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left z-10 lg:absolute lg:top-0 lg:right-0">
                 <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
                   PEOPLE<br />HERITAGE<br />OPPORTUNITY
                 </p>
               </div>
 
-              {/* Editorial Quote & Cursive Tagline with ample breathing room */}
-              <div className="relative z-10 text-right pr-2 sm:pr-6 mt-4 sm:mt-8">
-                <div className="inline-block text-left mb-3">
-                  <p className="font-serif italic text-base sm:text-lg lg:text-xl text-primary font-medium leading-snug">
-                    <span className="text-xl sm:text-2xl text-secondary mr-0.5 font-normal font-serif">“</span>
-                    Different<br />
-                    skills.<br />
-                    Brighter<br />
-                    tomorrows.
-                    <span className="text-xl sm:text-2xl text-secondary ml-0.5 font-normal font-serif">”</span>
-                  </p>
-                </div>
-                <div>
-                  <span className="font-handwriting text-2xl sm:text-3xl text-secondary italic block">
-                    Skills for stronger communities
-                  </span>
-                </div>
+              {/* Cursive Tagline — positioned 5px lower under the bottom curve of the visible art */}
+              <div className="relative z-10 text-right pr-2 sm:pr-6 mt-3 lg:mt-0 lg:absolute lg:top-[195px] xl:top-[235px] lg:right-0">
+                <span className="font-handwriting text-2xl sm:text-3xl text-[#C49B55] italic block">
+                  Skills for stronger communities
+                </span>
               </div>
             </div>
 
@@ -704,26 +684,28 @@ const ProjectsPage = () => {
           Keeping knowledge in practice.
       ════════════════════════════════════════════════════════════════ */}
       <section id="heritage-traditional-knowledge" className="py-12 sm:py-16 lg:py-20 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
-        {/* Full-Section Unified Artwork — Spans the entire section behind cards & header */}
-        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
+        {/* Header Artwork — confined to the header row, does not bleed into the cards */}
+        <div className="absolute top-0 inset-x-0 h-[300px] xl:h-[360px] pointer-events-none select-none z-0 overflow-hidden hidden lg:block">
           <div className="container mx-auto px-4 max-w-7xl h-full relative">
             <img
               src="/images/projects/heritage-header-art.png"
               alt=""
-              className="w-full h-full object-fill object-center opacity-85 hidden lg:block"
-            />
-            <img
-              src="/images/projects/heritage-header-art.png"
-              alt=""
-              className="w-full h-auto object-cover object-top opacity-50 lg:hidden"
+              className="w-full h-full object-contain object-right opacity-85"
             />
           </div>
+        </div>
+        <div className="absolute top-0 inset-x-0 h-[220px] pointer-events-none select-none z-0 overflow-hidden lg:hidden">
+          <img
+            src="/images/projects/heritage-header-art.png"
+            alt=""
+            className="w-full h-full object-cover object-top opacity-50"
+          />
         </div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           
           {/* Section Header with Artwork & Heritage Elements */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14 sm:mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-8 sm:mb-10">
             
             {/* Left Column: Title & Context */}
             <div className="lg:col-span-7">
@@ -762,20 +744,10 @@ const ProjectsPage = () => {
               </AnimeReveal>
             </div>
 
-            {/* Right Column: Top Label & Calligraphy (Non-overlapping) */}
-            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[220px]">
-              {/* Top right label */}
-              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-2 z-10">
-                <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
-                  TRADITION<br />
-                  PEOPLE<br />
-                  PLACES<br />
-                  POSSIBILITIES
-                </p>
-              </div>
-
-              {/* Overlay Cursive Tagline */}
-              <div className="relative z-10 text-right pr-2 sm:pr-4 mt-6 sm:mt-12">
+            {/* Right Column: Cursive Calligraphy positioned directly below visible artwork */}
+            <div className="lg:col-span-5 relative flex flex-col items-end lg:min-h-[250px] xl:min-h-[290px]">
+              {/* Overlay Cursive Tagline — sits just below the visible artwork */}
+              <div className="relative z-10 text-right pr-2 sm:pr-4 mt-3 lg:mt-0 lg:absolute lg:top-[200px] xl:top-[240px] lg:right-0">
                 <span className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-[#B85D3B] italic leading-tight block">
                   Rooted in practice.
                 </span>
@@ -1010,21 +982,6 @@ const ProjectsPage = () => {
           Taking opportunity beyond conventional spaces.
       ════════════════════════════════════════════════════════════════ */}
       <section id="rehabilitation-health-digital" className="py-12 sm:py-16 lg:py-20 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
-        {/* Full-Section Unified Artwork — Spans the entire section behind cards & header */}
-        <div className="absolute inset-0 pointer-events-none select-none z-0 overflow-hidden">
-          <div className="container mx-auto px-4 max-w-7xl h-full relative">
-            <img
-              src="/images/projects/inclusion-header-art.png"
-              alt=""
-              className="w-full h-full object-fill object-center opacity-90 hidden lg:block"
-            />
-            <img
-              src="/images/projects/inclusion-header-art.png"
-              alt=""
-              className="w-full h-auto object-cover object-top opacity-50 lg:hidden"
-            />
-          </div>
-        </div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           
@@ -1065,23 +1022,39 @@ const ProjectsPage = () => {
               </AnimeReveal>
             </div>
 
-            {/* Right Column: Top Label & Calligraphy (Non-overlapping) */}
-            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[220px]">
-              {/* Top right label */}
-              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-2 z-10">
-                <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
+            {/* Right Column: Arch Art with Text — image left, text right */}
+            <div className="lg:col-span-5 relative flex flex-row items-start justify-end gap-3 overflow-visible">
+              {/* Left: Art Image — scaled 135%, anchored top-right */}
+              <div
+                className="relative shrink-0 origin-top-right"
+                style={{ transform: "scale(1.35)", transformOrigin: "top right", width: "78%" }}
+              >
+                <img
+                  src="/images/projects/inclusion-arch-art.png"
+                  alt="Archway representing opportunity and new pathways"
+                  className="w-full object-contain object-right-top select-none pointer-events-none"
+                  style={{ maxHeight: "400px" }}
+                />
+
+                {/* Cursive tagline — overlaid at bottom-right of image */}
+                <div className="absolute bottom-2 right-1 sm:right-3 text-right pointer-events-none">
+                  <span
+                    className="font-handwriting text-[1.5rem] sm:text-[1.85rem] lg:text-[2.1rem] text-[#B85D3B] italic leading-snug block"
+                    style={{ textShadow: "0 1px 8px rgba(250,247,242,0.95), 0 0 3px rgba(250,247,242,1)" }}
+                  >
+                    Learning has<br />no boundaries.
+                  </span>
+                </div>
+              </div>
+
+              {/* Right: DIFFERENT PEOPLE BRIGHTER TOMORROWS label */}
+              <div className="pt-1 pl-2.5 border-l-2 border-[#C4A070]/70 text-left z-10 shrink-0">
+                <p className="text-[9px] sm:text-[10px] font-mono tracking-[0.28em] font-bold text-[#7A5530] uppercase leading-[1.6]">
                   DIFFERENT<br />
                   PEOPLE<br />
                   BRIGHTER<br />
                   TOMORROWS
                 </p>
-              </div>
-
-              {/* Overlay Cursive Tagline */}
-              <div className="relative z-10 text-right pr-2 sm:pr-4 mt-6 sm:mt-12">
-                <span className="font-handwriting text-2xl sm:text-3xl lg:text-4xl text-[#B85D3B] italic leading-tight block">
-                  Learning has no boundaries.
-                </span>
               </div>
             </div>
 
@@ -1111,25 +1084,27 @@ const ProjectsPage = () => {
                   </div>
 
                   {/* Image Frame */}
-                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                  <Link to="/projects/brij-anshuman" className="flex-1 h-48 sm:h-52 relative overflow-hidden block group/img">
                     <img
                       src="/images/projects/brij-anshuman-icon.jpg"
                       alt="Brij-Anshuman Prison Rehabilitation Program"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
                     <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
                       Rehabilitation & Learning
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Content Area */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
-                      BRIJ-ANSHUMAN
+                      <Link to="/projects/brij-anshuman" className="hover:text-[#B85D3B] transition-colors">
+                        BRIJ-ANSHUMAN
+                      </Link>
                     </h3>
                     <p className="text-sm font-serif italic text-[#B85D3B] font-semibold mb-3">
                       Learning beyond conventional spaces.
@@ -1188,25 +1163,27 @@ const ProjectsPage = () => {
                   </div>
 
                   {/* Image Frame */}
-                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                  <Link to="/projects/brij-sangini" className="flex-1 h-48 sm:h-52 relative overflow-hidden block group/img">
                     <img
                       src="/images/projects/sanitary-napkin-vending.jpg"
                       alt="Brij-Sangini Health & Dignity Initiative"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
                     <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
                       Health & Dignity
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Content Area */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
-                      BRIJ-SANGINI
+                      <Link to="/projects/brij-sangini" className="hover:text-[#557A61] transition-colors">
+                        BRIJ-SANGINI
+                      </Link>
                     </h3>
                     <p className="text-sm font-serif italic text-[#557A61] font-semibold mb-2">
                       Health, awareness and everyday dignity.
@@ -1280,25 +1257,27 @@ const ProjectsPage = () => {
                   </div>
 
                   {/* Image Frame */}
-                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                  <Link to="/projects/digi-shala" className="flex-1 h-48 sm:h-52 relative overflow-hidden block group/img">
                     <img
                       src="/images/projects/digi-shala.jpg"
                       alt="Digi-Shala practical digital literacy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
                     <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
                       Digital Learning
                     </span>
-                  </div>
+                  </Link>
                 </div>
 
                 {/* Content Area */}
                 <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
-                      DIGI-SHALA
+                      <Link to="/projects/digi-shala" className="hover:text-[#4A709C] transition-colors">
+                        DIGI-SHALA
+                      </Link>
                     </h3>
                     <p className="text-sm font-serif italic text-[#4A709C] font-semibold mb-3">
                       Learning for an increasingly digital world.
@@ -1379,22 +1358,24 @@ const ProjectsPage = () => {
                 id="brij-seva"
                 className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
               >
-                <div className="relative aspect-[16/9] overflow-hidden">
+                <Link to="/projects/brij-seva" className="relative aspect-[16/9] overflow-hidden block group/img">
                   <img
                     src="/images/projects/brij-seva-jal.jpg"
                     alt="Brij-Seva community drinking water service"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
                   <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
                     Community Service
                   </span>
-                </div>
+                </Link>
                 <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl sm:text-3xl font-display font-bold text-primary mb-1">
-                      BRIJ-SEVA
+                      <Link to="/projects/brij-seva" className="hover:text-accent transition-colors">
+                        BRIJ-SEVA
+                      </Link>
                     </h3>
                     <p className="text-base font-serif italic text-accent font-semibold mb-4">
                       Community service through practical action
@@ -1462,22 +1443,24 @@ const ProjectsPage = () => {
                 id="brij-directory"
                 className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
               >
-                <div className="relative aspect-[16/9] overflow-hidden">
+                <Link to="/projects/brij-directory" className="relative aspect-[16/9] overflow-hidden block group/img">
                   <img
                     src="/images/projects/shg-federation.jpg"
                     alt="Brij Business Women Directory women entrepreneurs"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
                   <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
                     Women · Enterprise · Visibility
                   </span>
-                </div>
+                </Link>
                 <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
                   <div>
                     <h3 className="text-2xl sm:text-3xl font-display font-bold text-primary mb-1">
-                      BRIJ BUSINESS WOMEN DIRECTORY
+                      <Link to="/projects/brij-directory" className="hover:text-accent transition-colors">
+                        BRIJ BUSINESS WOMEN DIRECTORY
+                      </Link>
                     </h3>
                     <p className="text-base font-serif italic text-accent font-semibold mb-4">
                       A directory of women-led businesses in Mathura and Braj

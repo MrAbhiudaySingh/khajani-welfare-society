@@ -8,7 +8,6 @@ import {
   Phone, 
   Mail, 
   ArrowRight, 
-  ArrowDown, 
   CheckCircle2, 
   Loader2, 
   Send, 
@@ -90,13 +89,6 @@ const ContactPage = () => {
     }
   };
 
-  const scrollToDetails = () => {
-    const el = document.getElementById("contact-details");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const socialLinks = [
     { 
       href: "https://www.facebook.com/KhajaniWelfareSociety", 
@@ -147,25 +139,9 @@ const ContactPage = () => {
               </h1>
 
               {/* Sub-paragraph */}
-              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light mb-8">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
                 For questions about our programmes, artisan collaborations, volunteering, institutional CSR partnerships, donations or general enquiries, connect with Khajani Welfare Society in Mathura.
               </p>
-
-              {/* Get in Touch CTA */}
-              <div className="flex flex-wrap justify-center items-center gap-3">
-                <button
-                  onClick={scrollToDetails}
-                  className="btn-3d-accent inline-flex items-center justify-center gap-2 px-7 py-3 text-xs sm:text-sm font-bold tracking-widest uppercase shadow-md cursor-pointer"
-                >
-                  Get in Touch <ArrowDown size={15} />
-                </button>
-                <a
-                  href="#enquiry-form"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 text-xs sm:text-sm font-bold tracking-widest uppercase rounded-full border border-border text-foreground hover:border-accent hover:text-accent hover:bg-accent/5 transition-all"
-                >
-                  Send a Message <ArrowRight size={15} />
-                </a>
-              </div>
             </AnimeReveal>
           </div>
         </section>

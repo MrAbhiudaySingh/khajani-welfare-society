@@ -19,7 +19,6 @@ const Navbar = () => {
     { to: "/gi-recognition", label: "GI Recognition" },
     { to: "/media", label: "Gallery & Media" },
     { to: "/get-involved", label: "Get Involved" },
-    { to: "/contact", label: "Contact Us" },
   ];
 
   // Scroll detection for navbar glass intensity
@@ -77,59 +76,78 @@ const Navbar = () => {
           : "bg-card/95 backdrop-blur-md border-b border-border"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <Link
-            ref={logoRef}
-            to="/"
-            className="flex-shrink-0 flex items-center gap-3 group cursor-pointer"
-          >
-            <img
-              src={logo}
-              alt="Khajani Welfare Society"
-              className="h-14 object-contain transition-transform duration-300 group-hover:scale-105"
-            />
-          </Link>
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20 gap-4">
+          {/* Left side: Logo + Desktop nav */}
+          <div className="flex items-center gap-4 xl:gap-8 h-full min-w-0">
+            {/* Logo */}
+            <Link
+              ref={logoRef}
+              to="/"
+              className="flex-shrink-0 flex items-center gap-3 group cursor-pointer"
+            >
+              <img
+                src={logo}
+                alt="Khajani Welfare Society"
+                className="h-14 object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </Link>
 
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex space-x-1 items-center h-full">
-            {navLinks.map((link) => {
-              const isActive =
-                link.to === "/"
-                  ? location.pathname === "/"
-                  : link.to === "/our-work"
-                  ? location.pathname === "/our-work" || location.pathname.startsWith("/projects")
-                  : location.pathname.startsWith(link.to);
-              return (
-                <Link
-                  key={link.to}
-                  to={link.to}
-                  className={`relative px-3 py-2 text-xs font-bold uppercase tracking-widest transition-colors rounded-lg group ${
-                    isActive
-                      ? "text-accent"
-                      : "text-foreground hover:text-accent hover:bg-accent/5"
-                  }`}
-                >
-                  {link.label}
-                  {/* Active / hover underline */}
-                  <span
-                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-accent rounded-full transition-all duration-300 ${
-                      isActive ? "w-3/4" : "w-0 group-hover:w-3/4"
+            {/* Desktop nav */}
+            <nav className="hidden lg:flex items-center gap-0.5 xl:gap-1.5 h-full">
+              {navLinks.map((link) => {
+                const isActive =
+                  link.to === "/"
+                    ? location.pathname === "/"
+                    : link.to === "/our-work"
+                    ? location.pathname === "/our-work" || location.pathname.startsWith("/projects")
+                    : location.pathname.startsWith(link.to);
+                return (
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className={`relative px-2 xl:px-3 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 transition-colors rounded-lg group ${
+                      isActive
+                        ? "text-accent"
+                        : "text-foreground hover:text-accent hover:bg-accent/5"
                     }`}
-                  />
-                </Link>
-              );
-            })}
-          </nav>
+                  >
+                    {link.label}
+                    {/* Active / hover underline */}
+                    <span
+                      className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-accent rounded-full transition-all duration-300 ${
+                        isActive ? "w-3/4" : "w-0 group-hover:w-3/4"
+                      }`}
+                    />
+                  </Link>
+                );
+              })}
+            </nav>
+          </div>
 
-          {/* Right side */}
-          <div className="flex items-center gap-3">
+          {/* Right side — pushed to the right end */}
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <Link
               to="/donate"
-              className="btn-3d-accent hidden sm:inline-flex items-center justify-center px-6 py-2.5 text-sm tracking-wide"
+              className="btn-3d-accent hidden sm:inline-flex items-center justify-center px-5 xl:px-6 py-2.5 text-xs xl:text-sm tracking-wide whitespace-nowrap"
             >
               Donate Now
+            </Link>
+
+            <Link
+              to="/contact"
+              className={`hidden sm:inline-flex relative px-2.5 xl:px-3 py-2 text-[11px] xl:text-xs font-bold uppercase tracking-wider whitespace-nowrap shrink-0 transition-colors rounded-lg group ${
+                location.pathname === "/contact"
+                  ? "text-accent"
+                  : "text-foreground hover:text-accent hover:bg-accent/5"
+              }`}
+            >
+              Contact Us
+              <span
+                className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 bg-accent rounded-full transition-all duration-300 ${
+                  location.pathname === "/contact" ? "w-3/4" : "w-0 group-hover:w-3/4"
+                }`}
+              />
             </Link>
 
             {/* Mobile hamburger */}
@@ -177,6 +195,17 @@ const Navbar = () => {
                   </Link>
                 );
               })}
+              <Link
+                to="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className={`text-sm font-bold uppercase tracking-widest transition-colors px-4 py-2.5 rounded-xl ${
+                  location.pathname === "/contact"
+                    ? "text-accent bg-accent/8"
+                    : "text-foreground hover:text-accent hover:bg-accent/5"
+                }`}
+              >
+                Contact Us
+              </Link>
               <Link
                 to="/donate"
                 onClick={() => setMobileMenuOpen(false)}

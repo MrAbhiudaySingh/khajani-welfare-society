@@ -612,55 +612,288 @@ const CulturePage = () => {
         {/* ══════════════════════════════════════════════════════════════════════════════════
             SCENE 8 — WHERE TRADITIONS CONNECT (Editorial Mosaic)
            ══════════════════════════════════════════════════════════════════════════════════ */}
-        <section className="py-24 bg-background border-b border-border">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <AnimeReveal variant="fade-up" className="max-w-3xl mx-auto text-center mb-16 space-y-3">
-              <span className="text-xs font-mono font-bold tracking-[0.25em] uppercase text-accent block">
-                HERITAGE IN PRACTICE
-              </span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-primary tracking-tight leading-tight">
-                Different traditions. A shared connection to Braj.
+        <section className="relative py-20 sm:py-28 bg-[#FAF7F2] text-foreground overflow-hidden border-b border-[#EAE2D5] select-none">
+          {/* Top-Left: Decorative Arches & Cursive Tagline */}
+          <div className="hidden lg:block absolute left-6 2xl:left-10 top-8 pointer-events-none select-none">
+            <div className="font-serif italic text-base sm:text-lg text-[#C85A32] -rotate-12 leading-tight">
+              Traditions <br />
+              <span className="ml-2">today,</span> <br />
+              <span className="ml-4 text-[#A32A29]">stronger</span> <br />
+              <span className="ml-6">tomorrow.</span>
+            </div>
+          </div>
+
+          {/* Left Side: Botanical Leaf Accent */}
+          <div className="hidden xl:block absolute left-2 top-1/3 w-28 opacity-60 pointer-events-none select-none">
+            <img
+              src="/images/projects/botanical-leaf-branch.png"
+              alt=""
+              className="w-full h-auto"
+            />
+          </div>
+
+          {/* Bottom-Left: Rooted in People Note */}
+          <div className="hidden lg:block absolute left-6 2xl:left-10 bottom-8 text-[10px] tracking-[0.22em] text-[#8C7A6B] font-mono uppercase leading-relaxed pointer-events-none select-none">
+            <div className="w-8 h-px bg-[#C85A32]/40 mb-2" />
+            ROOTED <br />
+            IN PEOPLE <br />
+            RICHER <br />
+            TOGETHER
+          </div>
+
+          {/* Top-Right: Editorial Taxonomy */}
+          <div className="hidden lg:block absolute right-6 2xl:left-auto 2xl:right-10 top-8 text-[10px] tracking-[0.22em] text-[#8C7A6B] font-mono uppercase text-right leading-relaxed pointer-events-none select-none">
+            PEOPLE <br />
+            PRACTICES <br />
+            PLACES <br />
+            POSSIBILITIES
+            <div className="w-8 h-px bg-[#C85A32]/40 mt-2 ml-auto" />
+          </div>
+
+          {/* Bottom-Right: Braj Lives On Calligraphy */}
+          <div className="hidden lg:block absolute right-6 2xl:right-10 bottom-8 font-serif italic text-2xl sm:text-3xl text-[#C85A32] pointer-events-none select-none -rotate-3">
+            Braj <br />
+            <span className="ml-4 underline decoration-[#C85A32]/50 underline-offset-4">Lives On.</span>
+          </div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Section Header */}
+            <AnimeReveal variant="fade-up" className="max-w-3xl mx-auto text-center mb-12 sm:mb-16 space-y-3">
+              <div className="inline-flex items-center justify-center gap-3 text-xs font-bold tracking-[0.25em] text-[#8C7A6B] uppercase">
+                <span className="w-8 h-px bg-[#D8C7B5]" />
+                <span>HERITAGE IN PRACTICE</span>
+                <span className="w-8 h-px bg-[#D8C7B5]" />
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#1C2D42] tracking-tight leading-tight">
+                Different traditions. <br />
+                <span className="text-[#C85A32] italic font-serif font-normal">
+                  A shared connection to Braj.
+                </span>
               </h2>
-              <p className="text-muted-foreground text-sm sm:text-base leading-relaxed pt-2 font-light">
+              <p className="text-muted-foreground text-xs sm:text-sm sm:max-w-xl mx-auto leading-relaxed pt-1 font-light">
                 This is where the story converges—not four isolated initiatives, but an integrated living ecology of cultural knowledge.
               </p>
             </AnimeReveal>
 
-            {/* Editorial 4-part Mosaic / convergence narrative */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
-              {[
-                {
-                  step: "01 · Royal Sanjhi Art",
-                  desc: "Sanjhi carries an intricate visual language of pattern, precision and storytelling.",
-                  color: "border-[#F3E5D5] bg-[#FDF8F3]",
-                },
-                {
-                  step: "02 · Mathura Zari Poshak",
-                  desc: "Mathura Zari Poshak carries specialised textile and embellishment skills rooted in devotional craftsmanship.",
-                  color: "border-[#E0EDF7] bg-[#F4F8FC]",
-                },
-                {
-                  step: "03 · Panchgavya & Traditional Materials",
-                  desc: "Panchgavya and cow-based materials connect traditional resources with useful and increasingly creative forms of making.",
-                  color: "border-[#E0EFE0] bg-[#F5F9F4]",
-                },
-                {
-                  step: "04 · Temple Flower Management",
-                  desc: "Temple flower management gives materials used in worship another productive life through skill and thoughtful reuse.",
-                  color: "border-[#F3E5D5] bg-[#FDF8F3]",
-                },
-              ].map((item, idx) => (
-                <AnimeReveal key={item.step} variant="fade-up" delay={idx * 80}>
-                  <div className={`p-8 rounded-3xl border ${item.color} space-y-3 shadow-xs hover:shadow-md transition-all`}>
-                    <div className="text-xs font-mono uppercase font-bold tracking-widest text-[#C48332]">
-                      {item.step}
-                    </div>
-                    <p className="text-sm text-foreground/80 leading-relaxed font-light">
-                      {item.desc}
-                    </p>
+            {/* 4 Distinctive Editorial Heritage Cards (2x2 Grid) */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-14">
+              {/* ── CARD 01: Royal Sanjhi Art ── */}
+              <AnimeReveal variant="fade-up" delay={50}>
+                <div className="rounded-[28px] sm:rounded-[32px] overflow-hidden bg-white border border-[#F0E2D2] shadow-xs hover:shadow-xl transition-all duration-500 flex flex-col sm:flex-row group h-full">
+                  <div className="sm:w-[42%] aspect-[4/3] sm:aspect-auto relative overflow-hidden bg-[#FDF8F3] shrink-0">
+                    <img
+                      src="/images/culture/culture-sanjhi-art.jpg"
+                      alt="Royal Sanjhi Art"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
                   </div>
-                </AnimeReveal>
-              ))}
+                  <div className="flex-1 p-5 sm:p-7 bg-[#FDF8F3] flex flex-col justify-between relative overflow-hidden">
+                    {/* Watermark Lotus Icon */}
+                    <div className="absolute -right-3 -top-3 pointer-events-none opacity-10 text-[#C48332]">
+                      <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                        <path d="M12 3c1.5 3 4 5.5 7 7-3 1.5-5.5 4-7 7-1.5-3-4-5.5-7-7 3-1.5 5.5-4 7-7z" />
+                        <path d="M12 7c.8 1.6 2.1 2.9 3.7 3.7-1.6.8-2.9 2.1-3.7 3.7-.8-1.6-2.1-2.9-3.7-3.7C9.9 9.9 11.2 8.6 12 7z" />
+                      </svg>
+                    </div>
+
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="w-4 h-0.5 bg-[#C48332]" />
+                        <span className="font-serif font-bold text-base text-[#C48332]">01</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#1C2D42] leading-snug">
+                        Royal Sanjhi Art
+                      </h3>
+                      <p className="text-xs sm:text-[13px] text-[#5A6578] leading-relaxed mt-2 font-normal">
+                        Sanjhi carries an intricate visual language of pattern, precision and storytelling.
+                      </p>
+                    </div>
+
+                    <div className="mt-4 pt-3 flex items-center justify-between gap-2 relative z-10">
+                      <div className="flex flex-wrap gap-1.5">
+                        {["Art", "Pattern", "Storytelling"].map((t) => (
+                          <span key={t} className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#F5EBE1] text-[#9E6B38]">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#C48332] text-white flex items-center justify-center shrink-0 shadow-md">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                          <path d="M12 2C8 7 3 9 3 14a9 9 0 0 0 18 0c0-5-5-7-9-12z" />
+                          <path d="M12 8c-2 2.5-4 3.5-4 6a4 4 0 0 0 8 0c0-2.5-2-3.5-4-6z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AnimeReveal>
+
+              {/* ── CARD 02: Mathura Zari Poshak ── */}
+              <AnimeReveal variant="fade-up" delay={120}>
+                <div className="rounded-[28px] sm:rounded-[32px] overflow-hidden bg-white border border-[#DDEAF5] shadow-xs hover:shadow-xl transition-all duration-500 flex flex-col sm:flex-row group h-full">
+                  <div className="sm:w-[42%] aspect-[4/3] sm:aspect-auto relative overflow-hidden bg-[#F4F8FC] shrink-0">
+                    <img
+                      src="/images/culture/culture-zari-poshak.jpg"
+                      alt="Mathura Zari Poshak"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="flex-1 p-5 sm:p-7 bg-[#F4F8FC] flex flex-col justify-between relative overflow-hidden">
+                    {/* Watermark Spool Icon */}
+                    <div className="absolute -right-3 -top-3 pointer-events-none opacity-10 text-[#5B82A6]">
+                      <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                        <path d="M6 3h12v4H6zM6 17h12v4H6zM8 7h8v10H8z" />
+                        <path d="M10 7v10M14 7v10" />
+                      </svg>
+                    </div>
+
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="w-4 h-0.5 bg-[#5B82A6]" />
+                        <span className="font-serif font-bold text-base text-[#5B82A6]">02</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#1C2D42] leading-snug">
+                        Mathura Zari Poshak
+                      </h3>
+                      <p className="text-xs sm:text-[13px] text-[#5A6578] leading-relaxed mt-2 font-normal">
+                        Mathura Zari Poshak carries specialised textile and embellishment skills rooted in devotional craftsmanship.
+                      </p>
+                    </div>
+
+                    <div className="mt-4 pt-3 flex items-center justify-between gap-2 relative z-10">
+                      <div className="flex flex-wrap gap-1.5">
+                        {["Textile", "Craftsmanship", "Devotion"].map((t) => (
+                          <span key={t} className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#E5EFF8] text-[#4A7296]">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#5B82A6] text-white flex items-center justify-center shrink-0 shadow-md">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                          <rect x="4" y="4" width="16" height="16" rx="2" />
+                          <path d="M4 12h16M12 4v16M8 4l8 16M16 4L8 20" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AnimeReveal>
+
+              {/* ── CARD 03: Panchgavya & Traditional Materials ── */}
+              <AnimeReveal variant="fade-up" delay={180}>
+                <div className="rounded-[28px] sm:rounded-[32px] overflow-hidden bg-white border border-[#DCEADE] shadow-xs hover:shadow-xl transition-all duration-500 flex flex-col sm:flex-row group h-full">
+                  <div className="sm:w-[42%] aspect-[4/3] sm:aspect-auto relative overflow-hidden bg-[#F5F9F4] shrink-0">
+                    <img
+                      src="/images/culture/culture-panchgavya.jpg"
+                      alt="Panchgavya & Traditional Materials"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="flex-1 p-5 sm:p-7 bg-[#F5F9F4] flex flex-col justify-between relative overflow-hidden">
+                    {/* Watermark Leaves Icon */}
+                    <div className="absolute -right-3 -top-3 pointer-events-none opacity-10 text-[#528A61]">
+                      <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                        <path d="M12 2L4 10l8 8 8-8-8-8z" />
+                        <path d="M12 6l-4 4 4 4 4-4-4-4z" />
+                      </svg>
+                    </div>
+
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="w-4 h-0.5 bg-[#528A61]" />
+                        <span className="font-serif font-bold text-base text-[#528A61]">03</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#1C2D42] leading-snug">
+                        Panchgavya &amp; Traditional Materials
+                      </h3>
+                      <p className="text-xs sm:text-[13px] text-[#5A6578] leading-relaxed mt-2 font-normal">
+                        Panchgavya and cow-based materials connect traditional resources with useful and increasingly creative forms of making.
+                      </p>
+                    </div>
+
+                    <div className="mt-4 pt-3 flex items-center justify-between gap-2 relative z-10">
+                      <div className="flex flex-wrap gap-1.5">
+                        {["Sustainability", "Tradition", "Innovation"].map((t) => (
+                          <span key={t} className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#E8F2E9] text-[#42754F]">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#528A61] text-white flex items-center justify-center shrink-0 shadow-md">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                          <path d="M7 6c-2 2-3 5-3 8 0 4 3 7 8 7s8-3 8-7c0-3-1-6-3-8" />
+                          <path d="M12 14v4M9 11l-3-3M15 11l3-3" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AnimeReveal>
+
+              {/* ── CARD 04: Temple Flower Management ── */}
+              <AnimeReveal variant="fade-up" delay={240}>
+                <div className="rounded-[28px] sm:rounded-[32px] overflow-hidden bg-white border border-[#F0E2D2] shadow-xs hover:shadow-xl transition-all duration-500 flex flex-col sm:flex-row group h-full">
+                  <div className="sm:w-[42%] aspect-[4/3] sm:aspect-auto relative overflow-hidden bg-[#FDF8F3] shrink-0">
+                    <img
+                      src="/images/culture/culture-temple-flowers.jpg"
+                      alt="Temple Flower Management"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="flex-1 p-5 sm:p-7 bg-[#FDF8F3] flex flex-col justify-between relative overflow-hidden">
+                    {/* Watermark Lotus Stem Icon */}
+                    <div className="absolute -right-3 -top-3 pointer-events-none opacity-10 text-[#C85A32]">
+                      <svg width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                        <path d="M12 4v16M8 8c2-2 6-2 8 0M7 12c3-2 7-2 10 0M8 16c2-1.5 6-1.5 8 0" />
+                      </svg>
+                    </div>
+
+                    <div className="relative z-10">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="w-4 h-0.5 bg-[#C85A32]" />
+                        <span className="font-serif font-bold text-base text-[#C85A32]">04</span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-[#1C2D42] leading-snug">
+                        Temple Flower Management
+                      </h3>
+                      <p className="text-xs sm:text-[13px] text-[#5A6578] leading-relaxed mt-2 font-normal">
+                        Temple flower management gives materials used in worship another productive life through skill and thoughtful reuse.
+                      </p>
+                    </div>
+
+                    <div className="mt-4 pt-3 flex items-center justify-between gap-2 relative z-10">
+                      <div className="flex flex-wrap gap-1.5">
+                        {["Reuse", "Livelihood", "Community"].map((t) => (
+                          <span key={t} className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-[#F9EFE4] text-[#B8582C]">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#C85A32] text-white flex items-center justify-center shrink-0 shadow-md">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+                          <circle cx="12" cy="12" r="3" />
+                          <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AnimeReveal>
+            </div>
+
+            {/* Bottom Heritage Ribbon / Taxonomy */}
+            <div className="pt-6 border-t border-[#EAE2D5] flex items-center justify-center gap-3 text-xs font-mono font-medium tracking-[0.22em] text-[#8C7A6B] uppercase select-none">
+              <span className="w-10 sm:w-20 h-px bg-[#D8C7B5]" />
+              <span className="inline-flex items-center gap-2">
+                <span>CULTURE</span>
+                <span>•</span>
+                <span>CRAFT</span>
+                <span>•</span>
+                <span>COMMUNITY</span>
+                <span>•</span>
+                <span>CONTINUITY</span>
+              </span>
+              <span className="w-10 sm:w-20 h-px bg-[#D8C7B5]" />
             </div>
 
             {/* Seamless Convergence Box */}

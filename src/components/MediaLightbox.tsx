@@ -9,43 +9,99 @@ export interface MediaItem {
   date?: string;
 }
 
-interface MediaLightboxProps {
-  items: MediaItem[];
-  currentIndex: number | null;
+export interface MediaLightboxProps {
+  // Enhanced / Structured items
+  items?: MediaItem[];
+  currentIndex?: number | null;
+  onNavigate?: (index: number) => void;
+
+  // Simple / Legacy array of image URLs or media objects
+  images?: string[];
+  media?: { url?: string; image?: string; title?: string; description?: string }[];
+  initialIndex?: number;
+  isOpen?: boolean;
+
   onClose: () => void;
-  onNavigate: (index: number) => void;
 }
 
 export const MediaLightbox: React.FC<MediaLightboxProps> = ({
-  items,
-  currentIndex,
+  items: propItems,
+  currentIndex: propCurrentIndex,
   onClose,
-  onNavigate,
+  onNavigate: propOnNavigate,
+  images,
+  media,
+  initialIndex = 0,
+  isOpen = true,
 }) => {
+  // If legacy isOpen prop is provided and false, don't render anything
+  if (isOpen === false) return null;
+
+  // Normalize items array
+  const items: MediaItem[] =
+    propItems && propItems.length > 0
+      ? propItems
+      : media && media.length > 0
+      ? media.map((m) => ({
+          image: m.image || m.url || "",
+          title: m.title,
+          desc: m.description,
+        }))
+      : images && images.length > 0
+      ? images.map((img) => ({ image: img }))
+      : [];
+
+  // Internal index state for legacy uncontrolled navigation
+  const [internalIndex, setInternalIndex] = useState<number>(initialIndex);
+
+  useEffect(() => {
+    if (typeof initialIndex === "number") {
+      setInternalIndex(initialIndex);
+    }
+  }, [initialIndex]);
+
+  const activeIndex =
+    typeof propCurrentIndex === "number"
+      ? propCurrentIndex
+      : propCurrentIndex === null
+      ? null
+      : internalIndex;
+
+  const handleNavigate = (newIdx: number) => {
+    if (propOnNavigate) {
+      propOnNavigate(newIdx);
+    } else {
+      setInternalIndex(newIdx);
+    }
+  };
+
   const [zoom, setZoom] = useState<number>(1);
   const [isPanning, setIsPanning] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
 
-  const activeItem = currentIndex !== null ? items[currentIndex] : null;
+  const activeItem =
+    items && activeIndex !== null && activeIndex >= 0 && activeIndex < items.length
+      ? items[activeIndex]
+      : null;
 
   // Reset zoom and pan on item change
   useEffect(() => {
     setZoom(1);
     setPosition({ x: 0, y: 0 });
-  }, [currentIndex]);
+  }, [activeIndex]);
 
   // Keyboard navigation
   useEffect(() => {
-    if (currentIndex === null) return;
+    if (activeIndex === null || !items.length) return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         onClose();
       } else if (e.key === "ArrowRight") {
-        if (currentIndex < items.length - 1) onNavigate(currentIndex + 1);
+        if (activeIndex < items.length - 1) handleNavigate(activeIndex + 1);
       } else if (e.key === "ArrowLeft") {
-        if (currentIndex > 0) onNavigate(currentIndex - 1);
+        if (activeIndex > 0) handleNavigate(activeIndex - 1);
       } else if (e.key === "+" || e.key === "=") {
         setZoom((prev) => Math.min(prev + 0.3, 3));
       } else if (e.key === "-") {
@@ -61,9 +117,9 @@ export const MediaLightbox: React.FC<MediaLightboxProps> = ({
       window.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "";
     };
-  }, [currentIndex, items.length, onClose, onNavigate]);
+  }, [activeIndex, items.length, onClose, propOnNavigate]);
 
-  if (currentIndex === null || !activeItem) return null;
+  if (activeIndex === null || !activeItem) return null;
 
   const handleZoomIn = () => setZoom((prev) => Math.min(prev + 0.4, 3.2));
   const handleZoomOut = () => {
@@ -164,7 +220,7 @@ export const MediaLightbox: React.FC<MediaLightboxProps> = ({
           </div>
 
           <span className="text-xs text-white/50 px-2 font-mono">
-            {currentIndex + 1} / {items.length}
+            {activeIndex + 1} / {items.length}
           </span>
 
           <button
@@ -186,9 +242,9 @@ export const MediaLightbox: React.FC<MediaLightboxProps> = ({
         onMouseLeave={handleMouseUp}
       >
         {/* Navigation Prev Button */}
-        {currentIndex > 0 && (
+        {activeIndex > 0 && (
           <button
-            onClick={() => onNavigate(currentIndex - 1)}
+            onClick={() => handleNavigate(activeIndex - 1)}
             className="absolute left-4 md:left-8 z-30 p-3.5 rounded-2xl glass-dark hover:bg-accent/20 border border-white/20 text-white transition-all transform hover:scale-110 active:scale-95 shadow-xl"
             title="Previous Article (←)"
           >
@@ -215,9 +271,9 @@ export const MediaLightbox: React.FC<MediaLightboxProps> = ({
         </div>
 
         {/* Navigation Next Button */}
-        {currentIndex < items.length - 1 && (
+        {activeIndex < items.length - 1 && (
           <button
-            onClick={() => onNavigate(currentIndex + 1)}
+            onClick={() => handleNavigate(activeIndex + 1)}
             className="absolute right-4 md:right-8 z-30 p-3.5 rounded-2xl glass-dark hover:bg-accent/20 border border-white/20 text-white transition-all transform hover:scale-110 active:scale-95 shadow-xl"
             title="Next Article (→)"
           >

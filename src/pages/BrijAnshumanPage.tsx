@@ -760,10 +760,14 @@ const BrijAnshumanPage = () => {
 
       {/* Lightbox for Gallery */}
       <MediaLightbox
-        images={GALLERY_IMAGES.map((img) => img.url)}
-        initialIndex={activeImageIndex}
-        isOpen={lightboxOpen}
+        items={GALLERY_IMAGES.map((img) => ({
+          image: img.url,
+          title: img.tag,
+          desc: img.caption,
+        }))}
+        currentIndex={lightboxOpen ? activeImageIndex : null}
         onClose={() => setLightboxOpen(false)}
+        onNavigate={(idx) => setActiveImageIndex(idx)}
       />
     </Layout>
   );

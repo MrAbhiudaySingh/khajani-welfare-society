@@ -6,7 +6,6 @@ import {
   ShieldCheck,
   Maximize2,
   X,
-  ArrowDown,
   ArrowRight,
   ExternalLink,
   Download,
@@ -28,7 +27,6 @@ import {
 const GIRecognitionPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activePage, setActivePage] = useState<1 | 2>(1);
-  const [activeAnatomyTab, setActiveAnatomyTab] = useState<number>(0);
   const [openTrivia, setOpenTrivia] = useState<number | null>(0);
 
   const certificatePages = [
@@ -238,14 +236,6 @@ const GIRecognitionPage = () => {
                       <FileCheck2 size={15} />
                       <span>View Official Certificate</span>
                     </button>
-
-                    <a
-                      href="#craft-anatomy"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#718096] hover:text-[#A32A29] transition-colors group px-3 py-2 rounded-full hover:bg-white/60"
-                    >
-                      <span>Explore Craft Anatomy</span>
-                      <ArrowDown size={14} className="group-hover:translate-y-1 transition-transform text-[#A32A29]" />
-                    </a>
                   </div>
                 </AnimeReveal>
               </div>
@@ -408,123 +398,7 @@ const GIRecognitionPage = () => {
           </div>
         </section>
 
-        {/* ════════════════════════════════════════════════════════════════
-            NEW INTERACTIVE SECTION — CRAFT ANATOMY & MATERIALS EXPLORER
-            Interactive tabbed widget showcasing the 4 pillars of the craft
-        ════════════════════════════════════════════════════════════════ */}
-        <section id="craft-anatomy" className="py-14 sm:py-18 bg-[#FDFBF7] border-y border-[#E8E2D9] relative">
-          <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-            {/* Section Header */}
-            <div className="text-center max-w-2xl mx-auto mb-10">
-              <AnimeReveal variant="fade-up">
-                <span className="text-[#A32A29] text-[11px] font-bold tracking-[0.2em] uppercase block mb-2 font-display">
-                  INTERACTIVE CRAFT EXPLORER
-                </span>
-                <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#1A202C] mb-3">
-                  Anatomy of Mathura Zari Poshak
-                </h2>
-                <p className="text-xs sm:text-sm text-[#718096] leading-relaxed">
-                  Click through the core dimensions documented and legally protected under Geographical Indication No. 1147.
-                </p>
-              </AnimeReveal>
-            </div>
 
-            {/* Interactive Tab Selector Buttons */}
-            <AnimeReveal variant="fade-up" delay={100}>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
-                {craftAnatomy.map((item, idx) => {
-                  const isActive = activeAnatomyTab === idx;
-                  return (
-                    <button
-                      key={item.id}
-                      type="button"
-                      onClick={() => setActiveAnatomyTab(idx)}
-                      className={`p-3.5 sm:p-4 rounded-2xl border text-left transition-all duration-300 flex flex-col justify-between cursor-pointer ${
-                        isActive
-                          ? "bg-white border-[#A32A29] shadow-md scale-[1.02] ring-2 ring-[#A32A29]/15"
-                          : "bg-white/60 border-[#E2D9CC] hover:bg-white hover:border-[#D5CEC2]"
-                      }`}
-                    >
-                      <div className="flex items-center justify-between mb-2">
-                        <span className="text-2xl">{item.icon}</span>
-                        <span
-                          className={`text-[9px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${
-                            isActive
-                              ? "bg-[#A32A29] text-white"
-                              : "bg-[#F0ECE1] text-[#718096]"
-                          }`}
-                        >
-                          {item.tag}
-                        </span>
-                      </div>
-                      <span
-                        className={`text-xs sm:text-[13px] font-bold font-display leading-tight ${
-                          isActive ? "text-[#A32A29]" : "text-[#1A202C]"
-                        }`}
-                      >
-                        {item.title}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
-            </AnimeReveal>
-
-            {/* Active Dimension Spotlight Showcase */}
-            <AnimeReveal variant="fade-up" delay={200}>
-              <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#E2D9CC] shadow-lg relative overflow-hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-                  <div className="lg:col-span-8 space-y-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">{craftAnatomy[activeAnatomyTab].icon}</span>
-                      <div>
-                        <span className="text-[10px] font-bold tracking-widest text-[#A32A29] uppercase block font-display">
-                          {craftAnatomy[activeAnatomyTab].subtitle}
-                        </span>
-                        <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#1A202C]">
-                          {craftAnatomy[activeAnatomyTab].title}
-                        </h3>
-                      </div>
-                    </div>
-
-                    <p className="text-sm sm:text-base text-[#4A5568] leading-relaxed">
-                      {craftAnatomy[activeAnatomyTab].description}
-                    </p>
-
-                    <div className="pt-3 space-y-2">
-                      <span className="text-xs font-bold uppercase tracking-wider text-[#1A202C] block">
-                        Official GI Registration Criteria:
-                      </span>
-                      {craftAnatomy[activeAnatomyTab].highlights.map((point) => (
-                        <div key={point} className="flex items-start gap-2.5 text-xs sm:text-sm text-[#4A5568]">
-                          <CheckCircle2 size={16} className="text-[#A32A29] flex-shrink-0 mt-0.5" />
-                          <span>{point}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Right: Dimension Highlight Plaque */}
-                  <div className="lg:col-span-4 bg-[#FAF8F5] rounded-2xl p-6 border border-[#E8E2D9] text-center flex flex-col items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-[#FFF9F2] border-2 border-[#E9DFD1] flex items-center justify-center text-3xl shadow-inner mb-3">
-                      {craftAnatomy[activeAnatomyTab].icon}
-                    </div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#A32A29] block font-display">
-                      {craftAnatomy[activeAnatomyTab].tag}
-                    </span>
-                    <span className="text-xs text-[#718096] mt-1">
-                      Protected under GI No. 1147
-                    </span>
-                    <div className="w-full h-px bg-[#E2D9CC] my-3" />
-                    <span className="text-[11px] text-[#4A5568] italic">
-                      Authentic specifications filed with the GI Registry
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </AnimeReveal>
-          </div>
-        </section>
 
         {/* ════════════════════════════════════════════════════════════════
             SCENE 3 — THE REGISTERED GI: MATHURA ZARI POSHAK
