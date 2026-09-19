@@ -21,7 +21,7 @@ import {
   Compass,
   X,
   Info,
-  ExternalLink,
+  Flower2,
   ChevronRight,
 } from "lucide-react";
 
@@ -366,57 +366,123 @@ const ProjectsPage = () => {
           SCREEN 2 — SKILLS, TRAINING & EDUCATION
           Learning takes different forms.
       ════════════════════════════════════════════════════════════════ */}
-      <section id="skills-training-education" className="py-20 lg:py-24 bg-background relative">
-        <div className="container mx-auto px-4 max-w-6xl">
-          {/* Section Header */}
-          <div className="max-w-3xl mb-14">
-            <AnimeReveal variant="fade-up">
-              <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase inline-block mb-2">
-                SKILLS · TRAINING · EDUCATION
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary tracking-tight leading-tight">
-                Learning takes different forms.
-              </h2>
-              <div className="mt-4 space-y-2 text-muted-foreground text-base sm:text-lg leading-relaxed">
-                <p>
-                  Some skills require months of structured training. Others can be introduced through a focused camp or workshop. For young learners, the need may be stronger educational foundations rather than vocational training.
-                </p>
-                <p className="text-sm sm:text-base text-primary/80 font-medium">
-                  Khajani works across each of these spaces through distinct programmes.
+      <section id="skills-training-education" className="py-16 sm:py-20 lg:py-24 bg-background relative overflow-hidden">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          
+          {/* Section Header with Artwork & Quote Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14 sm:mb-16">
+            
+            {/* Left Column: Title & Context */}
+            <div className="lg:col-span-7">
+              <AnimeReveal variant="fade-up">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-[#B85449] text-xs font-bold tracking-[0.2em] uppercase font-mono">
+                    SKILLS · TRAINING · EDUCATION
+                  </span>
+                  <span className="w-10 h-[1.5px] bg-[#B85449]/60" />
+                </div>
+
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary tracking-tight leading-[1.08]">
+                  Learning takes
+                  <br />
+                  <span className="font-serif italic font-normal text-[#B85449]">
+                    different forms.
+                  </span>
+                </h2>
+
+                <div className="mt-5 space-y-2.5 text-muted-foreground text-sm sm:text-base leading-relaxed font-light max-w-xl">
+                  <p>
+                    Some skills require months of structured training. Others can be introduced through a focused camp or workshop. For young learners, the need may be stronger educational foundations rather than vocational training.
+                  </p>
+                  <p className="text-xs sm:text-sm text-primary font-medium">
+                    Khajani works across each of these spaces through distinct programmes.
+                  </p>
+                </div>
+              </AnimeReveal>
+            </div>
+
+            {/* Right Column: Abstract Art Composition & Editorial Quote */}
+            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[220px]">
+              {/* Top right label */}
+              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-4 z-10">
+                <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
+                  PEOPLE<br />HERITAGE<br />OPPORTUNITY
                 </p>
               </div>
-            </AnimeReveal>
+
+              {/* Centered illustration background */}
+              <div className="absolute right-0 top-0 bottom-0 w-full max-w-[420px] pointer-events-none select-none opacity-90">
+                <img
+                  src="/images/projects/skills-header-art.png"
+                  alt="Abstract craft and botanical heritage artwork"
+                  className="w-full h-full object-contain object-right-top"
+                />
+              </div>
+
+              {/* Overlay Quote and Cursive Tagline */}
+              <div className="relative z-10 text-right pr-2 sm:pr-6 pt-4 mt-auto">
+                <div className="inline-block text-left mb-2">
+                  <p className="font-serif italic text-base sm:text-lg text-primary font-medium leading-snug">
+                    <span className="text-xl text-secondary mr-0.5 font-normal font-serif">“</span>
+                    Different<br />
+                    skills.<br />
+                    Brighter<br />
+                    tomorrows.
+                    <span className="text-xl text-secondary ml-0.5 font-normal font-serif">”</span>
+                  </p>
+                </div>
+                <div>
+                  <span className="font-handwriting text-2xl sm:text-3xl text-secondary italic block">
+                    Skills for stronger communities
+                  </span>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          {/* Programmes Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Programme 1: BRIJ-HUNAR */}
+          {/* Programmes Grid — 3 Bespoke Editorial Cards (Not Numbered) */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+            
+            {/* ─── Programme 1: BRIJ-HUNAR ─── */}
             <AnimeReveal variant="fade-up" delay={100} className="h-full">
               <div
                 id="brij-hunar"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#FAF0EE]/60 border border-[#ECD1CD] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/upsdm-tailor.jpg"
-                    alt="Brij-Hunar vocational training"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Long-Term Skill Development
-                  </span>
+                {/* Media Top Section with Terracotta Spine/Tab */}
+                <div className="flex w-full overflow-hidden border-b border-[#ECD1CD]/70">
+                  {/* Left Colored Spine (No Numbers) */}
+                  <div className="w-14 sm:w-16 bg-[#B85449] shrink-0 flex flex-col items-center justify-center py-6 text-white">
+                    <Flower2 size={24} className="text-white drop-shadow-xs" />
+                    <div className="w-5 h-[1.5px] bg-white/40 rounded-full mt-3" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/upsdm-tailor.jpg"
+                      alt="Brij-Hunar vocational training"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Long-Term Skill Development
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       BRIJ-HUNAR
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
+                    <p className="text-xs sm:text-sm font-serif italic font-semibold text-[#B85449] mb-3">
                       Long-term skill training for women and girls
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2 text-xs sm:text-[13px] text-muted-foreground leading-relaxed font-light">
                       <p>
                         Brij-Hunar provides structured vocational training in areas such as apparel and fashion, computer and digital skills, beauty and wellness, office skills, art and craft.
                       </p>
@@ -426,51 +492,72 @@ const ProjectsPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Long-Term Training</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Apparel &amp; Fashion</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Digital &amp; Wellness</span>
+                  <div className="mt-6 pt-4 border-t border-[#ECD1CD]/60">
+                    <div className="flex flex-wrap gap-1.5 mb-5">
+                      <span className="bg-[#FDF2F0] text-[#B85449] border border-[#F2D7D3] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Long-Term Training
+                      </span>
+                      <span className="bg-[#FDF2F0] text-[#B85449] border border-[#F2D7D3] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Apparel &amp; Fashion
+                      </span>
+                      <span className="bg-[#FDF2F0] text-[#B85449] border border-[#F2D7D3] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Digital &amp; Wellness
+                      </span>
                     </div>
+
                     <Link
                       to="/projects/brij-hunar"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
+                      className="flex items-center justify-between group/link text-xs font-bold uppercase tracking-wider text-primary hover:text-[#B85449] transition-colors"
                     >
                       <span>EXPLORE BRIJ-HUNAR</span>
-                      <ArrowRight size={14} />
+                      <span className="w-8 h-8 rounded-full border border-[#B85449]/40 flex items-center justify-center text-[#B85449] group-hover/link:bg-[#B85449] group-hover/link:text-white transition-all shadow-2xs">
+                        <ArrowRight size={13} />
+                      </span>
                     </Link>
                   </div>
                 </div>
               </div>
             </AnimeReveal>
 
-            {/* Programme 2: BRIJ-NIPUN */}
+            {/* ─── Programme 2: BRIJ-NIPUN ─── */}
             <AnimeReveal variant="fade-up" delay={200} className="h-full">
               <div
                 id="brij-nipun"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#EFF5F8]/60 border border-[#CFE0EA] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/brij-nipun-activities.jpg"
-                    alt="Brij-Nipun short-term workshop and camps"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Short-Term Skills & Camps
-                  </span>
+                {/* Media Top Section with Dusty Blue Spine/Tab */}
+                <div className="flex w-full overflow-hidden border-b border-[#CFE0EA]/70">
+                  {/* Left Colored Spine (No Numbers) */}
+                  <div className="w-14 sm:w-16 bg-[#4D7B97] shrink-0 flex flex-col items-center justify-center py-6 text-white">
+                    <Palette size={24} className="text-white drop-shadow-xs" />
+                    <div className="w-5 h-[1.5px] bg-white/40 rounded-full mt-3" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/brij-nipun-activities.jpg"
+                      alt="Brij-Nipun short-term workshop and camps"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Short-Term Skills &amp; Camps
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       BRIJ-NIPUN
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
+                    <p className="text-xs sm:text-sm font-serif italic font-semibold text-[#4D7B97] mb-3">
                       Short-term practical skill training
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2 text-xs sm:text-[13px] text-muted-foreground leading-relaxed font-light">
                       <p>
                         Brij-Nipun offers focused workshops and short training programmes in skills such as painting, Sanjhi art, baking, chocolate making, mehendi, nail art, clay work, creative crafts and digital skills.
                       </p>
@@ -480,81 +567,119 @@ const ProjectsPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Short-Term Camps</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Creative Crafts</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Flexible Workshops</span>
+                  <div className="mt-6 pt-4 border-t border-[#CFE0EA]/60">
+                    <div className="flex flex-wrap gap-1.5 mb-5">
+                      <span className="bg-[#F0F6FA] text-[#4D7B97] border border-[#D5E5EF] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Short-Term Camps
+                      </span>
+                      <span className="bg-[#F0F6FA] text-[#4D7B97] border border-[#D5E5EF] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Creative Crafts
+                      </span>
+                      <span className="bg-[#F0F6FA] text-[#4D7B97] border border-[#D5E5EF] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Flexible Workshops
+                      </span>
                     </div>
+
                     <Link
                       to="/projects/brij-nipun"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
+                      className="flex items-center justify-between group/link text-xs font-bold uppercase tracking-wider text-primary hover:text-[#4D7B97] transition-colors"
                     >
                       <span>EXPLORE BRIJ-NIPUN</span>
-                      <ArrowRight size={14} />
+                      <span className="w-8 h-8 rounded-full border border-[#4D7B97]/40 flex items-center justify-center text-[#4D7B97] group-hover/link:bg-[#4D7B97] group-hover/link:text-white transition-all shadow-2xs">
+                        <ArrowRight size={13} />
+                      </span>
                     </Link>
                   </div>
                 </div>
               </div>
             </AnimeReveal>
 
-            {/* Programme 3: KHAJANI LEARNING ACADEMY */}
+            {/* ─── Programme 3: KHAJANI LEARNING ACADEMY ─── */}
             <AnimeReveal variant="fade-up" delay={300} className="h-full">
               <div
                 id="kla"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#EFF5F1]/60 border border-[#CFE0D4] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/kla-students.jpg"
-                    alt="Khajani Learning Academy students"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Education & Learning
-                  </span>
+                {/* Media Top Section with Sage Green Spine/Tab */}
+                <div className="flex w-full overflow-hidden border-b border-[#CFE0D4]/70">
+                  {/* Left Colored Spine (No Numbers) */}
+                  <div className="w-14 sm:w-16 bg-[#537762] shrink-0 flex flex-col items-center justify-center py-6 text-white">
+                    <BookOpen size={24} className="text-white drop-shadow-xs" />
+                    <div className="w-5 h-[1.5px] bg-white/40 rounded-full mt-3" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/kla-students.jpg"
+                      alt="Khajani Learning Academy students"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Education &amp; Learning
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       KHAJANI LEARNING ACADEMY
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
+                    <p className="text-xs sm:text-sm font-serif italic font-semibold text-[#537762] mb-3">
                       Learning support for girls who need it most
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2 text-xs sm:text-[13px] text-muted-foreground leading-relaxed font-light">
                       <p>
                         Khajani Learning Academy supports school-going girls from economically weaker families through remedial education, academic support and mentoring.
                       </p>
                       <p>
                         Along with regular learning, girls get opportunities for digital skills, art and craft, awareness programmes, communication, life skills and activities that build confidence.
                       </p>
-                      <p className="font-semibold text-primary/90 text-xs">
+                      <p className="font-bold text-xs text-primary pt-1">
                         ₹6,100 can support one girl for one year.
                       </p>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Remedial Learning</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Academic Mentoring</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">₹6,100 / Year</span>
+                  <div className="mt-6 pt-4 border-t border-[#CFE0D4]/60">
+                    <div className="flex flex-wrap gap-1.5 mb-5">
+                      <span className="bg-[#F0F6F2] text-[#537762] border border-[#D3E5D9] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Remedial Learning
+                      </span>
+                      <span className="bg-[#F0F6F2] text-[#537762] border border-[#D3E5D9] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        Academic Mentoring
+                      </span>
+                      <span className="bg-[#F0F6F2] text-[#537762] border border-[#D3E5D9] px-2.5 py-1 rounded-md text-[11px] font-medium">
+                        ₹6,100 / Year
+                      </span>
                     </div>
+
                     <Link
                       to="/projects/kla"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
+                      className="flex items-center justify-between group/link text-xs font-bold uppercase tracking-wider text-primary hover:text-[#537762] transition-colors"
                     >
                       <span>EXPLORE KHAJANI LEARNING ACADEMY</span>
-                      <ArrowRight size={14} />
+                      <span className="w-8 h-8 rounded-full border border-[#537762]/40 flex items-center justify-center text-[#537762] group-hover/link:bg-[#537762] group-hover/link:text-white transition-all shadow-2xs">
+                        <ArrowRight size={13} />
+                      </span>
                     </Link>
                   </div>
                 </div>
               </div>
             </AnimeReveal>
+
           </div>
+
+          {/* Bottom Editorial Strip */}
+          <div className="mt-14 pt-6 border-t border-border/70 flex items-center justify-between text-[11px] font-mono uppercase tracking-widest text-muted-foreground">
+            <span>SAME OPPORTUNITIES. BRIGHTER FUTURES.</span>
+            <span>KHAJANI</span>
+          </div>
+
         </div>
       </section>
 
