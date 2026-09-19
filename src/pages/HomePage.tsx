@@ -37,7 +37,7 @@ function ImpactStatCounter({
       <div className="rounded-2xl p-5 sm:p-6 bg-white/5 backdrop-blur-md border border-white/10 hover:border-secondary/50 transition-all duration-300 hover:-translate-y-1 hover:bg-white/10 flex flex-col items-center justify-between h-full shadow-lg">
         <span
           ref={ref as React.RefObject<HTMLSpanElement>}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary mb-2 font-display tabular-nums tracking-tight"
+          className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-400 drop-shadow-sm mb-2 font-display tabular-nums tracking-tight"
         >
           {displayed}
         </span>

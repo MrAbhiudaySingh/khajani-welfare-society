@@ -53,7 +53,7 @@ function StatCounter({
   return (
     <span
       ref={ref as React.RefObject<HTMLSpanElement>}
-      className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-primary tabular-nums tracking-tight block text-center"
+      className="font-display font-bold text-5xl sm:text-6xl lg:text-7xl text-amber-400 tabular-nums tracking-tight block text-center drop-shadow-sm"
     >
       {displayed}
     </span>
