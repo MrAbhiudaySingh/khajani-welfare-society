@@ -9,9 +9,10 @@ import {
   Users, ArrowRight, Sparkles, CheckCircle2, Mail, HeartHandshake,
   Award, BookOpen, Heart, Compass, Feather, Building2, Calendar,
   Newspaper, Video, Image as ImageIcon, ChevronRight, Quote, ShieldCheck,
-  Cog, Share2, Sprout, Star
+  Cog, Share2, Sprout, Star, Eye, ZoomIn
 } from "lucide-react";
 import { animate, stagger } from "animejs";
+import { MediaLightbox, MediaItem } from "@/components/MediaLightbox";
 
 /* ─── Individual Counter Stat for Screen 5 Impact ─── */
 function ImpactStatCounter({
@@ -81,6 +82,39 @@ function AnimatedHeroHeading() {
 const HomePage = () => {
   const [subscribeEmail, setSubscribeEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+
+  // Lightbox state for Press Coverage newspaper clippings
+  const [lightboxItems, setLightboxItems] = useState<MediaItem[]>([]);
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const openLightbox = (items: MediaItem[], index: number) => {
+    setLightboxItems(items);
+    setLightboxIndex(index);
+  };
+
+  const pressCoverageItems: (MediaItem & { publication: string; headline: string; desc: string })[] = [
+    {
+      image: "/images/media/news-clipping-14.jpg",
+      publication: "दैनिक जागरण",
+      headline: "मथुरा की महिलाओं को कौशल से नई पहचान",
+      desc: "खजानी वेलफेयर सोसाइटी द्वारा आयोजित सिलाई एवं हस्तशिल्प प्रशिक्षण शिविरों से ग्रामीण महिलाओं को आत्मनिर्भरता की राह मिली।",
+      date: "2018",
+    },
+    {
+      image: "/images/media/news-clipping-1.jpg",
+      publication: "THE HINDU — SOCIAL IMPACT",
+      headline: "Mathura NGO empowers women through traditional crafts",
+      desc: "How Khajani Welfare Society breathes new economic vitality into ancestral Sanjhi art while providing stable rural livelihoods.",
+      date: "July 2021",
+    },
+    {
+      image: "/images/media/news-clipping-10.jpg",
+      publication: "INDIA TODAY",
+      headline: "Preserving Braj’s heritage, empowering rural women",
+      desc: "A grassroots movement born in Mathura that bridges traditional cultural arts with certified modern vocational pathways.",
+      date: "2020",
+    },
+  ];
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -1148,35 +1182,58 @@ const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="p-5 rounded-2xl bg-background border border-border/70">
-                <span className="text-xs font-bold text-accent block mb-1">दैनिक जागरण</span>
-                <h4 className="font-display font-bold text-base text-primary mb-2">
-                  मथुरा की महिलाओं को कौशल से नई पहचान
-                </h4>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  खजानी वेलफेयर सोसाइटी द्वारा आयोजित सिलाई एवं हस्तशिल्प प्रशिक्षण शिविरों से ग्रामीण महिलाओं को आत्मनिर्भरता की राह मिली।
-                </p>
-              </div>
+              {pressCoverageItems.map((item, idx) => (
+                <div
+                  key={item.headline}
+                  onClick={() => openLightbox(pressCoverageItems, idx)}
+                  className="rounded-2xl bg-background border border-border/70 hover:border-secondary/60 hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden group cursor-pointer hover:-translate-y-1"
+                >
+                  {/* Newspaper Clipping Image Header with Zoom Hover */}
+                  <div className="relative aspect-[16/10] overflow-hidden bg-[#FAF7F2] dark:bg-card/60 border-b border-border/60 p-2 flex items-center justify-center">
+                    <img
+                      src={item.image}
+                      alt={item.headline}
+                      className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-lg"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <div className="px-3.5 py-1.5 rounded-full bg-white text-primary text-xs font-bold flex items-center gap-1.5 shadow-lg transform translate-y-1 group-hover:translate-y-0 transition-transform">
+                        <ZoomIn size={14} />
+                        <span>Click to Expand</span>
+                      </div>
+                    </div>
+                  </div>
 
-              <div className="p-5 rounded-2xl bg-background border border-border/70">
-                <span className="text-xs font-bold text-accent block mb-1">THE HINDU — SOCIAL IMPACT</span>
-                <h4 className="font-display font-bold text-base text-primary mb-2">
-                  Mathura NGO empowers women through traditional crafts
-                </h4>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  How Khajani Welfare Society breathes new economic vitality into ancestral Sanjhi art while providing stable rural livelihoods.
-                </p>
-              </div>
+                  {/* Text Content */}
+                  <div className="p-5 flex flex-col justify-between flex-1">
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-1.5">
+                        <span className="text-xs font-bold text-accent block">
+                          {item.publication}
+                        </span>
+                        {item.date && (
+                          <span className="text-[10px] font-mono text-muted-foreground">
+                            {item.date}
+                          </span>
+                        )}
+                      </div>
+                      <h4 className="font-display font-bold text-base text-primary mb-2 group-hover:text-secondary transition-colors line-clamp-2">
+                        {item.headline}
+                      </h4>
+                      <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
+                        {item.desc}
+                      </p>
+                    </div>
 
-              <div className="p-5 rounded-2xl bg-background border border-border/70">
-                <span className="text-xs font-bold text-accent block mb-1">INDIA TODAY</span>
-                <h4 className="font-display font-bold text-base text-primary mb-2">
-                  Preserving Braj’s heritage, empowering rural women
-                </h4>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  A grassroots movement born in Mathura that bridges traditional cultural arts with certified modern vocational pathways.
-                </p>
-              </div>
+                    <div className="mt-4 pt-3 border-t border-border/40 flex items-center justify-between text-xs font-bold text-secondary group-hover:text-accent transition-colors">
+                      <span className="inline-flex items-center gap-1.5">
+                        <Eye size={13} /> View Full Clipping
+                      </span>
+                      <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -1539,6 +1596,14 @@ const HomePage = () => {
           </AnimeReveal>
         </div>
       </section>
+
+      {/* Lightbox for Press Clippings & Media */}
+      <MediaLightbox
+        items={lightboxItems}
+        currentIndex={lightboxIndex}
+        onClose={() => setLightboxIndex(null)}
+        onNavigate={(idx) => setLightboxIndex(idx)}
+      />
     </Layout>
   );
 };
