@@ -70,6 +70,8 @@ const App = () => (
           <Route path="/projects/brij-seva" element={<BrijSevaPage />} />
           <Route path="/projects/shakti-ek-adhaar" element={<ShaktiEkAdhaarPage />} />
           <Route path="/projects/radha-krishna-poshak" element={<RadhaKrishnaPoshakPage />} />
+          <Route path="/projects/mathura-zari-poshak" element={<RadhaKrishnaPoshakPage />} />
+          <Route path="/mathura-zari-poshak" element={<RadhaKrishnaPoshakPage />} />
           <Route path="/projects/royal-sanjhi" element={<RoyalSanjhiPage />} />
           <Route path="/royal-sanjhi" element={<RoyalSanjhiPage />} />
           <Route path="/projects/sanjhi-art" element={<RoyalSanjhiPage />} />

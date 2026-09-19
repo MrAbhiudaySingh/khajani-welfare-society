@@ -131,19 +131,19 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "mathura-poshak": {
     id: "mathura-poshak",
     name: "MATHURA ZARI POSHAK",
-    category: "Craft · Heritage · GI",
-    tagline: "A distinctive craft identity of Mathura.",
+    category: "Traditional craftsmanship rooted in Mathura",
+    tagline: "Traditional craftsmanship rooted in Mathura",
     image: "/images/projects/poshak-zari.jpg",
-    tags: ["Craft", "Artisans", "Heritage", "Geographical Indication (GI)"],
+    tags: ["125 artisans", "30-day training initiative", "GI registered", "Braj Heritage"],
     overview: [
-      "Khajani’s engagement with Mathura Zari Poshak connects traditional craft knowledge, artisans and the cultural identity of Mathura.",
-      "Its recognition as a Geographical Indication (GI) marks an important chapter in this journey.",
-      "The initiative honours centuries-old temple attire embroidery traditions while safeguarding artisan rights and craft authenticity.",
+      "Mathura Zari Poshak is a traditional craft associated with the making and decoration of Poshak for deities in Mathura and Braj.",
+      "Khajani works with artisans through training and skill development to strengthen the craft, support livelihoods and help traditional knowledge continue in practice.",
+      "125 artisans · 30-day training initiative · GI registered.",
     ],
     highlights: [
-      "Formal Geographical Indication (GI) recognition securing Mathura's artisan heritage",
-      "Preservation of specialized zari, gota, and hand-embroidery techniques",
-      "Supporting the artisan ecosystem supplying sanctum attire across India and abroad",
+      "Official Geographical Indication (GI) registration under Application No. 1147",
+      "Specialized disciplines across fabric preparation, precision cutting, zari needlework, and gota embellishment",
+      "Planned craft exchange and study exposure for 25 artisans to Nathdwara",
     ],
   },
   "brij-surabhi": {
@@ -682,35 +682,31 @@ const ProjectsPage = () => {
                       MATHURA ZARI POSHAK
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      A distinctive craft identity of Mathura.
+                      Traditional craftsmanship rooted in Mathura
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Khajani’s engagement with Mathura Zari Poshak connects traditional craft knowledge, artisans and the cultural identity of Mathura.
+                        Mathura Zari Poshak is a traditional craft associated with the making and decoration of Poshak for deities in Mathura and Braj.
                       </p>
                       <p>
-                        Its recognition as a Geographical Indication (GI) marks an important chapter in this journey, explored in detail on Khajani’s dedicated GI page.
-                      </p>
-                      <p className="text-xs text-muted-foreground/75 italic">
-                        *This stays deliberately brief because the dedicated GI page carries the complete story.
+                        Khajani works with artisans through training and skill development to strengthen the craft, support livelihoods and help traditional knowledge continue in practice.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
-                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Craft</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Artisans</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Heritage</span>
+                    <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium">
+                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">125 artisans</span>
+                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">30-day training</span>
+                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">GI registered</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("mathura-poshak")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/mathura-zari-poshak"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
-                      <span>Explore Mathura Zari Poshak GI</span>
+                      <span>EXPLORE MATHURA ZARI POSHAK</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1251,10 +1247,10 @@ const ProjectsPage = () => {
               {
                 id: "mathura-poshak",
                 name: "Mathura Zari Poshak",
-                subtitle: "Craft · Heritage · GI",
+                subtitle: "Traditional craftsmanship rooted in Mathura",
                 icon: Palette,
-                tag: "Craft & GI",
-                link: "/projects/radha-krishna-poshak",
+                tag: "GI Registered",
+                link: "/projects/mathura-zari-poshak",
               },
               {
                 id: "brij-surabhi",
