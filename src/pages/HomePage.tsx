@@ -708,9 +708,9 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Top Row: Left Typography & Right Perforated GI Card */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-14">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center mb-14">
             {/* Left Column: Title, Intro & CTA */}
-            <AnimeReveal variant="fade-left" className="lg:col-span-6 xl:col-span-7 space-y-5">
+            <AnimeReveal variant="fade-left" className="lg:col-span-5 xl:col-span-5 space-y-5">
               <div className="flex items-center gap-3">
                 <span className="text-[#A32A29] text-xs font-bold tracking-[0.25em] uppercase font-mono">
                   BRAJ HERITAGE
@@ -743,8 +743,8 @@ const HomePage = () => {
               </div>
             </AnimeReveal>
 
-            {/* Right Column: Featured GI Craft Card with Perforated / Deckle Torn Paper Edge */}
-            <AnimeReveal variant="fade-right" delay={150} className="lg:col-span-6 xl:col-span-5">
+            {/* Right Column: Featured GI Craft Card (Wider) with Official GI Logo & Deckle Torn Paper Edge */}
+            <AnimeReveal variant="fade-right" delay={150} className="lg:col-span-7 xl:col-span-7">
               <div className="rounded-[32px] overflow-hidden border border-[#E8DFD3] shadow-lg bg-[#FAF5EE] grid grid-cols-1 md:grid-cols-12 relative group">
                 
                 {/* Left: Parchment Content */}
@@ -801,14 +801,30 @@ const HomePage = () => {
                   </Link>
                 </div>
 
-                {/* Right: Rich Zari Poshak Photo */}
-                <div className="md:col-span-5 relative min-h-[220px] md:min-h-full overflow-hidden bg-black/10">
-                  <img
-                    src="/images/projects/poshak-zari.jpg"
-                    alt="Mathura Zari Poshak sacred deity attire"
-                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
+                {/* Right: Official GI Logo Showcase */}
+                <div className="md:col-span-5 relative min-h-[250px] md:min-h-full bg-[#FFFDF9] flex flex-col items-center justify-center p-6 sm:p-7 border-t md:border-t-0 md:border-l border-[#E8DFD3]/60 relative overflow-hidden group/logo">
+                  {/* Subtle warm glow background accent */}
+                  <div className="absolute inset-0 bg-radial from-[#C4A480]/15 via-transparent to-transparent pointer-events-none" />
+
+                  {/* Circular Frame for Authentic Official GI Logo */}
+                  <div className="relative z-10 w-36 h-36 sm:w-44 sm:h-44 rounded-full p-2.5 bg-white border-2 border-[#E8DFD3] shadow-md flex items-center justify-center transition-all duration-500 group-hover/logo:scale-105 group-hover/logo:border-[#A32A29] group-hover/logo:shadow-lg">
+                    <img
+                      src="/images/projects/mathura-zari-poshak-official-logo.png"
+                      alt="Mathura Zari Poshak Official Geographical Indication Logo"
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+
+                  {/* Official Seal Badge */}
+                  <div className="relative z-10 mt-3 flex flex-col items-center text-center">
+                    <span className="px-2.5 py-0.5 rounded-full bg-[#FAF5EE] border border-[#E2D8CA] text-[10px] font-mono font-bold uppercase tracking-widest text-[#A32A29] shadow-2xs">
+                      Official GI Emblem · No. 1147
+                    </span>
+                    <span className="text-[10px] text-[#718096] font-mono mt-1">
+                      Govt. of India Registered
+                    </span>
+                  </div>
                 </div>
 
               </div>
