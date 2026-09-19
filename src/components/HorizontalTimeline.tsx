@@ -235,7 +235,7 @@ export default function HorizontalTimeline() {
     const zIndex = 30 - absOffset * 5;
 
     return {
-      transform: `translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
+      transform: `translate(-50%, -50%) translateX(${translateX}px) translateZ(${translateZ}px) rotateY(${rotateY}deg) scale(${scale})`,
       zIndex,
       opacity: 1, // Completely solid, never bleeds through!
       filter: offset === 0 ? "none" : "brightness(0.97)",
@@ -246,7 +246,7 @@ export default function HorizontalTimeline() {
   return (
     <section
       id="timeline"
-      className="relative pt-12 pb-16 sm:pt-16 sm:pb-20 bg-[#FAF7F2] text-[#1C2D42] overflow-hidden border-y border-[#EAE2D5] select-none"
+      className="relative pt-12 pb-20 sm:pt-16 sm:pb-24 bg-[#FAF7F2] text-[#1C2D42] overflow-hidden border-y border-[#EAE2D5] select-none"
     >
       {/* Anchor targets */}
       <span id="timeline-part-1" className="absolute -top-24 left-0 pointer-events-none" />
@@ -259,7 +259,7 @@ export default function HorizontalTimeline() {
       <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 
         {/* ─── Header: Moments that made a difference ─── */}
-        <div className="relative text-center max-w-3xl mx-auto mb-6 sm:mb-8 px-4">
+        <div className="relative text-center max-w-3xl mx-auto mb-8 sm:mb-10 px-4">
           <AnimeReveal variant="fade-up">
             <div className="inline-flex items-center justify-center gap-2 text-xs font-bold tracking-[0.25em] text-[#8C7A6B] uppercase mb-2">
               <span>— OUR JOURNEY —</span>
@@ -284,7 +284,7 @@ export default function HorizontalTimeline() {
         </div>
 
         {/* ─── 3D Cover Flow Carousel Stage ─── */}
-        <div className="relative w-full flex items-center justify-center h-[390px] sm:h-[410px]">
+        <div className="relative w-full flex items-center justify-center h-[420px] sm:h-[440px]">
 
           {/* Left Flank: Arched Gateway Illustration (Architectural anchor, no redundant text) */}
           <div className="hidden xl:flex absolute left-2 2xl:left-8 top-1/2 -translate-y-1/2 items-center z-20 pointer-events-none select-none">
@@ -342,7 +342,7 @@ export default function HorizontalTimeline() {
 
           {/* 3D Cards Perspective Container */}
           <div
-            className="relative w-full h-[370px] sm:h-[390px] overflow-visible flex items-center justify-center cursor-grab active:cursor-grabbing"
+            className="relative w-full h-[420px] sm:h-[440px] overflow-visible flex items-center justify-center cursor-grab active:cursor-grabbing"
             style={{ perspective: "1000px", transformStyle: "preserve-3d" }}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
@@ -362,7 +362,7 @@ export default function HorizontalTimeline() {
                   key={m.id}
                   onClick={() => setActiveIndex(idx)}
                   style={cardStyle}
-                  className={`absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-[260px] sm:w-[280px] md:w-[300px] h-[350px] sm:h-[365px] rounded-3xl p-4 sm:p-5 bg-white border transition-all duration-500 cursor-pointer flex flex-col justify-between select-none ${
+                  className={`absolute top-1/2 left-1/2 w-[260px] sm:w-[280px] md:w-[290px] h-[350px] sm:h-[365px] rounded-3xl p-4 sm:p-5 bg-white border transition-all duration-500 cursor-pointer flex flex-col justify-between overflow-hidden select-none ${
                     isActive
                       ? "border-[#E5A93C] ring-4 ring-[#E5A93C]/25 shadow-2xl"
                       : "border-[#EAE2D5] shadow-lg hover:border-[#E5A93C]/50"
