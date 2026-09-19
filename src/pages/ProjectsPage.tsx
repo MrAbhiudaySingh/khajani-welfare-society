@@ -426,17 +426,14 @@ const ProjectsPage = () => {
                       BRIJ-HUNAR
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Skills built over time.
+                      Long-term skill training for women and girls
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Brij-Hunar is Khajani’s long-term skill-development programme, bringing together structured vocational training designed to develop practical skills through sustained learning and practice.
+                        Brij-Hunar provides structured vocational training in areas such as apparel and fashion, computer and digital skills, beauty and wellness, office skills, art and craft.
                       </p>
                       <p>
-                        Longer-duration training undertaken through relevant government skill-development collaborations also forms part of Brij-Hunar.
-                      </p>
-                      <p>
-                        The programme is centred on structured vocational and livelihood-oriented learning, rather than on any single scheme or funding partnership.
+                        The programme helps participants develop practical skills that can support employment, self-employment and income generation.
                       </p>
                     </div>
                   </div>
@@ -444,17 +441,16 @@ const ProjectsPage = () => {
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
                       <span className="bg-muted px-2.5 py-1 rounded-md">Long-Term Training</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Practical Skills</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Vocational Learning</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Apparel &amp; Fashion</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Digital &amp; Wellness</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-hunar")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-hunar"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
                     >
-                      <span>Explore Brij-Hunar</span>
+                      <span>EXPLORE BRIJ-HUNAR</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
