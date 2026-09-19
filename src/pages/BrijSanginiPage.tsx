@@ -301,7 +301,7 @@ const BrijSanginiPage = () => {
           {/* 3 Metric Badges */}
           <AnimeReveal variant="fade-up" delay={150}>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-              <div className="clay-card-gold p-8 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md text-center">
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md text-center hover:bg-white/10 transition-all">
                 <div className="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary mx-auto mb-4">
                   <Boxes size={24} />
                 </div>
@@ -310,7 +310,7 @@ const BrijSanginiPage = () => {
                 <p className="text-xs text-white/70">Installed for automated, discreet supply</p>
               </div>
 
-              <div className="clay-card-gold p-8 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md text-center">
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md text-center hover:bg-white/10 transition-all">
                 <div className="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary mx-auto mb-4">
                   <Flame size={24} />
                 </div>
@@ -319,7 +319,7 @@ const BrijSanginiPage = () => {
                 <p className="text-xs text-white/70">Safe electric incinerators for hygienic disposal</p>
               </div>
 
-              <div className="clay-card-gold p-8 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md text-center">
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md text-center hover:bg-white/10 transition-all">
                 <div className="w-12 h-12 rounded-2xl bg-secondary/20 flex items-center justify-center text-secondary mx-auto mb-4">
                   <School size={24} />
                 </div>

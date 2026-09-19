@@ -462,7 +462,7 @@ const BrijAnshumanPage = () => {
 
           {/* Visual Sequence: SKILL → PRODUCT → INCOME → BANK ACCOUNT → FUTURE */}
           <AnimeReveal variant="fade-up" delay={150}>
-            <div className="clay-card-gold p-8 sm:p-10 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md shadow-2xl">
+            <div className="p-8 sm:p-10 rounded-3xl bg-white/5 border border-white/20 backdrop-blur-md shadow-2xl">
               <div className="text-center mb-6">
                 <span className="text-[11px] font-mono tracking-widest text-secondary uppercase font-bold">
                   Documented Economic Pipeline
