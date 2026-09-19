@@ -973,21 +973,22 @@ const HomePage = () => {
                 <span className="inline-flex items-center gap-2 px-4 py-1.5 glass-dark rounded-full text-xs font-bold tracking-widest uppercase mb-4 text-secondary border border-white/10">
                   OUR IMPACT
                 </span>
-                <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4">
-                  Changing lives. Building brighter tomorrows.
-                </h3>
-                <p className="text-primary-foreground/80 text-base font-light">
-                  Together with our partners and communities, we are creating lasting impact in Mathura and Braj.
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4">
+                  Our work in numbers.
+                </h2>
+                <p className="text-primary-foreground/80 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto">
+                  A snapshot of Khajani’s work across people, communities, learning and traditional skills.
                 </p>
               </AnimeReveal>
 
-              {/* 5 Impact Metrics */}
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 sm:gap-6 mb-12">
-                <ImpactStatCounter target={10000} label="Women trained through our programmes" delay={0} />
-                <ImpactStatCounter target={200} label="Batches conducted across skills & trades" delay={80} />
-                <ImpactStatCounter target={500} label="Artisans and community members supported" delay={160} />
-                <ImpactStatCounter target={1000} label="Learners reached through education initiatives" delay={240} />
-                <ImpactStatCounter target={50} label="Communities engaged across Mathura and Braj" delay={320} />
+              {/* 6 Impact Metrics in 3x2 Grid on Desktop */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12">
+                <ImpactStatCounter target={22000} suffix="+" label="Women & Inmates Reached" delay={0} />
+                <ImpactStatCounter target={55000} suffix="+" label="Families Impacted" delay={80} />
+                <ImpactStatCounter target={1000} suffix="+" label="Lives Touched Annually" delay={160} />
+                <ImpactStatCounter target={152} suffix="" label="Villages Reached" delay={240} />
+                <ImpactStatCounter target={250} suffix="+" label="Sanjhi Artists Trained" delay={320} />
+                <ImpactStatCounter target={120} suffix="+" label="Women Earning Through Sanjhi Art" delay={400} />
               </div>
 
               {/* Quote & CTA */}
