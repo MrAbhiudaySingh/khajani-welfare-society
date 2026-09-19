@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import WhatsAppFloatingButton from "./components/WhatsAppFloatingButton";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import BrijSurabhiPage from "./pages/BrijSurabhiPage";
@@ -44,6 +45,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <WhatsAppFloatingButton />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
