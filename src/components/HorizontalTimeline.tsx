@@ -408,8 +408,8 @@ export default function HorizontalTimeline() {
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
-            className="flex gap-5 sm:gap-6 overflow-x-auto pb-8 pt-2 scrollbar-none snap-x snap-mandatory cursor-grab active:cursor-grabbing select-none"
-            style={{ scrollBehavior: "smooth" }}
+            className="flex gap-5 sm:gap-6 overflow-x-auto pb-4 pt-2 snap-x snap-mandatory cursor-grab active:cursor-grabbing select-none [&::-webkit-scrollbar]:hidden [scrollbar-width:none] [-ms-overflow-style:none]"
+            style={{ scrollBehavior: "smooth", scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {MILESTONES.map((m, idx) => {
               const isActive = activeIndex === idx;
@@ -526,40 +526,6 @@ export default function HorizontalTimeline() {
                 </div>
               );
             })}
-          </div>
-        </div>
-
-        {/* ─── Track Bottom Progress Bar & Drag Info ─── */}
-        <div className="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
-          <div className="flex items-center gap-2 w-full sm:w-72">
-            <span className="font-mono text-[11px]">Timeline Progress</span>
-            <div className="flex-1 h-1.5 bg-border rounded-full overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-secondary to-accent rounded-full transition-all duration-200"
-                style={{ width: `${scrollProgress}%` }}
-              />
-            </div>
-            <span className="font-mono text-[11px] font-bold text-primary">
-              {Math.round(scrollProgress)}%
-            </span>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <button
-              type="button"
-              onClick={() => scrollToMilestone(0)}
-              className="hover:text-primary transition-colors font-mono text-[11px] underline underline-offset-4 cursor-pointer"
-            >
-              Jump to 2007 (Beginning)
-            </button>
-            <span className="text-border">•</span>
-            <button
-              type="button"
-              onClick={() => scrollToMilestone(MILESTONES.length - 1)}
-              className="hover:text-accent transition-colors font-mono text-[11px] underline underline-offset-4 cursor-pointer font-bold"
-            >
-              Jump to Present Day →
-            </button>
           </div>
         </div>
 
