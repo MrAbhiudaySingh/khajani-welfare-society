@@ -1282,12 +1282,12 @@ const AboutPage = () => {
             </div>
           </AnimeReveal>
 
-          {/* Bottom Timeline Stepper: 6 Connected Cards */}
+          {/* Bottom Timeline Stepper: 6 Connected Cards with Logos on Track ABOVE the cards */}
           <div className="relative mb-14 sm:mb-16">
-            {/* Horizontal Line Connector */}
-            <div className="hidden lg:block absolute top-[18px] left-[7%] right-[7%] h-[1.5px] bg-[#D8C7B0] z-0" />
+            {/* Horizontal Line Connector behind the circle badges on desktop */}
+            <div className="hidden lg:block absolute top-[20px] left-[8%] right-[8%] h-[1.5px] bg-[#DCCBB5] z-0" />
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3.5 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-4 lg:gap-4 relative z-10">
               {[
                 {
                   year: "2007",
@@ -1300,7 +1300,7 @@ const AboutPage = () => {
                 },
                 {
                   year: "2015",
-                  title: "Formal Registration",
+                  title: "Formal Society Registration",
                   desc: "Registered under the Societies Registration Act, 1860.",
                   icon: FileText,
                   bg: "bg-[#E8F1FB]",
@@ -1346,23 +1346,25 @@ const AboutPage = () => {
               ].map((item, idx) => {
                 const IconComponent = item.icon;
                 return (
-                  <AnimeReveal key={item.title} variant="fade-up" delay={idx * 50} className="h-full">
-                    <div className="bg-[#FAF6EE]/90 sm:bg-white/90 rounded-xl border border-[#E8DCC9] p-3.5 pt-2.5 text-center shadow-2xs hover:shadow-xs hover:border-[#D4C3AC] transition-all flex flex-col justify-between h-full group">
-                      <div>
-                        {/* Circular Node Icon on Connector */}
-                        <div className={`w-9 h-9 rounded-full ${item.bg} ${item.text} border ${item.border} flex items-center justify-center shadow-xs mx-auto mb-2 group-hover:scale-110 transition-transform`}>
-                          <IconComponent size={16} />
-                        </div>
-                        <span className="font-display font-bold text-sm sm:text-base text-[#142033] block">
-                          {item.year}
-                        </span>
-                        <span className="text-[11px] font-bold text-[#142033] block mt-0.5 leading-snug">
-                          {item.title}
-                        </span>
-                        <p className="text-[10px] text-[#64748B] mt-1.5 leading-relaxed font-light">
-                          {item.desc}
-                        </p>
+                  <AnimeReveal key={item.title} variant="fade-up" delay={idx * 50} className="flex flex-col items-center h-full">
+                    {/* Circular Logo Pin on the Connecting Line (ABOVE the card, OUTSIDE) */}
+                    <div className="relative z-10 mb-3 flex items-center justify-center">
+                      <div className={`w-10 h-10 rounded-full ${item.bg} ${item.text} border-2 ${item.border} flex items-center justify-center shadow-xs hover:scale-110 transition-transform bg-white`}>
+                        <IconComponent size={18} className={item.text} />
                       </div>
+                    </div>
+
+                    {/* Clean White Card — Absolutely NO icon/logo inside */}
+                    <div className="bg-white rounded-2xl border border-[#EDE4D6] p-4 sm:p-5 text-center shadow-xs hover:shadow-sm hover:border-[#D8C7B0] transition-all flex flex-col justify-start h-full w-full group">
+                      <span className="font-display font-bold text-base sm:text-lg text-[#142033] block tracking-tight">
+                        {item.year}
+                      </span>
+                      <span className="text-xs font-bold text-[#142033] block mt-1 leading-snug">
+                        {item.title}
+                      </span>
+                      <p className="text-[11px] text-[#5A6878] mt-2 leading-relaxed font-light">
+                        {item.desc}
+                      </p>
                     </div>
                   </AnimeReveal>
                 );
