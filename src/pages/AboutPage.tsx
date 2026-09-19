@@ -1509,55 +1509,203 @@ const AboutPage = () => {
       {/* ══════════════════════════════════════════════════════════════════════════════════
           SCREEN 8 — GOVERNANCE & INSTITUTIONAL IDENTITY
          ══════════════════════════════════════════════════════════════════════════════════ */}
-      <section id="governance" className="py-24 bg-background scroll-mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="governance" className="py-20 lg:py-24 bg-[#FAF6EE] border-t border-[#EAE2D5] scroll-mt-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
-          <AnimeReveal variant="fade-up" className="max-w-3xl mb-14">
-            <span className="inline-flex items-center gap-2 text-accent font-bold text-xs tracking-[0.2em] uppercase px-3.5 py-1.5 rounded-full bg-accent/10 border border-accent/20 mb-3">
-              GOVERNANCE &amp; RESPONSIBILITY
-            </span>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-bold text-primary leading-tight">
-              Purpose needs accountability.
-            </h2>
-            <p className="text-muted-foreground text-base sm:text-lg mt-4 font-light leading-relaxed">
-              Khajani Welfare Society has grown from a grassroots initiative into an institution with responsibilities to the people it works with, the organisations it collaborates with and the regulatory frameworks within which it operates.
-            </p>
-            <div className="mt-4">
-              <span className="text-xs font-mono uppercase tracking-widest text-secondary font-bold">
-                Governance · Responsibility · Transparency · Continuity
+          {/* Top Hero Section: Two Columns (Text Left, Heritage Quote Artwork Right) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10">
+            <AnimeReveal variant="fade-up" className="lg:col-span-6">
+              <span className="inline-flex items-center gap-2 text-[#B85449] font-bold text-[11px] tracking-[0.2em] uppercase px-3.5 py-1 rounded-full bg-[#FBF0EE] border border-[#F2C7BE] mb-4 shadow-2xs">
+                GOVERNANCE &amp; RESPONSIBILITY
               </span>
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-[#142033] leading-[1.08] tracking-tight">
+                Purpose needs{" "}
+                <span className="font-serif italic font-normal text-[#B87738]">
+                  accountability.
+                </span>
+              </h2>
+              <p className="text-[#5A6878] text-sm sm:text-base mt-4 font-light leading-relaxed max-w-xl">
+                Khajani Welfare Society has grown from a grassroots initiative into an institution with responsibilities—to the people it works with, the organisations it collaborates with and the regulatory frameworks within which it operates.
+              </p>
+              <div className="mt-6">
+                <span className="text-[11px] font-mono tracking-widest text-[#A66F36] uppercase font-bold">
+                  GOVERNANCE · RESPONSIBILITY · TRANSPARENCY · CONTINUITY
+                </span>
+              </div>
+            </AnimeReveal>
+
+            {/* Right Side Illustration */}
+            <AnimeReveal variant="fade-left" delay={150} className="lg:col-span-6 flex justify-center lg:justify-end">
+              <div className="relative w-full max-w-[540px] pointer-events-none select-none">
+                <img
+                  src="/images/about/governance-hero-illustration.png"
+                  alt="Stronger institutions build brighter communities - Braj Heritage Architecture"
+                  className="w-full h-auto object-contain drop-shadow-sm"
+                  loading="lazy"
+                />
+              </div>
+            </AnimeReveal>
+          </div>
+
+          {/* Middle Card: OUR FOUNDATION — An Institution Built to Endure */}
+          <AnimeReveal variant="fade-up" delay={200}>
+            <div className="rounded-3xl bg-[#FAF6EE]/90 sm:bg-white/80 border border-[#E8DCC9] p-6 sm:p-8 lg:p-10 shadow-xs relative overflow-hidden mb-14">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                {/* Left Side: Foundation Info with Icon */}
+                <div className="lg:col-span-8 flex items-start gap-4 sm:gap-6">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#FAF0E1] border border-[#E6D4BD] flex items-center justify-center text-[#B87738] shrink-0 shadow-2xs mt-1">
+                    <FileText size={28} className="text-[#B87738]" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-[#B85449] block mb-1">
+                      OUR FOUNDATION
+                    </span>
+                    <h3 className="text-2xl sm:text-3xl font-display font-bold text-[#142033] leading-tight">
+                      An Institution Built to Endure.
+                    </h3>
+                    <p className="text-base sm:text-lg font-serif italic text-[#B87738] font-medium mt-0.5 mb-3">
+                      Grassroots in spirit. Structured in practice.
+                    </p>
+                    <p className="text-xs sm:text-sm text-[#5A6878] leading-relaxed max-w-2xl font-light">
+                      The formal registration of Khajani Welfare Society in 2015 under the Societies Registration Act, 1860 marked an important step in that evolution—giving organisational structure to work that had begun at the grassroots in 2007. Trust is sustained through institutional responsibility.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Right Side: 3 Key Pillars */}
+                <div className="lg:col-span-4 space-y-4 pt-6 lg:pt-0 border-t lg:border-t-0 lg:border-l border-[#E8DCC9] lg:pl-8">
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#FAF0E1] border border-[#E6D4BD] flex items-center justify-center text-[#B87738] shrink-0 mt-0.5">
+                      <Users size={16} />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#142033]">
+                        PEOPLE FIRST
+                      </h4>
+                      <p className="text-[11px] text-[#64748B] mt-0.5 leading-snug font-light">
+                        Accountable to the communities we serve
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#FAF0E1] border border-[#E6D4BD] flex items-center justify-center text-[#B87738] shrink-0 mt-0.5">
+                      <ShieldCheck size={16} />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#142033]">
+                        ETHICAL PRACTICES
+                      </h4>
+                      <p className="text-[11px] text-[#64748B] mt-0.5 leading-snug font-light">
+                        Guided by integrity and compliance
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-3.5">
+                    <div className="w-9 h-9 rounded-full bg-[#FAF0E1] border border-[#E6D4BD] flex items-center justify-center text-[#B87738] shrink-0 mt-0.5">
+                      <Leaf size={16} />
+                    </div>
+                    <div>
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-[#142033]">
+                        LONG-TERM IMPACT
+                      </h4>
+                      <p className="text-[11px] text-[#64748B] mt-0.5 leading-snug font-light">
+                        Building systems for a better tomorrow
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </AnimeReveal>
 
-          {/* An Institution Built to Endure */}
-          <div className="mb-14 p-8 rounded-3xl bg-card border border-border/80">
-            <h3 className="font-display font-bold text-2xl text-primary mb-2">
-              An Institution Built to Endure: Grassroots in spirit. Structured in practice.
-            </h3>
-            <p className="text-muted-foreground text-sm sm:text-base font-light leading-relaxed max-w-3xl">
-              The formal registration of Khajani Welfare Society in 2015 under the Societies Registration Act, 1860 marked an important step in that evolution—giving organisational structure to work that had begun at the grassroots in 2007. Trust is sustained through institutional responsibility.
-            </p>
-          </div>
+          {/* Bottom Timeline Stepper: 6 Connected Cards */}
+          <div className="relative mb-20">
+            {/* Horizontal Line Connector */}
+            <div className="hidden lg:block absolute top-[21px] left-[7%] right-[7%] h-[1.5px] bg-[#D8C7B0] z-0" />
 
-          {/* Restrained Horizontal Institutional Strip */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-16">
-            {[
-              { year: "2007", label: "Grassroots Beginning" },
-              { year: "2015", label: "Formal Society Registration" },
-              { year: "MATHURA", label: "Institutional Home" },
-              { year: "UTTAR PRADESH", label: "State of Operation" },
-              { year: "SOCIETY", label: "Organisational Structure" },
-              { year: "BRAJ", label: "Core Geographic Identity" },
-            ].map((strip) => (
-              <div key={strip.label} className="p-4 rounded-2xl bg-card border border-border/70 text-center">
-                <span className="text-lg font-display font-bold text-primary block">
-                  {strip.year}
-                </span>
-                <span className="text-[10px] text-muted-foreground uppercase tracking-wider block mt-1">
-                  {strip.label}
-                </span>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 relative z-10">
+              {[
+                {
+                  year: "2007",
+                  title: "Grassroots Beginning",
+                  desc: "A community-led initiative takes root.",
+                  icon: Leaf,
+                  bg: "bg-[#EAF5EC]",
+                  text: "text-[#2E7D32]",
+                  border: "border-[#C8E6C9]",
+                },
+                {
+                  year: "2015",
+                  title: "Formal Society Registration",
+                  desc: "Registered under the Societies Registration Act, 1860.",
+                  icon: FileText,
+                  bg: "bg-[#E8F1FB]",
+                  text: "text-[#1976D2]",
+                  border: "border-[#BBDEFB]",
+                },
+                {
+                  year: "MATHURA",
+                  title: "Institutional Home",
+                  desc: "Rooted in the cultural and social landscape of Mathura.",
+                  icon: Landmark,
+                  bg: "bg-[#F5EFEA]",
+                  text: "text-[#795548]",
+                  border: "border-[#D7CCC8]",
+                },
+                {
+                  year: "UTTAR PRADESH",
+                  title: "State of Operation",
+                  desc: "Working across communities in Uttar Pradesh.",
+                  icon: MapPin,
+                  bg: "bg-[#FCEBF0]",
+                  text: "text-[#C2185B]",
+                  border: "border-[#F8BBD0]",
+                },
+                {
+                  year: "SOCIETY",
+                  title: "Organisational Structure",
+                  desc: "A registered, compliant and accountable structure.",
+                  icon: Users,
+                  bg: "bg-[#F4EBFA]",
+                  text: "text-[#7B1FA2]",
+                  border: "border-[#E1BEE7]",
+                },
+                {
+                  year: "BRAJ",
+                  title: "Core Geographic Identity",
+                  desc: "Dedicated to the people, heritage and opportunities of Braj.",
+                  icon: Compass,
+                  bg: "bg-[#E0F2F1]",
+                  text: "text-[#00796B]",
+                  border: "border-[#B2DFDB]",
+                },
+              ].map((item, idx) => {
+                const IconComponent = item.icon;
+                return (
+                  <AnimeReveal key={item.title} variant="fade-up" delay={idx * 60} className="h-full">
+                    <div className="bg-[#FAF6EE]/90 sm:bg-white/90 rounded-2xl border border-[#E8DCC9] p-5 pt-3 text-center shadow-2xs hover:shadow-xs hover:border-[#D4C3AC] transition-all flex flex-col justify-between h-full group">
+                      <div>
+                        {/* Circular Node Icon on Connector */}
+                        <div className={`w-11 h-11 rounded-full ${item.bg} ${item.text} border ${item.border} flex items-center justify-center shadow-xs mx-auto mb-3.5 group-hover:scale-110 transition-transform`}>
+                          <IconComponent size={19} />
+                        </div>
+                        <span className="font-display font-bold text-base sm:text-lg text-[#142033] block">
+                          {item.year}
+                        </span>
+                        <span className="text-xs font-bold text-[#142033] block mt-0.5">
+                          {item.title}
+                        </span>
+                        <p className="text-[11px] text-[#64748B] mt-2 leading-relaxed font-light">
+                          {item.desc}
+                        </p>
+                      </div>
+                    </div>
+                  </AnimeReveal>
+                );
+              })}
+            </div>
           </div>
 
           {/* Governance Pillars */}
