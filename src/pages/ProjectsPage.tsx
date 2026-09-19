@@ -22,6 +22,8 @@ import {
   X,
   Info,
   Flower2,
+  Feather,
+  Leaf,
   ChevronRight,
 } from "lucide-react";
 
@@ -693,57 +695,125 @@ const ProjectsPage = () => {
           SCREEN 3 — HERITAGE & TRADITIONAL KNOWLEDGE
           Keeping knowledge in practice.
       ════════════════════════════════════════════════════════════════ */}
-      <section id="heritage-traditional-knowledge" className="py-20 lg:py-24 bg-card relative">
-        <div className="container mx-auto px-4 max-w-6xl">
-          {/* Section Header */}
-          <div className="max-w-3xl mb-14">
-            <AnimeReveal variant="fade-up">
-              <span className="text-accent text-xs font-bold tracking-[0.2em] uppercase inline-block mb-2">
-                BRAJ · CRAFT · LIVING HERITAGE
-              </span>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-primary tracking-tight leading-tight">
-                Keeping knowledge in practice.
-              </h2>
-              <div className="mt-4 space-y-2 text-muted-foreground text-base sm:text-lg leading-relaxed">
-                <p>
-                  Braj carries distinctive artistic and craft traditions shaped by generations of practice.
-                </p>
-                <p className="text-sm sm:text-base text-primary/80 font-medium">
-                  Khajani’s heritage work engages with the people who practise these traditions, the knowledge involved in making them and the ways in which that knowledge can continue.
+      <section id="heritage-traditional-knowledge" className="py-16 sm:py-20 lg:py-24 bg-[#FAF7F2] relative overflow-hidden border-y border-[#EAE2D5]">
+        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          
+          {/* Section Header with Artwork & Heritage Elements */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-14 sm:mb-16">
+            
+            {/* Left Column: Title & Context */}
+            <div className="lg:col-span-7">
+              <AnimeReveal variant="fade-up">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-[#B85D3B] text-xs font-bold tracking-[0.2em] uppercase font-mono">
+                    BRAJ · CRAFT · LIVING HERITAGE
+                  </span>
+                  <span className="w-10 h-[1.5px] bg-[#B85D3B]/60" />
+                </div>
+
+                <h2 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary tracking-tight leading-[1.08]">
+                  Keeping knowledge
+                  <br />
+                  <span className="font-serif italic font-normal text-[#B85D3B]">
+                    in practice.
+                  </span>
+                </h2>
+
+                <div className="mt-5 space-y-2.5 text-muted-foreground text-sm sm:text-base leading-relaxed font-light max-w-xl">
+                  <p>
+                    Braj carries distinctive artistic and craft traditions shaped by generations of practice.
+                  </p>
+                  <p className="text-xs sm:text-sm text-primary font-medium">
+                    Khajani’s heritage work engages with the people who practise these traditions, the knowledge involved in making them and the ways in which that knowledge can continue.
+                  </p>
+                </div>
+
+                {/* Sub-strand line */}
+                <div className="flex items-center gap-3 mt-6 pt-4 border-t border-[#EAE2D5]/70">
+                  <span className="w-8 h-[1.5px] bg-[#B85D3B]/50" />
+                  <span className="text-[10px] sm:text-[11px] font-mono font-bold tracking-[0.22em] text-[#8C6D46] uppercase">
+                    PEOPLE · CRAFT · HERITAGE · LIVELIHOODS
+                  </span>
+                </div>
+              </AnimeReveal>
+            </div>
+
+            {/* Right Column: Abstract Art Composition & Calligraphy */}
+            <div className="lg:col-span-5 relative flex flex-col justify-between items-end min-h-[240px]">
+              {/* Top right label */}
+              <div className="pl-3 border-l-2 border-[#D4AF37]/60 text-left mb-2 z-10">
+                <p className="text-[10px] font-mono tracking-[0.25em] font-bold text-[#8C6D46] uppercase leading-tight">
+                  TRADITION<br />
+                  PEOPLE<br />
+                  PLACES<br />
+                  POSSIBILITIES
                 </p>
               </div>
-            </AnimeReveal>
+
+              {/* Centered illustration background */}
+              <div className="absolute right-0 top-0 bottom-0 w-full max-w-[440px] pointer-events-none select-none opacity-95">
+                <img
+                  src="/images/projects/heritage-header-art.png"
+                  alt="Braj heritage craft, temple arch and pottery artwork"
+                  className="w-full h-full object-contain object-right-top"
+                />
+              </div>
+
+              {/* Overlay Cursive Tagline */}
+              <div className="relative z-10 text-right pr-2 sm:pr-4 pt-4 mt-auto">
+                <span className="font-handwriting text-2xl sm:text-3xl text-[#B85D3B] italic leading-tight block">
+                  Rooted in practice.
+                </span>
+                <span className="font-handwriting text-2xl sm:text-3xl text-[#B85D3B] italic leading-tight block">
+                  Carried forward together.
+                </span>
+              </div>
+            </div>
+
           </div>
 
-          {/* Programmes Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Programme 1: ROYAL SANJHI ART */}
+          {/* Programmes Grid — 3 Bespoke Editorial Cards (Not Numbered) */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+            
+            {/* ─── Programme 1: ROYAL SANJHI ART ─── */}
             <AnimeReveal variant="fade-up" delay={100} className="h-full">
               <div
                 id="royal-sanjhi"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#FAF0EE]/60 border border-[#ECD1CD] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/royal-sanjhi-training.jpg"
-                    alt="Royal Sanjhi Art Workshop"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Living Heritage
-                  </span>
+                {/* Media Top Section with Terracotta Spine/Tab (No Numbers) */}
+                <div className="flex w-full overflow-hidden border-b border-[#ECD1CD]/70">
+                  {/* Left Colored Spine */}
+                  <div className="w-14 sm:w-16 bg-[#B85D3B] shrink-0 flex flex-col items-center justify-center py-6 text-white">
+                    <Flower2 size={24} className="text-white drop-shadow-xs" />
+                    <div className="w-5 h-[1.5px] bg-white/40 rounded-full mt-3" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/royal-sanjhi-training.jpg"
+                      alt="Royal Sanjhi Art Workshop"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Living Heritage
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       ROYAL SANJHI ART
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
+                    <p className="text-sm font-serif italic text-[#B85D3B] font-semibold mb-3">
                       Keeping the traditional art of Braj alive
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed font-light">
                       <p>
                         Khajani trains women, students, young people and artisans in traditional Sanjhi techniques including stencil making, intricate paper cutting, patterns and motifs.
                       </p>
@@ -753,14 +823,14 @@ const ProjectsPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
+                  <div className="mt-6 pt-4 border-t border-[#ECD1CD]/60">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium">
-                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">250+ artists trained</span>
-                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">120+ women earning</span>
+                      <span className="bg-[#B85D3B]/10 text-[#B85D3B] font-semibold px-2.5 py-1 rounded-md">250+ artists trained</span>
+                      <span className="bg-[#B85D3B]/10 text-[#B85D3B] font-semibold px-2.5 py-1 rounded-md">120+ women earning</span>
                     </div>
                     <Link
                       to="/projects/royal-sanjhi"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#B85D3B] hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
                       <span>EXPLORE ROYAL SANJHI ART</span>
                       <ArrowRight size={14} />
@@ -770,33 +840,45 @@ const ProjectsPage = () => {
               </div>
             </AnimeReveal>
 
-            {/* Programme 2: MATHURA ZARI POSHAK */}
+            {/* ─── Programme 2: MATHURA ZARI POSHAK ─── */}
             <AnimeReveal variant="fade-up" delay={200} className="h-full">
               <div
                 id="mathura-poshak"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#FAF5EB]/60 border border-[#EFE2C8] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/poshak-zari.jpg"
-                    alt="Mathura Zari Poshak GI craft"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Craft · Heritage · GI
-                  </span>
+                {/* Media Top Section with Ochre/Sand Spine/Tab (No Numbers) */}
+                <div className="flex w-full overflow-hidden border-b border-[#EFE2C8]/70">
+                  {/* Left Colored Spine */}
+                  <div className="w-14 sm:w-16 bg-[#C29853] shrink-0 flex flex-col items-center justify-center py-6 text-white">
+                    <Feather size={24} className="text-white drop-shadow-xs" />
+                    <div className="w-5 h-[1.5px] bg-white/40 rounded-full mt-3" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/poshak-zari.jpg"
+                      alt="Mathura Zari Poshak GI craft"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Craft · Heritage · GI
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       MATHURA ZARI POSHAK
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
+                    <p className="text-sm font-serif italic text-[#C29853] font-semibold mb-3">
                       Traditional craftsmanship rooted in Mathura
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed font-light">
                       <p>
                         Mathura Zari Poshak is a traditional craft associated with the making and decoration of Poshak for deities in Mathura and Braj.
                       </p>
@@ -806,15 +888,15 @@ const ProjectsPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
+                  <div className="mt-6 pt-4 border-t border-[#EFE2C8]/60">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium">
-                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">125 artisans</span>
-                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">30-day training</span>
-                      <span className="bg-accent/10 text-accent font-semibold px-2.5 py-1 rounded-md">GI registered</span>
+                      <span className="bg-[#C29853]/15 text-[#8C6527] font-semibold px-2.5 py-1 rounded-md">125 artisans</span>
+                      <span className="bg-[#C29853]/15 text-[#8C6527] font-semibold px-2.5 py-1 rounded-md">30-day training</span>
+                      <span className="bg-[#C29853]/15 text-[#8C6527] font-semibold px-2.5 py-1 rounded-md">GI registered</span>
                     </div>
                     <Link
                       to="/projects/mathura-zari-poshak"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#C29853] hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
                       <span>EXPLORE MATHURA ZARI POSHAK</span>
                       <ArrowRight size={14} />
@@ -824,33 +906,45 @@ const ProjectsPage = () => {
               </div>
             </AnimeReveal>
 
-            {/* Programme 3: BRIJ-SURABHI */}
+            {/* ─── Programme 3: BRIJ-SURABHI ─── */}
             <AnimeReveal variant="fade-up" delay={300} className="h-full">
               <div
                 id="brij-surabhi"
-                className="clay-card rounded-2xl overflow-hidden flex flex-col h-full group hover:border-accent/40 transition-all border border-border/60"
+                className="rounded-3xl overflow-hidden flex flex-col h-full bg-gradient-to-b from-card via-card to-[#EFF5F1]/60 border border-[#CFDDD3] shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
               >
-                <div className="relative aspect-[16/10] overflow-hidden">
-                  <img
-                    src="/images/projects/brij-surabhi-cow.jpg"
-                    alt="Brij-Surabhi Cow Welfare & Temple Flower Reuse"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
-                  <span className="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-md">
-                    Cow Welfare · Temple Flowers
-                  </span>
+                {/* Media Top Section with Sage Green Spine/Tab (No Numbers) */}
+                <div className="flex w-full overflow-hidden border-b border-[#CFDDD3]/70">
+                  {/* Left Colored Spine */}
+                  <div className="w-14 sm:w-16 bg-[#557A61] shrink-0 flex flex-col items-center justify-center py-6 text-white">
+                    <Leaf size={24} className="text-white drop-shadow-xs" />
+                    <div className="w-5 h-[1.5px] bg-white/40 rounded-full mt-3" />
+                  </div>
+
+                  {/* Image Frame */}
+                  <div className="flex-1 h-48 sm:h-52 relative overflow-hidden">
+                    <img
+                      src="/images/projects/brij-surabhi-cow.jpg"
+                      alt="Brij-Surabhi Cow Welfare & Temple Flower Reuse"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent" />
+                    <span className="absolute top-3 right-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-xs border border-white/50 backdrop-blur-xs">
+                      Cow Welfare · Temple Flowers
+                    </span>
+                  </div>
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+
+                {/* Content Area */}
+                <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
                   <div>
-                    <h3 className="text-2xl font-display font-bold text-primary mb-1">
+                    <h3 className="text-2xl font-display font-bold text-primary tracking-tight mb-1">
                       BRIJ-SURABHI
                     </h3>
-                    <p className="text-sm font-serif italic text-accent font-semibold mb-3">
+                    <p className="text-sm font-serif italic text-[#557A61] font-semibold mb-3">
                       Turning local resources into useful products and livelihoods
                     </p>
-                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed font-light">
                       <p>
                         Brij-Surabhi works with women’s Self Help Groups and communities to create useful products from cow dung and reused temple flowers.
                       </p>
@@ -860,16 +954,16 @@ const ProjectsPage = () => {
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-4 border-t border-border/50">
+                  <div className="mt-6 pt-4 border-t border-[#CFDDD3]/60">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Women’s SHGs</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Cow Welfare</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Temple Flowers</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Livelihoods</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Women’s SHGs</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Cow Welfare</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Temple Flowers</span>
+                      <span className="bg-[#557A61]/15 text-[#3D5A46] font-semibold px-2.5 py-1 rounded-md">Livelihoods</span>
                     </div>
                     <Link
                       to="/projects/brij-surabhi"
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#557A61] hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
                       <span>EXPLORE BRIJ-SURABHI</span>
                       <ArrowRight size={14} />
@@ -878,7 +972,15 @@ const ProjectsPage = () => {
                 </div>
               </div>
             </AnimeReveal>
+
           </div>
+
+          {/* Section Corner Accents */}
+          <div className="mt-14 pt-6 border-t border-[#EAE2D5] flex items-center justify-between text-[10px] font-mono tracking-[0.25em] text-[#8C6D46]/70 uppercase">
+            <span>CULTURE · CREATIVITY · COMMUNITY</span>
+            <span>BRAJ FOREVER INSPIRES</span>
+          </div>
+
         </div>
       </section>
 
