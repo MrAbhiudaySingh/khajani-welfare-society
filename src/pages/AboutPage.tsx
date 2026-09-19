@@ -954,40 +954,40 @@ const AboutPage = () => {
             </div>
           </AnimeReveal>
 
-          {/* Sub-Section: The Founding Story (3 Prominent Profiles) */}
-          <div className="mb-12 sm:mb-14 max-w-5xl mx-auto">
-            <div className="text-center mb-6">
-              <h3 className="text-lg sm:text-xl font-display font-bold text-primary">
+          {/* Sub-Section: The Founding Story (3 Compact Profile Cards) */}
+          <div className="mb-10 sm:mb-12 max-w-3xl mx-auto">
+            <div className="text-center mb-4">
+              <h3 className="text-sm sm:text-base lg:text-lg font-display font-bold text-primary tracking-tight">
                 The Founding Story: Where experience met new ideas.
               </h3>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-3.5">
               {/* Dr. Harimohan Maheshwari */}
               <AnimeReveal variant="fade-up" delay={0}>
-                <div className="clay-card rounded-xl p-4 sm:p-4.5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-md transition-all duration-300 group hover:-translate-y-0.5">
+                <div className="clay-card rounded-xl p-3 sm:p-3.5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-md transition-all duration-300 group hover:-translate-y-0.5 bg-white/90">
                   <div>
-                    <div className="rounded-lg overflow-hidden h-36 sm:h-40 w-full bg-muted mb-3 border border-border/60 shadow-xs group-hover:scale-102 transition-transform duration-500">
+                    <div className="rounded-lg overflow-hidden h-24 sm:h-26 w-full bg-muted mb-2 border border-border/60 shadow-2xs group-hover:scale-[1.02] transition-transform duration-500">
                       <img
                         src="/images/about/dr-hari-mohan.jpg"
                         alt="Dr. Harimohan Maheshwari, Co-Founder"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-1">
+                    <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-accent/10 text-accent inline-block mb-1">
                       CO-FOUNDER
                     </span>
-                    <h4 className="font-display font-bold text-lg text-primary leading-tight mb-1">
+                    <h4 className="font-display font-bold text-sm sm:text-[15px] text-primary leading-tight mb-0.5">
                       Dr. Harimohan Maheshwari
                     </h4>
-                    <p className="text-[11px] font-medium text-secondary mb-1.5">
+                    <p className="text-[9.5px] font-medium text-[#C28236] mb-1.5 leading-snug">
                       A lifetime of service. A grassroots perspective.
                     </p>
-                    <p className="text-xs text-muted-foreground leading-relaxed">
+                    <p className="text-[10.5px] text-muted-foreground leading-relaxed font-light">
                       A retired veterinary doctor, Dr. Harimohan Maheshwari brought his long experience of public service and direct engagement with people and communities. Following his retirement in 2007, his understanding of grassroots realities and service-oriented approach became an important part of Khajani’s early journey in Mathura.
                     </p>
                   </div>
-                  <div className="mt-3 pt-2 border-t border-border/50 text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
+                  <div className="mt-2.5 pt-2 border-t border-border/40 text-[8.5px] font-mono text-muted-foreground uppercase tracking-wider">
                     Public Service · Community · Purpose
                   </div>
                 </div>
@@ -995,29 +995,29 @@ const AboutPage = () => {
 
               {/* Abha Maheshwari */}
               <AnimeReveal variant="fade-up" delay={100}>
-                <div className="clay-card rounded-xl p-4 sm:p-4.5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-md transition-all duration-300 group hover:-translate-y-0.5">
+                <div className="clay-card rounded-xl p-3 sm:p-3.5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-md transition-all duration-300 group hover:-translate-y-0.5 bg-white/90">
                   <div>
-                    <div className="rounded-lg overflow-hidden h-36 sm:h-40 w-full bg-muted mb-3 border border-border/60 shadow-xs group-hover:scale-102 transition-transform duration-500">
+                    <div className="rounded-lg overflow-hidden h-24 sm:h-26 w-full bg-muted mb-2 border border-border/60 shadow-2xs group-hover:scale-[1.02] transition-transform duration-500">
                       <img
                         src="/images/about/abha.jpg"
                         alt="Abha Maheshwari, Co-Founder &amp; President"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-1">
+                    <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-accent/10 text-accent inline-block mb-1">
                       CO-FOUNDER · PRESIDENT
                     </span>
-                    <h4 className="font-display font-bold text-lg text-primary leading-tight mb-1">
+                    <h4 className="font-display font-bold text-sm sm:text-[15px] text-primary leading-tight mb-0.5">
                       Abha Maheshwari
                     </h4>
-                    <p className="text-[11px] font-medium text-secondary mb-1.5">
+                    <p className="text-[9.5px] font-medium text-[#C28236] mb-1.5 leading-snug">
                       People at the heart of the journey.
                     </p>
-                    <p className="text-xs text-muted-foreground leading-relaxed">
+                    <p className="text-[10.5px] text-muted-foreground leading-relaxed font-light">
                       Abha Maheshwari has been part of Khajani’s journey from its beginnings. Her involvement has remained closely connected with the organisation’s work with women and communities and with the continuity and institutional development of Khajani as its work expanded.
                     </p>
                   </div>
-                  <div className="mt-3 pt-2 border-t border-border/50 text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
+                  <div className="mt-2.5 pt-2 border-t border-border/40 text-[8.5px] font-mono text-muted-foreground uppercase tracking-wider">
                     People · Participation · Continuity
                   </div>
                 </div>
@@ -1025,29 +1025,29 @@ const AboutPage = () => {
 
               {/* Shipra Rathi */}
               <AnimeReveal variant="fade-up" delay={200}>
-                <div className="clay-card rounded-xl p-4 sm:p-4.5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-md transition-all duration-300 group hover:-translate-y-0.5">
+                <div className="clay-card rounded-xl p-3 sm:p-3.5 flex flex-col justify-between h-full border border-border/80 hover:border-secondary/60 hover:shadow-md transition-all duration-300 group hover:-translate-y-0.5 bg-white/90">
                   <div>
-                    <div className="rounded-lg overflow-hidden h-36 sm:h-40 w-full bg-muted mb-3 border border-border/60 shadow-xs group-hover:scale-102 transition-transform duration-500">
+                    <div className="rounded-lg overflow-hidden h-24 sm:h-26 w-full bg-muted mb-2 border border-border/60 shadow-2xs group-hover:scale-[1.02] transition-transform duration-500">
                       <img
                         src="/images/about/shipra-rathi.jpg"
                         alt="Shipra Rathi, Co-Founder &amp; Secretary"
                         className="w-full h-full object-cover object-top"
                       />
                     </div>
-                    <span className="text-[9px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-accent/10 text-accent block w-fit mb-1">
+                    <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-accent/10 text-accent inline-block mb-1">
                       CO-FOUNDER · SECRETARY
                     </span>
-                    <h4 className="font-display font-bold text-lg text-primary leading-tight mb-1">
+                    <h4 className="font-display font-bold text-sm sm:text-[15px] text-primary leading-tight mb-0.5">
                       Shipra Rathi
                     </h4>
-                    <p className="text-[11px] font-medium text-secondary mb-1.5">
+                    <p className="text-[9.5px] font-medium text-[#C28236] mb-1.5 leading-snug">
                       From design and skills to livelihood possibilities.
                     </p>
-                    <p className="text-xs text-muted-foreground leading-relaxed">
+                    <p className="text-[10.5px] text-muted-foreground leading-relaxed font-light">
                       Daughter of Dr. Harimohan and Abha Maheshwari, Shipra Rathi brought a younger generation and a different professional perspective. A fashion designer with experience in vocational training, her background in design and practical learning became central to Khajani’s work in women’s skills, livelihoods and traditional crafts.
                     </p>
                   </div>
-                  <div className="mt-3 pt-2 border-t border-border/50 text-[10px] font-mono text-muted-foreground uppercase tracking-wider">
+                  <div className="mt-2.5 pt-2 border-t border-border/40 text-[8.5px] font-mono text-muted-foreground uppercase tracking-wider">
                     Design · Skills · Livelihoods
                   </div>
                 </div>
