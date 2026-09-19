@@ -5,7 +5,6 @@ import { AnimeReveal } from "@/components/AnimeReveal";
 import { useAnimeCounter } from "@/hooks/use-anime-counter";
 import AuroraBackground from "@/components/AuroraBackground";
 import TiltCard from "@/components/TiltCard";
-import { partnerList } from "@/components/PartnerLogos";
 import {
   Users, ArrowRight, Sparkles, CheckCircle2, Mail, HeartHandshake,
   Award, BookOpen, Heart, Compass, Feather, Building2, Calendar,
@@ -75,43 +74,6 @@ function AnimatedHeroHeading() {
       <span className="hero-word block text-secondary italic font-serif">Preserving heritage.</span>
       <span className="hero-word block text-accent">Creating opportunities.</span>
     </h1>
-  );
-}
-
-/* ─── Partners ticker with authentic institutional logos ─── */
-function PartnersTicker() {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-    const items = Array.from(el.querySelectorAll(".partner-item")) as HTMLElement[];
-    items.forEach((i) => { i.style.opacity = "0"; });
-    animate(items, {
-      opacity: [0, 1],
-      translateY: [16, 0],
-      ease: "outExpo",
-      duration: 700,
-      delay: stagger(120, { start: 200 }),
-    });
-  }, []);
-
-  return (
-    <div
-      ref={containerRef}
-      className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 lg:gap-10"
-    >
-      {partnerList.map(({ name, Component, desc }) => (
-        <div
-          key={name}
-          title={`${name} — ${desc}`}
-          className="partner-item group flex items-center justify-center p-3 sm:p-4 rounded-xl bg-card border border-border/70 hover:border-secondary/60 hover:shadow-md transition-all duration-300 cursor-default"
-          style={{ opacity: 0 }}
-        >
-          <Component height={42} className="transition-transform duration-300 group-hover:scale-105" />
-        </div>
-      ))}
-    </div>
   );
 }
 
@@ -246,13 +208,6 @@ const HomePage = () => {
               </span>
             </div>
           </AnimeReveal>
-        </div>
-      </section>
-
-      {/* ── Institutional Partners Ribbon ── */}
-      <section className="py-10 glass border-y border-border/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <PartnersTicker />
         </div>
       </section>
 
