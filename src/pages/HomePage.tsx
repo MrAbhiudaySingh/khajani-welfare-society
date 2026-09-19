@@ -1136,12 +1136,48 @@ const HomePage = () => {
           {/* 6 Visual Moments Streams */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             {[
-              { stream: "SKILLS IN ACTION", tagline: "Learning. Creating. Earning.", img: "/images/projects/upsdm-tailor.jpg", link: "/projects/upsdm-training" },
-              { stream: "OUR CRAFT", tagline: "Preserving a living tradition.", img: "/images/projects/royal-sanjhi-training.jpg", link: "/projects/royal-sanjhi" },
-              { stream: "BRIGHTER FUTURES", tagline: "Education opens doors.", img: "/images/projects/kla-students.jpg", link: "/projects/kla" },
-              { stream: "STRONGER COMMUNITIES", tagline: "Together for a better tomorrow.", img: "/images/projects/shg-federation.jpg", link: "/projects/shg-federation" },
-              { stream: "RECOGNITION", tagline: "Encouragement for our journey.", img: "/images/media/press-review-3.jpg", link: "/media" },
-              { stream: "ROOTED IN BRAJ", tagline: "Heritage inspires our work.", img: "/images/projects/brij-surabhi-cow.jpg", link: "/projects/brij-surabhi" },
+              {
+                stream: "SKILLS IN ACTION",
+                tagline: "Learning. Creating. Earning.",
+                title: "Vocational training empowering women with lifelong livelihood skills.",
+                img: "/images/projects/upsdm-tailor.jpg",
+                link: "/projects/upsdm-training"
+              },
+              {
+                stream: "OUR CRAFT",
+                tagline: "Preserving a living tradition.",
+                title: "Reviving ancestral Sanjhi art and traditional Braj craft heritage.",
+                img: "/images/projects/royal-sanjhi-training.jpg",
+                link: "/projects/royal-sanjhi"
+              },
+              {
+                stream: "BRIGHTER FUTURES",
+                tagline: "Education opens doors.",
+                title: "Foundational schooling & digital literacy for young girls in Mathura.",
+                img: "/images/projects/kla-students.jpg",
+                link: "/projects/kla"
+              },
+              {
+                stream: "STRONGER COMMUNITIES",
+                tagline: "Together for a better tomorrow.",
+                title: "Self-help groups and women's cooperatives driving local change.",
+                img: "/images/projects/shg-federation.jpg",
+                link: "/projects/shg-federation"
+              },
+              {
+                stream: "RECOGNITION",
+                tagline: "Encouragement for our journey.",
+                title: "State honours and leadership awards celebrating grassroots impact.",
+                img: "/images/media/press-review-3.jpg",
+                link: "/media"
+              },
+              {
+                stream: "ROOTED IN BRAJ",
+                tagline: "Heritage inspires our work.",
+                title: "Sacred culture, cow welfare, and sustainable temple traditions.",
+                img: "/images/projects/brij-surabhi-cow.jpg",
+                link: "/projects/brij-surabhi"
+              },
             ].map((item, i) => (
               <AnimeReveal key={item.stream} variant="fade-up" delay={i * 70}>
                 <Link to={item.link} className="group relative rounded-3xl overflow-hidden aspect-[4/3] block bg-muted shadow-md hover:shadow-xl transition-all">
@@ -1153,11 +1189,11 @@ const HomePage = () => {
                     </span>
                   </div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <p className="text-secondary text-xs font-semibold">
+                    <p className="text-secondary text-xs font-semibold tracking-wide">
                       {item.tagline}
                     </p>
-                    <h3 className="text-lg font-display font-bold text-white mt-0.5">
-                      {item.stream} — {item.tagline}
+                    <h3 className="text-base sm:text-lg font-display font-bold text-white mt-1 leading-snug group-hover:text-secondary/90 transition-colors">
+                      {item.title}
                     </h3>
                   </div>
                 </Link>
