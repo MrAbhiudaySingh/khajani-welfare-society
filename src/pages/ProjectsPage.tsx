@@ -187,28 +187,20 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "brij-sangini": {
     id: "brij-sangini",
     name: "BRIJ-SANGINI",
-    category: "Health & Dignity",
-    tagline: "Health, awareness and everyday dignity.",
+    category: "Women’s Health · Menstrual Hygiene · Awareness · Blood Donation · Dignity",
+    tagline: "Health, hygiene and dignity for women and girls",
     image: "/images/projects/sanitary-napkin-vending.jpg",
-    tags: ["Health", "Awareness", "Dignity", "Participation"],
+    tags: ["Women’s Health", "Menstrual Hygiene", "Awareness", "Blood Donation", "Dignity"],
     overview: [
-      "Brij-Sangini brings together Khajani’s initiatives connected with health, awareness and dignity.",
-      "Rather than functioning as separate projects, activities such as Menstrual Hygiene initiatives and Blood Donation Camps form part of this larger programme.",
-    ],
-    keyStrands: [
-      {
-        title: "Menstrual Hygiene",
-        desc: "Khajani’s menstrual-hygiene work combines awareness with practical intervention. Documented work includes the installation of 25 sanitary napkin vending machines and destroyers across 25 government schools and colleges.",
-      },
-      {
-        title: "Blood Donation Camps",
-        desc: "Blood-donation camps bring together voluntary participation and a direct community-health need. Other verified health and dignity initiatives can continue to be added within Brij-Sangini.",
-      },
+      "Brij-Sangini brings together Khajani’s work in menstrual hygiene, women’s health awareness and blood donation.",
+      "The programme focuses on practical needs that directly affect the everyday health, confidence and well-being of women, girls and communities.",
+      "The programme combines awareness with practical action—including the installation of 25 sanitary napkin vending machines and destroyers across 25 government schools and colleges in 2020.",
+      "Blood-donation initiatives encourage voluntary community participation to meet critical local healthcare needs.",
     ],
     highlights: [
-      "Breakdown of deep-rooted taboos through frank, supportive adolescent health sessions",
-      "Direct hardware infrastructure: 25 automated vending units ensuring institutional access",
-      "Community blood donation drives addressing acute local clinical supply needs",
+      "Installation of 25 sanitary napkin vending machines & 25 destroyers across 25 government schools & colleges (2020)",
+      "Structured 4-step framework: Talk & Explain, Provide Access, Support Safe Use, and Safe Disposal",
+      "Regular voluntary blood donation camps addressing acute clinical supply needs",
     ],
   },
   "brij-seva": {
@@ -879,50 +871,32 @@ const ProjectsPage = () => {
                       BRIJ-SANGINI
                     </h3>
                     <p className="text-sm font-serif italic text-accent font-semibold mb-3">
-                      Health, awareness and everyday dignity.
+                      Health, hygiene and dignity for women and girls
                     </p>
                     <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Brij-Sangini brings together Khajani’s initiatives connected with health, awareness and dignity.
+                        Brij-Sangini brings together Khajani’s work in menstrual hygiene, women’s health awareness and blood donation.
                       </p>
                       <p>
-                        Rather than functioning as separate projects, activities such as Menstrual Hygiene initiatives and Blood Donation Camps form part of this larger programme:
-                      </p>
-                      <div className="bg-muted/40 p-3 rounded-xl space-y-2 border border-border/40 text-xs">
-                        <p>
-                          <strong className="text-primary font-semibold block uppercase tracking-wide text-[10px]">
-                            Menstrual Hygiene
-                          </strong>
-                          Khajani’s menstrual-hygiene work combines awareness with practical intervention. Documented work includes the installation of 25 sanitary napkin vending machines and destroyers across 25 government schools and colleges.
-                        </p>
-                        <p>
-                          <strong className="text-primary font-semibold block uppercase tracking-wide text-[10px]">
-                            Blood Donation Camps
-                          </strong>
-                          Blood-donation camps bring together voluntary participation and a direct community-health need.
-                        </p>
-                      </div>
-                      <p className="text-[11px] text-muted-foreground/80 italic">
-                        Other verified health and dignity initiatives can continue to be added within Brij-Sangini.
+                        The programme combines awareness with practical action—including the installation of 25 sanitary napkin vending machines and destroyers across 25 government schools and colleges.
                       </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Health</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Awareness</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Dignity</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Participation</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Women’s Health</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Menstrual Hygiene</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">25 Schools</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Blood Donation</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-sangini")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-sangini"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer font-mono"
                     >
-                      <span>Explore Brij-Sangini</span>
+                      <span>EXPLORE BRIJ-SANGINI</span>
                       <ArrowRight size={14} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1265,6 +1239,7 @@ const ProjectsPage = () => {
                 subtitle: "Health & Dignity",
                 icon: Heart,
                 tag: "Health",
+                link: "/projects/brij-sangini",
               },
               {
                 id: "brij-seva",

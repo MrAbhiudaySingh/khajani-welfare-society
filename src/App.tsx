@@ -69,6 +69,7 @@ const App = () => (
           <Route path="/projects/brij-surabhi-cow-welfare" element={<BrijSurabhiCowWelfarePage />} />
           <Route path="/projects/brij-surabhi-temple-waste" element={<BrijSurabhiTempleWastePage />} />
           <Route path="/projects/brij-sangini" element={<BrijSanginiPage />} />
+          <Route path="/brij-sangini" element={<BrijSanginiPage />} />
           <Route path="/projects/brij-seva" element={<BrijSevaPage />} />
           <Route path="/projects/shakti-ek-adhaar" element={<ShaktiEkAdhaarPage />} />
           <Route path="/projects/radha-krishna-poshak" element={<RadhaKrishnaPoshakPage />} />
