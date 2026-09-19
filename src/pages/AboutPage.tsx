@@ -34,20 +34,22 @@ function ImpactCounter({
 
   return (
     <AnimeReveal variant="fade-up" delay={delay} className="h-full">
-      <div className="clay-card rounded-3xl p-6 sm:p-8 flex flex-col justify-between h-full border border-border/70 hover:border-secondary/50 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
+      <div className="clay-card rounded-2xl p-5 sm:p-5 lg:p-4 xl:p-5 flex flex-col justify-between h-full border border-border/70 hover:border-secondary/50 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1">
         <div>
-          <span
-            ref={ref as React.RefObject<HTMLSpanElement>}
-            className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary mb-2 block tabular-nums group-hover:text-accent transition-colors"
-          >
-            {displayed}
-          </span>
-          <div className="h-0.5 w-10 bg-secondary/60 rounded-full mb-3 group-hover:w-16 transition-all duration-300" />
-          <h4 className="font-display font-bold text-lg text-foreground mb-1">
+          <div className="overflow-hidden mb-2">
+            <span
+              ref={ref as React.RefObject<HTMLSpanElement>}
+              className="text-3xl sm:text-4xl lg:text-[24px] xl:text-[30px] 2xl:text-4xl font-display font-bold text-primary block tabular-nums tracking-tight whitespace-nowrap group-hover:text-accent transition-colors"
+            >
+              {displayed}
+            </span>
+          </div>
+          <div className="h-0.5 w-8 bg-secondary/60 rounded-full mb-3 group-hover:w-12 transition-all duration-300" />
+          <h4 className="font-display font-bold text-base sm:text-base lg:text-[14px] xl:text-base text-foreground leading-snug min-h-[2.6rem] flex items-center">
             {label}
           </h4>
         </div>
-        <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed mt-2">
+        <p className="text-xs text-muted-foreground leading-relaxed mt-3 pt-3 border-t border-border/40">
           {subtext}
         </p>
       </div>
@@ -997,7 +999,7 @@ const AboutPage = () => {
             </AnimeReveal>
 
             {/* 5 Verified Counters Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-14">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-3 xl:gap-5 mb-14">
               <ImpactCounter
                 target={10000}
                 label="Women Trained"
