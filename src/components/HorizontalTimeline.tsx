@@ -241,8 +241,9 @@ export default function HorizontalTimeline() {
 
     const isMobile = windowWidth < 640;
     const isTablet = windowWidth >= 640 && windowWidth < 1024;
+    const isLaptop = windowWidth >= 1024 && windowWidth < 1440;
 
-    const spacing = isMobile ? 125 : isTablet ? 170 : 215;
+    const spacing = isMobile ? 115 : isTablet ? 145 : isLaptop ? 170 : 205;
     const translateX = offset * spacing;
     const rotateY = offset === 0 ? 0 : offset > 0 ? -18 : 18;
     const translateZ = offset === 0 ? 0 : -absOffset * (isMobile ? 35 : 55);
@@ -301,9 +302,9 @@ export default function HorizontalTimeline() {
         {/* ─── 3D Cover Flow Carousel Stage ─── */}
         <div className="relative w-full flex items-center justify-center h-[520px] sm:h-[550px] md:h-[580px]">
 
-          {/* Left Flank: Arched Gateway Illustration (Only on wide screens where space permits) */}
-          <div className="hidden 2xl:flex absolute left-4 2xl:left-8 top-1/2 -translate-y-1/2 items-center z-20 pointer-events-none select-none">
-            <div className="relative w-24 2xl:w-28 aspect-[3/4] rounded-t-[70px] rounded-b-xl overflow-hidden border-2 border-white shadow-xl bg-white">
+          {/* Left Flank: Arched Gateway Illustration (Visible on all screens sm and above) */}
+          <div className="hidden sm:flex absolute left-2 sm:left-4 xl:left-8 top-1/2 -translate-y-1/2 items-center z-20 pointer-events-none select-none">
+            <div className="relative w-20 sm:w-24 xl:w-28 aspect-[3/4] rounded-t-[50px] sm:rounded-t-[60px] xl:rounded-t-[70px] rounded-b-xl overflow-hidden border-2 border-white shadow-xl bg-white">
               <img
                 src="/images/about/timeline-left-arch.jpg"
                 alt="The Beginning Archway"
@@ -319,7 +320,7 @@ export default function HorizontalTimeline() {
             onClick={handlePrev}
             disabled={activeIndex === 0}
             aria-label="Previous milestone"
-            className={`absolute left-2 sm:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-[#E2D9CC] shadow-xl flex items-center justify-center text-[#1C2D42] transition-all duration-300 ${
+            className={`absolute left-3 sm:left-16 xl:left-24 top-1/2 -translate-y-1/2 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-[#E2D9CC] shadow-xl flex items-center justify-center text-[#1C2D42] transition-all duration-300 ${
               activeIndex === 0
                 ? "opacity-35 cursor-not-allowed"
                 : "hover:bg-[#C85A32] hover:text-white hover:border-[#C85A32] hover:scale-105 active:scale-95 cursor-pointer"
@@ -334,7 +335,7 @@ export default function HorizontalTimeline() {
             onClick={handleNext}
             disabled={activeIndex === MILESTONES.length - 1}
             aria-label="Next milestone"
-            className={`absolute right-2 sm:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-[#E2D9CC] shadow-xl flex items-center justify-center text-[#1C2D42] transition-all duration-300 ${
+            className={`absolute right-3 sm:right-16 xl:right-24 top-1/2 -translate-y-1/2 z-40 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-[#E2D9CC] shadow-xl flex items-center justify-center text-[#1C2D42] transition-all duration-300 ${
               activeIndex === MILESTONES.length - 1
                 ? "opacity-35 cursor-not-allowed"
                 : "hover:bg-[#C85A32] hover:text-white hover:border-[#C85A32] hover:scale-105 active:scale-95 cursor-pointer"
@@ -343,9 +344,9 @@ export default function HorizontalTimeline() {
             <ChevronRight size={22} />
           </button>
 
-          {/* Right Flank: Palace Heritage Illustration (Only on wide screens where space permits) */}
-          <div className="hidden 2xl:flex absolute right-4 2xl:right-8 top-1/2 -translate-y-1/2 items-center z-20 pointer-events-none select-none">
-            <div className="relative w-24 2xl:w-28 aspect-[3/4] rounded-t-[70px] rounded-b-xl overflow-hidden border-2 border-white shadow-xl bg-white">
+          {/* Right Flank: Palace Heritage Illustration (Visible on all screens sm and above) */}
+          <div className="hidden sm:flex absolute right-2 sm:right-4 xl:right-8 top-1/2 -translate-y-1/2 items-center z-20 pointer-events-none select-none">
+            <div className="relative w-20 sm:w-24 xl:w-28 aspect-[3/4] rounded-t-[50px] sm:rounded-t-[60px] xl:rounded-t-[70px] rounded-b-xl overflow-hidden border-2 border-white shadow-xl bg-white">
               <img
                 src="/images/about/timeline-right-palace.jpg"
                 alt="Heritage Architecture"
@@ -377,7 +378,7 @@ export default function HorizontalTimeline() {
                   key={m.id}
                   onClick={() => setActiveIndex(idx)}
                   style={cardStyle}
-                  className={`absolute top-1/2 left-1/2 w-[310px] sm:w-[350px] md:w-[380px] lg:w-[395px] h-[480px] sm:h-[510px] md:h-[540px] rounded-3xl p-5 sm:p-6 bg-white border transition-all duration-500 cursor-pointer flex flex-col justify-between overflow-hidden select-none ${
+                  className={`absolute top-1/2 left-1/2 w-[300px] sm:w-[330px] md:w-[360px] lg:w-[380px] h-[480px] sm:h-[510px] md:h-[540px] rounded-3xl p-5 sm:p-6 bg-white border transition-all duration-500 cursor-pointer flex flex-col justify-between overflow-hidden select-none ${
                     isActive
                       ? "border-[#E5A93C] ring-4 ring-[#E5A93C]/25 shadow-2xl"
                       : "border-[#EAE2D5] shadow-lg hover:border-[#E5A93C]/50"
