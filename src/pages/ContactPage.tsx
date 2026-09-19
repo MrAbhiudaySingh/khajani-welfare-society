@@ -21,7 +21,32 @@ import {
   Briefcase 
 } from "lucide-react";
 
+function MapToggleBtn({
+  active,
+  onClick,
+  label,
+}: {
+  active: boolean;
+  onClick: () => void;
+  label: string;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`px-5 py-2.5 text-xs font-bold uppercase tracking-widest rounded-full border transition-all duration-200 cursor-pointer shadow-md ${
+        active
+          ? "btn-3d-accent border-accent text-white"
+          : "bg-white/95 backdrop-blur-md text-foreground border-border hover:bg-white"
+      }`}
+    >
+      {label}
+    </button>
+  );
+}
+
 const ContactPage = () => {
+  const [activeMap, setActiveMap] = useState<"office" | "center">("office");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -243,36 +268,6 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                {/* Map Card & Get Directions */}
-                <div className="clay-card rounded-2xl p-4 sm:p-5 bg-card border border-border/80 shadow-xs overflow-hidden">
-                  <div className="flex items-center justify-between mb-2.5">
-                    <span className="text-xs uppercase font-bold tracking-wider text-primary">
-                      Find Us in Mathura
-                    </span>
-                    <a
-                      href="https://maps.google.com/?q=Khajani+Welfare+Society+Dampier+Nagar+Mathura+Uttar+Pradesh"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-accent hover:text-accent/80 font-bold inline-flex items-center gap-1 transition-colors"
-                    >
-                      Directions <ArrowRight size={12} />
-                    </a>
-                  </div>
-
-                  {/* Clean Map Embed */}
-                  <div className="w-full h-44 sm:h-48 rounded-xl overflow-hidden border border-border bg-muted">
-                    <iframe
-                      title="Khajani Welfare Society Location"
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.8166547141566!2d77.6749174!3d27.4890858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39737119022e3895%3A0xe54d92416f5c80ef!2sDampier%20Nagar%2C%20Mathura%2C%20Uttar%20Pradesh%20281001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen={false}
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    />
-                  </div>
-                </div>
 
                 {/* Verified Official Social Accounts */}
                 <div className="pt-1">
@@ -450,6 +445,77 @@ const ContactPage = () => {
               </div>
 
             </div>
+          </div>
+        </section>
+
+        {/* ========================================================= */}
+        {/* PRESENCE IN BRIJ (Exact Map & Hubs from About Us)         */}
+        {/* ========================================================= */}
+        <section className="py-20 sm:py-24 bg-background border-t border-border">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <AnimeReveal variant="fade-up">
+              <div className="mb-12 sm:mb-16 flex flex-col md:flex-row md:items-end justify-between border-b border-border pb-8">
+                <div>
+                  <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-accent block mb-2">
+                    OUR GEOGRAPHY &amp; LOCATIONS
+                  </span>
+                  <h2 className="text-4xl sm:text-5xl font-display font-medium text-primary">
+                    Presence in Brij
+                  </h2>
+                </div>
+                <p className="text-muted-foreground max-w-md md:text-right mt-4 md:mt-0 italic font-serif text-sm sm:text-base">
+                  "Serving over 100 villages within a 50km radius."
+                </p>
+              </div>
+            </AnimeReveal>
+
+            <AnimeReveal variant="scale">
+              <div className="clay-card overflow-hidden">
+                <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div className="relative h-[440px] sm:h-[500px] w-full bg-muted overflow-hidden">
+                    {/* Map toggle */}
+                    <div className="absolute top-4 left-4 z-10 flex gap-2">
+                      <MapToggleBtn active={activeMap === "office"} onClick={() => setActiveMap("office")} label="Office" />
+                      <MapToggleBtn active={activeMap === "center"} onClick={() => setActiveMap("center")} label="Center" />
+                    </div>
+                    <iframe
+                      title={activeMap === "office" ? "Khajani Welfare Society - Office" : "Khajani Welfare Society - Training Centre"}
+                      src={
+                        activeMap === "office"
+                          ? "https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Khajani+Welfare+Society,+Gali+Sales+Tax,+Dampier+Nagar,+Mathura,+Uttar+Pradesh&zoom=17"
+                          : "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d221.16145897473746!2d77.675511!3d27.5133306!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3973711c41e6011d%3A0x9d9880dcfc6f0c68!2sKHAJANI%20LEARNING%20ACADEMY!5e0!3m2!1sen!2sin!4v1773558202587!5m2!1sen!2sin"
+                      }
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+                  </div>
+
+                  <div className="p-8 sm:p-12 flex flex-col justify-center">
+                    <div className="space-y-6 sm:space-y-8">
+                      {[
+                        { num: "01", name: "Mathura HQ", desc: "Administrative hub & Advanced IT Training Center. The heart of our operations." },
+                        { num: "02", name: "Vrindavan Cluster", desc: "Focus on textile, embroidery, and souvenir crafting for the tourism market." },
+                        { num: "03", name: "Govardhan Unit", desc: "Agri-based skill development and organic farming workshops." },
+                      ].map((loc) => (
+                        <div key={loc.num} className="glass rounded-xl p-5 group cursor-pointer hover:border-accent/30 transition-all duration-300">
+                          <div className="flex items-center mb-2 gap-3">
+                            <span className="text-secondary font-bold text-sm w-8 shrink-0">{loc.num}.</span>
+                            <h3 className="text-xl font-display font-bold text-primary group-hover:text-accent transition-colors">
+                              {loc.name}
+                            </h3>
+                          </div>
+                          <p className="text-muted-foreground text-sm pl-11 leading-relaxed">{loc.desc}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimeReveal>
           </div>
         </section>
 
