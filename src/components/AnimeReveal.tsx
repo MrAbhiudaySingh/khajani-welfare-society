@@ -2,33 +2,40 @@ import React, { forwardRef, useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { animate, stagger } from "animejs";
 
-type AnimationVariant =
+export type AnimationVariant =
   | "fade-up"
+  | "fade-down"
   | "fade-left"
   | "fade-right"
   | "scale"
   | "fade"
+  | "blur-reveal"
   | "stagger-children";
 
-interface AnimeRevealProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AnimeRevealProps extends React.HTMLAttributes<HTMLDivElement> {
   variant?: AnimationVariant;
   delay?: number;
   duration?: number;
   staggerDelay?: number;
   children: React.ReactNode;
   threshold?: number;
+  once?: boolean;
 }
 
 const getInitialStyle = (variant: AnimationVariant): React.CSSProperties => {
   switch (variant) {
     case "fade-up":
-      return { opacity: 0, transform: "translateY(48px)" };
+      return { opacity: 0, transform: "translateY(36px)" };
+    case "fade-down":
+      return { opacity: 0, transform: "translateY(-36px)" };
     case "fade-left":
-      return { opacity: 0, transform: "translateX(-48px)" };
+      return { opacity: 0, transform: "translateX(-36px)" };
     case "fade-right":
-      return { opacity: 0, transform: "translateX(48px)" };
+      return { opacity: 0, transform: "translateX(36px)" };
     case "scale":
-      return { opacity: 0, transform: "scale(0.88)" };
+      return { opacity: 0, transform: "scale(0.92)" };
+    case "blur-reveal":
+      return { opacity: 0, transform: "translateY(24px)", filter: "blur(10px)" };
     case "stagger-children":
       return {};
     default:
@@ -42,39 +49,54 @@ const AnimeReveal = forwardRef<HTMLDivElement, AnimeRevealProps>(
       variant = "fade-up",
       delay = 0,
       duration = 800,
-      staggerDelay = 80,
-      threshold = 0.12,
+      staggerDelay = 70,
+      threshold = 0.1,
+      once = true,
       className,
       children,
       style,
       ...props
     },
-    _ref
+    ref
   ) => {
-    const containerRef = useRef<HTMLDivElement>(null);
+    const localRef = useRef<HTMLDivElement>(null);
+    const containerRef = (ref as React.RefObject<HTMLDivElement>) || localRef;
     const hasAnimated = useRef(false);
 
     useEffect(() => {
       const el = containerRef.current;
       if (!el) return;
 
+      // Check user reduced-motion preference
+      const prefersReducedMotion =
+        typeof window !== "undefined" &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if (prefersReducedMotion) {
+        el.style.opacity = "1";
+        el.style.transform = "none";
+        el.style.filter = "none";
+        return;
+      }
+
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting && !hasAnimated.current) {
+          if (entry.isIntersecting && (!hasAnimated.current || !once)) {
             hasAnimated.current = true;
-            observer.unobserve(el);
+            if (once) observer.unobserve(el);
 
             if (variant === "stagger-children") {
               const childEls = Array.from(el.children) as HTMLElement[];
               childEls.forEach((child) => {
                 child.style.opacity = "0";
-                child.style.transform = "translateY(36px)";
+                child.style.transform = "translateY(28px)";
               });
+
               animate(childEls, {
                 opacity: [0, 1],
-                translateY: [36, 0],
+                translateY: [28, 0],
                 ease: "outExpo",
-                duration,
+                duration: duration * 0.9,
                 delay: stagger(staggerDelay, { start: delay }),
               });
             } else {
@@ -87,19 +109,28 @@ const AnimeReveal = forwardRef<HTMLDivElement, AnimeRevealProps>(
               switch (variant) {
                 case "fade-up":
                   animeProps.opacity = [0, 1];
-                  animeProps.translateY = [48, 0];
+                  animeProps.translateY = [36, 0];
+                  break;
+                case "fade-down":
+                  animeProps.opacity = [0, 1];
+                  animeProps.translateY = [-36, 0];
                   break;
                 case "fade-left":
                   animeProps.opacity = [0, 1];
-                  animeProps.translateX = [-48, 0];
+                  animeProps.translateX = [-36, 0];
                   break;
                 case "fade-right":
                   animeProps.opacity = [0, 1];
-                  animeProps.translateX = [48, 0];
+                  animeProps.translateX = [36, 0];
                   break;
                 case "scale":
                   animeProps.opacity = [0, 1];
-                  animeProps.scale = [0.88, 1];
+                  animeProps.scale = [0.92, 1];
+                  break;
+                case "blur-reveal":
+                  animeProps.opacity = [0, 1];
+                  animeProps.translateY = [24, 0];
+                  animeProps.filter = ["blur(10px)", "blur(0px)"];
                   break;
                 default:
                   animeProps.opacity = [0, 1];
@@ -109,31 +140,15 @@ const AnimeReveal = forwardRef<HTMLDivElement, AnimeRevealProps>(
             }
           }
         },
-        { threshold }
+        { threshold, rootMargin: "60px 0px -20px 0px" }
       );
 
-      // Failsafe: ensure elements become visible even if IntersectionObserver doesn't fire promptly
-      const fallbackTimer = setTimeout(() => {
-        if (!hasAnimated.current && el) {
-          hasAnimated.current = true;
-          el.style.opacity = "1";
-          el.style.transform = "none";
-          if (variant === "stagger-children") {
-            const childEls = Array.from(el.children) as HTMLElement[];
-            childEls.forEach((child) => {
-              child.style.opacity = "1";
-              child.style.transform = "none";
-            });
-          }
-        }
-      }, 400 + delay);
-
       observer.observe(el);
+
       return () => {
-        clearTimeout(fallbackTimer);
         observer.disconnect();
       };
-    }, [variant, delay, duration, staggerDelay, threshold]);
+    }, [variant, delay, duration, staggerDelay, threshold, once]);
 
     const initialStyle =
       variant !== "stagger-children" ? getInitialStyle(variant) : {};
