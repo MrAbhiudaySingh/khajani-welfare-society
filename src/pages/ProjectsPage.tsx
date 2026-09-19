@@ -208,28 +208,20 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "brij-seva": {
     id: "brij-seva",
     name: "BRIJ-SEVA",
-    category: "Community Service",
-    tagline: "Service begins with showing up.",
+    category: "Jal Seva · Daan Utsav · Plantation Drives · Community Participation",
+    tagline: "Community service through practical action",
     image: "/images/projects/brij-seva-jal.jpg",
-    tags: ["Service", "Giving", "Participation", "Community"],
+    tags: ["Jal Seva", "Daan Utsav", "Plantation Drives", "Community Participation"],
     overview: [
-      "Brij-Seva brings together Khajani’s community-service initiatives.",
-      "Its activities vary according to the need and occasion, but share a straightforward purpose: people coming together to contribute in practical ways.",
-    ],
-    keyStrands: [
-      {
-        title: "Jal Seva",
-        desc: "Community service centred around providing drinking water during periods when it is particularly needed.",
-      },
-      {
-        title: "Daan Utsav",
-        desc: "Activities centred on giving, participation and bringing available resources together with community needs.",
-      },
+      "Brij-Seva brings together Khajani’s community-service initiatives in Mathura and Braj, including Jal Seva, Daan Utsav and plantation drives.",
+      "The programme responds to everyday community needs through simple, practical action and encourages people to participate in serving the communities around them.",
+      "From providing drinking water during the summer and organising giving initiatives to plantation drives, Brij-Seva responds to simple but important needs through practical community action.",
     ],
     highlights: [
-      "Active citizen volunteerism answering direct humanitarian and climate realities",
-      "Summertime clean drinking water kiosks serving pilgrims and local residents",
-      "Resource mobilization channelled directly to underserved families without administrative drag",
+      "Jal Seva: Clean drinking water distribution during peak summer heat in Mathura",
+      "Daan Utsav: Dignified resource sharing and useful household item distribution",
+      "Plantation Drives: Planting native trees and fostering community care for the environment",
+      "Active volunteerism connecting youth, local communities, and institutions",
     ],
   },
   "brij-directory": {
@@ -1018,56 +1010,60 @@ const ProjectsPage = () => {
                       BRIJ-SEVA
                     </h3>
                     <p className="text-base font-serif italic text-accent font-semibold mb-4">
-                      Service begins with showing up.
+                      Community service through practical action
                     </p>
                     <div className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        Brij-Seva brings together Khajani’s community-service initiatives.
+                        Brij-Seva brings together Khajani’s community-service initiatives in Mathura and Braj, including Jal Seva, Daan Utsav and plantation drives.
                       </p>
                       <p>
-                        Its activities vary according to the need and occasion, but share a straightforward purpose: people coming together to contribute in practical ways.
+                        The programme responds to everyday community needs through simple, practical action and encourages people to participate in serving the communities around them.
                       </p>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 my-3">
-                        <div className="p-3.5 rounded-xl bg-muted/40 border border-border/40">
-                          <div className="flex items-center gap-2 text-primary font-semibold text-xs uppercase tracking-wide mb-1">
-                            <Droplets size={14} className="text-secondary" />
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 my-3">
+                        <div className="p-3 rounded-xl bg-muted/40 border border-border/40 text-center sm:text-left">
+                          <div className="flex items-center gap-1.5 text-primary font-semibold text-xs uppercase tracking-wide mb-1">
+                            <Droplets size={13} className="text-secondary" />
                             Jal Seva
                           </div>
-                          <p className="text-xs text-muted-foreground leading-relaxed">
-                            Community service centred around providing drinking water during periods when it is particularly needed.
+                          <p className="text-[11px] text-muted-foreground leading-relaxed">
+                            Drinking water during the summer months.
                           </p>
                         </div>
-                        <div className="p-3.5 rounded-xl bg-muted/40 border border-border/40">
-                          <div className="flex items-center gap-2 text-primary font-semibold text-xs uppercase tracking-wide mb-1">
-                            <Gift size={14} className="text-accent" />
+                        <div className="p-3 rounded-xl bg-muted/40 border border-border/40 text-center sm:text-left">
+                          <div className="flex items-center gap-1.5 text-primary font-semibold text-xs uppercase tracking-wide mb-1">
+                            <Gift size={13} className="text-accent" />
                             Daan Utsav
                           </div>
-                          <p className="text-xs text-muted-foreground leading-relaxed">
-                            Activities centred on giving, participation and bringing available resources together with community needs.
+                          <p className="text-[11px] text-muted-foreground leading-relaxed">
+                            Giving what can be useful to someone else.
+                          </p>
+                        </div>
+                        <div className="p-3 rounded-xl bg-muted/40 border border-border/40 text-center sm:text-left">
+                          <div className="flex items-center gap-1.5 text-primary font-semibold text-xs uppercase tracking-wide mb-1">
+                            <TreePine size={13} className="text-emerald-700" />
+                            Plantation
+                          </div>
+                          <p className="text-[11px] text-muted-foreground leading-relaxed">
+                            Plant today. Care for tomorrow.
                           </p>
                         </div>
                       </div>
-                      <p className="text-[11px] text-muted-foreground/80 italic">
-                        Other verified community-service activities can sit within Brij-Seva as the programme develops.
-                      </p>
                     </div>
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Service</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Giving</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Participation</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Community</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Jal Seva</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Daan Utsav</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Plantation Drives</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Community Participation</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-seva")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-seva"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
                     >
-                      <span>Explore Brij-Seva</span>
-                      <ArrowRight size={14} />
-                    </button>
+                      <span>EXPLORE BRIJ-SEVA →</span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1252,6 +1248,7 @@ const ProjectsPage = () => {
                 subtitle: "Community Service",
                 icon: Droplets,
                 tag: "Community",
+                link: "/projects/brij-seva",
               },
               {
                 id: "brij-directory",
