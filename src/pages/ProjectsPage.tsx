@@ -227,19 +227,19 @@ const PROJECT_DETAILS: Record<string, ProjectDetail> = {
   "brij-directory": {
     id: "brij-directory",
     name: "BRIJ BUSINESS WOMEN DIRECTORY",
-    category: "Women · Enterprise · Visibility",
-    tagline: "Bringing Braj’s women-led enterprises into view.",
+    category: "Women Entrepreneurs · Local Businesses · Visibility · Connections · Opportunities",
+    tagline: "A directory of women-led businesses in Mathura and Braj",
     image: "/images/projects/shg-federation.jpg",
-    tags: ["Women", "Enterprise", "Visibility", "Market Access"],
+    tags: ["Women Entrepreneurs", "Local Businesses", "Visibility", "Connections", "Opportunities"],
     overview: [
-      "The Brij Business Women Directory is an initiative to identify, document and showcase women entrepreneurs, home-based workers, artisans and skilled women across the Braj region.",
-      "It creates a common platform where women-led businesses and skills can become more visible, build connections, reach potential customers and discover opportunities for collaboration.",
-      "Its purpose can be understood through three simple ideas: Identity & Visibility · Network & Connect · Promote & Showcase.",
+      "The Brij Business Women Directory brings women entrepreneurs, home-based businesses and women-led enterprises onto one platform, making their products and services easier to discover.",
+      "The initiative helps create visibility, connections and opportunities for women building their own businesses.",
+      "Across Mathura and Braj, women run businesses from homes, shops, studios and small workspaces. The directory creates a common platform where women-led businesses can be listed, discovered and connected.",
     ],
     highlights: [
-      "Documentation of micro-enterprises, skilled artisans, and home producers",
-      "Bridging grassroots women creators with urban buyers, events, and CSR networks",
-      "Collective solidarity and peer learning among women business owners across Braj",
+      "Dynamic searchable platform covering Crafts, Fashion, Food, Beauty, Education, and Services",
+      "Direct bridge connecting Khajani skill-development alumni with commercial customers",
+      "Public listing application with verification ensuring authentic women-led enterprise",
     ],
   },
 };
@@ -1093,28 +1093,34 @@ const ProjectsPage = () => {
                       BRIJ BUSINESS WOMEN DIRECTORY
                     </h3>
                     <p className="text-base font-serif italic text-accent font-semibold mb-4">
-                      Bringing Braj’s women-led enterprises into view.
+                      A directory of women-led businesses in Mathura and Braj
                     </p>
                     <div className="space-y-3 text-xs sm:text-sm text-muted-foreground leading-relaxed">
                       <p>
-                        The Brij Business Women Directory is an initiative to identify, document and showcase women entrepreneurs, home-based workers, artisans and skilled women across the Braj region.
+                        The Brij Business Women Directory brings women entrepreneurs, home-based businesses and women-led enterprises onto one platform, making their products and services easier to discover.
                       </p>
                       <p>
-                        It creates a common platform where women-led businesses and skills can become more visible, build connections, reach potential customers and discover opportunities for collaboration.
+                        The initiative helps create visibility, connections and opportunities for women building their own businesses.
                       </p>
                       <div className="bg-muted/40 p-3.5 rounded-xl border border-border/40">
                         <p className="text-xs text-primary font-medium mb-1.5">
-                          Its purpose can be understood through three simple ideas:
+                          Connecting enterprise with visibility across:
                         </p>
-                        <div className="flex flex-wrap gap-2 text-xs font-semibold text-accent">
-                          <span className="bg-background px-2.5 py-1 rounded-md border border-border/40">
-                            Identity & Visibility
+                        <div className="flex flex-wrap gap-1.5 text-[11px] font-semibold text-accent">
+                          <span className="bg-background px-2 py-0.5 rounded-md border border-border/40">
+                            Crafts & Sanjhi
                           </span>
-                          <span className="bg-background px-2.5 py-1 rounded-md border border-border/40">
-                            Network & Connect
+                          <span className="bg-background px-2 py-0.5 rounded-md border border-border/40">
+                            Fashion & Zari
                           </span>
-                          <span className="bg-background px-2.5 py-1 rounded-md border border-border/40">
-                            Promote & Showcase
+                          <span className="bg-background px-2 py-0.5 rounded-md border border-border/40">
+                            Home Food
+                          </span>
+                          <span className="bg-background px-2 py-0.5 rounded-md border border-border/40">
+                            Beauty & Wellness
+                          </span>
+                          <span className="bg-background px-2 py-0.5 rounded-md border border-border/40">
+                            Education & Services
                           </span>
                         </div>
                       </div>
@@ -1123,19 +1129,17 @@ const ProjectsPage = () => {
 
                   <div className="mt-6 pt-4 border-t border-border/50">
                     <div className="flex flex-wrap gap-1.5 mb-4 text-[11px] font-medium text-primary/80">
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Women</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Enterprise</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Women Entrepreneurs</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Local Businesses</span>
                       <span className="bg-muted px-2.5 py-1 rounded-md">Visibility</span>
-                      <span className="bg-muted px-2.5 py-1 rounded-md">Market Access</span>
+                      <span className="bg-muted px-2.5 py-1 rounded-md">Opportunities</span>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => openProjectModal("brij-directory")}
-                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5 cursor-pointer"
+                    <Link
+                      to="/projects/brij-directory"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-accent hover:text-primary transition-colors group-hover:gap-2.5"
                     >
-                      <span>Explore the Directory</span>
-                      <ArrowRight size={14} />
-                    </button>
+                      <span>EXPLORE THE DIRECTORY →</span>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -1256,6 +1260,7 @@ const ProjectsPage = () => {
                 subtitle: "Women · Enterprise · Visibility",
                 icon: Briefcase,
                 tag: "Enterprise",
+                link: "/projects/brij-directory",
               },
             ].map((proj, idx) => {
               const Icon = proj.icon;

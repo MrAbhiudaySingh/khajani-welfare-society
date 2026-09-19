@@ -19,6 +19,7 @@ import BrijSurabhiCowWelfarePage from "./pages/BrijSurabhiCowWelfarePage";
 import BrijSurabhiTempleWastePage from "./pages/BrijSurabhiTempleWastePage";
 import BrijSanginiPage from "./pages/BrijSanginiPage";
 import BrijSevaPage from "./pages/BrijSevaPage";
+import BrijDirectoryPage from "./pages/BrijDirectoryPage";
 import ShaktiEkAdhaarPage from "./pages/ShaktiEkAdhaarPage";
 import RadhaKrishnaPoshakPage from "./pages/RadhaKrishnaPoshakPage";
 import RoyalSanjhiPage from "./pages/RoyalSanjhiPage";
@@ -73,6 +74,10 @@ const App = () => (
           <Route path="/brij-sangini" element={<BrijSanginiPage />} />
           <Route path="/projects/brij-seva" element={<BrijSevaPage />} />
           <Route path="/brij-seva" element={<BrijSevaPage />} />
+          <Route path="/projects/brij-directory" element={<BrijDirectoryPage />} />
+          <Route path="/brij-directory" element={<BrijDirectoryPage />} />
+          <Route path="/brij-business-women-directory" element={<BrijDirectoryPage />} />
+          <Route path="/directory" element={<BrijDirectoryPage />} />
           <Route path="/projects/shakti-ek-adhaar" element={<ShaktiEkAdhaarPage />} />
           <Route path="/projects/radha-krishna-poshak" element={<RadhaKrishnaPoshakPage />} />
           <Route path="/projects/mathura-zari-poshak" element={<RadhaKrishnaPoshakPage />} />
