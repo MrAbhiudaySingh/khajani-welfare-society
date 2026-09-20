@@ -98,8 +98,7 @@ const Footer = () => {
   return (
     <footer 
       id="footer" 
-      className="relative overflow-hidden text-stone-300"
-      style={{ background: "hsl(var(--footer-bg, 222 47% 7%))" }}
+      className="relative overflow-hidden text-stone-200 bg-primary"
     >
       {/* Decorative ambient glowing orbs */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl pointer-events-none" />
@@ -261,7 +260,7 @@ const Footer = () => {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full text-xs px-3 py-2 bg-stone-900/80 border border-white/10 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400/60 transition-colors"
+                      className="w-full text-xs px-3 py-2 bg-white/10 border border-white/15 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-amber-400/80 transition-colors"
                     />
                   </div>
                   <div>
@@ -272,7 +271,7 @@ const Footer = () => {
                       required
                       value={formData.contact}
                       onChange={handleInputChange}
-                      className="w-full text-xs px-3 py-2 bg-stone-900/80 border border-white/10 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400/60 transition-colors"
+                      className="w-full text-xs px-3 py-2 bg-white/10 border border-white/15 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-amber-400/80 transition-colors"
                     />
                   </div>
                   <div>
@@ -283,7 +282,7 @@ const Footer = () => {
                       rows={2}
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="w-full text-xs px-3 py-2 bg-stone-900/80 border border-white/10 rounded-lg text-stone-200 placeholder-stone-500 focus:outline-none focus:border-amber-400/60 transition-colors resize-none"
+                      className="w-full text-xs px-3 py-2 bg-white/10 border border-white/15 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-amber-400/80 transition-colors resize-none"
                     />
                   </div>
 

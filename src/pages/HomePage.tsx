@@ -1568,12 +1568,12 @@ const HomePage = () => {
                     ].map((p) => (
                       <div
                         key={p.name}
-                        className="rounded-2xl border border-[#EEF2F6] bg-[#FAFBFD] p-1.5 flex items-center justify-center hover:border-accent/40 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer"
+                        className="rounded-2xl border border-[#EBE6DE] bg-[#FCFBF8] p-1 flex items-center justify-center hover:border-accent/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer overflow-hidden"
                       >
                         <img
                           src={p.img}
                           alt={p.alt}
-                          className="w-full h-auto object-contain rounded-xl group-hover:scale-[1.03] transition-transform duration-300"
+                          className="w-full h-auto object-contain rounded-xl group-hover:scale-[1.02] transition-transform duration-300"
                           loading="lazy"
                         />
                       </div>
