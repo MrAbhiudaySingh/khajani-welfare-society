@@ -649,154 +649,36 @@ const BrijDirectoryPage = () => {
             </div>
           </AnimeReveal>
 
-          {/* Search & Category Filter Controls */}
-          <div className="bg-muted/30 p-4 sm:p-6 rounded-2xl border border-border/60 mb-10 shadow-sm">
-            <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-6">
-              {/* Live Search Input */}
-              <div className="relative w-full md:w-96">
-                <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
-                <input
-                  type="text"
-                  placeholder="Search by business, woman's name, or craft..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-background border border-border text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                />
-                {searchQuery && (
-                  <button
-                    onClick={() => setSearchQuery("")}
-                    className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary text-xs"
-                  >
-                    Clear
-                  </button>
-                )}
+          {/* Coming Soon Notice */}
+          <AnimeReveal variant="fade-up" delay={150}>
+            <div className="clay-card rounded-3xl p-10 sm:p-16 text-center border border-border/80 bg-muted/20 max-w-3xl mx-auto shadow-lg relative overflow-hidden">
+              <div className="w-16 h-16 rounded-2xl bg-secondary/15 text-secondary flex items-center justify-center mx-auto mb-6 shadow-inner">
+                <Sparkles size={32} />
               </div>
-
-              {/* Submit CTA button */}
-              <button
-                type="button"
-                onClick={() => setModalOpen(true)}
-                className="btn-3d-accent px-5 py-2.5 text-xs font-bold uppercase tracking-wider flex items-center gap-2 w-full md:w-auto justify-center cursor-pointer"
-              >
-                <PlusCircle size={14} />
-                <span>Submit a Business</span>
-              </button>
-            </div>
-
-            {/* Category Filter Pills */}
-            <div className="flex flex-wrap gap-2">
-              {CATEGORIES.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setSelectedCategory(cat)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all cursor-pointer ${
-                    selectedCategory === cat
-                      ? "bg-primary text-white shadow-sm font-semibold"
-                      : "bg-background text-muted-foreground hover:text-primary border border-border/60 hover:border-accent/40"
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Directory Grid */}
-          {filteredListings.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredListings.map((biz) => (
-                <div
-                  key={biz.id}
-                  className="clay-card rounded-2xl overflow-hidden border border-border/60 hover:border-accent/50 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="aspect-[16/10] relative overflow-hidden bg-muted">
-                      <img
-                        src={biz.image}
-                        alt={biz.businessName}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent" />
-                      <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-primary shadow-sm">
-                        {biz.category}
-                      </span>
-                      {biz.verified && (
-                        <span className="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-600 text-white shadow-sm">
-                          <CheckCircle2 size={11} /> Verified
-                        </span>
-                      )}
-                      <div className="absolute bottom-3 left-3 right-3 text-white">
-                        <span className="text-[11px] font-medium text-secondary block">
-                          Founded by {biz.entrepreneurName}
-                        </span>
-                      </div>
-                    </div>
-
-                    <div className="p-5">
-                      <h3 className="text-lg font-display font-bold text-primary mb-1 group-hover:text-accent transition-colors">
-                        {biz.businessName}
-                      </h3>
-                      <div className="flex items-center gap-1 text-[11px] text-muted-foreground mb-3">
-                        <MapPin size={12} className="text-accent shrink-0" />
-                        <span>{biz.location}</span>
-                      </div>
-                      <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
-                        {biz.offerDescription}
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="p-5 pt-0 border-t border-border/40 mt-4 flex items-center justify-between gap-3">
-                    <span className="text-[11px] font-semibold text-accent uppercase tracking-wider">
-                      {biz.tag}
-                    </span>
-                    <div className="flex items-center gap-2">
-                      {biz.whatsapp && (
-                        <a
-                          href={`https://wa.me/${biz.whatsapp.replace(/[^0-9]/g, "")}?text=Hello%2C%20I%20found%20your%20business%20on%20the%20Khajani%20Brij%20Business%20Women%20Directory!`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-8 h-8 rounded-full bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white transition-colors flex items-center justify-center text-xs"
-                          title="Connect on WhatsApp"
-                        >
-                          <MessageCircle size={15} />
-                        </a>
-                      )}
-                      {biz.phone && (
-                        <a
-                          href={`tel:${biz.phone}`}
-                          className="w-8 h-8 rounded-full bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white transition-colors flex items-center justify-center text-xs"
-                          title="Call Business"
-                        >
-                          <Phone size={14} />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16 clay-card rounded-2xl border border-dashed border-border/80">
-              <Store size={36} className="mx-auto text-muted-foreground mb-3" />
-              <h4 className="text-base font-display font-bold text-primary mb-1">
-                No matching businesses found
-              </h4>
-              <p className="text-xs text-muted-foreground max-w-sm mx-auto mb-4">
-                Try searching with different keywords or switch back to "All" categories.
+              <span className="inline-block px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-[0.2em] bg-accent/10 text-accent border border-accent/20 mb-4">
+                Directory Under Preparation
+              </span>
+              <h3 className="text-3xl sm:text-5xl font-display font-bold text-primary mb-4">
+                Coming Soon
+              </h3>
+              <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto leading-relaxed mb-8 font-serif">
+                The Brij Business Women Directory is currently being curated with verified women-led enterprises, artisanal workshops, and local professionals across Mathura and Braj.
               </p>
-              <button
-                onClick={() => {
-                  setSelectedCategory("All");
-                  setSearchQuery("");
-                }}
-                className="btn-3d-outline px-4 py-2 text-xs uppercase font-bold tracking-wider"
-              >
-                Reset Filters
-              </button>
+              <div className="p-6 rounded-2xl bg-background/90 border border-border/60 max-w-md mx-auto text-center space-y-4 shadow-sm">
+                <p className="text-xs sm:text-sm text-primary font-medium">
+                  Are you a woman entrepreneur or artisan in Mathura?
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setModalOpen(true)}
+                  className="btn-3d-accent px-6 py-3 text-xs font-bold uppercase tracking-wider inline-flex items-center gap-2 cursor-pointer shadow-md"
+                >
+                  <PlusCircle size={15} />
+                  <span>Submit a Business</span>
+                </button>
+              </div>
             </div>
-          )}
+          </AnimeReveal>
         </div>
       </section>
 
