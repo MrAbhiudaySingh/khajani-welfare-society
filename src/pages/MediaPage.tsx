@@ -47,7 +47,7 @@ const fieldPhotos: FieldPhoto[] = [
     id: "fp-4",
     category: "skills",
     image: "/images/about/apparel-beauty-lab.jpg",
-    title: "Apparel & Beauty Wellness Lab",
+    title: "Beauty & Wellness Training Center",
   },
   {
     id: "fp-5",
@@ -436,7 +436,7 @@ const MediaPage = () => {
                 {/* 5. Bottom Right */}
                 <div className="col-span-7 overflow-hidden rounded-2xl border border-[#EAE2D5] group">
                   <img src="/images/about/apparel-beauty-lab.jpg"
-                    alt="Apparel lab"
+                    alt="Beauty and wellness training center"
                     className="w-full h-28 sm:h-32 object-cover group-hover:scale-105 transition-transform duration-500"
                    loading="lazy" decoding="async"/>
                 </div>
