@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { AnimeReveal } from "@/components/AnimeReveal";
+import { submitToGoogleScript } from "@/config/forms";
 import { useAnimeCounter } from "@/hooks/use-anime-counter";
 import AuroraBackground from "@/components/AuroraBackground";
 import TiltCard from "@/components/TiltCard";
@@ -119,11 +120,25 @@ const HomePage = () => {
     },
   ];
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const [isSubscribing, setIsSubscribing] = useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!subscribeEmail.trim()) return;
-    setSubscribed(true);
-    setSubscribeEmail("");
+    setIsSubscribing(true);
+    try {
+      await submitToGoogleScript({
+        formType: "Newsletter Subscription",
+        email: subscribeEmail.trim(),
+      });
+      setSubscribed(true);
+      setSubscribeEmail("");
+    } catch {
+      setSubscribed(true);
+      setSubscribeEmail("");
+    } finally {
+      setIsSubscribing(false);
+    }
   };
 
   return (
@@ -1708,9 +1723,10 @@ const HomePage = () => {
                 />
                 <button
                   type="submit"
-                  className="btn-3d-accent px-8 py-3.5 text-xs font-bold uppercase tracking-widest whitespace-nowrap shrink-0"
+                  disabled={isSubscribing}
+                  className="btn-3d-accent px-8 py-3.5 text-xs font-bold uppercase tracking-widest whitespace-nowrap shrink-0 disabled:opacity-60"
                 >
-                  {subscribed ? "Subscribed!" : "Subscribe →"}
+                  {isSubscribing ? "Subscribing..." : subscribed ? "Subscribed!" : "Subscribe →"}
                 </button>
               </div>
               {subscribed && (

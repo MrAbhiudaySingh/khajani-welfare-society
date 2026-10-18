@@ -14,6 +14,7 @@ import {
   Loader2 
 } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { submitToGoogleScript } from "@/config/forms";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -43,20 +44,12 @@ const Footer = () => {
     setError("");
 
     try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbw_YY7ecAhA2tVYmh1xucywWrGdGEdFJqy6_rYtRXQRmMKTYLcg1YN9m8redond8rJR/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: formData.name,
-            contact: formData.contact,
-            type: "Footer Contact Enquiry",
-            message: formData.message,
-          }),
-        }
-      );
+      await submitToGoogleScript({
+        formType: "Footer Quick Contact",
+        name: formData.name,
+        contact: formData.contact,
+        message: formData.message,
+      });
       setSubmitted(true);
       setFormData({ name: "", contact: "", message: "" });
     } catch {

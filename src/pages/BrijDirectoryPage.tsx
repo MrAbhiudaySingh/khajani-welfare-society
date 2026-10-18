@@ -5,6 +5,7 @@ import SEO from "@/components/SEO";
 import { AnimeReveal } from "@/components/AnimeReveal";
 import AuroraBackground from "@/components/AuroraBackground";
 import MediaLightbox from "@/components/MediaLightbox";
+import { submitToGoogleScript } from "@/config/forms";
 import {
   Sparkles,
   ArrowRight,
@@ -33,7 +34,8 @@ import {
   PlusCircle,
   Clock,
   Eye,
-  Send
+  Send,
+  Loader2
 } from "lucide-react";
 
 interface BusinessListing {
@@ -216,6 +218,7 @@ const BrijDirectoryPage = () => {
   // Form Modal State
   const [modalOpen, setModalOpen] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     yourName: "",
     businessName: "",
@@ -243,9 +246,27 @@ const BrijDirectoryPage = () => {
     setLightboxOpen(true);
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormSubmitted(true);
+    setIsSubmitting(true);
+    try {
+      await submitToGoogleScript({
+        formType: "Business Directory Application",
+        yourName: formData.yourName,
+        businessName: formData.businessName,
+        phone: formData.phone,
+        email: formData.email,
+        category: formData.category,
+        location: formData.location,
+        whatYouOffer: formData.whatYouOffer,
+        websiteOrSocial: formData.websiteOrSocial,
+      });
+      setFormSubmitted(true);
+    } catch {
+      setFormSubmitted(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const resetForm = () => {
@@ -1335,10 +1356,20 @@ const BrijDirectoryPage = () => {
                   <div className="pt-2">
                     <button
                       type="submit"
-                      className="btn-3d-accent w-full py-3 text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2 cursor-pointer"
+                      disabled={isSubmitting}
+                      className="btn-3d-accent w-full py-3 text-xs uppercase font-bold tracking-widest flex items-center justify-center gap-2 cursor-pointer disabled:opacity-50"
                     >
-                      <Send size={13} />
-                      <span>SUBMIT YOUR BUSINESS →</span>
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 size={13} className="animate-spin" />
+                          <span>SUBMITTING...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Send size={13} />
+                          <span>SUBMIT YOUR BUSINESS →</span>
+                        </>
+                      )}
                     </button>
                   </div>
                 </form>

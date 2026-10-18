@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import AnimeReveal from "@/components/AnimeReveal";
 import AuroraBackground from "@/components/AuroraBackground";
+import { submitToGoogleScript } from "@/config/forms";
 import { 
   MapPin, 
   Phone, 
@@ -77,22 +78,15 @@ const ContactPage = () => {
     setError("");
 
     try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbw_YY7ecAhA2tVYmh1xucywWrGdGEdFJqy6_rYtRXQRmMKTYLcg1YN9m8redond8rJR/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone || "Not provided",
-            interest: formData.interest,
-            message: formData.message,
-            source: "Contact Page Form",
-          }),
-        }
-      );
+      await submitToGoogleScript({
+        formType: "Contact Us",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || "Not provided",
+        interest: formData.interest,
+        message: formData.message,
+        source: "Contact Page Form",
+      });
       setSubmitted(true);
       setFormData({
         name: "",

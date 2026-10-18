@@ -4,6 +4,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { AnimeReveal } from "@/components/AnimeReveal";
 import AuroraBackground from "@/components/AuroraBackground";
+import { submitToGoogleScript } from "@/config/forms";
 import {
   Users,
   Handshake,
@@ -45,15 +46,14 @@ const GetInvolvedPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbw_YY7ecAhA2tVYmh1xucywWrGdGEdFJqy6_rYtRXQRmMKTYLcg1YN9m8redond8rJR/exec",
-        {
-          method: "POST",
-          mode: "no-cors",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
+      await submitToGoogleScript({
+        formType: "Volunteer / Get Involved",
+        name: formData.name,
+        contact: formData.contact,
+        type: formData.type,
+        skillsOrInterest: formData.skillsOrInterest,
+        message: formData.message,
+      });
       setSubmitted(true);
       setTimeout(() => {
         setFormData({ name: "", contact: "", type: "Volunteer", skillsOrInterest: "", message: "" });

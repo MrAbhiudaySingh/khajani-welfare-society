@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Send, Handshake, Building2, Users, Globe } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { submitToGoogleScript } from "@/config/forms";
 
 const PartnershipInquiryPage = () => {
   const { toast } = useToast();
@@ -23,11 +24,13 @@ const PartnershipInquiryPage = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbwsyp9fQCwlCDmid51E8yI2vp6q2dYj-TJe4bo-4iKuzu3AcvsyqbuW-RlVnWAr0UAt/exec", {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+      await submitToGoogleScript({
+        formType: "Corporate Partnership",
+        name: formData.name,
+        organization: formData.organization,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
       });
       toast({ title: "Inquiry Sent!", description: "Thank you! We will get back to you soon." });
       setFormData({ name: "", organization: "", email: "", phone: "", message: "" });
