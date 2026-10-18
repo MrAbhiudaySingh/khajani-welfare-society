@@ -1,0 +1,28 @@
+# Robots.txt for Khajani Welfare Society
+# https://khajani.org/
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /scratch/
+
+# Search Engine Crawlers
+User-agent: Googlebot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.pdf$
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://khajani.org/sitemap.xml

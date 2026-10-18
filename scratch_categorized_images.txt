@@ -1,0 +1,616 @@
+
+### Site Identity & Branding (Favicons, Meta & Banners) (3 images)
+- **File**: `/favicon.ico`
+  - **Dimensions / Type**: N/A (Unknown, 20 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/favicon.png`
+  - **Dimensions / Type**: 696x699 (PNG, 340 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/og-image.png`
+  - **Dimensions / Type**: 1920x579 (PNG, 601 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+
+### Leadership, Governance & Key Dignitaries (8 images)
+- **File**: `/images/about/abha.jpg`
+  - **Dimensions / Type**: 228x228 (PNG, 81 KB)
+  - **Alts/Titles**: Abha Maheshwari, Co-Founder & President
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/awards-dignitaries.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 241 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/about/dr-hari-mohan.jpg`
+  - **Dimensions / Type**: 263x265 (PNG, 94 KB)
+  - **Alts/Titles**: Dr. Hari Mohan Maheshwari, Co-Founder
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/hema-malini-award.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 318 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/about/hema-malini.jpg`
+  - **Dimensions / Type**: 288x200 (JPEG, 46 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/about/om-birla.jpg`
+  - **Dimensions / Type**: 232x320 (JPEG, 56 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/about/shipra-rathi.jpg`
+  - **Dimensions / Type**: 251x273 (PNG, 98 KB)
+  - **Alts/Titles**: Shipra Rathi, Co-Founder & Secretary
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/team-working.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 352 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/pages/BrijHunarPage.tsx
+
+### GI Recognition, Legal Documents & Official Seals (Mathura Zari Poshak) (8 images)
+- **File**: `/images/projects/gi-certificate-1147.jpg`
+  - **Dimensions / Type**: 896x1200 (JPEG, 1127 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/projects/govt-of-india-seal.png`
+  - **Dimensions / Type**: 1024x1024 (PNG, 909 KB)
+  - **Alts/Titles**: State Emblem of India - Government of India
+  - **Used In**: src/pages/GIRecognitionPage.tsx
+- **File**: `/images/projects/ip-india-logo.png`
+  - **Dimensions / Type**: 1024x1024 (PNG, 1059 KB)
+  - **Alts/Titles**: Intellectual Property India Logo
+  - **Used In**: src/pages/GIRecognitionPage.tsx
+- **File**: `/images/projects/mathura-zari-poshak-gi-certificate-1147.pdf`
+  - **Dimensions / Type**: N/A (Unknown, 1092 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/projects/mathura-zari-poshak-gi-logo.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 791 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/RadhaKrishnaPoshakPage.tsx
+- **File**: `/images/projects/mathura-zari-poshak-official-logo.png`
+  - **Dimensions / Type**: 1618x1618 (PNG, 1578 KB)
+  - **Alts/Titles**: Authentic Mathura Zari Poshak Official GI Logo from Government PDF | Mathura Zari Poshak Official Geographical Indication Logo
+  - **Used In**: src/pages/GIRecognitionPage.tsx, src/pages/HomePage.tsx
+- **File**: `/images/projects/real-gi-certificate-page-1.png`
+  - **Dimensions / Type**: 992x1403 (PNG, 2261 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/GIRecognitionPage.tsx
+- **File**: `/images/projects/real-gi-certificate-page-2.png`
+  - **Dimensions / Type**: 1020x1320 (PNG, 650 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/GIRecognitionPage.tsx
+
+### Partner & Sponsor Official Logos (20 images)
+- **File**: `/images/home/partners/balrampur.png`
+  - **Dimensions / Type**: 138x115 (PNG, 24 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/card-balrampur.png`
+  - **Dimensions / Type**: 572x460 (PNG, 58 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-hrsuccesstalk.png`
+  - **Dimensions / Type**: 572x460 (PNG, 15 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-hrsuccesstalk.svg`
+  - **Dimensions / Type**: N/A (Unknown, 15 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/card-indianoil.png`
+  - **Dimensions / Type**: 572x460 (PNG, 92 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-msme.png`
+  - **Dimensions / Type**: 572x460 (PNG, 138 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-sidbi.png`
+  - **Dimensions / Type**: 572x460 (PNG, 36 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-supreme.png`
+  - **Dimensions / Type**: 572x460 (PNG, 76 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-uppro.png`
+  - **Dimensions / Type**: 572x460 (PNG, 62 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-upsdm.png`
+  - **Dimensions / Type**: 572x460 (PNG, 49 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/card-worldbank.png`
+  - **Dimensions / Type**: 572x460 (PNG, 69 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/home/partners/hrsuccesstalk.png`
+  - **Dimensions / Type**: 192x192 (PNG, 11 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/indianoil.png`
+  - **Dimensions / Type**: 138x115 (PNG, 24 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/msme.png`
+  - **Dimensions / Type**: 138x115 (PNG, 28 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/sidbi.png`
+  - **Dimensions / Type**: 138x115 (PNG, 21 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/supreme.png`
+  - **Dimensions / Type**: 143x115 (PNG, 6 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/uppro.png`
+  - **Dimensions / Type**: 143x115 (PNG, 9 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/upsdm.png`
+  - **Dimensions / Type**: 138x115 (PNG, 22 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners/worldbank.png`
+  - **Dimensions / Type**: 138x115 (PNG, 22 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/home/partners-quote-flourish.png`
+  - **Dimensions / Type**: 1024x342 (PNG, 110 KB)
+  - **Alts/Titles**: Greater impact through shared purpose
+  - **Used In**: src/pages/HomePage.tsx
+
+### Vocational Training & Skill Development (UPSDM, EduDaksh, KLA, Brij Hunar) (25 images)
+- **File**: `/images/about/apparel-beauty-lab.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 254 KB)
+  - **Alts/Titles**: Apparel lab
+  - **Used In**: src/pages/BrijHunarPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/about/classroom.jpg`
+  - **Dimensions / Type**: 1200x896 (JPEG, 996 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/pages/BrijHunarPage.tsx
+- **File**: `/images/about/collab-upsdm.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 257 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/about/computer-lab.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 304 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijHunarPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/projects/brij-hunar-class.jpg`
+  - **Dimensions / Type**: 277x171 (JPEG, 36 KB)
+  - **Alts/Titles**: Skill development center
+  - **Used In**: src/pages/BrijNipunPage.tsx, src/pages/MediaPage.tsx, src/pages/RadhaKrishnaPoshakPage.tsx
+- **File**: `/images/projects/brij-hunar-sewing-hall.jpg`
+  - **Dimensions / Type**: 174x111 (JPEG, 6 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/RadhaKrishnaPoshakPage.tsx
+- **File**: `/images/projects/brij-hunar-tailoring.jpg`
+  - **Dimensions / Type**: 174x111 (JPEG, 6 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/RadhaKrishnaPoshakPage.tsx
+- **File**: `/images/projects/brij-hunar-training.jpg`
+  - **Dimensions / Type**: 264x168 (JPEG, 40 KB)
+  - **Alts/Titles**: Women in hands-on practical vocational training session in Mathura
+  - **Used In**: src/pages/BrijHunarPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/projects/brij-nipun-activities.jpg`
+  - **Dimensions / Type**: 565x192 (JPEG, 38 KB)
+  - **Alts/Titles**: Participants learning hands-on craft skills in Brij-Nipun workshop | Brij-Nipun short-term workshop and camps
+  - **Used In**: src/pages/BrijNipunPage.tsx, src/pages/ProjectsPage.tsx, src/pages/RoyalSanjhiPage.tsx
+- **File**: `/images/projects/brij-nipun-workshop.jpg`
+  - **Dimensions / Type**: 176x111 (JPEG, 7 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/RoyalSanjhiPage.tsx
+- **File**: `/images/projects/digi-shala-icon.jpg`
+  - **Dimensions / Type**: 743x485 (PNG, 597 KB)
+  - **Alts/Titles**: Digi-Shala interactive computer training inside campus
+  - **Used In**: src/pages/DigiShalaPage.tsx
+- **File**: `/images/projects/digi-shala.jpg`
+  - **Dimensions / Type**: 512x342 (JPEG, 108 KB)
+  - **Alts/Titles**: Digi-Shala digital learning classroom for girls | Digi-Shala practical digital literacy
+  - **Used In**: src/components/OurJourneyTimeline.tsx, src/pages/BrijDirectoryPage.tsx, src/pages/DigiShalaPage.tsx (and more)
+- **File**: `/images/projects/edudaksh-award.jpg`
+  - **Dimensions / Type**: 228x373 (JPEG, 3 KB)
+  - **Alts/Titles**: KLA students receiving academic recognition
+  - **Used In**: src/pages/KLAPage.tsx
+- **File**: `/images/projects/edudaksh-classroom.jpg`
+  - **Dimensions / Type**: 228x373 (JPEG, 3 KB)
+  - **Alts/Titles**: EduDaksh classroom session
+  - **Used In**: src/pages/EdudakshPage.tsx, src/pages/KLAPage.tsx
+- **File**: `/images/projects/edudaksh-computer.jpg`
+  - **Dimensions / Type**: 281x375 (JPEG, 23 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/KLAPage.tsx
+- **File**: `/images/projects/edudaksh-gallery.jpg`
+  - **Dimensions / Type**: 1600x900 (JPEG, 292 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/projects/edudaksh-training.jpg`
+  - **Dimensions / Type**: 830x374 (JPEG, 49 KB)
+  - **Alts/Titles**: EduDaksh remedial learning in action
+  - **Used In**: src/pages/EdudakshPage.tsx
+- **File**: `/images/projects/kla-classroom-1.jpg`
+  - **Dimensions / Type**: 481x423 (PNG, 317 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx, src/pages/KLAPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/projects/kla-classroom-2.jpg`
+  - **Dimensions / Type**: 481x427 (PNG, 287 KB)
+  - **Alts/Titles**: Safe and encouraging learning atmosphere at KLA
+  - **Used In**: src/pages/KLAPage.tsx
+- **File**: `/images/projects/kla-students.jpg`
+  - **Dimensions / Type**: 862x466 (PNG, 839 KB)
+  - **Alts/Titles**: Khajani Learning Academy students in Mathura | Students in classroom | Khajani Learning Academy students
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/pages/BrijDirectoryPage.tsx, src/pages/HomePage.tsx (and more)
+- **File**: `/images/projects/upsdm-beauty.jpg`
+  - **Dimensions / Type**: 326x204 (PNG, 121 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijAnshumanPage.tsx, src/pages/BrijDirectoryPage.tsx, src/pages/UPSDMTrainingPage.tsx
+- **File**: `/images/projects/upsdm-class.jpg`
+  - **Dimensions / Type**: 232x111 (JPEG, 9 KB)
+  - **Alts/Titles**: A modern training classroom with students
+  - **Used In**: src/pages/UPSDMTrainingPage.tsx
+- **File**: `/images/projects/upsdm-computer.jpg`
+  - **Dimensions / Type**: 232x111 (JPEG, 11 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/projects/upsdm-sewing.jpg`
+  - **Dimensions / Type**: 233x111 (JPEG, 11 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijAnshumanPage.tsx
+- **File**: `/images/projects/upsdm-tailor.jpg`
+  - **Dimensions / Type**: 317x190 (PNG, 123 KB)
+  - **Alts/Titles**: Women in tailoring workshop | Brij-Hunar vocational training
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/components/OurJourneyTimeline.tsx, src/pages/BrijAnshumanPage.tsx (and more)
+
+### Artisan Heritage & Crafts (Zari Poshak, Sanjhi Art, UPITS Trade Show) (6 images)
+- **File**: `/images/culture/culture-sanjhi-art.jpg`
+  - **Dimensions / Type**: 1200x896 (JPEG, 841 KB)
+  - **Alts/Titles**: Royal Sanjhi Art
+  - **Used In**: src/pages/CulturePage.tsx
+- **File**: `/images/culture/culture-zari-poshak.jpg`
+  - **Dimensions / Type**: 1200x896 (JPEG, 1044 KB)
+  - **Alts/Titles**: Mathura Zari Poshak
+  - **Used In**: src/pages/CulturePage.tsx
+- **File**: `/images/projects/poshak-sanjhi.jpg`
+  - **Dimensions / Type**: 694x925 (JPEG, 267 KB)
+  - **Alts/Titles**: Intricate Sanjhi paper cutting motif
+  - **Used In**: src/pages/BrijAnshumanPage.tsx, src/pages/CulturePage.tsx, src/pages/RadhaKrishnaPoshakPage.tsx (and more)
+- **File**: `/images/projects/poshak-zari.jpg`
+  - **Dimensions / Type**: 799x649 (PNG, 891 KB)
+  - **Alts/Titles**: Artisan hands embroidering Mathura Zari Poshak | Intricate Zari work on Mathura deity poshak | Mathura Zari Poshak sacred deity attire | Zari embroidery detail | Mathura Zari Poshak GI craft | Authentic Mathura Zari Poshak Craftsmanship
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/components/OurJourneyTimeline.tsx, src/pages/BrijAnshumanPage.tsx (and more)
+- **File**: `/images/projects/royal-sanjhi-training.jpg`
+  - **Dimensions / Type**: 3000x4000 (JPEG, 2232 KB)
+  - **Alts/Titles**: Sanjhi Art Training at Khajani | Khajani collaborative skill sharing workshop | Sanjhi artisan craft training | Royal Sanjhi Art Workshop | Royal Sanjhi Art Training at Khajani
+  - **Used In**: src/pages/BrijAnshumanPage.tsx, src/pages/BrijDirectoryPage.tsx, src/pages/BrijNipunPage.tsx (and more)
+- **File**: `/images/projects/sanjhi-artisan-craft.jpg`
+  - **Dimensions / Type**: 3000x4000 (JPEG, 2232 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/UPITSTradeShowPage.tsx
+
+### Cow Welfare & Ecological Initiatives (Brij Surabhi, Gaushala, Temple Waste Recycling) (9 images)
+- **File**: `/images/culture/culture-panchgavya.jpg`
+  - **Dimensions / Type**: 1200x896 (JPEG, 817 KB)
+  - **Alts/Titles**: Panchgavya & Traditional Materials
+  - **Used In**: src/pages/CulturePage.tsx
+- **File**: `/images/culture/culture-temple-flowers.jpg`
+  - **Dimensions / Type**: 1200x896 (JPEG, 926 KB)
+  - **Alts/Titles**: Temple Flower Management
+  - **Used In**: src/pages/CulturePage.tsx
+- **File**: `/images/projects/brij-surabhi-cow-craft.jpg`
+  - **Dimensions / Type**: 370x248 (PNG, 153 KB)
+  - **Alts/Titles**: Cow Dung-Based Products Making | Khajani Sanjhi Art on Cow-Dung Material | Cow dung craft and incense making | Sanjhi on Sustainable Cow-Dung Material
+  - **Used In**: src/pages/BrijSurabhiPage.tsx, src/pages/CulturePage.tsx, src/pages/RoyalSanjhiPage.tsx
+- **File**: `/images/projects/brij-surabhi-cow.jpg`
+  - **Dimensions / Type**: 320x269 (PNG, 154 KB)
+  - **Alts/Titles**: Brij-Surabhi Cow Welfare & Temple Flower Project | Brij-Surabhi Cow Welfare & Temple Flower Reuse
+  - **Used In**: src/pages/BrijSurabhiPage.tsx, src/pages/HomePage.tsx, src/pages/ProjectsPage.tsx
+- **File**: `/images/projects/brij-surabhi-diya.jpg`
+  - **Dimensions / Type**: 362x237 (PNG, 170 KB)
+  - **Alts/Titles**: Eco-friendly diyas crafted from cow dung
+  - **Used In**: src/pages/BrijAnshumanPage.tsx, src/pages/BrijDirectoryPage.tsx, src/pages/BrijSurabhiCowWelfarePage.tsx (and more)
+- **File**: `/images/projects/brij-surabhi-flower-recycling.jpg`
+  - **Dimensions / Type**: 460x503 (PNG, 97 KB)
+  - **Alts/Titles**: Temple Flower Reuse and Incense | Floral Waste Processing | Repurposing sacred temple flower offerings in Mathura
+  - **Used In**: src/pages/BrijSurabhiPage.tsx, src/pages/BrijSurabhiTempleWastePage.tsx, src/pages/CulturePage.tsx (and more)
+- **File**: `/images/projects/brij-surabhi-idol-painting.jpg`
+  - **Dimensions / Type**: 369x249 (PNG, 232 KB)
+  - **Alts/Titles**: Artisan painting sacred deity idols crafted with traditional materials
+  - **Used In**: src/pages/BrijSurabhiCowWelfarePage.tsx, src/pages/BrijSurabhiPage.tsx, src/pages/BrijSurabhiTempleWastePage.tsx (and more)
+- **File**: `/images/projects/brij-surabhi-temple.jpg`
+  - **Dimensions / Type**: 141x250 (JPEG, 13 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijSurabhiPage.tsx, src/pages/BrijSurabhiTempleWastePage.tsx
+- **File**: `/images/projects/brij-surabhi-temple-waste.jpg`
+  - **Dimensions / Type**: N/A (External / Missing, 0 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijNipunPage.tsx
+
+### Community Welfare, Health & Women Empowerment Campaigns (16 images)
+- **File**: `/images/about/shg-groups.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 238 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/projects/blood-donation-camp.jpg`
+  - **Dimensions / Type**: 1277x601 (PNG, 1307 KB)
+  - **Alts/Titles**: Blood Donation Camp at Khajani Welfare Society
+  - **Used In**: src/pages/CampaignsPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/projects/brij-anshuman-icon.jpg`
+  - **Dimensions / Type**: 673x500 (PNG, 680 KB)
+  - **Alts/Titles**: Brij-Anshuman vocational training inside prison | Covid Relief | Brij-Anshuman Prison Rehabilitation Program
+  - **Used In**: src/pages/BrijAnshumanPage.tsx, src/pages/CampaignsPage.tsx, src/pages/ProjectsPage.tsx
+- **File**: `/images/projects/brij-sangini-icon.jpg`
+  - **Dimensions / Type**: 749x486 (PNG, 592 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/projects/brij-seva-icon.jpg`
+  - **Dimensions / Type**: 882x493 (PNG, 804 KB)
+  - **Alts/Titles**: Brij-Seva
+  - **Used In**: src/pages/CampaignsPage.tsx
+- **File**: `/images/projects/brij-seva-jal.jpg`
+  - **Dimensions / Type**: 399x532 (JPEG, 84 KB)
+  - **Alts/Titles**: Brij-Seva community service initiative | Jal Seva drinking water distribution | Jal Seva Campaign | Brij-Seva community drinking water service
+  - **Used In**: src/pages/BrijSevaPage.tsx, src/pages/CampaignsPage.tsx, src/pages/ProjectsPage.tsx
+- **File**: `/images/projects/brij-seva-plantation.jpg`
+  - **Dimensions / Type**: 512x384 (JPEG, 140 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/projects/daan-utsav.jpg`
+  - **Dimensions / Type**: 462x260 (PNG, 332 KB)
+  - **Alts/Titles**: Daan Utsav community giving | Daan Utsav - Festival of Giving
+  - **Used In**: src/pages/BrijSevaPage.tsx, src/pages/CampaignsPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/projects/plantation-drive.jpg`
+  - **Dimensions / Type**: 900x413 (JPEG, 181 KB)
+  - **Alts/Titles**: Plantation drive with local volunteers | Plantation Drive 1 | Plantation Drive 2
+  - **Used In**: src/pages/BrijSevaPage.tsx, src/pages/CampaignsPage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/projects/sanitary-napkin-vending.jpg`
+  - **Dimensions / Type**: 661x507 (PNG, 511 KB)
+  - **Alts/Titles**: Brij-Sangini menstrual hygiene initiative | Brij-Sangini Health & Dignity Initiative | Sanitary napkin vending installation
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/components/OurJourneyTimeline.tsx, src/pages/BrijSanginiPage.tsx (and more)
+- **File**: `/images/projects/sanitary-napkin.jpg`
+  - **Dimensions / Type**: 368x355 (JPEG, 43 KB)
+  - **Alts/Titles**: Menstrual Hygiene Session | Menstrual hygiene awareness camp | Health awareness workshop
+  - **Used In**: src/pages/CampaignsPage.tsx, src/pages/SanitaryNapkinPage.tsx
+- **File**: `/images/projects/shakti-ek-adhaar-1.jpg`
+  - **Dimensions / Type**: 638x327 (PNG, 437 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx, src/pages/MediaPage.tsx, src/pages/ShaktiEkAdhaarPage.tsx
+- **File**: `/images/projects/shakti-ek-adhaar-2.jpg`
+  - **Dimensions / Type**: 695x186 (JPEG, 45 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/ShaktiEkAdhaarPage.tsx
+- **File**: `/images/projects/shakti-ek-adhaar-3.jpg`
+  - **Dimensions / Type**: 695x186 (JPEG, 53 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijNipunPage.tsx, src/pages/MediaPage.tsx, src/pages/ShaktiEkAdhaarPage.tsx
+- **File**: `/images/projects/shakti-ek-adhaar.jpg`
+  - **Dimensions / Type**: 590x393 (JPEG, 80 KB)
+  - **Alts/Titles**: Shakti Ek Adhaar
+  - **Used In**: src/pages/CampaignsPage.tsx
+- **File**: `/images/projects/shg-federation.jpg`
+  - **Dimensions / Type**: 407x328 (PNG, 318 KB)
+  - **Alts/Titles**: Women entrepreneurs in Mathura | Women Entrepreneurs | Khajani Welfare Society community gathering | Brij Business Women Directory women entrepreneurs | Group of women working at sewing machines
+  - **Used In**: src/pages/BrijDirectoryPage.tsx, src/pages/CampaignsPage.tsx, src/pages/GetInvolvedPage.tsx (and more)
+
+### Media Coverage, Newspaper Clippings & Press Reviews (13 images)
+- **File**: `/images/media/news-clipping-1.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 358 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-10.jpg`
+  - **Dimensions / Type**: 424x249 (PNG, 199 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/pages/HomePage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-11.jpg`
+  - **Dimensions / Type**: 438x627 (PNG, 528 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-12.jpg`
+  - **Dimensions / Type**: 696x802 (PNG, 688 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-13.jpg`
+  - **Dimensions / Type**: 699x911 (PNG, 986 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-14.jpg`
+  - **Dimensions / Type**: 685x984 (PNG, 1046 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-16.jpg`
+  - **Dimensions / Type**: 702x859 (PNG, 606 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-2.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 404 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-4.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 364 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-5.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 348 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-6.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 379 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/news-clipping-7.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 345 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/media/press-review-3.jpg`
+  - **Dimensions / Type**: 329x246 (JPEG, 25 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx, src/pages/MediaPage.tsx
+
+### Get Involved & Donation (UPI QR, Volunteers, Artisans) (11 images)
+- **File**: `/images/donate/upi-qr.jpg`
+  - **Dimensions / Type**: 540x656 (PNG, 246 KB)
+  - **Alts/Titles**: Khajani Welfare Society Official UPI QR Code
+  - **Used In**: src/pages/DonatePage.tsx
+- **File**: `/images/get-involved/artisan-woman-embroidery.jpg`
+  - **Dimensions / Type**: 896x1200 (JPEG, 978 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx, src/pages/MediaPage.tsx
+- **File**: `/images/get-involved/artisan.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 629 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/get-involved/donate.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 450 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/get-involved/involvement-artisan.jpg`
+  - **Dimensions / Type**: 175x85 (JPEG, 7 KB)
+  - **Alts/Titles**: Support Our Artisans
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/get-involved/involvement-donate.jpg`
+  - **Dimensions / Type**: 175x85 (JPEG, 6 KB)
+  - **Alts/Titles**: Donate
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/get-involved/involvement-hero-embroidery.jpg`
+  - **Dimensions / Type**: 245x265 (JPEG, 24 KB)
+  - **Alts/Titles**: Khajani artisan embroidering Mathura Zari Poshak
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/get-involved/involvement-partner.jpg`
+  - **Dimensions / Type**: 175x85 (JPEG, 6 KB)
+  - **Alts/Titles**: Partner with Us
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/get-involved/involvement-volunteer.jpg`
+  - **Dimensions / Type**: 175x85 (JPEG, 7 KB)
+  - **Alts/Titles**: Volunteer
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/get-involved/partner.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 415 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/get-involved/volunteer.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 280 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+
+### Site Sketches, Flourishes & Decorative Heritage Illustrations (10 images)
+- **File**: `/images/about/governance-hero-illustration.png`
+  - **Dimensions / Type**: 1024x576 (PNG, 906 KB)
+  - **Alts/Titles**: Stronger institutions build brighter communities - Braj Heritage Architecture
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/rooted-in-braj-flourish.png`
+  - **Dimensions / Type**: 1024x586 (PNG, 530 KB)
+  - **Alts/Titles**: Same roots. Stronger people. Brighter tomorrows.
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/what-we-believe-art.png`
+  - **Dimensions / Type**: 1024x572 (PNG, 147 KB)
+  - **Alts/Titles**: Same roots. Stronger people. Brighter tomorrows.
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/home/braj-pavilion-ghat.png`
+  - **Dimensions / Type**: 1024x682 (PNG, 981 KB)
+  - **Alts/Titles**: Mathura Heritage Ghat Architecture
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/projects/botanical-leaf-branch.png`
+  - **Dimensions / Type**: 860x1024 (PNG, 295 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/CulturePage.tsx, src/pages/HomePage.tsx
+- **File**: `/images/projects/heritage-header-art.png`
+  - **Dimensions / Type**: 1024x682 (PNG, 612 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/ProjectsPage.tsx
+- **File**: `/images/projects/inclusion-arch-art.png`
+  - **Dimensions / Type**: 1024x682 (PNG, 575 KB)
+  - **Alts/Titles**: Archway representing opportunity and new pathways
+  - **Used In**: src/pages/ProjectsPage.tsx
+- **File**: `/images/projects/mathura-ghat-panoramic.png`
+  - **Dimensions / Type**: 1024x399 (PNG, 668 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/projects/mathura-ghat-sketch.png`
+  - **Dimensions / Type**: 1024x682 (PNG, 879 KB)
+  - **Alts/Titles**: Mathura Ghat Sketch
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/projects/skills-header-art.png`
+  - **Dimensions / Type**: 1024x682 (PNG, 559 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/ProjectsPage.tsx
+
+### Other / Uncategorized (19 images)
+- **File**: `/images/about/accomplishments.jpg`
+  - **Dimensions / Type**: 1600x1067 (JPEG, 572 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/MediaPage.tsx
+- **File**: `/images/about/area-community.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 1237 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/components/OurJourneyTimeline.tsx, src/pages/AboutPage.tsx
+- **File**: `/images/about/area-education.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 1017 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/area-heritage.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 816 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/area-livelihoods.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 996 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/area-partnerships.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 771 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/area-skills.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 785 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/AboutPage.tsx
+- **File**: `/images/about/govt-collab-1.jpg`
+  - **Dimensions / Type**: 640x480 (JPEG, 105 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/components/OurJourneyTimeline.tsx, src/pages/UPITSTradeShowPage.tsx
+- **File**: `/images/about/govt-collab-2.jpg`
+  - **Dimensions / Type**: 463x347 (JPEG, 82 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/about/hero-women-training.jpg`
+  - **Dimensions / Type**: 816x612 (JPEG, 227 KB)
+  - **Alts/Titles**: Young women building confidence in skill classes | Vocational trainees
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/pages/BrijHunarPage.tsx, src/pages/BrijNipunPage.tsx (and more)
+- **File**: `/images/about/institute-entrance.jpg`
+  - **Dimensions / Type**: 1131x1600 (JPEG, 278 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/components/HorizontalTimeline.tsx, src/components/OurJourneyTimeline.tsx
+- **File**: `/images/about/our-story-workshop.jpg`
+  - **Dimensions / Type**: 1200x896 (JPEG, 996 KB)
+  - **Alts/Titles**: Khajani Welfare Society women in skill training workshop, Mathura
+  - **Used In**: src/components/OurJourneyTimeline.tsx, src/pages/AboutPage.tsx
+- **File**: `/images/icons/women-skills.jpg`
+  - **Dimensions / Type**: 1024x1024 (JPEG, 547 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: 
+- **File**: `/images/projects/area-of-work.jpg`
+  - **Dimensions / Type**: 1600x900 (JPEG, 271 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/UPITSTradeShowPage.tsx
+- **File**: `/images/projects/hero-training.jpg`
+  - **Dimensions / Type**: 1024x652 (JPEG, 413 KB)
+  - **Alts/Titles**: Women in classroom skill session at Khajani | Khajani Welfare Society at UP International Trade Show 2026
+  - **Used In**: src/pages/BrijSurabhiPage.tsx, src/pages/HomePage.tsx, src/pages/MediaPage.tsx (and more)
+- **File**: `/images/projects/pathway-community-empowerment.jpg`
+  - **Dimensions / Type**: 1024x771 (JPEG, 266 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/projects/pathway-education-digital.jpg`
+  - **Dimensions / Type**: 1024x768 (JPEG, 390 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/HomePage.tsx
+- **File**: `/images/projects/pathway-heritage-artisan.jpg`
+  - **Dimensions / Type**: 1024x682 (JPEG, 217 KB)
+  - **Alts/Titles**: Process of traditional craftsmanship at Khajani | Women artisans practicing Mathura Zari Poshak
+  - **Used In**: src/pages/CulturePage.tsx, src/pages/HomePage.tsx, src/pages/RadhaKrishnaPoshakPage.tsx (and more)
+- **File**: `/images/projects/pathway-women-skills.jpg`
+  - **Dimensions / Type**: 1024x682 (JPEG, 204 KB)
+  - **Alts/Titles**: None specified
+  - **Used In**: src/pages/BrijDirectoryPage.tsx, src/pages/BrijSurabhiPage.tsx, src/pages/HomePage.tsx

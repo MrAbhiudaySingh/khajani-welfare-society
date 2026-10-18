@@ -1,0 +1,1860 @@
+[
+  {
+    "path": "/images/about/abha.jpg",
+    "exists": true,
+    "sizeKB": 81,
+    "dimensions": "228x228",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Abha Maheshwari, Co-Founder & President"
+    ]
+  },
+  {
+    "path": "/images/about/accomplishments.jpg",
+    "exists": true,
+    "sizeKB": 572,
+    "dimensions": "1600x1067",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/apparel-beauty-lab.jpg",
+    "exists": true,
+    "sizeKB": 254,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijHunarPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": [
+      "Apparel lab"
+    ]
+  },
+  {
+    "path": "/images/about/area-community.jpg",
+    "exists": true,
+    "sizeKB": 1237,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/area-education.jpg",
+    "exists": true,
+    "sizeKB": 1017,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/area-heritage.jpg",
+    "exists": true,
+    "sizeKB": 816,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/area-livelihoods.jpg",
+    "exists": true,
+    "sizeKB": 996,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/area-partnerships.jpg",
+    "exists": true,
+    "sizeKB": 771,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/area-skills.jpg",
+    "exists": true,
+    "sizeKB": 785,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/awards-dignitaries.jpg",
+    "exists": true,
+    "sizeKB": 241,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/classroom.jpg",
+    "exists": true,
+    "sizeKB": 996,
+    "dimensions": "1200x896",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/pages/BrijHunarPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/collab-upsdm.jpg",
+    "exists": true,
+    "sizeKB": 257,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/computer-lab.jpg",
+    "exists": true,
+    "sizeKB": 304,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijHunarPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/dr-hari-mohan.jpg",
+    "exists": true,
+    "sizeKB": 94,
+    "dimensions": "263x265",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Dr. Hari Mohan Maheshwari, Co-Founder"
+    ]
+  },
+  {
+    "path": "/images/about/governance-hero-illustration.png",
+    "exists": true,
+    "sizeKB": 906,
+    "dimensions": "1024x576",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Stronger institutions build brighter communities - Braj Heritage Architecture"
+    ]
+  },
+  {
+    "path": "/images/about/govt-collab-1.jpg",
+    "exists": true,
+    "sizeKB": 105,
+    "dimensions": "640x480",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/UPITSTradeShowPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/govt-collab-2.jpg",
+    "exists": true,
+    "sizeKB": 82,
+    "dimensions": "463x347",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/about/hema-malini-award.jpg",
+    "exists": true,
+    "sizeKB": 318,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/hema-malini.jpg",
+    "exists": true,
+    "sizeKB": 46,
+    "dimensions": "288x200",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/about/hero-women-training.jpg",
+    "exists": true,
+    "sizeKB": 227,
+    "dimensions": "816x612",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/pages/BrijHunarPage.tsx",
+      "src/pages/BrijNipunPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/UPITSTradeShowPage.tsx"
+    ],
+    "alts": [
+      "Young women building confidence in skill classes",
+      "Vocational trainees"
+    ]
+  },
+  {
+    "path": "/images/about/institute-entrance.jpg",
+    "exists": true,
+    "sizeKB": 278,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/components/OurJourneyTimeline.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/om-birla.jpg",
+    "exists": true,
+    "sizeKB": 56,
+    "dimensions": "232x320",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/about/our-story-workshop.jpg",
+    "exists": true,
+    "sizeKB": 996,
+    "dimensions": "1200x896",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Khajani Welfare Society women in skill training workshop, Mathura"
+    ]
+  },
+  {
+    "path": "/images/about/rooted-in-braj-flourish.png",
+    "exists": true,
+    "sizeKB": 530,
+    "dimensions": "1024x586",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Same roots. Stronger people. Brighter tomorrows."
+    ]
+  },
+  {
+    "path": "/images/about/shg-groups.jpg",
+    "exists": true,
+    "sizeKB": 238,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/about/shipra-rathi.jpg",
+    "exists": true,
+    "sizeKB": 98,
+    "dimensions": "251x273",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Shipra Rathi, Co-Founder & Secretary"
+    ]
+  },
+  {
+    "path": "/images/about/team-working.jpg",
+    "exists": true,
+    "sizeKB": 352,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/pages/BrijHunarPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/about/what-we-believe-art.png",
+    "exists": true,
+    "sizeKB": 147,
+    "dimensions": "1024x572",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/AboutPage.tsx"
+    ],
+    "alts": [
+      "Same roots. Stronger people. Brighter tomorrows."
+    ]
+  },
+  {
+    "path": "/images/culture/culture-panchgavya.jpg",
+    "exists": true,
+    "sizeKB": 817,
+    "dimensions": "1200x896",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CulturePage.tsx"
+    ],
+    "alts": [
+      "Panchgavya & Traditional Materials"
+    ]
+  },
+  {
+    "path": "/images/culture/culture-sanjhi-art.jpg",
+    "exists": true,
+    "sizeKB": 841,
+    "dimensions": "1200x896",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CulturePage.tsx"
+    ],
+    "alts": [
+      "Royal Sanjhi Art"
+    ]
+  },
+  {
+    "path": "/images/culture/culture-temple-flowers.jpg",
+    "exists": true,
+    "sizeKB": 926,
+    "dimensions": "1200x896",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CulturePage.tsx"
+    ],
+    "alts": [
+      "Temple Flower Management"
+    ]
+  },
+  {
+    "path": "/images/culture/culture-zari-poshak.jpg",
+    "exists": true,
+    "sizeKB": 1044,
+    "dimensions": "1200x896",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CulturePage.tsx"
+    ],
+    "alts": [
+      "Mathura Zari Poshak"
+    ]
+  },
+  {
+    "path": "/images/donate/upi-qr.jpg",
+    "exists": true,
+    "sizeKB": 246,
+    "dimensions": "540x656",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/DonatePage.tsx"
+    ],
+    "alts": [
+      "Khajani Welfare Society Official UPI QR Code"
+    ]
+  },
+  {
+    "path": "/images/get-involved/artisan-woman-embroidery.jpg",
+    "exists": true,
+    "sizeKB": 978,
+    "dimensions": "896x1200",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/get-involved/artisan.jpg",
+    "exists": true,
+    "sizeKB": 629,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/get-involved/donate.jpg",
+    "exists": true,
+    "sizeKB": 450,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/get-involved/involvement-artisan.jpg",
+    "exists": true,
+    "sizeKB": 7,
+    "dimensions": "175x85",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Support Our Artisans"
+    ]
+  },
+  {
+    "path": "/images/get-involved/involvement-donate.jpg",
+    "exists": true,
+    "sizeKB": 6,
+    "dimensions": "175x85",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Donate"
+    ]
+  },
+  {
+    "path": "/images/get-involved/involvement-hero-embroidery.jpg",
+    "exists": true,
+    "sizeKB": 24,
+    "dimensions": "245x265",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Khajani artisan embroidering Mathura Zari Poshak"
+    ]
+  },
+  {
+    "path": "/images/get-involved/involvement-partner.jpg",
+    "exists": true,
+    "sizeKB": 6,
+    "dimensions": "175x85",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Partner with Us"
+    ]
+  },
+  {
+    "path": "/images/get-involved/involvement-volunteer.jpg",
+    "exists": true,
+    "sizeKB": 7,
+    "dimensions": "175x85",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Volunteer"
+    ]
+  },
+  {
+    "path": "/images/get-involved/partner.jpg",
+    "exists": true,
+    "sizeKB": 415,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/get-involved/volunteer.jpg",
+    "exists": true,
+    "sizeKB": 280,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/braj-pavilion-ghat.png",
+    "exists": true,
+    "sizeKB": 981,
+    "dimensions": "1024x682",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Mathura Heritage Ghat Architecture"
+    ]
+  },
+  {
+    "path": "/images/home/partners/balrampur.png",
+    "exists": true,
+    "sizeKB": 24,
+    "dimensions": "138x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-balrampur.png",
+    "exists": true,
+    "sizeKB": 58,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-hrsuccesstalk.png",
+    "exists": true,
+    "sizeKB": 15,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-hrsuccesstalk.svg",
+    "exists": true,
+    "sizeKB": 15,
+    "dimensions": null,
+    "type": "Unknown",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-indianoil.png",
+    "exists": true,
+    "sizeKB": 92,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-msme.png",
+    "exists": true,
+    "sizeKB": 138,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-sidbi.png",
+    "exists": true,
+    "sizeKB": 36,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-supreme.png",
+    "exists": true,
+    "sizeKB": 76,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-uppro.png",
+    "exists": true,
+    "sizeKB": 62,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-upsdm.png",
+    "exists": true,
+    "sizeKB": 49,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/card-worldbank.png",
+    "exists": true,
+    "sizeKB": 69,
+    "dimensions": "572x460",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/hrsuccesstalk.png",
+    "exists": true,
+    "sizeKB": 11,
+    "dimensions": "192x192",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/indianoil.png",
+    "exists": true,
+    "sizeKB": 24,
+    "dimensions": "138x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/msme.png",
+    "exists": true,
+    "sizeKB": 28,
+    "dimensions": "138x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/sidbi.png",
+    "exists": true,
+    "sizeKB": 21,
+    "dimensions": "138x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/supreme.png",
+    "exists": true,
+    "sizeKB": 6,
+    "dimensions": "143x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/uppro.png",
+    "exists": true,
+    "sizeKB": 9,
+    "dimensions": "143x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/upsdm.png",
+    "exists": true,
+    "sizeKB": 22,
+    "dimensions": "138x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners/worldbank.png",
+    "exists": true,
+    "sizeKB": 22,
+    "dimensions": "138x115",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/home/partners-quote-flourish.png",
+    "exists": true,
+    "sizeKB": 110,
+    "dimensions": "1024x342",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Greater impact through shared purpose"
+    ]
+  },
+  {
+    "path": "/images/icons/women-skills.jpg",
+    "exists": true,
+    "sizeKB": 547,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-1.jpg",
+    "exists": true,
+    "sizeKB": 358,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-10.jpg",
+    "exists": true,
+    "sizeKB": 199,
+    "dimensions": "424x249",
+    "type": "PNG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-11.jpg",
+    "exists": true,
+    "sizeKB": 528,
+    "dimensions": "438x627",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-12.jpg",
+    "exists": true,
+    "sizeKB": 688,
+    "dimensions": "696x802",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-13.jpg",
+    "exists": true,
+    "sizeKB": 986,
+    "dimensions": "699x911",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-14.jpg",
+    "exists": true,
+    "sizeKB": 1046,
+    "dimensions": "685x984",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-16.jpg",
+    "exists": true,
+    "sizeKB": 606,
+    "dimensions": "702x859",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-2.jpg",
+    "exists": true,
+    "sizeKB": 404,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-4.jpg",
+    "exists": true,
+    "sizeKB": 364,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-5.jpg",
+    "exists": true,
+    "sizeKB": 348,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-6.jpg",
+    "exists": true,
+    "sizeKB": 379,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/news-clipping-7.jpg",
+    "exists": true,
+    "sizeKB": 345,
+    "dimensions": "1131x1600",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/media/press-review-3.jpg",
+    "exists": true,
+    "sizeKB": 25,
+    "dimensions": "329x246",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/area-of-work.jpg",
+    "exists": true,
+    "sizeKB": 271,
+    "dimensions": "1600x900",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/UPITSTradeShowPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/blood-donation-camp.jpg",
+    "exists": true,
+    "sizeKB": 1307,
+    "dimensions": "1277x601",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": [
+      "Blood Donation Camp at Khajani Welfare Society"
+    ]
+  },
+  {
+    "path": "/images/projects/botanical-leaf-branch.png",
+    "exists": true,
+    "sizeKB": 295,
+    "dimensions": "860x1024",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/CulturePage.tsx",
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-anshuman-icon.jpg",
+    "exists": true,
+    "sizeKB": 680,
+    "dimensions": "673x500",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": [
+      "Brij-Anshuman vocational training inside prison",
+      "Covid Relief",
+      "Brij-Anshuman Prison Rehabilitation Program"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-hunar-class.jpg",
+    "exists": true,
+    "sizeKB": 36,
+    "dimensions": "277x171",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijNipunPage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/RadhaKrishnaPoshakPage.tsx"
+    ],
+    "alts": [
+      "Skill development center"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-hunar-sewing-hall.jpg",
+    "exists": true,
+    "sizeKB": 6,
+    "dimensions": "174x111",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/RadhaKrishnaPoshakPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-hunar-tailoring.jpg",
+    "exists": true,
+    "sizeKB": 6,
+    "dimensions": "174x111",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/RadhaKrishnaPoshakPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-hunar-training.jpg",
+    "exists": true,
+    "sizeKB": 40,
+    "dimensions": "264x168",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijHunarPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": [
+      "Women in hands-on practical vocational training session in Mathura"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-nipun-activities.jpg",
+    "exists": true,
+    "sizeKB": 38,
+    "dimensions": "565x192",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijNipunPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Participants learning hands-on craft skills in Brij-Nipun workshop",
+      "Brij-Nipun short-term workshop and camps"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-nipun-workshop.jpg",
+    "exists": true,
+    "sizeKB": 7,
+    "dimensions": "176x111",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-sangini-icon.jpg",
+    "exists": true,
+    "sizeKB": 592,
+    "dimensions": "749x486",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-seva-icon.jpg",
+    "exists": true,
+    "sizeKB": 804,
+    "dimensions": "882x493",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/CampaignsPage.tsx"
+    ],
+    "alts": [
+      "Brij-Seva"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-seva-jal.jpg",
+    "exists": true,
+    "sizeKB": 84,
+    "dimensions": "399x532",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijSevaPage.tsx",
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": [
+      "Brij-Seva community service initiative",
+      "Jal Seva drinking water distribution",
+      "Jal Seva Campaign",
+      "Brij-Seva community drinking water service"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-seva-plantation.jpg",
+    "exists": true,
+    "sizeKB": 140,
+    "dimensions": "512x384",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-surabhi-cow-craft.jpg",
+    "exists": true,
+    "sizeKB": 153,
+    "dimensions": "370x248",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Cow Dung-Based Products Making",
+      "Khajani Sanjhi Art on Cow-Dung Material",
+      "Cow dung craft and incense making",
+      "Sanjhi on Sustainable Cow-Dung Material"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-surabhi-cow.jpg",
+    "exists": true,
+    "sizeKB": 154,
+    "dimensions": "320x269",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": [
+      "Brij-Surabhi Cow Welfare & Temple Flower Project",
+      "Brij-Surabhi Cow Welfare & Temple Flower Reuse"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-surabhi-diya.jpg",
+    "exists": true,
+    "sizeKB": 170,
+    "dimensions": "362x237",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/BrijSurabhiCowWelfarePage.tsx",
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Eco-friendly diyas crafted from cow dung"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-surabhi-flower-recycling.jpg",
+    "exists": true,
+    "sizeKB": 97,
+    "dimensions": "460x503",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": [
+      "Temple Flower Reuse and Incense",
+      "Floral Waste Processing",
+      "Repurposing sacred temple flower offerings in Mathura"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-surabhi-idol-painting.jpg",
+    "exists": true,
+    "sizeKB": 232,
+    "dimensions": "369x249",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijSurabhiCowWelfarePage.tsx",
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Artisan painting sacred deity idols crafted with traditional materials"
+    ]
+  },
+  {
+    "path": "/images/projects/brij-surabhi-temple.jpg",
+    "exists": true,
+    "sizeKB": 13,
+    "dimensions": "141x250",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/BrijSurabhiTempleWastePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/daan-utsav.jpg",
+    "exists": true,
+    "sizeKB": 332,
+    "dimensions": "462x260",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijSevaPage.tsx",
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": [
+      "Daan Utsav community giving",
+      "Daan Utsav - Festival of Giving"
+    ]
+  },
+  {
+    "path": "/images/projects/digi-shala-icon.jpg",
+    "exists": true,
+    "sizeKB": 597,
+    "dimensions": "743x485",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/DigiShalaPage.tsx"
+    ],
+    "alts": [
+      "Digi-Shala interactive computer training inside campus"
+    ]
+  },
+  {
+    "path": "/images/projects/digi-shala.jpg",
+    "exists": true,
+    "sizeKB": 108,
+    "dimensions": "512x342",
+    "type": "JPEG",
+    "usedIn": [
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/DigiShalaPage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": [
+      "Digi-Shala digital learning classroom for girls",
+      "Digi-Shala practical digital literacy"
+    ]
+  },
+  {
+    "path": "/images/projects/edudaksh-award.jpg",
+    "exists": true,
+    "sizeKB": 3,
+    "dimensions": "228x373",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/KLAPage.tsx"
+    ],
+    "alts": [
+      "KLA students receiving academic recognition"
+    ]
+  },
+  {
+    "path": "/images/projects/edudaksh-classroom.jpg",
+    "exists": true,
+    "sizeKB": 3,
+    "dimensions": "228x373",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/EdudakshPage.tsx",
+      "src/pages/KLAPage.tsx"
+    ],
+    "alts": [
+      "EduDaksh classroom session"
+    ]
+  },
+  {
+    "path": "/images/projects/edudaksh-computer.jpg",
+    "exists": true,
+    "sizeKB": 23,
+    "dimensions": "281x375",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/KLAPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/edudaksh-gallery.jpg",
+    "exists": true,
+    "sizeKB": 292,
+    "dimensions": "1600x900",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/edudaksh-training.jpg",
+    "exists": true,
+    "sizeKB": 49,
+    "dimensions": "830x374",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/EdudakshPage.tsx"
+    ],
+    "alts": [
+      "EduDaksh remedial learning in action"
+    ]
+  },
+  {
+    "path": "/images/projects/gi-certificate-1147.jpg",
+    "exists": true,
+    "sizeKB": 1127,
+    "dimensions": "896x1200",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/govt-of-india-seal.png",
+    "exists": true,
+    "sizeKB": 909,
+    "dimensions": "1024x1024",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/GIRecognitionPage.tsx"
+    ],
+    "alts": [
+      "State Emblem of India - Government of India"
+    ]
+  },
+  {
+    "path": "/images/projects/heritage-header-art.png",
+    "exists": true,
+    "sizeKB": 612,
+    "dimensions": "1024x682",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/hero-training.jpg",
+    "exists": true,
+    "sizeKB": 413,
+    "dimensions": "1024x652",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx",
+      "src/pages/UPITSTradeShowPage.tsx"
+    ],
+    "alts": [
+      "Women in classroom skill session at Khajani",
+      "Khajani Welfare Society at UP International Trade Show 2026"
+    ]
+  },
+  {
+    "path": "/images/projects/inclusion-arch-art.png",
+    "exists": true,
+    "sizeKB": 575,
+    "dimensions": "1024x682",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": [
+      "Archway representing opportunity and new pathways"
+    ]
+  },
+  {
+    "path": "/images/projects/ip-india-logo.png",
+    "exists": true,
+    "sizeKB": 1059,
+    "dimensions": "1024x1024",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/GIRecognitionPage.tsx"
+    ],
+    "alts": [
+      "Intellectual Property India Logo"
+    ]
+  },
+  {
+    "path": "/images/projects/kla-classroom-1.jpg",
+    "exists": true,
+    "sizeKB": 317,
+    "dimensions": "481x423",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx",
+      "src/pages/KLAPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/kla-classroom-2.jpg",
+    "exists": true,
+    "sizeKB": 287,
+    "dimensions": "481x427",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/KLAPage.tsx"
+    ],
+    "alts": [
+      "Safe and encouraging learning atmosphere at KLA"
+    ]
+  },
+  {
+    "path": "/images/projects/kla-students.jpg",
+    "exists": true,
+    "sizeKB": 839,
+    "dimensions": "862x466",
+    "type": "PNG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/KLAPage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Khajani Learning Academy students in Mathura",
+      "Students in classroom",
+      "Khajani Learning Academy students"
+    ]
+  },
+  {
+    "path": "/images/projects/mathura-ghat-panoramic.png",
+    "exists": true,
+    "sizeKB": 668,
+    "dimensions": "1024x399",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/mathura-ghat-sketch.png",
+    "exists": true,
+    "sizeKB": 879,
+    "dimensions": "1024x682",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Mathura Ghat Sketch"
+    ]
+  },
+  {
+    "path": "/images/projects/mathura-zari-poshak-gi-certificate-1147.pdf",
+    "exists": true,
+    "sizeKB": 1092,
+    "dimensions": null,
+    "type": "Unknown",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/mathura-zari-poshak-gi-logo.jpg",
+    "exists": true,
+    "sizeKB": 791,
+    "dimensions": "1024x1024",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/RadhaKrishnaPoshakPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/mathura-zari-poshak-official-logo.png",
+    "exists": true,
+    "sizeKB": 1578,
+    "dimensions": "1618x1618",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/GIRecognitionPage.tsx",
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": [
+      "Authentic Mathura Zari Poshak Official GI Logo from Government PDF",
+      "Mathura Zari Poshak Official Geographical Indication Logo"
+    ]
+  },
+  {
+    "path": "/images/projects/pathway-community-empowerment.jpg",
+    "exists": true,
+    "sizeKB": 266,
+    "dimensions": "1024x771",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/pathway-education-digital.jpg",
+    "exists": true,
+    "sizeKB": 390,
+    "dimensions": "1024x768",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/pathway-heritage-artisan.jpg",
+    "exists": true,
+    "sizeKB": 217,
+    "dimensions": "1024x682",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CulturePage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Process of traditional craftsmanship at Khajani",
+      "Women artisans practicing Mathura Zari Poshak"
+    ]
+  },
+  {
+    "path": "/images/projects/pathway-women-skills.jpg",
+    "exists": true,
+    "sizeKB": 204,
+    "dimensions": "1024x682",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/BrijSurabhiPage.tsx",
+      "src/pages/HomePage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/plantation-drive.jpg",
+    "exists": true,
+    "sizeKB": 181,
+    "dimensions": "900x413",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijSevaPage.tsx",
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/MediaPage.tsx"
+    ],
+    "alts": [
+      "Plantation drive with local volunteers",
+      "Plantation Drive 1",
+      "Plantation Drive 2"
+    ]
+  },
+  {
+    "path": "/images/projects/poshak-sanjhi.jpg",
+    "exists": true,
+    "sizeKB": 267,
+    "dimensions": "694x925",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Intricate Sanjhi paper cutting motif"
+    ]
+  },
+  {
+    "path": "/images/projects/poshak-zari.jpg",
+    "exists": true,
+    "sizeKB": 891,
+    "dimensions": "799x649",
+    "type": "PNG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/GIRecognitionPage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src/pages/UPITSTradeShowPage.tsx"
+    ],
+    "alts": [
+      "Artisan hands embroidering Mathura Zari Poshak",
+      "Intricate Zari work on Mathura deity poshak",
+      "Mathura Zari Poshak sacred deity attire",
+      "Zari embroidery detail",
+      "Mathura Zari Poshak GI craft",
+      "Authentic Mathura Zari Poshak Craftsmanship"
+    ]
+  },
+  {
+    "path": "/images/projects/real-gi-certificate-page-1.png",
+    "exists": true,
+    "sizeKB": 2261,
+    "dimensions": "992x1403",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/GIRecognitionPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/real-gi-certificate-page-2.png",
+    "exists": true,
+    "sizeKB": 650,
+    "dimensions": "1020x1320",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/GIRecognitionPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/royal-sanjhi-training.jpg",
+    "exists": true,
+    "sizeKB": 2232,
+    "dimensions": "3000x4000",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/BrijNipunPage.tsx",
+      "src/pages/CulturePage.tsx",
+      "src/pages/GetInvolvedPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/RoyalSanjhiPage.tsx"
+    ],
+    "alts": [
+      "Sanjhi Art Training at Khajani",
+      "Khajani collaborative skill sharing workshop",
+      "Sanjhi artisan craft training",
+      "Royal Sanjhi Art Workshop",
+      "Royal Sanjhi Art Training at Khajani"
+    ]
+  },
+  {
+    "path": "/images/projects/sanitary-napkin-vending.jpg",
+    "exists": true,
+    "sizeKB": 511,
+    "dimensions": "661x507",
+    "type": "PNG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/BrijSanginiPage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/SanitaryNapkinPage.tsx"
+    ],
+    "alts": [
+      "Brij-Sangini menstrual hygiene initiative",
+      "Brij-Sangini Health & Dignity Initiative",
+      "Sanitary napkin vending installation"
+    ]
+  },
+  {
+    "path": "/images/projects/sanitary-napkin.jpg",
+    "exists": true,
+    "sizeKB": 43,
+    "dimensions": "368x355",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/SanitaryNapkinPage.tsx"
+    ],
+    "alts": [
+      "Menstrual Hygiene Session",
+      "Menstrual hygiene awareness camp",
+      "Health awareness workshop"
+    ]
+  },
+  {
+    "path": "/images/projects/sanjhi-artisan-craft.jpg",
+    "exists": true,
+    "sizeKB": 2232,
+    "dimensions": "3000x4000",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/UPITSTradeShowPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/shakti-ek-adhaar-1.jpg",
+    "exists": true,
+    "sizeKB": 437,
+    "dimensions": "638x327",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ShaktiEkAdhaarPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/shakti-ek-adhaar-2.jpg",
+    "exists": true,
+    "sizeKB": 45,
+    "dimensions": "695x186",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/ShaktiEkAdhaarPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/shakti-ek-adhaar-3.jpg",
+    "exists": true,
+    "sizeKB": 53,
+    "dimensions": "695x186",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijNipunPage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ShaktiEkAdhaarPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/shakti-ek-adhaar.jpg",
+    "exists": true,
+    "sizeKB": 80,
+    "dimensions": "590x393",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/CampaignsPage.tsx"
+    ],
+    "alts": [
+      "Shakti Ek Adhaar"
+    ]
+  },
+  {
+    "path": "/images/projects/shg-federation.jpg",
+    "exists": true,
+    "sizeKB": 318,
+    "dimensions": "407x328",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/CampaignsPage.tsx",
+      "src/pages/GetInvolvedPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/SHGFederationPage.tsx"
+    ],
+    "alts": [
+      "Women entrepreneurs in Mathura",
+      "Women Entrepreneurs",
+      "Khajani Welfare Society community gathering",
+      "Brij Business Women Directory women entrepreneurs",
+      "Group of women working at sewing machines"
+    ]
+  },
+  {
+    "path": "/images/projects/skills-header-art.png",
+    "exists": true,
+    "sizeKB": 559,
+    "dimensions": "1024x682",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/ProjectsPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/upsdm-beauty.jpg",
+    "exists": true,
+    "sizeKB": 121,
+    "dimensions": "326x204",
+    "type": "PNG",
+    "usedIn": [
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/UPSDMTrainingPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/upsdm-class.jpg",
+    "exists": true,
+    "sizeKB": 9,
+    "dimensions": "232x111",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/UPSDMTrainingPage.tsx"
+    ],
+    "alts": [
+      "A modern training classroom with students"
+    ]
+  },
+  {
+    "path": "/images/projects/upsdm-computer.jpg",
+    "exists": true,
+    "sizeKB": 11,
+    "dimensions": "232x111",
+    "type": "JPEG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/upsdm-sewing.jpg",
+    "exists": true,
+    "sizeKB": 11,
+    "dimensions": "233x111",
+    "type": "JPEG",
+    "usedIn": [
+      "src/pages/BrijAnshumanPage.tsx"
+    ],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/upsdm-tailor.jpg",
+    "exists": true,
+    "sizeKB": 123,
+    "dimensions": "317x190",
+    "type": "PNG",
+    "usedIn": [
+      "src/components/HorizontalTimeline.tsx",
+      "src/components/OurJourneyTimeline.tsx",
+      "src/pages/BrijAnshumanPage.tsx",
+      "src/pages/BrijDirectoryPage.tsx",
+      "src/pages/BrijHunarPage.tsx",
+      "src/pages/CollaborationsPage.tsx",
+      "src/pages/HomePage.tsx",
+      "src/pages/MediaPage.tsx",
+      "src/pages/ProjectsPage.tsx",
+      "src/pages/UPSDMTrainingPage.tsx"
+    ],
+    "alts": [
+      "Women in tailoring workshop",
+      "Brij-Hunar vocational training"
+    ]
+  },
+  {
+    "path": "/favicon.ico",
+    "exists": true,
+    "sizeKB": 20,
+    "dimensions": null,
+    "type": "Unknown",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/favicon.png",
+    "exists": true,
+    "sizeKB": 340,
+    "dimensions": "696x699",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/og-image.png",
+    "exists": true,
+    "sizeKB": 601,
+    "dimensions": "1920x579",
+    "type": "PNG",
+    "usedIn": [],
+    "alts": []
+  },
+  {
+    "path": "/images/projects/brij-surabhi-temple-waste.jpg",
+    "exists": false,
+    "sizeKB": null,
+    "dimensions": null,
+    "type": "External / Missing",
+    "usedIn": [
+      "src/pages/BrijNipunPage.tsx"
+    ],
+    "alts": []
+  }
+]

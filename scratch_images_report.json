@@ -1,0 +1,2475 @@
+{
+  "codeReferences": [
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/about/institute-entrance.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/institute-entrance.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/about/area-community.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-community.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/about/team-working.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/team-working.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/about/classroom.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/classroom.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/sanitary-napkin-vending.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/media/news-clipping-10.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-10.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/components/HorizontalTimeline.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/hero-women-training.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/about/institute-entrance.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/institute-entrance.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/about/area-community.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-community.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/about/govt-collab-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/govt-collab-1.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/projects/digi-shala.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/digi-shala.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/sanitary-napkin-vending.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/components/OurJourneyTimeline.tsx",
+      "src": "/images/about/our-story-workshop.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/our-story-workshop.jpg\""
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/our-story-workshop.jpg",
+      "alt": "Khajani Welfare Society women in skill training workshop, Mathura",
+      "rawTag": "<img\n                    src=\"/images/about/our-story-workshop.jpg\"\n                    alt=\"Khajani Welfare Society women in skill training workshop,"
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/what-we-believe-art.png",
+      "alt": "Same roots. Stronger people. Brighter tomorrows.",
+      "rawTag": "<img src=\"/images/about/what-we-believe-art.png\"\n                    alt=\"Same roots. Stronger people. Brighter tomorrows.\"\n                    classN"
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/rooted-in-braj-flourish.png",
+      "alt": "Same roots. Stronger people. Brighter tomorrows.",
+      "rawTag": "<img src=\"/images/about/rooted-in-braj-flourish.png\"\n                  alt=\"Same roots. Stronger people. Brighter tomorrows.\"\n                  classN"
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/dr-hari-mohan.jpg",
+      "alt": "Dr. Hari Mohan Maheshwari, Co-Founder",
+      "rawTag": "<img src=\"/images/about/dr-hari-mohan.jpg\"\n                        alt=\"Dr. Hari Mohan Maheshwari, Co-Founder\"\n                        className=\"w-fu"
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/abha.jpg",
+      "alt": "Abha Maheshwari, Co-Founder & President",
+      "rawTag": "<img src=\"/images/about/abha.jpg\"\n                        alt=\"Abha Maheshwari, Co-Founder & President\"\n                        className=\"w-full h-fu"
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/shipra-rathi.jpg",
+      "alt": "Shipra Rathi, Co-Founder & Secretary",
+      "rawTag": "<img src=\"/images/about/shipra-rathi.jpg\"\n                        alt=\"Shipra Rathi, Co-Founder & Secretary\"\n                        className=\"w-full"
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/governance-hero-illustration.png",
+      "alt": "Stronger institutions build brighter communities - Braj Heritage Architecture",
+      "rawTag": "<img\n                  src=\"/images/about/governance-hero-illustration.png\"\n                  alt=\"Stronger institutions build brighter communities - "
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/area-skills.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-skills.jpg\""
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/area-livelihoods.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-livelihoods.jpg\""
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/area-heritage.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-heritage.jpg\""
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/area-education.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-education.jpg\""
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/area-community.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-community.jpg\""
+    },
+    {
+      "file": "src/pages/AboutPage.tsx",
+      "src": "/images/about/area-partnerships.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/area-partnerships.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/brij-anshuman-icon.jpg",
+      "alt": "Brij-Anshuman vocational training inside prison",
+      "rawTag": "<img src=\"/images/projects/brij-anshuman-icon.jpg\"\n            alt=\"Brij-Anshuman vocational training inside prison\"\n            className=\"w-full h-f"
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/upsdm-sewing.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-sewing.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/upsdm-beauty.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-beauty.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/BrijAnshumanPage.tsx",
+      "src": "/images/projects/poshak-sanjhi.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-sanjhi.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "Women entrepreneurs in Mathura",
+      "rawTag": "<img src=\"/images/projects/shg-federation.jpg\"\n            alt=\"Women entrepreneurs in Mathura\"\n            className=\"w-full h-full object-cover opac"
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/pathway-women-skills.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/pathway-women-skills.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/upsdm-beauty.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-beauty.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/BrijDirectoryPage.tsx",
+      "src": "/images/projects/digi-shala.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/digi-shala.jpg\""
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/projects/brij-hunar-training.jpg",
+      "alt": "Women in hands-on practical vocational training session in Mathura",
+      "rawTag": "<img src=\"/images/projects/brij-hunar-training.jpg\"\n                    alt=\"Women in hands-on practical vocational training session in Mathura\"\n     "
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "Young women building confidence in skill classes",
+      "rawTag": "<img src=\"/images/about/hero-women-training.jpg\"\n                  alt=\"Young women building confidence in skill classes\"\n                  className="
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/about/computer-lab.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/computer-lab.jpg\""
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/about/apparel-beauty-lab.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/apparel-beauty-lab.jpg\""
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/projects/brij-hunar-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-hunar-training.jpg\""
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/about/classroom.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/classroom.jpg\""
+    },
+    {
+      "file": "src/pages/BrijHunarPage.tsx",
+      "src": "/images/about/team-working.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/team-working.jpg\""
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/projects/brij-nipun-activities.jpg",
+      "alt": "Participants learning hands-on craft skills in Brij-Nipun workshop",
+      "rawTag": "<img src=\"/images/projects/brij-nipun-activities.jpg\"\n                    alt=\"Participants learning hands-on craft skills in Brij-Nipun workshop\"\n   "
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/projects/brij-nipun-activities.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-nipun-activities.jpg\""
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-3.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/shakti-ek-adhaar-3.jpg\""
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/hero-women-training.jpg\""
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/projects/brij-surabhi-temple-waste.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-temple-waste.jpg\""
+    },
+    {
+      "file": "src/pages/BrijNipunPage.tsx",
+      "src": "/images/projects/brij-hunar-class.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-hunar-class.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSanginiPage.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "Brij-Sangini menstrual hygiene initiative",
+      "rawTag": "<img src=\"/images/projects/sanitary-napkin-vending.jpg\"\n            alt=\"Brij-Sangini menstrual hygiene initiative\"\n            className=\"w-full h-fu"
+    },
+    {
+      "file": "src/pages/BrijSevaPage.tsx",
+      "src": "/images/projects/brij-seva-jal.jpg",
+      "alt": "Brij-Seva community service initiative",
+      "rawTag": "<img src=\"/images/projects/brij-seva-jal.jpg\"\n            alt=\"Brij-Seva community service initiative\"\n            className=\"w-full h-full object-cov"
+    },
+    {
+      "file": "src/pages/BrijSevaPage.tsx",
+      "src": "/images/projects/brij-seva-jal.jpg",
+      "alt": "Jal Seva drinking water distribution",
+      "rawTag": "<img src=\"/images/projects/brij-seva-jal.jpg\"\n                      alt=\"Jal Seva drinking water distribution\"\n                      className=\"w-full"
+    },
+    {
+      "file": "src/pages/BrijSevaPage.tsx",
+      "src": "/images/projects/daan-utsav.jpg",
+      "alt": "Daan Utsav community giving",
+      "rawTag": "<img src=\"/images/projects/daan-utsav.jpg\"\n                      alt=\"Daan Utsav community giving\"\n                      className=\"w-full h-full obje"
+    },
+    {
+      "file": "src/pages/BrijSevaPage.tsx",
+      "src": "/images/projects/plantation-drive.jpg",
+      "alt": "Plantation drive with local volunteers",
+      "rawTag": "<img src=\"/images/projects/plantation-drive.jpg\"\n                      alt=\"Plantation drive with local volunteers\"\n                      className=\"w"
+    },
+    {
+      "file": "src/pages/BrijSurabhiCowWelfarePage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiCowWelfarePage.tsx",
+      "src": "/images/projects/brij-surabhi-idol-painting.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-idol-painting.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow.jpg",
+      "alt": "Brij-Surabhi Cow Welfare & Temple Flower Project",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-cow.jpg\"\n                    alt=\"Brij-Surabhi Cow Welfare & Temple Flower Project\"\n                    classN"
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "alt": "Cow Dung-Based Products Making",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-cow-craft.jpg\"\n                      alt=\"Cow Dung-Based Products Making\"\n                      className=\"w-f"
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "alt": "Temple Flower Reuse and Incense",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-flower-recycling.jpg\"\n                      alt=\"Temple Flower Reuse and Incense\"\n                      classN"
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "alt": "Khajani Sanjhi Art on Cow-Dung Material",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-cow-craft.jpg\"\n                      alt=\"Khajani Sanjhi Art on Cow-Dung Material\"\n                      class"
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-cow.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-cow-craft.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-idol-painting.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-idol-painting.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-flower-recycling.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-temple.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-temple.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/hero-training.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiPage.tsx",
+      "src": "/images/projects/pathway-women-skills.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/pathway-women-skills.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "alt": "Floral Waste Processing",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-flower-recycling.jpg\"\n                  alt=\"Floral Waste Processing\"\n                  className=\"w-full h-fu"
+    },
+    {
+      "file": "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src": "/images/projects/brij-surabhi-idol-painting.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-idol-painting.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src": "/images/projects/brij-surabhi-temple.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-temple.jpg\""
+    },
+    {
+      "file": "src/pages/BrijSurabhiTempleWastePage.tsx",
+      "src": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-flower-recycling.jpg\""
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar.jpg",
+      "alt": "Shakti Ek Adhaar",
+      "rawTag": "<img alt=\"Shakti Ek Adhaar\" className=\"w-full h-full object-cover transition duration-1000 transform group-hover:scale-105\" src=\"/images/projects/shak"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/brij-seva-icon.jpg",
+      "alt": "Brij-Seva",
+      "rawTag": "<img alt=\"Brij-Seva\" className=\"w-full h-full object-cover object-center\" src=\"/images/projects/brij-seva-icon.jpg\"  loading=\"lazy\" decoding=\"async\"/>"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "Women Entrepreneurs",
+      "rawTag": "<img alt=\"Women Entrepreneurs\" className=\"absolute inset-0 w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition duration-500\" src=\""
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/brij-seva-jal.jpg",
+      "alt": "Jal Seva Campaign",
+      "rawTag": "<img alt=\"Jal Seva Campaign\" className=\"w-full h-full object-cover transition duration-1000 transform group-hover:scale-105\" src=\"/images/projects/bri"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/daan-utsav.jpg",
+      "alt": "Daan Utsav - Festival of Giving",
+      "rawTag": "<img alt=\"Daan Utsav - Festival of Giving\" className=\"w-full h-full object-cover sepia-[20%] group-hover:sepia-0 transition duration-700\" src=\"/images"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/plantation-drive.jpg",
+      "alt": "Plantation Drive 1",
+      "rawTag": "<img alt=\"Plantation Drive 1\" className=\"w-full h-full object-cover hover:scale-110 transition duration-700\" src=\"/images/projects/plantation-drive.jp"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/plantation-drive.jpg",
+      "alt": "Plantation Drive 2",
+      "rawTag": "<img alt=\"Plantation Drive 2\" className=\"w-full h-full object-cover hover:scale-110 transition duration-700\" src=\"/images/projects/plantation-drive.jp"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/blood-donation-camp.jpg",
+      "alt": "Blood Donation Camp at Khajani Welfare Society",
+      "rawTag": "<img alt=\"Blood Donation Camp at Khajani Welfare Society\" className=\"w-full h-full object-cover\" src=\"/images/projects/blood-donation-camp.jpg\"  loadi"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/brij-anshuman-icon.jpg",
+      "alt": "Covid Relief",
+      "rawTag": "<img alt=\"Covid Relief\" className=\"w-full h-full object-cover filter sepia contrast-110 hover:contrast-100 transition duration-700\" src=\"/images/proje"
+    },
+    {
+      "file": "src/pages/CampaignsPage.tsx",
+      "src": "/images/projects/sanitary-napkin.jpg",
+      "alt": "Menstrual Hygiene Session",
+      "rawTag": "<img alt=\"Menstrual Hygiene Session\" className=\"w-full h-full object-cover hover:scale-105 transition duration-1000\" src=\"/images/projects/sanitary-na"
+    },
+    {
+      "file": "src/pages/CollaborationsPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "Women in tailoring workshop",
+      "rawTag": "<img alt=\"Women in tailoring workshop\"\n                  className=\"w-full h-[500px] object-cover rounded-2xl shadow-2xl grayscale hover:grayscale-0 t"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "Artisan hands embroidering Mathura Zari Poshak",
+      "rawTag": "<img src=\"/images/projects/poshak-zari.jpg\"\n              alt=\"Artisan hands embroidering Mathura Zari Poshak\"\n              className=\"w-full h-full "
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/pathway-heritage-artisan.jpg",
+      "alt": "Process of traditional craftsmanship at Khajani",
+      "rawTag": "<img src=\"/images/projects/pathway-heritage-artisan.jpg\"\n                      alt=\"Process of traditional craftsmanship at Khajani\"\n                 "
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "Sanjhi Art Training at Khajani",
+      "rawTag": "<img src=\"/images/projects/royal-sanjhi-training.jpg\"\n                    alt=\"Sanjhi Art Training at Khajani\"\n                    className=\"w-full h"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/poshak-sanjhi.jpg",
+      "alt": "Intricate Sanjhi paper cutting motif",
+      "rawTag": "<img src=\"/images/projects/poshak-sanjhi.jpg\"\n                      alt=\"Intricate Sanjhi paper cutting motif\"\n                      className=\"w-full"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "Intricate Zari work on Mathura deity poshak",
+      "rawTag": "<img src=\"/images/projects/poshak-zari.jpg\"\n                      alt=\"Intricate Zari work on Mathura deity poshak\"\n                      className=\"w"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "Eco-friendly diyas crafted from cow dung",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-diya.jpg\"\n                      alt=\"Eco-friendly diyas crafted from cow dung\"\n                      className"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "alt": "Cow dung craft and incense making",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-cow-craft.jpg\"\n                      alt=\"Cow dung craft and incense making\"\n                      className=\""
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/brij-surabhi-idol-painting.jpg",
+      "alt": "Artisan painting sacred deity idols crafted with traditional materials",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-idol-painting.jpg\"\n                      alt=\"Artisan painting sacred deity idols crafted with traditional mat"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "alt": "Repurposing sacred temple flower offerings in Mathura",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-flower-recycling.jpg\"\n                      alt=\"Repurposing sacred temple flower offerings in Mathura\"\n      "
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/projects/botanical-leaf-branch.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/botanical-leaf-branch.png\"\n              alt=\"\"\n              className=\"w-full h-auto\"\n             loading=\"lazy\" decodin"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/culture/culture-sanjhi-art.jpg",
+      "alt": "Royal Sanjhi Art",
+      "rawTag": "<img src=\"/images/culture/culture-sanjhi-art.jpg\"\n                      alt=\"Royal Sanjhi Art\"\n                      className=\"w-full h-full object-c"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/culture/culture-zari-poshak.jpg",
+      "alt": "Mathura Zari Poshak",
+      "rawTag": "<img src=\"/images/culture/culture-zari-poshak.jpg\"\n                      alt=\"Mathura Zari Poshak\"\n                      className=\"w-full h-full obje"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/culture/culture-panchgavya.jpg",
+      "alt": "Panchgavya & Traditional Materials",
+      "rawTag": "<img src=\"/images/culture/culture-panchgavya.jpg\"\n                      alt=\"Panchgavya & Traditional Materials\"\n                      className=\"w-fu"
+    },
+    {
+      "file": "src/pages/CulturePage.tsx",
+      "src": "/images/culture/culture-temple-flowers.jpg",
+      "alt": "Temple Flower Management",
+      "rawTag": "<img src=\"/images/culture/culture-temple-flowers.jpg\"\n                      alt=\"Temple Flower Management\"\n                      className=\"w-full h-f"
+    },
+    {
+      "file": "src/pages/DigiShalaPage.tsx",
+      "src": "/images/projects/digi-shala.jpg",
+      "alt": "Digi-Shala digital learning classroom for girls",
+      "rawTag": "<img src=\"/images/projects/digi-shala.jpg\"\n            alt=\"Digi-Shala digital learning classroom for girls\"\n            className=\"w-full h-full obje"
+    },
+    {
+      "file": "src/pages/DigiShalaPage.tsx",
+      "src": "/images/projects/digi-shala-icon.jpg",
+      "alt": "Digi-Shala interactive computer training inside campus",
+      "rawTag": "<img src=\"/images/projects/digi-shala-icon.jpg\"\n                    alt=\"Digi-Shala interactive computer training inside campus\"\n                    c"
+    },
+    {
+      "file": "src/pages/DonatePage.tsx",
+      "src": "/images/donate/upi-qr.jpg",
+      "alt": "Khajani Welfare Society Official UPI QR Code",
+      "rawTag": "<img src=\"/images/donate/upi-qr.jpg\"\n                    alt=\"Khajani Welfare Society Official UPI QR Code\"\n                    className=\"w-full h-fu"
+    },
+    {
+      "file": "src/pages/EdudakshPage.tsx",
+      "src": "/images/projects/edudaksh-classroom.jpg",
+      "alt": "EduDaksh classroom session",
+      "rawTag": "<img src=\"/images/projects/edudaksh-classroom.jpg\"\n            alt=\"EduDaksh classroom session\"\n            className=\"w-full h-full object-cover opac"
+    },
+    {
+      "file": "src/pages/EdudakshPage.tsx",
+      "src": "/images/projects/edudaksh-training.jpg",
+      "alt": "EduDaksh remedial learning in action",
+      "rawTag": "<img alt=\"EduDaksh remedial learning in action\"\n                  className=\"w-full h-full object-cover\"\n                  src=\"/images/projects/eduda"
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "Mathura Zari Poshak sacred deity attire",
+      "rawTag": "<img src=\"/images/projects/poshak-zari.jpg\"\n                      alt=\"Mathura Zari Poshak sacred deity attire\"\n                      className=\"w-ful"
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/govt-of-india-seal.png",
+      "alt": "State Emblem of India - Government of India",
+      "rawTag": "<img src=\"/images/projects/govt-of-india-seal.png\"\n                            alt=\"State Emblem of India - Government of India\"\n                     "
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/ip-india-logo.png",
+      "alt": "Intellectual Property India Logo",
+      "rawTag": "<img src=\"/images/projects/ip-india-logo.png\"\n                            alt=\"Intellectual Property India Logo\"\n                            className"
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/mathura-zari-poshak-official-logo.png?v=official",
+      "alt": "Authentic Mathura Zari Poshak Official GI Logo from Government PDF",
+      "rawTag": "<img src=\"/images/projects/mathura-zari-poshak-official-logo.png?v=official\"\n                          alt=\"Authentic Mathura Zari Poshak Official GI "
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "Zari embroidery detail",
+      "rawTag": "<img src=\"/images/projects/poshak-zari.jpg\"\n                  alt=\"Zari embroidery detail\"\n                  className=\"w-full h-full object-cover obj"
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/real-gi-certificate-page-1.png",
+      "alt": "",
+      "context": "image: \"/images/projects/real-gi-certificate-page-1.png\""
+    },
+    {
+      "file": "src/pages/GIRecognitionPage.tsx",
+      "src": "/images/projects/real-gi-certificate-page-2.png",
+      "alt": "",
+      "context": "image: \"/images/projects/real-gi-certificate-page-2.png\""
+    },
+    {
+      "file": "src/pages/GetInvolvedPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "Khajani collaborative skill sharing workshop",
+      "rawTag": "<img src=\"/images/projects/royal-sanjhi-training.jpg\"\n                    alt=\"Khajani collaborative skill sharing workshop\"\n                    class"
+    },
+    {
+      "file": "src/pages/GetInvolvedPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "Khajani Welfare Society community gathering",
+      "rawTag": "<img src=\"/images/projects/shg-federation.jpg\"\n            alt=\"Khajani Welfare Society community gathering\"\n            className=\"w-full h-full obje"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "Women in classroom skill session at Khajani",
+      "rawTag": "<img\n                    alt=\"Women in classroom skill session at Khajani\"\n                    className=\"w-full h-full object-cover transform hover:s"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/botanical-leaf-branch.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/botanical-leaf-branch.png\"\n                    alt=\"\"\n                    className=\"w-24 sm:w-28 h-auto pointer-events-non"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/botanical-leaf-branch.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/botanical-leaf-branch.png\"\n                    alt=\"\"\n                    className=\"w-24 sm:w-28 h-auto pointer-events-non"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/mathura-ghat-sketch.png",
+      "alt": "Mathura Ghat Sketch",
+      "rawTag": "<img src=\"/images/projects/mathura-ghat-sketch.png\"\n                        alt=\"Mathura Ghat Sketch\"\n                        className=\"w-full h-auto"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/mathura-zari-poshak-official-logo.png",
+      "alt": "Mathura Zari Poshak Official Geographical Indication Logo",
+      "rawTag": "<img\n                      src=\"/images/projects/mathura-zari-poshak-official-logo.png\"\n                      alt=\"Mathura Zari Poshak Official Geogra"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners-quote-flourish.png",
+      "alt": "Greater impact through shared purpose",
+      "rawTag": "<img src=\"/images/home/partners-quote-flourish.png\"\n                  alt=\"Greater impact through shared purpose\"\n                  className=\"w-full "
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/braj-pavilion-ghat.png",
+      "alt": "Mathura Heritage Ghat Architecture",
+      "rawTag": "<img src=\"/images/home/braj-pavilion-ghat.png\"\n                      alt=\"Mathura Heritage Ghat Architecture\"\n                      className=\"w-[300p"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/get-involved/involvement-hero-embroidery.jpg",
+      "alt": "Khajani artisan embroidering Mathura Zari Poshak",
+      "rawTag": "<img src=\"/images/get-involved/involvement-hero-embroidery.jpg\"\n                  alt=\"Khajani artisan embroidering Mathura Zari Poshak\"\n             "
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/mathura-ghat-panoramic.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/mathura-ghat-panoramic.png\"\n                alt=\"\"\n                className=\"absolute -right-8 -bottom-10 w-64 sm:w-72 h-a"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/get-involved/involvement-donate.jpg",
+      "alt": "Donate",
+      "rawTag": "<img src=\"/images/get-involved/involvement-donate.jpg\"\n                      alt=\"Donate\"\n                      className=\"h-20 w-auto object-contain "
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/get-involved/involvement-volunteer.jpg",
+      "alt": "Volunteer",
+      "rawTag": "<img src=\"/images/get-involved/involvement-volunteer.jpg\"\n                      alt=\"Volunteer\"\n                      className=\"h-20 w-auto object-co"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/get-involved/involvement-partner.jpg",
+      "alt": "Partner with Us",
+      "rawTag": "<img src=\"/images/get-involved/involvement-partner.jpg\"\n                      alt=\"Partner with Us\"\n                      className=\"h-20 w-auto objec"
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/get-involved/involvement-artisan.jpg",
+      "alt": "Support Our Artisans",
+      "rawTag": "<img src=\"/images/get-involved/involvement-artisan.jpg\"\n                      alt=\"Support Our Artisans\"\n                      className=\"h-20 w-auto "
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/media/news-clipping-14.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-14.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/media/news-clipping-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-1.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/media/news-clipping-10.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-10.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/pathway-women-skills.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/pathway-women-skills.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/pathway-heritage-artisan.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/pathway-heritage-artisan.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/pathway-education-digital.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/pathway-education-digital.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/pathway-community-empowerment.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/pathway-community-empowerment.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/get-involved/artisan-woman-embroidery.jpg",
+      "alt": "",
+      "context": "image: \"/images/get-involved/artisan-woman-embroidery.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/kla-classroom-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-classroom-1.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/shakti-ek-adhaar-1.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/hero-women-training.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/shg-federation.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/media/press-review-3.jpg",
+      "alt": "",
+      "context": "img: \"/images/media/press-review-3.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/projects/brij-surabhi-cow.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/brij-surabhi-cow.jpg\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-worldbank.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-worldbank.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-hrsuccesstalk.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-hrsuccesstalk.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-sidbi.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-sidbi.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-upsdm.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-upsdm.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-msme.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-msme.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-uppro.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-uppro.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-indianoil.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-indianoil.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-balrampur.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-balrampur.png\""
+    },
+    {
+      "file": "src/pages/HomePage.tsx",
+      "src": "/images/home/partners/card-supreme.png",
+      "alt": "",
+      "context": "img: \"/images/home/partners/card-supreme.png\""
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "Khajani Learning Academy students in Mathura",
+      "rawTag": "<img src=\"/images/projects/kla-students.jpg\"\n                    alt=\"Khajani Learning Academy students in Mathura\"\n                    className=\"w-f"
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/kla-classroom-2.jpg",
+      "alt": "Safe and encouraging learning atmosphere at KLA",
+      "rawTag": "<img src=\"/images/projects/kla-classroom-2.jpg\"\n                    alt=\"Safe and encouraging learning atmosphere at KLA\"\n                    classNam"
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/edudaksh-award.jpg",
+      "alt": "KLA students receiving academic recognition",
+      "rawTag": "<img src=\"/images/projects/edudaksh-award.jpg\"\n                    alt=\"KLA students receiving academic recognition\"\n                    className=\"w-"
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/kla-classroom-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-classroom-1.jpg\""
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/kla-classroom-2.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-classroom-2.jpg\""
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/edudaksh-computer.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/edudaksh-computer.jpg\""
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/edudaksh-award.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/edudaksh-award.jpg\""
+    },
+    {
+      "file": "src/pages/KLAPage.tsx",
+      "src": "/images/projects/edudaksh-classroom.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/edudaksh-classroom.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "Sanjhi artisan craft training",
+      "rawTag": "<img src=\"/images/projects/royal-sanjhi-training.jpg\"\n                    alt=\"Sanjhi artisan craft training\"\n                    className=\"w-full h-"
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "Students in classroom",
+      "rawTag": "<img src=\"/images/projects/kla-students.jpg\"\n                    alt=\"Students in classroom\"\n                    className=\"w-full h-24 sm:h-26 object"
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "Vocational trainees",
+      "rawTag": "<img src=\"/images/about/hero-women-training.jpg\"\n                    alt=\"Vocational trainees\"\n                    className=\"w-full h-24 sm:h-26 obje"
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/brij-hunar-class.jpg",
+      "alt": "Skill development center",
+      "rawTag": "<img src=\"/images/projects/brij-hunar-class.jpg\"\n                    alt=\"Skill development center\"\n                    className=\"w-full h-28 sm:h-32"
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/apparel-beauty-lab.jpg",
+      "alt": "Apparel lab",
+      "rawTag": "<img src=\"/images/about/apparel-beauty-lab.jpg\"\n                    alt=\"Apparel lab\"\n                    className=\"w-full h-28 sm:h-32 object-cover "
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/brij-hunar-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-hunar-training.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/computer-lab.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/computer-lab.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/apparel-beauty-lab.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/apparel-beauty-lab.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/hero-training.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/hero-women-training.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/kla-classroom-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-classroom-1.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/digi-shala.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/digi-shala.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/edudaksh-gallery.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/edudaksh-gallery.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/get-involved/artisan-woman-embroidery.jpg",
+      "alt": "",
+      "context": "image: \"/images/get-involved/artisan-woman-embroidery.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/blood-donation-camp.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/blood-donation-camp.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/sanitary-napkin-vending.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/shg-federation.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/plantation-drive.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/plantation-drive.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/daan-utsav.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/daan-utsav.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-3.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/shakti-ek-adhaar-3.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-flower-recycling.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/shakti-ek-adhaar-1.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/projects/gi-certificate-1147.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/gi-certificate-1147.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/hema-malini-award.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/hema-malini-award.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/accomplishments.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/accomplishments.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/awards-dignitaries.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/awards-dignitaries.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/press-review-3.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/press-review-3.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/about/collab-upsdm.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/collab-upsdm.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-1.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-10.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-10.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-11.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-11.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-14.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-14.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-2.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-2.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-16.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-16.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-4.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-4.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-6.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-6.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-7.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-7.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-12.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-12.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-13.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-13.jpg\""
+    },
+    {
+      "file": "src/pages/MediaPage.tsx",
+      "src": "/images/media/news-clipping-5.jpg",
+      "alt": "",
+      "context": "image: \"/images/media/news-clipping-5.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/skills-header-art.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/skills-header-art.png\"\n              alt=\"\"\n              className=\"h-full w-auto object-contain object-right-top opacity-"
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "Brij-Hunar vocational training",
+      "rawTag": "<img\n                      src=\"/images/projects/upsdm-tailor.jpg\"\n                      alt=\"Brij-Hunar vocational training\"\n                      cl"
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-nipun-activities.jpg",
+      "alt": "Brij-Nipun short-term workshop and camps",
+      "rawTag": "<img\n                      src=\"/images/projects/brij-nipun-activities.jpg\"\n                      alt=\"Brij-Nipun short-term workshop and camps\"\n     "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "Khajani Learning Academy students",
+      "rawTag": "<img\n                      src=\"/images/projects/kla-students.jpg\"\n                      alt=\"Khajani Learning Academy students\"\n                     "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/heritage-header-art.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/heritage-header-art.png\"\n              alt=\"\"\n              className=\"w-full h-full object-contain object-right opacity-85"
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/heritage-header-art.png",
+      "alt": "",
+      "rawTag": "<img src=\"/images/projects/heritage-header-art.png\"\n            alt=\"\"\n            className=\"w-full h-full object-cover object-top opacity-50\"\n      "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "Royal Sanjhi Art Workshop",
+      "rawTag": "<img\n                      src=\"/images/projects/royal-sanjhi-training.jpg\"\n                      alt=\"Royal Sanjhi Art Workshop\"\n                    "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "Mathura Zari Poshak GI craft",
+      "rawTag": "<img\n                      src=\"/images/projects/poshak-zari.jpg\"\n                      alt=\"Mathura Zari Poshak GI craft\"\n                      class"
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow.jpg",
+      "alt": "Brij-Surabhi Cow Welfare & Temple Flower Reuse",
+      "rawTag": "<img\n                      src=\"/images/projects/brij-surabhi-cow.jpg\"\n                      alt=\"Brij-Surabhi Cow Welfare & Temple Flower Reuse\"\n    "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/inclusion-arch-art.png",
+      "alt": "Archway representing opportunity and new pathways",
+      "rawTag": "<img src=\"/images/projects/inclusion-arch-art.png\"\n                  alt=\"Archway representing opportunity and new pathways\"\n                  classNa"
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-anshuman-icon.jpg",
+      "alt": "Brij-Anshuman Prison Rehabilitation Program",
+      "rawTag": "<img\n                      src=\"/images/projects/brij-anshuman-icon.jpg\"\n                      alt=\"Brij-Anshuman Prison Rehabilitation Program\"\n     "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "Brij-Sangini Health & Dignity Initiative",
+      "rawTag": "<img\n                      src=\"/images/projects/sanitary-napkin-vending.jpg\"\n                      alt=\"Brij-Sangini Health & Dignity Initiative\"\n   "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/digi-shala.jpg",
+      "alt": "Digi-Shala practical digital literacy",
+      "rawTag": "<img\n                      src=\"/images/projects/digi-shala.jpg\"\n                      alt=\"Digi-Shala practical digital literacy\"\n                   "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-seva-jal.jpg",
+      "alt": "Brij-Seva community drinking water service",
+      "rawTag": "<img\n                    src=\"/images/projects/brij-seva-jal.jpg\"\n                    alt=\"Brij-Seva community drinking water service\"\n               "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "Brij Business Women Directory women entrepreneurs",
+      "rawTag": "<img\n                    src=\"/images/projects/shg-federation.jpg\"\n                    alt=\"Brij Business Women Directory women entrepreneurs\"\n       "
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "Khajani Welfare Society at UP International Trade Show 2026",
+      "rawTag": "<img\n                    src=\"/images/projects/hero-training.jpg\"\n                    alt=\"Khajani Welfare Society at UP International Trade Show 2026"
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/hero-training.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-nipun-activities.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-nipun-activities.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/digi-shala.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/digi-shala.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-cow.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-anshuman-icon.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-anshuman-icon.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/sanitary-napkin-vending.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/brij-seva-jal.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-seva-jal.jpg\""
+    },
+    {
+      "file": "src/pages/ProjectsPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/shg-federation.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "Authentic Mathura Zari Poshak Craftsmanship",
+      "rawTag": "<img src=\"/images/projects/poshak-zari.jpg\"\n                    alt=\"Authentic Mathura Zari Poshak Craftsmanship\"\n                    className=\"w-ful"
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/pathway-heritage-artisan.jpg",
+      "alt": "Women artisans practicing Mathura Zari Poshak",
+      "rawTag": "<img src=\"/images/projects/pathway-heritage-artisan.jpg\"\n                      alt=\"Women artisans practicing Mathura Zari Poshak\"\n                   "
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/pathway-heritage-artisan.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/pathway-heritage-artisan.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/poshak-sanjhi.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-sanjhi.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/brij-hunar-tailoring.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-hunar-tailoring.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/brij-hunar-class.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-hunar-class.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/brij-hunar-sewing-hall.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-hunar-sewing-hall.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/mathura-zari-poshak-gi-logo.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/mathura-zari-poshak-gi-logo.jpg\""
+    },
+    {
+      "file": "src/pages/RadhaKrishnaPoshakPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/hero-training.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "Royal Sanjhi Art Training at Khajani",
+      "rawTag": "<img src=\"/images/projects/royal-sanjhi-training.jpg\"\n                    alt=\"Royal Sanjhi Art Training at Khajani\"\n                    className=\"w-"
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "alt": "Sanjhi on Sustainable Cow-Dung Material",
+      "rawTag": "<img src=\"/images/projects/brij-surabhi-cow-craft.jpg\"\n                      alt=\"Sanjhi on Sustainable Cow-Dung Material\"\n                      class"
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/poshak-sanjhi.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-sanjhi.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-cow-craft.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-nipun-workshop.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-nipun-workshop.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-diya.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-diya.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-nipun-activities.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-nipun-activities.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/pathway-heritage-artisan.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/pathway-heritage-artisan.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-surabhi-idol-painting.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-surabhi-idol-painting.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/pathway-heritage-artisan.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/pathway-heritage-artisan.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/brij-nipun-activities.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/brij-nipun-activities.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/kla-students.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/kla-students.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/royal-sanjhi-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/royal-sanjhi-training.jpg\""
+    },
+    {
+      "file": "src/pages/RoyalSanjhiPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/hero-training.jpg\""
+    },
+    {
+      "file": "src/pages/SHGFederationPage.tsx",
+      "src": "/images/projects/shg-federation.jpg",
+      "alt": "Group of women working at sewing machines",
+      "rawTag": "<img alt=\"Group of women working at sewing machines\"\n            className=\"w-full h-full object-cover object-center\"\n            src=\"/images/project"
+    },
+    {
+      "file": "src/pages/SanitaryNapkinPage.tsx",
+      "src": "/images/projects/sanitary-napkin.jpg",
+      "alt": "Menstrual hygiene awareness camp",
+      "rawTag": "<img src=\"/images/projects/sanitary-napkin.jpg\"\n            alt=\"Menstrual hygiene awareness camp\"\n            className=\"w-full h-full object-cover o"
+    },
+    {
+      "file": "src/pages/SanitaryNapkinPage.tsx",
+      "src": "/images/projects/sanitary-napkin-vending.jpg",
+      "alt": "Sanitary napkin vending installation",
+      "rawTag": "<img src=\"/images/projects/sanitary-napkin-vending.jpg\"\n                alt=\"Sanitary napkin vending installation\"\n                className=\"w-full h"
+    },
+    {
+      "file": "src/pages/SanitaryNapkinPage.tsx",
+      "src": "/images/projects/sanitary-napkin.jpg",
+      "alt": "Health awareness workshop",
+      "rawTag": "<img src=\"/images/projects/sanitary-napkin.jpg\"\n                alt=\"Health awareness workshop\"\n                className=\"w-full h-80 object-cover ro"
+    },
+    {
+      "file": "src/pages/ShaktiEkAdhaarPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-3.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/shakti-ek-adhaar-3.jpg\""
+    },
+    {
+      "file": "src/pages/ShaktiEkAdhaarPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-1.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/shakti-ek-adhaar-1.jpg\""
+    },
+    {
+      "file": "src/pages/ShaktiEkAdhaarPage.tsx",
+      "src": "/images/projects/shakti-ek-adhaar-2.jpg",
+      "alt": "",
+      "context": "img: \"/images/projects/shakti-ek-adhaar-2.jpg\""
+    },
+    {
+      "file": "src/pages/UPITSTradeShowPage.tsx",
+      "src": "/images/projects/hero-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/hero-training.jpg\""
+    },
+    {
+      "file": "src/pages/UPITSTradeShowPage.tsx",
+      "src": "/images/projects/poshak-zari.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/poshak-zari.jpg\""
+    },
+    {
+      "file": "src/pages/UPITSTradeShowPage.tsx",
+      "src": "/images/projects/sanjhi-artisan-craft.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/sanjhi-artisan-craft.jpg\""
+    },
+    {
+      "file": "src/pages/UPITSTradeShowPage.tsx",
+      "src": "/images/projects/area-of-work.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/area-of-work.jpg\""
+    },
+    {
+      "file": "src/pages/UPITSTradeShowPage.tsx",
+      "src": "/images/about/hero-women-training.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/hero-women-training.jpg\""
+    },
+    {
+      "file": "src/pages/UPITSTradeShowPage.tsx",
+      "src": "/images/about/govt-collab-1.jpg",
+      "alt": "",
+      "context": "image: \"/images/about/govt-collab-1.jpg\""
+    },
+    {
+      "file": "src/pages/UPSDMTrainingPage.tsx",
+      "src": "/images/projects/upsdm-class.jpg",
+      "alt": "A modern training classroom with students",
+      "rawTag": "<img alt=\"A modern training classroom with students\"\n            className=\"w-full h-full object-cover object-center\"\n            src=\"/images/project"
+    },
+    {
+      "file": "src/pages/UPSDMTrainingPage.tsx",
+      "src": "/images/projects/upsdm-tailor.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-tailor.jpg\""
+    },
+    {
+      "file": "src/pages/UPSDMTrainingPage.tsx",
+      "src": "/images/projects/upsdm-beauty.jpg",
+      "alt": "",
+      "context": "image: \"/images/projects/upsdm-beauty.jpg\""
+    }
+  ],
+  "diskImages": [
+    {
+      "relativePath": "/images/about/abha.jpg",
+      "sizeBytes": 83106,
+      "fullPath": "public/images/about/abha.jpg"
+    },
+    {
+      "relativePath": "/images/about/accomplishments.jpg",
+      "sizeBytes": 586144,
+      "fullPath": "public/images/about/accomplishments.jpg"
+    },
+    {
+      "relativePath": "/images/about/apparel-beauty-lab.jpg",
+      "sizeBytes": 260414,
+      "fullPath": "public/images/about/apparel-beauty-lab.jpg"
+    },
+    {
+      "relativePath": "/images/about/area-community.jpg",
+      "sizeBytes": 1266291,
+      "fullPath": "public/images/about/area-community.jpg"
+    },
+    {
+      "relativePath": "/images/about/area-education.jpg",
+      "sizeBytes": 1041334,
+      "fullPath": "public/images/about/area-education.jpg"
+    },
+    {
+      "relativePath": "/images/about/area-heritage.jpg",
+      "sizeBytes": 836078,
+      "fullPath": "public/images/about/area-heritage.jpg"
+    },
+    {
+      "relativePath": "/images/about/area-livelihoods.jpg",
+      "sizeBytes": 1020095,
+      "fullPath": "public/images/about/area-livelihoods.jpg"
+    },
+    {
+      "relativePath": "/images/about/area-partnerships.jpg",
+      "sizeBytes": 789376,
+      "fullPath": "public/images/about/area-partnerships.jpg"
+    },
+    {
+      "relativePath": "/images/about/area-skills.jpg",
+      "sizeBytes": 803550,
+      "fullPath": "public/images/about/area-skills.jpg"
+    },
+    {
+      "relativePath": "/images/about/awards-dignitaries.jpg",
+      "sizeBytes": 246847,
+      "fullPath": "public/images/about/awards-dignitaries.jpg"
+    },
+    {
+      "relativePath": "/images/about/classroom.jpg",
+      "sizeBytes": 1020173,
+      "fullPath": "public/images/about/classroom.jpg"
+    },
+    {
+      "relativePath": "/images/about/collab-upsdm.jpg",
+      "sizeBytes": 263552,
+      "fullPath": "public/images/about/collab-upsdm.jpg"
+    },
+    {
+      "relativePath": "/images/about/computer-lab.jpg",
+      "sizeBytes": 311482,
+      "fullPath": "public/images/about/computer-lab.jpg"
+    },
+    {
+      "relativePath": "/images/about/dr-hari-mohan.jpg",
+      "sizeBytes": 96621,
+      "fullPath": "public/images/about/dr-hari-mohan.jpg"
+    },
+    {
+      "relativePath": "/images/about/governance-hero-illustration.png",
+      "sizeBytes": 927822,
+      "fullPath": "public/images/about/governance-hero-illustration.png"
+    },
+    {
+      "relativePath": "/images/about/govt-collab-1.jpg",
+      "sizeBytes": 107955,
+      "fullPath": "public/images/about/govt-collab-1.jpg"
+    },
+    {
+      "relativePath": "/images/about/govt-collab-2.jpg",
+      "sizeBytes": 84396,
+      "fullPath": "public/images/about/govt-collab-2.jpg"
+    },
+    {
+      "relativePath": "/images/about/hema-malini-award.jpg",
+      "sizeBytes": 325239,
+      "fullPath": "public/images/about/hema-malini-award.jpg"
+    },
+    {
+      "relativePath": "/images/about/hema-malini.jpg",
+      "sizeBytes": 47023,
+      "fullPath": "public/images/about/hema-malini.jpg"
+    },
+    {
+      "relativePath": "/images/about/hero-women-training.jpg",
+      "sizeBytes": 232289,
+      "fullPath": "public/images/about/hero-women-training.jpg"
+    },
+    {
+      "relativePath": "/images/about/institute-entrance.jpg",
+      "sizeBytes": 284347,
+      "fullPath": "public/images/about/institute-entrance.jpg"
+    },
+    {
+      "relativePath": "/images/about/om-birla.jpg",
+      "sizeBytes": 57071,
+      "fullPath": "public/images/about/om-birla.jpg"
+    },
+    {
+      "relativePath": "/images/about/our-story-workshop.jpg",
+      "sizeBytes": 1020173,
+      "fullPath": "public/images/about/our-story-workshop.jpg"
+    },
+    {
+      "relativePath": "/images/about/rooted-in-braj-flourish.png",
+      "sizeBytes": 543182,
+      "fullPath": "public/images/about/rooted-in-braj-flourish.png"
+    },
+    {
+      "relativePath": "/images/about/shg-groups.jpg",
+      "sizeBytes": 243382,
+      "fullPath": "public/images/about/shg-groups.jpg"
+    },
+    {
+      "relativePath": "/images/about/shipra-rathi.jpg",
+      "sizeBytes": 100304,
+      "fullPath": "public/images/about/shipra-rathi.jpg"
+    },
+    {
+      "relativePath": "/images/about/team-working.jpg",
+      "sizeBytes": 360543,
+      "fullPath": "public/images/about/team-working.jpg"
+    },
+    {
+      "relativePath": "/images/about/what-we-believe-art.png",
+      "sizeBytes": 150541,
+      "fullPath": "public/images/about/what-we-believe-art.png"
+    },
+    {
+      "relativePath": "/images/culture/culture-panchgavya.jpg",
+      "sizeBytes": 836151,
+      "fullPath": "public/images/culture/culture-panchgavya.jpg"
+    },
+    {
+      "relativePath": "/images/culture/culture-sanjhi-art.jpg",
+      "sizeBytes": 861478,
+      "fullPath": "public/images/culture/culture-sanjhi-art.jpg"
+    },
+    {
+      "relativePath": "/images/culture/culture-temple-flowers.jpg",
+      "sizeBytes": 948048,
+      "fullPath": "public/images/culture/culture-temple-flowers.jpg"
+    },
+    {
+      "relativePath": "/images/culture/culture-zari-poshak.jpg",
+      "sizeBytes": 1069430,
+      "fullPath": "public/images/culture/culture-zari-poshak.jpg"
+    },
+    {
+      "relativePath": "/images/donate/upi-qr.jpg",
+      "sizeBytes": 251742,
+      "fullPath": "public/images/donate/upi-qr.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/artisan-woman-embroidery.jpg",
+      "sizeBytes": 1001840,
+      "fullPath": "public/images/get-involved/artisan-woman-embroidery.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/artisan.jpg",
+      "sizeBytes": 644407,
+      "fullPath": "public/images/get-involved/artisan.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/donate.jpg",
+      "sizeBytes": 460548,
+      "fullPath": "public/images/get-involved/donate.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/involvement-artisan.jpg",
+      "sizeBytes": 7025,
+      "fullPath": "public/images/get-involved/involvement-artisan.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/involvement-donate.jpg",
+      "sizeBytes": 5762,
+      "fullPath": "public/images/get-involved/involvement-donate.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/involvement-hero-embroidery.jpg",
+      "sizeBytes": 24587,
+      "fullPath": "public/images/get-involved/involvement-hero-embroidery.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/involvement-partner.jpg",
+      "sizeBytes": 5755,
+      "fullPath": "public/images/get-involved/involvement-partner.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/involvement-volunteer.jpg",
+      "sizeBytes": 6739,
+      "fullPath": "public/images/get-involved/involvement-volunteer.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/partner.jpg",
+      "sizeBytes": 424645,
+      "fullPath": "public/images/get-involved/partner.jpg"
+    },
+    {
+      "relativePath": "/images/get-involved/volunteer.jpg",
+      "sizeBytes": 287075,
+      "fullPath": "public/images/get-involved/volunteer.jpg"
+    },
+    {
+      "relativePath": "/images/home/braj-pavilion-ghat.png",
+      "sizeBytes": 1004221,
+      "fullPath": "public/images/home/braj-pavilion-ghat.png"
+    },
+    {
+      "relativePath": "/images/home/partners/balrampur.png",
+      "sizeBytes": 24620,
+      "fullPath": "public/images/home/partners/balrampur.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-balrampur.png",
+      "sizeBytes": 58992,
+      "fullPath": "public/images/home/partners/card-balrampur.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-hrsuccesstalk.png",
+      "sizeBytes": 15561,
+      "fullPath": "public/images/home/partners/card-hrsuccesstalk.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-hrsuccesstalk.svg",
+      "sizeBytes": 15795,
+      "fullPath": "public/images/home/partners/card-hrsuccesstalk.svg"
+    },
+    {
+      "relativePath": "/images/home/partners/card-indianoil.png",
+      "sizeBytes": 94397,
+      "fullPath": "public/images/home/partners/card-indianoil.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-msme.png",
+      "sizeBytes": 140894,
+      "fullPath": "public/images/home/partners/card-msme.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-sidbi.png",
+      "sizeBytes": 36874,
+      "fullPath": "public/images/home/partners/card-sidbi.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-supreme.png",
+      "sizeBytes": 77875,
+      "fullPath": "public/images/home/partners/card-supreme.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-uppro.png",
+      "sizeBytes": 63631,
+      "fullPath": "public/images/home/partners/card-uppro.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-upsdm.png",
+      "sizeBytes": 49693,
+      "fullPath": "public/images/home/partners/card-upsdm.png"
+    },
+    {
+      "relativePath": "/images/home/partners/card-worldbank.png",
+      "sizeBytes": 70977,
+      "fullPath": "public/images/home/partners/card-worldbank.png"
+    },
+    {
+      "relativePath": "/images/home/partners/hrsuccesstalk.png",
+      "sizeBytes": 11061,
+      "fullPath": "public/images/home/partners/hrsuccesstalk.png"
+    },
+    {
+      "relativePath": "/images/home/partners/indianoil.png",
+      "sizeBytes": 24453,
+      "fullPath": "public/images/home/partners/indianoil.png"
+    },
+    {
+      "relativePath": "/images/home/partners/msme.png",
+      "sizeBytes": 28405,
+      "fullPath": "public/images/home/partners/msme.png"
+    },
+    {
+      "relativePath": "/images/home/partners/sidbi.png",
+      "sizeBytes": 21476,
+      "fullPath": "public/images/home/partners/sidbi.png"
+    },
+    {
+      "relativePath": "/images/home/partners/supreme.png",
+      "sizeBytes": 5702,
+      "fullPath": "public/images/home/partners/supreme.png"
+    },
+    {
+      "relativePath": "/images/home/partners/uppro.png",
+      "sizeBytes": 9141,
+      "fullPath": "public/images/home/partners/uppro.png"
+    },
+    {
+      "relativePath": "/images/home/partners/upsdm.png",
+      "sizeBytes": 22358,
+      "fullPath": "public/images/home/partners/upsdm.png"
+    },
+    {
+      "relativePath": "/images/home/partners/worldbank.png",
+      "sizeBytes": 22977,
+      "fullPath": "public/images/home/partners/worldbank.png"
+    },
+    {
+      "relativePath": "/images/home/partners-quote-flourish.png",
+      "sizeBytes": 112744,
+      "fullPath": "public/images/home/partners-quote-flourish.png"
+    },
+    {
+      "relativePath": "/images/icons/women-skills.jpg",
+      "sizeBytes": 560295,
+      "fullPath": "public/images/icons/women-skills.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-1.jpg",
+      "sizeBytes": 367023,
+      "fullPath": "public/images/media/news-clipping-1.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-10.jpg",
+      "sizeBytes": 203620,
+      "fullPath": "public/images/media/news-clipping-10.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-11.jpg",
+      "sizeBytes": 540574,
+      "fullPath": "public/images/media/news-clipping-11.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-12.jpg",
+      "sizeBytes": 704765,
+      "fullPath": "public/images/media/news-clipping-12.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-13.jpg",
+      "sizeBytes": 1009711,
+      "fullPath": "public/images/media/news-clipping-13.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-14.jpg",
+      "sizeBytes": 1070700,
+      "fullPath": "public/images/media/news-clipping-14.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-16.jpg",
+      "sizeBytes": 620501,
+      "fullPath": "public/images/media/news-clipping-16.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-2.jpg",
+      "sizeBytes": 413727,
+      "fullPath": "public/images/media/news-clipping-2.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-4.jpg",
+      "sizeBytes": 372935,
+      "fullPath": "public/images/media/news-clipping-4.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-5.jpg",
+      "sizeBytes": 356176,
+      "fullPath": "public/images/media/news-clipping-5.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-6.jpg",
+      "sizeBytes": 388289,
+      "fullPath": "public/images/media/news-clipping-6.jpg"
+    },
+    {
+      "relativePath": "/images/media/news-clipping-7.jpg",
+      "sizeBytes": 353345,
+      "fullPath": "public/images/media/news-clipping-7.jpg"
+    },
+    {
+      "relativePath": "/images/media/press-review-3.jpg",
+      "sizeBytes": 25845,
+      "fullPath": "public/images/media/press-review-3.jpg"
+    },
+    {
+      "relativePath": "/images/projects/area-of-work.jpg",
+      "sizeBytes": 277647,
+      "fullPath": "public/images/projects/area-of-work.jpg"
+    },
+    {
+      "relativePath": "/images/projects/blood-donation-camp.jpg",
+      "sizeBytes": 1338159,
+      "fullPath": "public/images/projects/blood-donation-camp.jpg"
+    },
+    {
+      "relativePath": "/images/projects/botanical-leaf-branch.png",
+      "sizeBytes": 301816,
+      "fullPath": "public/images/projects/botanical-leaf-branch.png"
+    },
+    {
+      "relativePath": "/images/projects/brij-anshuman-icon.jpg",
+      "sizeBytes": 696197,
+      "fullPath": "public/images/projects/brij-anshuman-icon.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-hunar-class.jpg",
+      "sizeBytes": 36441,
+      "fullPath": "public/images/projects/brij-hunar-class.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-hunar-sewing-hall.jpg",
+      "sizeBytes": 6347,
+      "fullPath": "public/images/projects/brij-hunar-sewing-hall.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-hunar-tailoring.jpg",
+      "sizeBytes": 6279,
+      "fullPath": "public/images/projects/brij-hunar-tailoring.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-hunar-training.jpg",
+      "sizeBytes": 40995,
+      "fullPath": "public/images/projects/brij-hunar-training.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-nipun-activities.jpg",
+      "sizeBytes": 38681,
+      "fullPath": "public/images/projects/brij-nipun-activities.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-nipun-workshop.jpg",
+      "sizeBytes": 6719,
+      "fullPath": "public/images/projects/brij-nipun-workshop.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-sangini-icon.jpg",
+      "sizeBytes": 606263,
+      "fullPath": "public/images/projects/brij-sangini-icon.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-seva-icon.jpg",
+      "sizeBytes": 822843,
+      "fullPath": "public/images/projects/brij-seva-icon.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-seva-jal.jpg",
+      "sizeBytes": 86103,
+      "fullPath": "public/images/projects/brij-seva-jal.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-seva-plantation.jpg",
+      "sizeBytes": 143110,
+      "fullPath": "public/images/projects/brij-seva-plantation.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-surabhi-cow-craft.jpg",
+      "sizeBytes": 156273,
+      "fullPath": "public/images/projects/brij-surabhi-cow-craft.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-surabhi-cow.jpg",
+      "sizeBytes": 157609,
+      "fullPath": "public/images/projects/brij-surabhi-cow.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-surabhi-diya.jpg",
+      "sizeBytes": 173905,
+      "fullPath": "public/images/projects/brij-surabhi-diya.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-surabhi-flower-recycling.jpg",
+      "sizeBytes": 99391,
+      "fullPath": "public/images/projects/brij-surabhi-flower-recycling.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-surabhi-idol-painting.jpg",
+      "sizeBytes": 237868,
+      "fullPath": "public/images/projects/brij-surabhi-idol-painting.jpg"
+    },
+    {
+      "relativePath": "/images/projects/brij-surabhi-temple.jpg",
+      "sizeBytes": 12902,
+      "fullPath": "public/images/projects/brij-surabhi-temple.jpg"
+    },
+    {
+      "relativePath": "/images/projects/daan-utsav.jpg",
+      "sizeBytes": 339895,
+      "fullPath": "public/images/projects/daan-utsav.jpg"
+    },
+    {
+      "relativePath": "/images/projects/digi-shala-icon.jpg",
+      "sizeBytes": 611136,
+      "fullPath": "public/images/projects/digi-shala-icon.jpg"
+    },
+    {
+      "relativePath": "/images/projects/digi-shala.jpg",
+      "sizeBytes": 110780,
+      "fullPath": "public/images/projects/digi-shala.jpg"
+    },
+    {
+      "relativePath": "/images/projects/edudaksh-award.jpg",
+      "sizeBytes": 3273,
+      "fullPath": "public/images/projects/edudaksh-award.jpg"
+    },
+    {
+      "relativePath": "/images/projects/edudaksh-classroom.jpg",
+      "sizeBytes": 3273,
+      "fullPath": "public/images/projects/edudaksh-classroom.jpg"
+    },
+    {
+      "relativePath": "/images/projects/edudaksh-computer.jpg",
+      "sizeBytes": 23923,
+      "fullPath": "public/images/projects/edudaksh-computer.jpg"
+    },
+    {
+      "relativePath": "/images/projects/edudaksh-gallery.jpg",
+      "sizeBytes": 299324,
+      "fullPath": "public/images/projects/edudaksh-gallery.jpg"
+    },
+    {
+      "relativePath": "/images/projects/edudaksh-training.jpg",
+      "sizeBytes": 50319,
+      "fullPath": "public/images/projects/edudaksh-training.jpg"
+    },
+    {
+      "relativePath": "/images/projects/gi-certificate-1147.jpg",
+      "sizeBytes": 1154534,
+      "fullPath": "public/images/projects/gi-certificate-1147.jpg"
+    },
+    {
+      "relativePath": "/images/projects/govt-of-india-seal.png",
+      "sizeBytes": 930660,
+      "fullPath": "public/images/projects/govt-of-india-seal.png"
+    },
+    {
+      "relativePath": "/images/projects/heritage-header-art.png",
+      "sizeBytes": 626346,
+      "fullPath": "public/images/projects/heritage-header-art.png"
+    },
+    {
+      "relativePath": "/images/projects/hero-training.jpg",
+      "sizeBytes": 423186,
+      "fullPath": "public/images/projects/hero-training.jpg"
+    },
+    {
+      "relativePath": "/images/projects/inclusion-arch-art.png",
+      "sizeBytes": 589218,
+      "fullPath": "public/images/projects/inclusion-arch-art.png"
+    },
+    {
+      "relativePath": "/images/projects/ip-india-logo.png",
+      "sizeBytes": 1084415,
+      "fullPath": "public/images/projects/ip-india-logo.png"
+    },
+    {
+      "relativePath": "/images/projects/kla-classroom-1.jpg",
+      "sizeBytes": 324283,
+      "fullPath": "public/images/projects/kla-classroom-1.jpg"
+    },
+    {
+      "relativePath": "/images/projects/kla-classroom-2.jpg",
+      "sizeBytes": 293536,
+      "fullPath": "public/images/projects/kla-classroom-2.jpg"
+    },
+    {
+      "relativePath": "/images/projects/kla-students.jpg",
+      "sizeBytes": 858982,
+      "fullPath": "public/images/projects/kla-students.jpg"
+    },
+    {
+      "relativePath": "/images/projects/mathura-ghat-panoramic.png",
+      "sizeBytes": 683897,
+      "fullPath": "public/images/projects/mathura-ghat-panoramic.png"
+    },
+    {
+      "relativePath": "/images/projects/mathura-ghat-sketch.png",
+      "sizeBytes": 900468,
+      "fullPath": "public/images/projects/mathura-ghat-sketch.png"
+    },
+    {
+      "relativePath": "/images/projects/mathura-zari-poshak-gi-certificate-1147.pdf",
+      "sizeBytes": 1117991,
+      "fullPath": "public/images/projects/mathura-zari-poshak-gi-certificate-1147.pdf"
+    },
+    {
+      "relativePath": "/images/projects/mathura-zari-poshak-gi-logo.jpg",
+      "sizeBytes": 809845,
+      "fullPath": "public/images/projects/mathura-zari-poshak-gi-logo.jpg"
+    },
+    {
+      "relativePath": "/images/projects/mathura-zari-poshak-official-logo.png",
+      "sizeBytes": 1615816,
+      "fullPath": "public/images/projects/mathura-zari-poshak-official-logo.png"
+    },
+    {
+      "relativePath": "/images/projects/pathway-community-empowerment.jpg",
+      "sizeBytes": 272698,
+      "fullPath": "public/images/projects/pathway-community-empowerment.jpg"
+    },
+    {
+      "relativePath": "/images/projects/pathway-education-digital.jpg",
+      "sizeBytes": 398971,
+      "fullPath": "public/images/projects/pathway-education-digital.jpg"
+    },
+    {
+      "relativePath": "/images/projects/pathway-heritage-artisan.jpg",
+      "sizeBytes": 222511,
+      "fullPath": "public/images/projects/pathway-heritage-artisan.jpg"
+    },
+    {
+      "relativePath": "/images/projects/pathway-women-skills.jpg",
+      "sizeBytes": 208971,
+      "fullPath": "public/images/projects/pathway-women-skills.jpg"
+    },
+    {
+      "relativePath": "/images/projects/plantation-drive.jpg",
+      "sizeBytes": 185121,
+      "fullPath": "public/images/projects/plantation-drive.jpg"
+    },
+    {
+      "relativePath": "/images/projects/poshak-sanjhi.jpg",
+      "sizeBytes": 273554,
+      "fullPath": "public/images/projects/poshak-sanjhi.jpg"
+    },
+    {
+      "relativePath": "/images/projects/poshak-zari.jpg",
+      "sizeBytes": 911880,
+      "fullPath": "public/images/projects/poshak-zari.jpg"
+    },
+    {
+      "relativePath": "/images/projects/real-gi-certificate-page-1.png",
+      "sizeBytes": 2315045,
+      "fullPath": "public/images/projects/real-gi-certificate-page-1.png"
+    },
+    {
+      "relativePath": "/images/projects/real-gi-certificate-page-2.png",
+      "sizeBytes": 666042,
+      "fullPath": "public/images/projects/real-gi-certificate-page-2.png"
+    },
+    {
+      "relativePath": "/images/projects/royal-sanjhi-training.jpg",
+      "sizeBytes": 2285915,
+      "fullPath": "public/images/projects/royal-sanjhi-training.jpg"
+    },
+    {
+      "relativePath": "/images/projects/sanitary-napkin-vending.jpg",
+      "sizeBytes": 523624,
+      "fullPath": "public/images/projects/sanitary-napkin-vending.jpg"
+    },
+    {
+      "relativePath": "/images/projects/sanitary-napkin.jpg",
+      "sizeBytes": 44032,
+      "fullPath": "public/images/projects/sanitary-napkin.jpg"
+    },
+    {
+      "relativePath": "/images/projects/sanjhi-artisan-craft.jpg",
+      "sizeBytes": 2285915,
+      "fullPath": "public/images/projects/sanjhi-artisan-craft.jpg"
+    },
+    {
+      "relativePath": "/images/projects/shakti-ek-adhaar-1.jpg",
+      "sizeBytes": 447450,
+      "fullPath": "public/images/projects/shakti-ek-adhaar-1.jpg"
+    },
+    {
+      "relativePath": "/images/projects/shakti-ek-adhaar-2.jpg",
+      "sizeBytes": 45852,
+      "fullPath": "public/images/projects/shakti-ek-adhaar-2.jpg"
+    },
+    {
+      "relativePath": "/images/projects/shakti-ek-adhaar-3.jpg",
+      "sizeBytes": 54251,
+      "fullPath": "public/images/projects/shakti-ek-adhaar-3.jpg"
+    },
+    {
+      "relativePath": "/images/projects/shakti-ek-adhaar.jpg",
+      "sizeBytes": 82394,
+      "fullPath": "public/images/projects/shakti-ek-adhaar.jpg"
+    },
+    {
+      "relativePath": "/images/projects/shg-federation.jpg",
+      "sizeBytes": 325789,
+      "fullPath": "public/images/projects/shg-federation.jpg"
+    },
+    {
+      "relativePath": "/images/projects/skills-header-art.png",
+      "sizeBytes": 572128,
+      "fullPath": "public/images/projects/skills-header-art.png"
+    },
+    {
+      "relativePath": "/images/projects/upsdm-beauty.jpg",
+      "sizeBytes": 124051,
+      "fullPath": "public/images/projects/upsdm-beauty.jpg"
+    },
+    {
+      "relativePath": "/images/projects/upsdm-class.jpg",
+      "sizeBytes": 8902,
+      "fullPath": "public/images/projects/upsdm-class.jpg"
+    },
+    {
+      "relativePath": "/images/projects/upsdm-computer.jpg",
+      "sizeBytes": 11240,
+      "fullPath": "public/images/projects/upsdm-computer.jpg"
+    },
+    {
+      "relativePath": "/images/projects/upsdm-sewing.jpg",
+      "sizeBytes": 11077,
+      "fullPath": "public/images/projects/upsdm-sewing.jpg"
+    },
+    {
+      "relativePath": "/images/projects/upsdm-tailor.jpg",
+      "sizeBytes": 125740,
+      "fullPath": "public/images/projects/upsdm-tailor.jpg"
+    },
+    {
+      "relativePath": "/favicon.ico",
+      "sizeBytes": 20373,
+      "fullPath": "./public/favicon.ico"
+    },
+    {
+      "relativePath": "/favicon.png",
+      "sizeBytes": 347960,
+      "fullPath": "./public/favicon.png"
+    },
+    {
+      "relativePath": "/og-image.png",
+      "sizeBytes": 614997,
+      "fullPath": "./public/og-image.png"
+    }
+  ]
+}
