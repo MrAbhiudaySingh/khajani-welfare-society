@@ -35,12 +35,12 @@ interface GalleryImage {
 
 const GALLERY_IMAGES: GalleryImage[] = [
   {
-    url: "/images/projects/digi-shala.jpg",
+    url: "/images/about/computer-lab.jpg",
     caption: "Girls engaging in hands-on computer and digital application sessions",
     tag: "Computer Learning",
   },
   {
-    url: "/images/projects/digi-shala-icon.jpg",
+    url: "/images/projects/edudaksh-training.jpg",
     caption: "Interactive classroom demonstration exploring modern digital tools",
     tag: "Digital Demonstrations",
   },
@@ -55,12 +55,12 @@ const GALLERY_IMAGES: GalleryImage[] = [
     tag: "Technology Awareness",
   },
   {
-    url: "/images/projects/kla-students.jpg",
+    url: "/images/projects/kla-classroom-2.jpg",
     caption: "Students participating enthusiastically in tech guidance workshops",
     tag: "Classroom Interaction",
   },
   {
-    url: "/images/projects/upsdm-computer.jpg",
+    url: "/images/projects/digi-computer-lab.jpg",
     caption: "Instructor-led digital orientation and safe internet browsing practice",
     tag: "Learning Activities",
   },
@@ -70,7 +70,7 @@ const GALLERY_IMAGES: GalleryImage[] = [
     tag: "Institutional Integration",
   },
   {
-    url: "/images/projects/hero-training.jpg",
+    url: "/images/projects/digi-shala.jpg",
     caption: "Building confidence and digital capability for future career pathways",
     tag: "Digital Confidence",
   },
@@ -119,7 +119,7 @@ const DigiShalaPage = () => {
       <section className="relative min-h-[75vh] flex items-center justify-center bg-primary text-white overflow-hidden py-20 lg:py-28">
         <AuroraBackground variant="dark" intensity={1.2} />
         <div className="absolute inset-0 z-0">
-          <img src="/images/projects/digi-shala.jpg"
+          <img src="/images/projects/brij-hunar-esdp.jpg"
             alt="Digi-Shala digital learning classroom for girls"
             className="w-full h-full object-cover opacity-20 mix-blend-luminosity"
            loading="lazy" decoding="async"/>
@@ -582,8 +582,8 @@ const DigiShalaPage = () => {
 
               <div className="md:col-span-6">
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl border border-border">
-                  <img src="/images/projects/digi-shala-icon.jpg"
-                    alt="Digi-Shala interactive computer training inside campus"
+                  <img src="/images/about/skills-wider-communities.jpg"
+                    alt="Digi-Shala interactive outreach inside partner campus"
                     className="w-full h-full object-cover"
                    loading="lazy" decoding="async"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
